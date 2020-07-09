@@ -1,0 +1,27 @@
+/* COMPONENT SLIDER MAIN*/ 
+.carousel-control-prev{
+    width: 40px;
+    height: 40px;
+    background: rgba(245, 245, 245, 0.35);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: .5rem;
+    .carousel-control-prev-icon{
+        background-image: unset ;
+        width: unset;
+        height: unset;
+        position: absolute;
+        top: 40%;
+        transform: translateX(-50%) translateY(-40%);
+        left: 50%;
+    }
+}
+.carousel-control-next{
+    @extend .carousel-control-prev;
+    margin-right: .5rem;
+    margin-left: 0;
+    .carousel-control-next-icon{
+        @extend .carousel-control-prev-icon;
+    }
+}
