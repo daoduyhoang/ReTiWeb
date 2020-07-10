@@ -22,5 +22,13 @@
     "gulp-replace": "^1.0.0",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daoduyhoang/ReTiWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daoduyhoang/ReTiWeb/issues"
+  },
+  "homepage": "https://github.com/daoduyhoang/ReTiWeb#readme"
 }
