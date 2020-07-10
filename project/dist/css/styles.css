@@ -1,5 +1,104 @@
-div {
-  border: 1px solid #000; }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
-p {
-  color: blue; }
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.card {
+  width: 360px;
+  line-height: 14px;
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif; }
+  .card-title {
+    color: #0C77C6;
+    line-height: 20px;
+    font-size: 14px; }
+  .card-body {
+    border: none; }
+  .card-price-vnd {
+    background-color: #EF5B40;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 49px;
+    height: 26px; }
+  .card-badge-new {
+    position: absolute;
+    width: 58px;
+    height: 29px;
+    top: 14px;
+    left: -6px; }
+  .card-badge-Group-277 {
+    position: absolute;
+    width: 24px;
+    height: 21.2px;
+    top: 14px;
+    right: 8px; }
+  .card-price {
+    line-height: 24px;
+    color: #EF5B40;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px; }
+  .card-buy {
+    background: #0C77C6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .card-buy:hover {
+    text-decoration: none; }
+
+/* COMPONENT SLIDER MAIN*/
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+  height: 40px;
+  background: rgba(245, 245, 245, 0.35);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: .5rem; }
+  .carousel-control-prev .carousel-control-prev-icon, .carousel-control-next .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
+    background-image: unset;
+    width: unset;
+    height: unset;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translateX(-50%) translateY(-40%);
+    -moz-transform: translateX(-50%) translateY(-40%);
+    -ms-transform: translateX(-50%) translateY(-40%);
+    -o-transform: translateX(-50%) translateY(-40%);
+    transform: translateX(-50%) translateY(-40%);
+    left: 50%; }
+
+.carousel-control-next {
+  margin-right: .5rem;
+  margin-left: 0; }
+
+#carouselControls .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next, .carousel-control-next {
+    display: none; } }
+
+/* Header */
+ul {
+  list-style: none; }
