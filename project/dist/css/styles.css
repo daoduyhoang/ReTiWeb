@@ -40,3 +40,7 @@ html, body {
 .carousel-control-next {
   margin-right: .5rem;
   margin-left: 0; }
+
+/* Header */
+ul {
+  list-style: none; }
