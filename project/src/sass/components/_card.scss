@@ -1,0 +1,59 @@
+.card{
+    width: 360px;
+    line-height: 14px;
+    display: inline-block;
+    border: none;
+    font: {
+        size: 12px;
+        family: $roboto;
+    };
+    &-title{
+        color: #0C77C6;
+        line-height: 20px;
+        font: {
+            size: 14px;
+        };
+    }
+    &-body{
+        border: none;
+    }
+    &-price-vnd{
+        background-color: #EF5B40;
+        border-radius: 4px;
+        width: 49px;
+        height: 26px;
+    }
+    &-badge-new{
+        position: absolute;
+        width: 58px;
+        height: 29px;
+        top: 14px;
+        left: -6px;
+    }
+    &-badge-Group-277{
+        position: absolute;
+        width: 24px;
+        height: 21.2px;
+        top: 14px;
+        right: 8px;
+    }
+    &-price{
+        line-height: 24px;
+        color: #EF5B40;
+        margin: 0;
+        font: {
+            style: normal;
+            weight: bold;
+            size: 20px;
+        }
+    }
+    &-buy{
+        background: #0C77C6;
+        border-radius: 4px; 
+    }
+    &-buy:hover{
+        text-decoration: none;
+    }
+}
+
+
