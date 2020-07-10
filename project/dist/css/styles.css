@@ -98,3 +98,7 @@ html, body {
 @media only screen and (max-width: 480px) {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
+
+/* Header */
+ul {
+  list-style: none; }
