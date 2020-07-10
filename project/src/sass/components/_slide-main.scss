@@ -25,3 +25,14 @@
         @extend .carousel-control-prev-icon;
     }
 }
+#carouselControls .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+@include Responsive(XS){
+    .carousel-control-prev,.carousel-control-next{
+        display: none;
+    }
+}
+
