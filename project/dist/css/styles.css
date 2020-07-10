@@ -41,6 +41,17 @@ html, body {
   margin-right: .5rem;
   margin-left: 0; }
 
+#carouselControls .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next, .carousel-control-next {
+    display: none; } }
+
 /* Header */
 ul {
   list-style: none; }
