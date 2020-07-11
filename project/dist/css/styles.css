@@ -92,6 +92,155 @@ ul {
   margin-right: .5rem;
   margin-left: 0; }
 
+<<<<<<< HEAD
+/*KHU VUC NOI BAT*/
+.container, .container .khuvucnoibat {
+  width: 100%;
+  height: 100%; }
+  .container .khuvucnoibat {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .container .khuvucnoibat .top {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      height: 10%;
+      width: 100%; }
+      .container .khuvucnoibat .top img {
+        margin-left: auto;
+        margin-right: auto; }
+      .container .khuvucnoibat .top p {
+        margin-left: auto;
+        margin-right: auto;
+        font-family: Roboto Slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 40px; }
+    .container .khuvucnoibat .colLeft, .container .khuvucnoibat .colRight .rightTop, .container .khuvucnoibat .colRight .rightBottom {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: flex-end;
+      -moz-justify-content: flex-end;
+      -ms-justify-content: flex-end;
+      -webkit-box-pack: end;
+      -moz-box-pack: end;
+      justify-content: flex-end;
+      -ms-flex-pack: flex-end;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      background-image: url("../images/khuvucnoibat/image2.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 48%;
+      height: 90%;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      margin-right: 0.5rem; }
+      .container .khuvucnoibat .colLeft .title, .container .khuvucnoibat .colRight .rightTop .title, .container .khuvucnoibat .colRight .rightBottom .title {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        justify-content: space-between;
+        -ms-flex-pack: space-between;
+        bottom: 0;
+        color: #F2F2F2;
+        background-color: #3BB8C4;
+        -webkit-border-radius: 0px 0px 8px 8px;
+        -moz-border-radius: 0px 0px 8px 8px;
+        border-radius: 0px 0px 8px 8px; }
+        .container .khuvucnoibat .colLeft .title p, .container .khuvucnoibat .colRight .rightTop .title p, .container .khuvucnoibat .colRight .rightBottom .title p {
+          margin: 1rem; }
+    .container .khuvucnoibat .colRight {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      flex-direction: column;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 50%;
+      height: 90%;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      border-radius: 8px;
+      width: 50%;
+      margin-left: 0.5rem; }
+      .container .khuvucnoibat .colRight .rightTop, .container .khuvucnoibat .colRight .rightBottom {
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        -webkit-box-pack: end;
+        -moz-box-pack: end;
+        justify-content: flex-end;
+        -ms-flex-pack: flex-end;
+        background-image: url("../images/khuvucnoibat/image3.png");
+        height: 50%;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 0.5rem; }
+      .container .khuvucnoibat .colRight .rightBottom {
+        -webkit-justify-content: flex-end;
+        -moz-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        -webkit-box-pack: end;
+        -moz-box-pack: end;
+        justify-content: flex-end;
+        -ms-flex-pack: flex-end;
+        background-image: url("../images/khuvucnoibat/image4.png");
+        margin-top: 0.5rem;
+        margin-right: 0;
+        margin-bottom: 0; }
+=======
 #carouselControls .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -106,6 +255,7 @@ ul {
 /* Header */
 ul {
   list-style: none; }
+<<<<<<< HEAD
 
 /* TITLE PAGE */
 .title-partial {
@@ -174,3 +324,6 @@ ul {
     -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1); } }
+=======
+>>>>>>> master
+>>>>>>> 135e79714a5697d69b14da1249683f6bd03fd949
