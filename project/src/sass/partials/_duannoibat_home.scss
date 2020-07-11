@@ -1,0 +1,41 @@
+.duannoibat-home{
+    .duannoibat-title{
+        line-height: 40px;
+        font: {
+            family:$roboto_slab;
+            style: normal;
+            size: 32px;
+        };
+    }
+}
+@include Responsive(MD){
+    .card {
+        &-price{
+            font-size: 12px;
+        }
+        &-buy{
+            padding: .25rem!important;
+        }
+    }
+}
+@include Responsive(SM){
+    .card{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+}
+@include Responsive(XS){
+    .card{
+        max-width: 100%;
+        flex: 0 0 100%;
+        &-price{
+            font-size: 16px;
+        }
+        &-price{
+            padding: 0.25rem !important;
+        }
+        &-buy{
+            padding: 0.25rem !important;
+        }
+    }
+}

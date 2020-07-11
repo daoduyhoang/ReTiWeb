@@ -14,6 +14,7 @@ html, body {
   line-height: 14px;
   display: inline-block;
   border: none;
+  padding: 0.5rem;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
   .card-title {
@@ -26,9 +27,7 @@ html, body {
     background-color: #EF5B40;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    border-radius: 4px;
-    width: 49px;
-    height: 26px; }
+    border-radius: 4px; }
   .card-badge-new {
     position: absolute;
     width: 58px;
@@ -37,10 +36,10 @@ html, body {
     left: -6px; }
   .card-badge-Group-277 {
     position: absolute;
-    width: 24px;
-    height: 21.2px;
     top: 14px;
-    right: 8px; }
+    right: 8px;
+    color: #EF5B40;
+    font-size: 20px; }
   .card-price {
     line-height: 24px;
     color: #EF5B40;
@@ -98,3 +97,39 @@ html, body {
 @media only screen and (max-width: 480px) {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
+
+.duannoibat-home .duannoibat-title {
+  line-height: 40px;
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-size: 32px; }
+
+@media only screen and (max-width: 1024px) {
+  .card-price {
+    font-size: 12px; }
+  .card-buy {
+    padding: 0.25rem !important; } }
+
+@media only screen and (max-width: 768px) {
+  .card {
+    max-width: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%; } }
+
+@media only screen and (max-width: 480px) {
+  .card {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+    -moz-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%; }
+    .card-price {
+      font-size: 16px; }
+    .card-price {
+      padding: 0.25rem !important; }
+    .card-buy {
+      padding: 0.25rem !important; } }
