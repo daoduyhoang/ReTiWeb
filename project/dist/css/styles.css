@@ -9,6 +9,53 @@ html, body {
   height: 100%;
   width: 100%; }
 
+.card {
+  width: 360px;
+  line-height: 14px;
+  display: inline-block;
+  border: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif; }
+  .card-title {
+    color: #0C77C6;
+    line-height: 20px;
+    font-size: 14px; }
+  .card-body {
+    border: none; }
+  .card-price-vnd {
+    background-color: #EF5B40;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    width: 49px;
+    height: 26px; }
+  .card-badge-new {
+    position: absolute;
+    width: 58px;
+    height: 29px;
+    top: 14px;
+    left: -6px; }
+  .card-badge-Group-277 {
+    position: absolute;
+    width: 24px;
+    height: 21.2px;
+    top: 14px;
+    right: 8px; }
+  .card-price {
+    line-height: 24px;
+    color: #EF5B40;
+    margin: 0;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px; }
+  .card-buy {
+    background: #0C77C6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px; }
+  .card-buy:hover {
+    text-decoration: none; }
+
 /* COMPONENT SLIDER MAIN*/
 .carousel-control-prev, .carousel-control-next {
   width: 40px;
@@ -41,6 +88,7 @@ html, body {
   margin-right: .5rem;
   margin-left: 0; }
 
+<<<<<<< HEAD
 /*KHU VUC NOI BAT*/
 .container, .container .khuvucnoibat {
   width: 100%;
@@ -188,3 +236,19 @@ html, body {
         margin-top: 0.5rem;
         margin-right: 0;
         margin-bottom: 0; }
+=======
+#carouselControls .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next, .carousel-control-next {
+    display: none; } }
+
+/* Header */
+ul {
+  list-style: none; }
+>>>>>>> master
