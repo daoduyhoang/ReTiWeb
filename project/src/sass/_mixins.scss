@@ -21,3 +21,16 @@ $XL:   1170px;
    @media only screen and (max-width: $XL) { @content; } 
   }
 }
+@mixin title_partials(){
+  font-family: $roboto_slab;
+  font-weight: bold;
+  font-size:32px;
+  color: #333132;
+}
+@mixin text_description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+}

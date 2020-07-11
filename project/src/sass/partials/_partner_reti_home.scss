@@ -1,0 +1,43 @@
+.text-partner_reti{
+    text-align: center;
+    @include text_description();
+}
+.partner-reti{
+    .item{
+        width: 130px;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+    }
+    .owl-stage{
+        display: flex;
+        align-items: center;
+    }
+}
+.slider-partner{
+    position: relative;
+}
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 9;
+    .btn-prev i,.btn-next i{
+        color: $main-color;
+        cursor: pointer;
+    }
+}
+@include Responsive(XS){
+    .owl-nav{
+        .btn-prev i{
+            color: black;
+            width: 24px;
+            height: 24px;
+            box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
+        }
+    }
+    
+}
