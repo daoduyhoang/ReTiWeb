@@ -9,6 +9,10 @@ html, body {
   height: 100%;
   width: 100%; }
 
+/* Header */
+ul {
+  list-style: none; }
+
 .card {
   width: 360px;
   line-height: 14px;
