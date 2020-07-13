@@ -92,7 +92,28 @@ ul {
   margin-right: .5rem;
   margin-left: 0; }
 
-<<<<<<< HEAD
+#carouselControls .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+@media only screen and (max-width: 480px) {
+  .carousel-control-prev, .carousel-control-next, .carousel-control-next {
+    display: none; } }
+
+/* TITLE PAGE */
+.title-partial {
+  text-align: center; }
+  .title-partial .icon-title {
+    margin-bottom: 30px; }
+  .title-partial h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #333132; }
+
 /*KHU VUC NOI BAT*/
 .container, .container .khuvucnoibat {
   width: 100%;
@@ -240,33 +261,6 @@ ul {
         margin-top: 0.5rem;
         margin-right: 0;
         margin-bottom: 0; }
-=======
-#carouselControls .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
-
-@media only screen and (max-width: 480px) {
-  .carousel-control-prev, .carousel-control-next, .carousel-control-next {
-    display: none; } }
-
-/* Header */
-ul {
-  list-style: none; }
-<<<<<<< HEAD
-
-/* TITLE PAGE */
-.title-partial {
-  text-align: center; }
-  .title-partial .icon-title {
-    margin-bottom: 30px; }
-  .title-partial h2 {
-    font-family: "Roboto Slab", serif;
-    font-weight: bold;
-    font-size: 32px;
-    color: #333132; }
 
 .text-partner_reti {
   text-align: center;
@@ -324,6 +318,3 @@ ul {
     -webkit-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.1); } }
-=======
->>>>>>> master
->>>>>>> 135e79714a5697d69b14da1249683f6bd03fd949
