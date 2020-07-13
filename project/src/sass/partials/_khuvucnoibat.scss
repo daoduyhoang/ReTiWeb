@@ -1,0 +1,143 @@
+/*KHU VUC NOI BAT*/
+$width46: 46%;
+$width50: 50%;
+$width100: 100%;
+$height50: 50%;
+$height90: 90%;
+$height100: 100%;
+$boderRadius: 8px;
+$boderRadiusTitle: 0px 0px 8px 8px;
+$height100vh: 100vh;
+$colorTitle: #F2F2F2;
+$bgcolorTitle:#3BB8C4;
+// $bgcolorTitle: linear-gradient(187.59deg, #20ABB9 1.33%, #56C5D0 86.35%);#FFFFFF
+$margin0: 0;
+$margin1: 1rem;
+$absolute: absolute;
+$relative: relative;
+$no-repeat: no-repeat;
+@mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  @mixin flex-direction($direction) {
+    -webkit-flex-direction: $direction;
+       -moz-flex-direction: $direction;
+        -ms-flex-direction: $direction;
+            flex-direction: $direction;
+  }
+  @mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+       -moz-justify-content: $justify;
+        -ms-justify-content: $justify;
+            justify-content: $justify;
+              -ms-flex-pack: $justify;
+  }
+  @mixin align-items($align) {
+    -webkit-align-content: $align;
+       -moz-align-content: $align;
+        -ms-align-content: $align;
+            align-content: $align;
+  }
+  @mixin flex-wrap($wrap) {
+    -webkit-flex-wrap: $wrap;
+       -moz-flex-wrap: $wrap;
+        -ms-flex-wrap: $wrap;
+            flex-wrap: $wrap;
+  }
+.container{
+    width: $width100;
+    height: $height100;
+    .khuvucnoibat{
+        @extend .container;
+        @include flexbox();
+        @include flex-wrap(wrap);
+            .top{
+                @include flexbox();
+                @include flex-direction(column); 
+                height: 10%;
+                width: $width100;
+                img{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                p{
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-family: Roboto Slab;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+            .colLeft{
+                @include flexbox();
+                @include justify-content(flex-end);
+                @include flex-direction(column);    
+                background-image: url("../images/khuvucnoibat/image2.png");
+                background-repeat: $no-repeat;
+                background-size: cover;
+                width: 48%;
+                height: $height90;
+                border-radius: $boderRadius;
+                margin-right: 0.5rem;
+                .title{
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    bottom: 0;
+                    color: $colorTitle;
+                    background-color: $bgcolorTitle;
+                    border-radius: $boderRadiusTitle;
+                    // font :{
+                    //     family: Roboto;
+                    //     style: normal;
+                    //     weight: bold;
+                    //     size: 16px;
+                    // }
+                    p{
+                        margin: $margin1;
+                    }
+                }
+            }
+            .colRight{
+                @include flexbox();
+                @include justify-content(space-between);
+                @include flex-direction(column);    
+                background-repeat: $no-repeat;
+                background-size: cover;
+                width: $width50;
+                height: $height90;
+                border-radius: $boderRadius;
+                width: $width50;
+                margin-left: 0.5rem;
+                .rightTop{
+                    @include justify-content(flex-end);
+                    @extend .colLeft;
+                    background-image: url("../images/khuvucnoibat/image3.png");
+                    height: $height50;
+                    width: $width100;
+                    margin-right: 0;
+                    margin-bottom: 0.5rem;
+                    .title{
+                        @extend .title;
+                    }
+                }
+                .rightBottom{
+                    @include justify-content(flex-end);
+                    @extend .colLeft;
+                    @extend .rightTop;
+                    background-image: url("../images/khuvucnoibat/image4.png");
+                    margin-top: 0.5rem;
+                    margin-right: 0;
+                    margin-bottom: 0;
+                    .title{
+                        @extend .title;
+                    }
+                }
+            }
+    }
+}
