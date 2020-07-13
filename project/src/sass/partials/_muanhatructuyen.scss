@@ -1,0 +1,71 @@
+/*mua nha truc tuyen*/
+.container{
+    .row{
+        @include flexbox();
+        @include justify-content(space-between);
+        .muaNhaTrucTuyen-columnLeft{
+            @include flex-direction(column);
+            width: 49.5%;
+            height: 430px;
+            .title-partial-horizontal{
+                margin-bottom: 30px;
+                h2{
+                    @include title_partials();
+                } 
+            }
+            .content{
+                @include text_description();
+                margin-bottom: 30px;
+            }
+            .paging{
+                @extend .content;
+                .page{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-weight: bold;
+                    border: 2px solid #333132;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    padding: 5px 10px;
+                    margin-right: 30px;
+                }
+                .line{
+                    font-weight: bold;
+                    margin-right: 30px;
+                }
+            }
+            .content2{
+                .content2-title{
+                    font-weight: bold;
+                }
+                .content2-body{
+                    @include text_description();
+                }
+            }
+            .columnLeft-button{
+                margin-top: 60px;
+                .button{
+                    @include text_description();
+                    background: #56C4CF;
+                    border-radius: 4px;
+                    color: white;
+                    width: 170px;
+                    height: 45px;
+                }
+            }
+        }
+        .muaNhaTrucTuyen-columnRight{
+            // @extend .muaNhaTrucTuyen-columnLeft;
+            background-image: url("../../dist/images/muanhatructuyen/img.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: $boderRadius;
+            width: 49.5%;
+            height: 430px;
+        }
+    }
+    
+}
