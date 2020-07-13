@@ -1,12 +1,18 @@
 /*mua nha truc tuyen*/
 .container{
-    .row{
+    .muaNhaTrucTuyen-row{
+        width: 100%;
         @include flexbox();
         @include justify-content(space-between);
         .muaNhaTrucTuyen-columnLeft{
-            @include flex-direction(column);
             width: 49.5%;
             height: auto;
+            @include flex-direction(column);
+            @include Responsive(SM){
+                width: 100%;
+                margin: 0px 10px;
+                }
+            }
             .title-partial-horizontal{
                 margin-bottom: 30px;
                 h2{
@@ -16,6 +22,11 @@
             .content{
                 @include text_description();
                 margin-bottom: 30px;
+            }
+            .muaNhaTrucTuyen-img{
+                display: none;
+                margin-bottom: 30px;
+                width: 100%;
             }
             .paging{
                 @extend .content;
@@ -56,7 +67,7 @@
                     height: 45px;
                 }
             }
-        }
+        
         .muaNhaTrucTuyen-columnRight{
             // @extend .muaNhaTrucTuyen-columnLeft;
             background-image: url("../../dist/images/muanhatructuyen/img.png");
@@ -65,7 +76,21 @@
             border-radius: $boderRadius;
             width: 49.5%;
             height: auto;
+            @include Responsive(SM){
+                width: 0%;
+            }
         }
     }
-    
 }
+@include Responsive(SM){
+    .container{
+        .muaNhaTrucTuyen-row{
+            .muaNhaTrucTuyen-columnLeft{
+                .muaNhaTrucTuyen-img{
+                    display: block;
+                    overflow: scroll;
+                }
+                }
+            }
+        }
+    }
