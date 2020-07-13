@@ -1,12 +1,64 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
+<<<<<<< HEAD
 body{
     font-size: $roboto;
 }
+=======
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote {
+    &:before,
+    &:after {
+        content: "";
+        content: none;
+    }
+}
+
+q {
+    &:before,
+    &:after {
+        content: "";
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+>>>>>>> fdfdd7ba7c083b7d81f0f6f481b30023093a1c55
