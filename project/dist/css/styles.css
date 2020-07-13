@@ -10,6 +10,7 @@ body {
   height: 100%;
   width: 100%; }
 
+<<<<<<< HEAD
 article,
 aside,
 details,
@@ -103,6 +104,12 @@ a:hover {
     .header-search form input {
       width: 100px; }
 
+=======
+/* Header */
+ul {
+  list-style: none; }
+
+>>>>>>> develop
 .card {
   width: 360px;
   line-height: 14px;
