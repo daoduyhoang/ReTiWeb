@@ -34,6 +34,13 @@ $XL:   1170px;
   font-size: 14px;
   line-height: 26px;
 }
+@mixin text_title {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
 
 //Flex
 @mixin flexbox() {
