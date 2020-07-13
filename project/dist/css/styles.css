@@ -13,7 +13,6 @@ body {
 body {
   font-size: "Roboto", sans-serif; }
 
-/* Header */
 article,
 aside,
 details,
@@ -519,6 +518,7 @@ a:hover {
   .project_classification .icon-more {
     font-size: 12px;
     margin-left: .9rem; }
+
 /*mua nha truc tuyen*/
 .container .row {
   display: -webkit-box;
