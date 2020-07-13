@@ -6,7 +6,7 @@
         .muaNhaTrucTuyen-columnLeft{
             @include flex-direction(column);
             width: 49.5%;
-            height: 430px;
+            height: auto;
             .title-partial-horizontal{
                 margin-bottom: 30px;
                 h2{
@@ -64,7 +64,7 @@
             background-size: cover;
             border-radius: $boderRadius;
             width: 49.5%;
-            height: 430px;
+            height: auto;
         }
     }
     
