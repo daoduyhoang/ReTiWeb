@@ -62,7 +62,20 @@
         form {
             position: relative;
             input {
-                width: 100px;
+                width: 100%;
+                color: $gray-color;
+                height: 45px;
+            }
+            button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                outline: unset;
+                background: $main-color;
+                border-radius: 5px;
+                color: #fff;
+                width: 75px;
+                height: 45px;
             }
         }
     }

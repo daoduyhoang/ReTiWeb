@@ -10,7 +10,6 @@ body {
   height: 100%;
   width: 100%; }
 
-<<<<<<< HEAD
 article,
 aside,
 details,
@@ -102,14 +101,22 @@ a:hover {
   .header-search form {
     position: relative; }
     .header-search form input {
-      width: 100px; }
+      width: 100%;
+      color: #F2F2F2;
+      height: 45px; }
+    .header-search form button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      outline: unset;
+      background: #56C4CF;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      color: #fff;
+      width: 75px;
+      height: 45px; }
 
-=======
-/* Header */
-ul {
-  list-style: none; }
-
->>>>>>> develop
 .card {
   width: 360px;
   line-height: 14px;
