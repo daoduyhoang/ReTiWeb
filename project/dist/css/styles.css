@@ -294,6 +294,14 @@ a:hover {
     font-size: 32px;
     color: #333132; }
 
+/* PROPERTY TYPE*/
+.custom-control-label::before {
+  border: 1px solid #8D8D8D !important;
+  background-color: white; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #56C4CF; }
+
 /*title-partial_horizontal*/
 .title-partial-horizontal {
   text-align: center;
