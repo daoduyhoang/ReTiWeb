@@ -1,4 +1,69 @@
 /* Header */
-ul {
-    list-style: none;
+.header {
+    &-main-box {
+        padding: 23px 0;
+        vertical-align: middle;
+    }
+    &-logo-box {
+        
+    }
+    &-menu-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            margin-bottom: unset;
+            li {
+                float: left;
+                a {
+                    padding: 10px 15px;
+                    color: $text-color;
+                    &:hover {
+                        color: $link-color;
+                    }
+                }
+            }
+            &.nav-menu {
+
+            }
+            &.header-fnc {
+                a {
+                    color: $main-color;
+                    &:hover {
+                        color: $main-color;
+                        @include text-stroke($main-color, 1px, $white-color);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header {
+    &-bottom-bar {
+        background-color: $gray-color;
+    }
+    &-bottom-box {
+        position: relative;
+        .bottom-show-menu {
+            a {
+                color: $text-color;
+                &:hover {
+                    color: $main-color;
+                }
+            }
+            .icon-dropdown {
+                color: $main-color;
+            }
+        }
+    }
+    &-search {
+        width: 35%;
+        form {
+            position: relative;
+            input {
+                width: 100px;
+            }
+        }
+    }
 }
