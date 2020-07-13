@@ -10,12 +10,10 @@ body {
   height: 100%;
   width: 100%; }
 
-<<<<<<< HEAD
 body {
   font-size: "Roboto", sans-serif; }
 
 /* Header */
-=======
 article,
 aside,
 details,
@@ -30,7 +28,6 @@ section {
   display: block; }
 
 ol,
->>>>>>> fdfdd7ba7c083b7d81f0f6f481b30023093a1c55
 ul {
   list-style: none; }
 
@@ -455,7 +452,6 @@ a:hover {
       -o-transform: translateX(-50%);
       transform: translateX(-50%); } }
 
-<<<<<<< HEAD
 /* FORM*/
 .container-form {
   margin: 0 2rem;
@@ -523,7 +519,6 @@ a:hover {
   .project_classification .icon-more {
     font-size: 12px;
     margin-left: .9rem; }
-=======
 /*mua nha truc tuyen*/
 .container .row {
   display: -webkit-box;
@@ -611,4 +606,3 @@ a:hover {
     border-radius: 8px;
     width: 49.5%;
     height: 430px; }
->>>>>>> fdfdd7ba7c083b7d81f0f6f481b30023093a1c55
