@@ -186,10 +186,6 @@ ul {
   background-color: #56C4CF;
   border-color: #dee2e6; }
 
-.page-item:first-child {
-  background: #333132;
-  color: white; }
-
 /*KHU VUC NOI BAT*/
 .container, .container .khuvucnoibat {
   width: 100%;
