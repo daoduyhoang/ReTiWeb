@@ -5,9 +5,6 @@ $boderRadiusTitle: 0px 0px 8px 8px;
     height: 100%;
     .khuVucNoiBat{
         @extend .container;
-        @include flexbox();
-        @include flex-wrap(wrap);
-        @include justify-content(space-between);
             .top{
                 @include flexbox();
                 @include flex-direction(column); 
@@ -26,14 +23,13 @@ $boderRadiusTitle: 0px 0px 8px 8px;
             }
             .khuVucNoiBat-colLeft{
                 @include flexbox();
-                @include justify-content(flex-end);
                 @include flex-direction(column);   
-                background-image: url("../images/khuvucnoibat/image2.png");
-                background-repeat: no-repeat;
-                background-size: cover;
                 width: 49%;
-                height: 85%;
+                margin-right: 20px;
                 border-radius: $boderRadius;
+                img{
+                    object-fit: cover;
+                }
                 @include Responsive(XS) {
                     width: 100%;
                     margin-bottom: 20px;
@@ -44,8 +40,8 @@ $boderRadiusTitle: 0px 0px 8px 8px;
                 }
                 .title{
                     @include flexbox();
-                    @include justify-content(space-between);
                     @include align-items(center);
+                    justify-content: space-between;
                     background-color: $main-color;
                     border-radius: $boderRadiusTitle;
                     // font{
@@ -64,14 +60,14 @@ $boderRadiusTitle: 0px 0px 8px 8px;
             }
             .khuVucNoiBat-colRight{
                 @extend .khuVucNoiBat-colLeft;
-                @include justify-content(space-between); 
                 background-image: none;
                 margin-right:0;
+                justify-content: space-between;
+                img{
+                    object-fit: cover;
+                }
                 .rightTop{
                     @extend .khuVucNoiBat-colLeft;
-                    @include justify-content(flex-end);
-                    background-image: url("../images/khuvucnoibat/image3.png");
-                    height: 48.5%;
                     width: 100%;
                     .title{
                         @extend .title;
@@ -80,8 +76,6 @@ $boderRadiusTitle: 0px 0px 8px 8px;
                 .rightBottom{
                     @extend .khuVucNoiBat-colLeft;
                     @extend .rightTop;
-                    @include justify-content(flex-end);
-                    background-image: url("../images/khuvucnoibat/image4.png");
                     margin-bottom: 0;
                     .title{
                         @extend .title;
