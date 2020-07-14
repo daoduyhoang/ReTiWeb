@@ -1,138 +1,87 @@
 /*KHU VUC NOI BAT*/
-$width46: 46%;
-$width50: 50%;
-$width100: 100%;
-$height50: 50%;
-$height90: 90%;
-$height100: 100%;
 $boderRadius: 8px;
 $boderRadiusTitle: 0px 0px 8px 8px;
-$height100vh: 100vh;
-$colorTitle: #F2F2F2;
-$bgcolorTitle:#3BB8C4;
-// $bgcolorTitle: linear-gradient(187.59deg, #20ABB9 1.33%, #56C5D0 86.35%);#FFFFFF
-$margin0: 0;
-$margin1: 1rem;
-$absolute: absolute;
-$relative: relative;
-$no-repeat: no-repeat;
-@mixin flexbox() {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-  }
-  @mixin flex-direction($direction) {
-    -webkit-flex-direction: $direction;
-       -moz-flex-direction: $direction;
-        -ms-flex-direction: $direction;
-            flex-direction: $direction;
-  }
-  @mixin justify-content($justify) {
-    -webkit-justify-content: $justify;
-       -moz-justify-content: $justify;
-        -ms-justify-content: $justify;
-            justify-content: $justify;
-              -ms-flex-pack: $justify;
-  }
-  @mixin align-items($align) {
-    -webkit-align-content: $align;
-       -moz-align-content: $align;
-        -ms-align-content: $align;
-            align-content: $align;
-  }
-  @mixin flex-wrap($wrap) {
-    -webkit-flex-wrap: $wrap;
-       -moz-flex-wrap: $wrap;
-        -ms-flex-wrap: $wrap;
-            flex-wrap: $wrap;
-  }
 .container{
-    width: $width100;
-    height: $height100;
-    .khuvucnoibat{
+    height: 100%;
+    .khuVucNoiBat{
         @extend .container;
         @include flexbox();
         @include flex-wrap(wrap);
+        @include justify-content(space-between);
             .top{
                 @include flexbox();
                 @include flex-direction(column); 
+                text-align: center;
                 height: 10%;
-                width: $width100;
+                width: 100%;
+                margin-bottom: 30px;
                 img{
                     margin-left: auto;
                     margin-right: auto;
+                    margin-bottom: 30px;
                 }
-                p{
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-family: Roboto Slab;
-                    font-style: normal;
-                    font-weight: bold;
-                    font-size: 32px;
-                    line-height: 40px;
+                h2{
+                    @include title_partials();
                 }
             }
-            .colLeft{
+            .khuVucNoiBat-colLeft{
                 @include flexbox();
                 @include justify-content(flex-end);
-                @include flex-direction(column);    
+                @include flex-direction(column);   
                 background-image: url("../images/khuvucnoibat/image2.png");
-                background-repeat: $no-repeat;
+                background-repeat: no-repeat;
                 background-size: cover;
-                width: 48%;
-                height: $height90;
+                width: 49%;
+                height: 85%;
                 border-radius: $boderRadius;
-                margin-right: 0.5rem;
+                @include Responsive(XS) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                } 
+                @include Responsive(SM) {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
                 .title{
                     @include flexbox();
                     @include justify-content(space-between);
-                    bottom: 0;
-                    color: $colorTitle;
-                    background-color: $bgcolorTitle;
+                    @include align-items(center);
+                    background-color: $main-color;
                     border-radius: $boderRadiusTitle;
-                    // font :{
+                    // font{
                     //     family: Roboto;
                     //     style: normal;
                     //     weight: bold;
                     //     size: 16px;
                     // }
+                    line-height: 24px;
+                    color: $white-color;
                     p{
-                        margin: $margin1;
+                        padding: 23px;
+                        margin: 0;
                     }
                 }
             }
-            .colRight{
-                @include flexbox();
-                @include justify-content(space-between);
-                @include flex-direction(column);    
-                background-repeat: $no-repeat;
-                background-size: cover;
-                width: $width50;
-                height: $height90;
-                border-radius: $boderRadius;
-                width: $width50;
-                margin-left: 0.5rem;
+            .khuVucNoiBat-colRight{
+                @extend .khuVucNoiBat-colLeft;
+                @include justify-content(space-between); 
+                background-image: none;
+                margin-right:0;
                 .rightTop{
+                    @extend .khuVucNoiBat-colLeft;
                     @include justify-content(flex-end);
-                    @extend .colLeft;
                     background-image: url("../images/khuvucnoibat/image3.png");
-                    height: $height50;
-                    width: $width100;
-                    margin-right: 0;
-                    margin-bottom: 0.5rem;
+                    height: 48.5%;
+                    width: 100%;
                     .title{
                         @extend .title;
                     }
                 }
                 .rightBottom{
-                    @include justify-content(flex-end);
-                    @extend .colLeft;
+                    @extend .khuVucNoiBat-colLeft;
                     @extend .rightTop;
+                    @include justify-content(flex-end);
                     background-image: url("../images/khuvucnoibat/image4.png");
-                    margin-top: 0.5rem;
-                    margin-right: 0;
                     margin-bottom: 0;
                     .title{
                         @extend .title;

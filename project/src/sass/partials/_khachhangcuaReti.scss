@@ -1,0 +1,52 @@
+/*khach hang cua Reti*/
+$padding: 20px 50px 0px 50px;
+.khachHangCuaReti-row1{
+    margin-bottom: 30px;
+}
+    .khachHangCuaReti-row2{
+        margin-left: auto;
+        margin-right: auto;
+        .khachHangCuaReti-post{
+            position: absolute;
+            width: 555px;
+            height: 315px;
+            background: #FFFFFF;
+            box-shadow: 0px 24px 40px rgba(112, 112, 112, 0.2);
+            border-radius: 8px;
+            .khachHangCuaReti-city{
+                @include text_description;
+                padding: $padding;
+            }
+            .khachHangCuaReti-post-row{
+                @include flexbox();
+                padding: $padding;
+                padding-top: 0;
+                .khachHangCuaReti-retian{
+                    @include text_description;
+                    
+                    .p2{
+                        font-weight: bold;
+                    }
+                }
+                .khachHangCuaReti-days{
+                    
+                    @extend .khachHangCuaReti-retian;
+                    padding-left: 150px;
+                }
+            }
+            .khachHangCuaReti-cmt{
+                padding: $padding;
+                padding-top: 0;
+                font-family: Roboto Slab;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }
+            .khachHangCuaReti-img{
+                height: 600px;  
+                float: right;
+            }
+        
+}
