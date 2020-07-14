@@ -30,9 +30,50 @@
     height: 10px;
     border-radius: 50%;
 }
+
 @include Responsive(XS){
     .carousel-control-prev,.carousel-control-next{
         display: none;
+    }
+}
+@media(min-width:769px){
+    #slider{
+        #carouselControls .carousel-indicators li{
+            width: 33.33%;
+            border-radius: unset;
+            height: unset;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+        }
+        .carousel-indicators li{
+            text-indent: unset;
+            height: unset;
+            margin-right: unset;
+            margin-left: unset;
+            background-color: unset;
+        }
+        .carousel-indicators{
+            top: 100%;
+            bottom: unset;
+            background: #F2F2F2;
+            margin-right: unset;
+        }
+        .carousel-indicators li::before,.carousel-indicators li::after{
+            display: none;
+        }
+        .carousel-indicators .active {
+            border-bottom: 2px solid #24B4E6;
+            background-color: unset;
+        }
+        .carousel-indicators li span{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            text-align: center;
+    
+        }
     }
 }
 
