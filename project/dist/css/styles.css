@@ -1670,3 +1670,45 @@ form {
   .khachHangCuaReti-row2 .khachHangCuaReti-img {
     height: 600px;
     float: right; }
+
+.khachHangCuaReti-slide .owl-nav {
+  margin: 0; }
+
+.khachHangCuaReti-slide .owl-prev {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  background: #F5F5F5 !important;
+  outline: none;
+  margin: 0 !important; }
+
+.khachHangCuaReti-slide .owl-next {
+  position: absolute;
+  left: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  background: #F5F5F5 !important;
+  outline: none;
+  margin: 0 !important; }
+
+.khachHangCuaReti-slide i {
+  color: #24B4E6; }
+
+.khachHangCuaReti-slide .owl-theme .owl-nav [class*=owl-]:hover {
+  background: #F5F5F5;
+  color: #24B4E6;
+  text-decoration: none; }
