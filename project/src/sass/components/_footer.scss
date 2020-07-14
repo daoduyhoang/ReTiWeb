@@ -54,6 +54,9 @@
     .policy-color{
         color: #0C77C6;
     }
+    &-around{
+        justify-content: space-around;
+    }
 }
 @media(min-width:415px) and (max-width:768px){
     .footer-nowrap{

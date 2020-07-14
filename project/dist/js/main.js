@@ -96,4 +96,11 @@ $('.khachHangCuaReti-slide').owlCarousel({
   },
   dots: false
 }); //end slide khach hang cua reti
+// TIEN ICH
 
+$(".btn-mobile-utilities a").click(function () {
+  var parent = $(this).parents('.utilities');
+  var child = parent.children('.utilities-content');
+  child.toggleClass('show-item');
+  console.log(child);
+});
