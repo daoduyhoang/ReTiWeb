@@ -1,0 +1,23 @@
+/*project_classification*/
+.project_classification{
+    display: flex;
+    flex-wrap: wrap;
+    .project{
+        display: flex;
+        flex-direction: column;
+       ul{
+           flex: auto;
+        a{
+            color: black;
+            font-size: 12px;
+        }
+       }
+        a:hover{
+            text-decoration: none;
+        }
+    }
+    .icon-more{
+        font-size: 12px;
+        margin-left: .9rem;
+    }
+}
