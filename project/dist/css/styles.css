@@ -283,6 +283,46 @@ a:hover {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
 
+@media (min-width: 769px) {
+  #slider #carouselControls .carousel-indicators li {
+    width: 33.33%;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    border-radius: unset;
+    height: unset;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px; }
+  #slider .carousel-indicators li {
+    text-indent: unset;
+    height: unset;
+    margin-right: unset;
+    margin-left: unset;
+    background-color: unset; }
+  #slider .carousel-indicators {
+    top: 100%;
+    bottom: unset;
+    background: #F2F2F2;
+    margin-right: unset; }
+  #slider .carousel-indicators li::before, #slider .carousel-indicators li::after {
+    display: none; }
+  #slider .carousel-indicators .active {
+    border-bottom: 2px solid #24B4E6;
+    background-color: unset; }
+  #slider .carousel-indicators li span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center; } }
 /* Header */
 ul {
   list-style: none; }
