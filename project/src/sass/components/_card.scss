@@ -1,8 +1,11 @@
 .card{
-    width: 360px;
     line-height: 14px;
     display: inline-block;
     border: none;
+    padding: 15px 10px;
+    a{
+        text-decoration: none;
+    }
     font: {
         size: 12px;
         family: $roboto;
@@ -16,12 +19,11 @@
     }
     &-body{
         border: none;
+        padding: 15px 5px 5px 5px !important;
     }
     &-price-vnd{
         background-color: #EF5B40;
         border-radius: 4px;
-        width: 49px;
-        height: 26px;
     }
     &-badge-new{
         position: absolute;
@@ -32,10 +34,10 @@
     }
     &-badge-Group-277{
         position: absolute;
-        width: 24px;
-        height: 21.2px;
         top: 14px;
         right: 8px;
+        color: #EF5B40;
+        font-size: 20px;
     }
     &-price{
         line-height: 24px;
@@ -50,8 +52,6 @@
     &-buy{
         background: #0C77C6;
         border-radius: 4px; 
-    }
-    &-buy:hover{
         text-decoration: none;
     }
 }
