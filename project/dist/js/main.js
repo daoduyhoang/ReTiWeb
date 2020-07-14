@@ -67,9 +67,6 @@ $('.slide-card-duannoibat').owlCarousel({
   dots: false
 }); //end slide du an noi bat
 
-<<<<<<< HEAD
-$(".js-range-slider").ionRangeSlider();
-=======
 $(".js-range-slider").ionRangeSlider(); //start slide khách hàng của Reti
 
 $('.khachHangCuaReti-slide').owlCarousel({
@@ -100,4 +97,3 @@ $('.khachHangCuaReti-slide').owlCarousel({
   dots: false
 }); //end slide khach hang cua reti
 
->>>>>>> develop
