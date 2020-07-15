@@ -27,6 +27,12 @@ $XL:   1170px;
   font-size:32px;
   color: #333132;
 }
+@mixin title_partials_mobile(){
+  font-family: $roboto_slab;
+  font-weight: bold;
+  font-size:26px;
+  color: #333132;
+}
 @mixin text_description {
   font-family: $roboto;
   font-style: normal;
@@ -71,7 +77,21 @@ $XL:   1170px;
 }
 @mixin flex-wrap($wrap) {
   -webkit-flex-wrap: $wrap;
-     -moz-flex-wrap: $wrap;
-      -ms-flex-wrap: $wrap;
-          flex-wrap: $wrap;
+  -moz-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin box-shadow($x, $y, $blur, $c){ 
+  -webkit-box-shadow: $x $y $blur $c;
+  -moz-box-shadow: $x $y $blur $c;
+  -ms-box-shadow: $x $y $blur $c;
+  box-shadow: $x $y $blur $c;
+}
+
+@mixin transition($second) {
+  -webkit-transition: all $second;
+  -moz-transition: all $second;
+  -ms-transition: all $second;
+  transition: all $second;
 }

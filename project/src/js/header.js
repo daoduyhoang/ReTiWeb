@@ -62,10 +62,9 @@ for(let i = 0; i < childMenu.length; i++) {
 
 jQuery('.bottom-show-menu').click(function(e) {
     e.preventDefault();
+    jQuery('.bottom-show-menu').toggleClass('active')
     jQuery('.menu-dropdown').toggleClass('active')
 })
-
-
 
 
 //==================
