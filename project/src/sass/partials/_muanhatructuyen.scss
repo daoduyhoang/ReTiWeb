@@ -65,6 +65,7 @@
                     color: white;
                     width: 170px;
                     height: 45px;
+                    border: none;
                 }
             }
         
@@ -94,3 +95,19 @@
             }
         }
     }
+@media(min-width:320px) and (max-width:768px){
+    .muaNhaTrucTuyen-img{
+        img{
+            width: 100%;
+        }
+    }
+    .paging{
+        text-align: center;
+    }
+    .content2{
+        text-align: center;
+    }
+    .columnLeft-button{
+        text-align: center;
+    }
+}
