@@ -22,17 +22,33 @@
 <body>
     <header class="header">
         <div class="header-main-bar">
-            <div class="container header-main-box clearfix">
-                <div class="header-logo-box float-left">
+            <div class="container header-main-box">
+                <div class="header-logo-box">
                     <a href="../pages/home.html">
                         <img src="../../images/logo.png" alt="">
                     </a>
                 </div>
-                <div class="header-menu-box float-right">
+                <div class="header-menu-box">
                     <ul class="nav-menu">
                         <li class="menu-item"><a href="#">Dự án</a></li>
-                        <li class="menu-item"><a href="#">Dịch vụ</a></li>
-                        <li class="menu-item"><a href="#">Tin tức</a></li>
+                        <li class="menu-item">
+                            <a href="#">Dịch vụ <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav-menu-dropdown">
+                                <li><a href="#">Công nghệ</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Phát triển</a></li>
+                                <li><a href="#">Phân phối</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Tin tức <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav-menu-dropdown">
+                                <li><a href="#">Công nghệ</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Phát triển</a></li>
+                                <li><a href="#">Phân phối</a></li>
+                            </ul>
+                        </li>
                         <li class="menu-item"><a href="#">Về RETI</a></li>
                         <li class="menu-item"><a href="#">Trở thành đại lý</a></li>
                     </ul>
@@ -48,14 +64,14 @@
             </div>
         </div> <!-- header-main-bar -->
         <div class="header-bottom-bar">
-            <div class="container header-bottom-box clearfix">
-                <div class="bottom-show-menu float-left">
-                    <a href="#">
+            <div class="container header-bottom-box">
+                <div class="bottom-show-menu">
+                    <a>
                         <span>Phân loại dự án</span>
                         <span class="icon-dropdown"><i class="fas fa-chevron-down"></i></span>
                     </a>
                 </div>
-                <div class="header-search float-right">
+                <div class="header-search">
                     <form action="">
                         <input type="text" placeholder="Nhập tên dự án hoặc khu vực bạn muốn tìm">
                         <button><i class="fas fa-search"></i></button>
@@ -360,7 +376,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="../../js/minh.js"></script>
+    <script src="../../js/header.js"></script>
 </body>
 
 </html>
