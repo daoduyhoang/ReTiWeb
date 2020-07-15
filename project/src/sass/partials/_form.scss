@@ -27,3 +27,35 @@
         }
     }
 }
+@media(max-width:768px){
+    .container-form {
+        .form-web {
+            width: 60%;
+        }
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .container-form{
+        margin: 0;
+    }
+    .container-form {
+        .form-web {
+            width: 90%;
+            .form-email {
+                width: 100%;
+                margin-right: 0;
+            }
+            .form-number {
+                width: 100%;
+            }
+            .btn-submit{
+                width: 100%;
+            }
+        }
+        .d-flex{
+            flex-wrap: wrap;
+        }
+        
+    }
+} 
+    

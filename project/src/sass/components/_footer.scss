@@ -58,6 +58,9 @@
         justify-content: space-around;
     }
 }
+.top-footer{
+    border-bottom: 1px solid #EDEDED;
+}
 @media(min-width:415px) and (max-width:768px){
     .footer-nowrap{
         flex-wrap: nowrap !important;
