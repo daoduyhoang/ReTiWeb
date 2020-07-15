@@ -27,6 +27,12 @@ $XL:   1170px;
   font-size:32px;
   color: #333132;
 }
+@mixin title_partials_mobile(){
+  font-family: $roboto_slab;
+  font-weight: bold;
+  font-size:26px;
+  color: #333132;
+}
 @mixin text_description {
   font-family: $roboto;
   font-style: normal;

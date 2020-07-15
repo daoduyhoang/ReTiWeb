@@ -1,0 +1,52 @@
+.table-pc{
+    .table{
+        border-bottom: 1px solid #dee2e6;
+    }
+    .table thead th {
+        font-size: 12px;
+        text-align: center;
+    }
+    .table td, .table th {
+        font-size: 12px;
+        text-align: center;
+    }
+    .custom-badge{
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+        border-radius: 4px;
+        padding: 7px 15px;
+        color: #3CC13B;
+    }
+    .detai-table{
+        text-decoration: underline;
+    }
+    .hover-table tbody tr:hover {
+        color: #212529;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    }
+}
+.paging-table{
+    .total-record{
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.5);
+        margin-right: 5px;
+    }
+    .next-page{
+        button{
+            border: none;
+            background: none;
+            i{
+                color:rgba(0, 0, 0, 0.5);
+            }
+        }
+        margin-left: 5px;
+    }
+    .fa-chevron-left{
+        padding-right: 5px;
+    }
+    .fa-chevron-right{
+        padding-left: 5px;
+    }
+    &:first-child{
+        padding: 0 15px;
+    }
+}
