@@ -1,0 +1,52 @@
+.filter-control{
+    .btn-filter{
+        border: none;
+        border-radius: 2px;   
+        margin-right: 10px;
+        padding: 10px 15px;
+        font-size: 12px;
+        font-family: $roboto;
+    }
+    i{
+        font-size: 12px;
+    }
+    a{
+        padding-right: 10px;
+        font-size: 12px;
+        font-family: $roboto;
+    }
+    .view-map{
+        display: flex;
+        align-items: center;
+        span{
+            font-size: 12px;
+            font-family: $roboto;
+            padding-right: 5px;
+        }
+    }
+    
+    .property-type{
+        position: absolute;
+        width: 377px;
+        left: 26%;
+        top: 50px;
+        z-index: 9;
+    }
+    .price-range{
+        position: absolute;
+        left: 35%;
+        top: 51px;
+        z-index: 9;
+    }
+    .filter-more{
+        position: absolute;
+        width: 752px;
+        left: 12%;
+        top: 50px;
+        z-index: 9;
+    }
+    .btn-active{
+        color: white;
+        background-color: #56C4CF;
+    }
+}
