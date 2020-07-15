@@ -1,9 +1,9 @@
 /* PROPERTY TYPE*/
-.custom-control-label::before{
+.property-type .custom-control-label::before{
     border: 1px solid #8D8D8D !important;
     background-color: white;
 }
-.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+.property-type .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
     background-color: #56C4CF;
 }
 .property-type{
