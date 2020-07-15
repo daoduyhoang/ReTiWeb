@@ -2,6 +2,8 @@ $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  autoplay: true,
+  autoplayTimeout: 6000,
   responsive: {
     0: {
       items: 1
@@ -96,6 +98,7 @@ $('.khachHangCuaReti-slide').owlCarousel({
   dots: false
 });
 //end slide khach hang cua reti
+
 // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
