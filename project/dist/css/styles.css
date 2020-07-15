@@ -1034,6 +1034,62 @@ form {
   border-color: #56C4CF;
   background-color: #56C4CF; }
 
+.table-pc .table {
+  border-bottom: 1px solid #dee2e6; }
+
+.table-pc .table thead th {
+  font-size: 12px;
+  text-align: center; }
+
+.table-pc .table td, .table-pc .table th {
+  font-size: 12px;
+  text-align: center; }
+
+.table-pc .custom-badge {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 7px 15px;
+  color: #3CC13B; }
+
+.table-pc .detai-table {
+  text-decoration: underline; }
+
+.table-pc .hover-table tbody tr:hover {
+  color: #212529;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #0683F9;
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9; }
+
+.paging-table .total-record {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-right: 5px; }
+
+.paging-table .next-page {
+  margin-left: 5px; }
+  .paging-table .next-page button {
+    border: none;
+    background: none; }
+    .paging-table .next-page button i {
+      color: rgba(0, 0, 0, 0.5); }
+
+.paging-table .fa-chevron-left {
+  padding-right: 5px; }
+
+.paging-table .fa-chevron-right {
+  padding-left: 5px; }
+
+.paging-table:first-child {
+  padding: 0 15px; }
+
 /*title-partial_horizontal*/
 .title-partial-horizontal {
   text-align: center;
