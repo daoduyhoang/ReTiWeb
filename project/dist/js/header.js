@@ -66,5 +66,6 @@ for (var _i2 = 0; _i2 < childMenu.length; _i2++) {
 
 jQuery('.bottom-show-menu').click(function (e) {
   e.preventDefault();
+  jQuery('.bottom-show-menu').toggleClass('active');
   jQuery('.menu-dropdown').toggleClass('active');
 }); //==================
