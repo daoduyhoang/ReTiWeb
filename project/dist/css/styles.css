@@ -771,6 +771,9 @@ body {
   .menu-phanloai {
     display: none; } }
 
+.menu-drop {
+  background-color: #fff; }
+
 /* FOOTER*/
 .logo {
   margin-bottom: 10px; }
