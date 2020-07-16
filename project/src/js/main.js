@@ -2,8 +2,10 @@ $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
   nav: false,
+  stagePadding: 4,
   autoplay: true,
   autoplayTimeout: 6000,
+  items: 4,
   responsive: {
     0: {
       items: 1
