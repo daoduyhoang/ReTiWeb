@@ -1,4 +1,14 @@
 /* Header */
+.stick {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    position: fixed !important;
+    animation-name: fadeDown;
+    width: 100%;
+    z-index: 9999;
+    background-color: #fff;
+    top: 0;
+}
 .header {
     &-main-box {
         display: flex;
@@ -284,6 +294,38 @@
     }
 }
 
+@keyframes fadeDown {
+    from {
+        transform: translate3d(0,-70px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadeDown {
+    from {
+        transform: translate3d(0,-70px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadeDown {
+    from {
+        transform: translate3d(0,-70px,0);
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
 
 @keyframes fadeInUp {
     from {
@@ -424,6 +466,10 @@ body {
             ul {
                 a {
                     padding-left: 40px;
+                    @include transition(.3s);
+                    &:hover {
+                        color: $main-color;
+                    }
                 }
                 ul a {
                     padding-left: 60px;
@@ -673,4 +719,7 @@ body {
     .menu-phanloai {
         display: none !important;
     }
+}
+.menu-drop{
+    background-color: #fff;
 }

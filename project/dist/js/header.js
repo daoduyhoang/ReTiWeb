@@ -1,4 +1,17 @@
-"use strict";
+"use strict"; // Stick Header 
+
+var getHeader = document.querySelector('.header');
+var getMenuPl = document.querySelector('.menu-phanloai');
+var offSetHeader = getHeader.offsetHeight;
+window.addEventListener("scroll", function () {
+  if (window.pageYOffset > offSetHeader) {
+    getHeader.classList.add('stick');
+    getMenuPl.classList.add('stick');
+  } else if (window.pageYOffset == 0) {
+    getHeader.classList.remove('stick');
+    getMenuPl.classList.remove('stick');
+  }
+}); //===============
 
 var getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 > .menu-drd-item'));
 

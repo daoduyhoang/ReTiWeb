@@ -1,0 +1,106 @@
+// THONG TIN CAN HO
+.info-department{
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    .adress{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: #333132;
+        display: inline-block;
+        margin: 10px 0;
+    }
+    .department-name{
+        font-family: $roboto_slab;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        color: #333132;
+    }
+    .price-department{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 10px;
+        }
+        span{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            color: #EF5B40;
+        }
+    }
+    .info-details{
+        span{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333132;
+        }
+    }
+    .details{
+        h5{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #333132;
+            margin-top: 10px;
+        }
+        span{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            color: #333132;
+        }
+    }
+    .control-buy{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        a{
+            width: 100%;
+            display: block;
+            padding: 10px 20px;
+        }
+        .buy-now{
+            background: #56C4CF;
+            border-radius: 2px;
+            color:#fff;
+            margin-bottom: 15px;
+        }
+        .sign{
+            background: #FFFFFF;
+            border: 1px solid #BDBDBD;
+            box-sizing: border-box;
+            border-radius: 8px;
+            color: black;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+    .policy-department{
+        .share{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            .save{
+                margin-right: 20px;
+                i{
+                    color: #2D9CDB;
+                }
+            }
+        }
+        .sharing{
+            margin-bottom: 10px;
+        }
+    }
+}
