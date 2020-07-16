@@ -665,6 +665,6 @@ body {
 }
 @media (min-width: 850px) {
     .menu-phanloai {
-        display: none;
+        display: none !important;
     }
 }
