@@ -2311,7 +2311,25 @@ body {
   .height-partner_reti {
     height: 600px; }
   .partner_reti-content {
-    top: 47%; } }
+    top: 47%; }
+  .khachHangCuaReti-slide .owl-next {
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-64%, -50%);
+    -moz-transform: translate(-64%, -50%);
+    -ms-transform: translate(-64%, -50%);
+    -o-transform: translate(-64%, -50%);
+    transform: translate(-64%, -50%); }
+  .khachHangCuaReti-slide i {
+    font-size: 15px; }
+  .khachHangCuaReti-slide .owl-prev {
+    width: 30px;
+    height: 30px;
+    -webkit-transform: translate(-26%, -50%);
+    -moz-transform: translate(-26%, -50%);
+    -ms-transform: translate(-26%, -50%);
+    -o-transform: translate(-26%, -50%);
+    transform: translate(-26%, -50%); } }
 
 @media (max-width: 375px) {
   .height-partner_reti {
