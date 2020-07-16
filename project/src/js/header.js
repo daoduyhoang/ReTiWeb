@@ -61,45 +61,46 @@ for (let i = 0; i < childMenu.length; i++) {
 }
 
 jQuery('.menu-drd-level-1 > li > a').click(function (e) {
-    e.preventDefault();
-})
-
-
-
-//==================
-
-// Menu phan loai mobile
-let getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
-jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
-let appendToMenuMobile = function(idMain, idAppend) {
-    let stringAew = '.menu-phanloai ' + idMain;
-    let getParentIdMain = jQuery(stringAew).parent();
-    let dsaw = document.querySelector(idAppend).children[0].innerHTML;
-    getParentIdMain.append(dsaw);
-};
-appendToMenuMobile('#show-noibat', '#noibat');
-appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
-appendToMenuMobile('#show-khuvuc', '#khuvuc');
-
-jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
-
-
-$(document).ready(function () {
-    $(".menu-phanloai li.has-drop > a").on("click", function (e) {
+    jQuery('.bottom-show-menu').click(function (e) {
         e.preventDefault();
-        if ($(this).parent().hasClass("active")) {
-            $(this).parent().removeClass("active");
-        } else {
-            $(this).parent().siblings('.has-drop').removeClass("active");
-            $(this).parent().addClass("active");
-        }
-    });
-});
-jQuery('.menu-phanloai .close-menu').click(function(e) {
-    e.preventDefault();
-    jQuery('.menu-phanloai').removeClass('active');
-})
+    })
 
+
+
+    //==================
+
+    // Menu phan loai mobile
+    let getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
+    jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
+    let appendToMenuMobile = function (idMain, idAppend) {
+        let stringAew = '.menu-phanloai ' + idMain;
+        let getParentIdMain = jQuery(stringAew).parent();
+        let dsaw = document.querySelector(idAppend).children[0].innerHTML;
+        getParentIdMain.append(dsaw);
+    };
+    appendToMenuMobile('#show-noibat', '#noibat');
+    appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
+    appendToMenuMobile('#show-khuvuc', '#khuvuc');
+
+    jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
+
+
+    $(document).ready(function () {
+        $(".menu-phanloai li.has-drop > a").on("click", function (e) {
+            e.preventDefault();
+            if ($(this).parent().hasClass("active")) {
+                $(this).parent().removeClass("active");
+            } else {
+                $(this).parent().siblings('.has-drop').removeClass("active");
+                $(this).parent().addClass("active");
+            }
+        });
+    });
+    jQuery('.menu-phanloai .close-menu').click(function (e) {
+        e.preventDefault();
+        jQuery('.menu-phanloai').removeClass('active');
+    })
+});
 //==============
 
 
@@ -124,11 +125,11 @@ function myFunction(x) {
                 }
             });
         });
-        var appendMenuDrd = function(idMain, idAppend) {
+        var appendMenuDrd = function (idMain, idAppend) {
             let getParentIdMain = idMain.parent();
-            let getChildMenu 
+            let getChildMenu
         }
-        jQuery('.bottom-show-menu').click(function (e){
+        jQuery('.bottom-show-menu').click(function (e) {
             jQuery('.menu-phanloai').addClass('active');
         });
     } else {
