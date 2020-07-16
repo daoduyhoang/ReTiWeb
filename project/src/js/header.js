@@ -1,118 +1,113 @@
+"use strict";
 
-let getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 .menu-drd-item'));
+var getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 .menu-drd-item'));
 
-for (let i = 0; i < getLiMenu.length; i++) {
-    let ads = getLiMenu[i];
-    let wfaf = ads.getAttribute('class');
-    let qwe = wfaf.split(' ');
+for (var i = 0; i < getLiMenu.length; i++) {
+    var ads = getLiMenu[i];
+    var wfaf = ads.getAttribute('class');
+    var qwe = wfaf.split(' ');
     ads.addEventListener('click', function () {
-        let sibling = getSiblings(this);
-        for (let j = 0; j < sibling.length; j++) {
+        var sibling = getSiblings(this);
+
+        for (var j = 0; j < sibling.length; j++) {
             sibling[j].classList.remove('active');
         }
-        this.classList.add('active');
-    })
-}
-var getSiblings = function (elem) {
 
+        this.classList.add('active');
+    });
+}
+
+var getSiblings = function getSiblings(elem) {
     // Setup siblings array and get the first sibling
     var siblings = [];
-    var sibling = elem.parentNode.firstChild;
+    var sibling = elem.parentNode.firstChild; // Loop through each sibling and push to the array
 
-    // Loop through each sibling and push to the array
     while (sibling) {
         if (sibling.nodeType === 1 && sibling !== elem) {
             siblings.push(sibling);
         }
-        sibling = sibling.nextSibling
+
+        sibling = sibling.nextSibling;
     }
 
     return siblings;
-
 };
 
-
-
-
-let clickShowMenu = function (idClick, idShow) {
-    let clickToShow = document.getElementById(idClick);
-    let showDown = document.getElementById(idShow);
-
+var clickShowMenu = function clickShowMenu(idClick, idShow) {
+    var clickToShow = document.getElementById(idClick);
+    var showDown = document.getElementById(idShow);
     clickToShow.addEventListener('click', function () {
-        let adwd = Array.from(document.querySelectorAll('.menu-style'));
-        for (let i = 0; i < adwd.length; i++) {
-            adwd[i].classList.remove('active');
+        var adwd = Array.from(document.querySelectorAll('.menu-style'));
+
+        for (var _i = 0; _i < adwd.length; _i++) {
+            adwd[_i].classList.remove('active');
         }
+
         showDown.classList.add('active');
-    })
-}
+    });
+};
+
 clickShowMenu('show-noibat', 'noibat');
 clickShowMenu('show-loaihinhbds', 'loaihinhbds');
 clickShowMenu('show-khuvuc', 'khuvuc');
+var childMenu = Array.from(document.querySelectorAll('.menu-child-menu ul'));
 
-let childMenu = Array.from(document.querySelectorAll('.menu-child-menu ul'));
-for (let i = 0; i < childMenu.length; i++) {
-    let sdaw = childMenu[i];
-    let qwfst = childMenu[i].children;
+for (var _i2 = 0; _i2 < childMenu.length; _i2++) {
+    var sdaw = childMenu[_i2];
+    var qwfst = childMenu[_i2].children;
+
     if (qwfst.length > 10) {
-        let anhggf = qwfst[10].parentElement;
+        var anhggf = qwfst[10].parentElement;
         anhggf.classList.add('menu-style-2-child-flex');
     }
 }
 
 jQuery('.menu-drd-level-1 > li > a').click(function (e) {
-    jQuery('.bottom-show-menu').click(function (e) {
+    e.preventDefault();
+}); //==================
+// Menu phan loai mobile
+
+var getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
+jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
+
+var appendToMenuMobile = function appendToMenuMobile(idMain, idAppend) {
+    var stringAew = '.menu-phanloai ' + idMain;
+    var getParentIdMain = jQuery(stringAew).parent();
+    var dsaw = document.querySelector(idAppend).children[0].innerHTML;
+    getParentIdMain.append(dsaw);
+};
+
+appendToMenuMobile('#show-noibat', '#noibat');
+appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
+appendToMenuMobile('#show-khuvuc', '#khuvuc');
+jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
+$(document).ready(function () {
+    $(".menu-phanloai li.has-drop > a").on("click", function (e) {
         e.preventDefault();
-    })
 
-
-
-    //==================
-
-    // Menu phan loai mobile
-    let getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
-    jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
-    let appendToMenuMobile = function (idMain, idAppend) {
-        let stringAew = '.menu-phanloai ' + idMain;
-        let getParentIdMain = jQuery(stringAew).parent();
-        let dsaw = document.querySelector(idAppend).children[0].innerHTML;
-        getParentIdMain.append(dsaw);
-    };
-    appendToMenuMobile('#show-noibat', '#noibat');
-    appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
-    appendToMenuMobile('#show-khuvuc', '#khuvuc');
-
-    jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
-
-
-    $(document).ready(function () {
-        $(".menu-phanloai li.has-drop > a").on("click", function (e) {
-            e.preventDefault();
-            if ($(this).parent().hasClass("active")) {
-                $(this).parent().removeClass("active");
-            } else {
-                $(this).parent().siblings('.has-drop').removeClass("active");
-                $(this).parent().addClass("active");
-            }
-        });
+        if ($(this).parent().hasClass("active")) {
+            $(this).parent().removeClass("active");
+        } else {
+            $(this).parent().siblings('.has-drop').removeClass("active");
+            $(this).parent().addClass("active");
+        }
     });
-    jQuery('.menu-phanloai .close-menu').click(function (e) {
-        e.preventDefault();
-        jQuery('.menu-phanloai').removeClass('active');
-    })
 });
-//==============
-
+jQuery('.menu-phanloai .close-menu').click(function (e) {
+    e.preventDefault();
+    jQuery('.menu-phanloai').removeClass('active');
+}); //==============
 
 function myFunction(x) {
-    let searchBtm = jQuery('.header-search');
-    let searchPlh = jQuery('.header-search input');
+    var searchBtm = jQuery('.header-search');
+    var searchPlh = jQuery('.header-search input');
+
     if (x.matches) {
         jQuery('.header').addClass('header-mobile');
         jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
             e.preventDefault();
             jQuery('.header-main-box').toggleClass('active');
-        })
+        });
         jQuery('.header-menu-box').append(searchBtm);
         searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
         $(document).ready(function () {
@@ -125,10 +120,12 @@ function myFunction(x) {
                 }
             });
         });
-        var appendMenuDrd = function (idMain, idAppend) {
-            let getParentIdMain = idMain.parent();
-            let getChildMenu
-        }
+
+        var appendMenuDrd = function appendMenuDrd(idMain, idAppend) {
+            var getParentIdMain = idMain.parent();
+            var getChildMenu;
+        };
+
         jQuery('.bottom-show-menu').click(function (e) {
             jQuery('.menu-phanloai').addClass('active');
         });
@@ -138,9 +135,9 @@ function myFunction(x) {
         searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
         jQuery('.bottom-show-menu').click(function (e) {
             e.preventDefault();
-            jQuery('.bottom-show-menu').toggleClass('active')
-            jQuery('.menu-dropdown').toggleClass('active')
-        })
+            jQuery('.bottom-show-menu').toggleClass('active');
+            jQuery('.menu-dropdown').toggleClass('active');
+        });
     }
 }
 

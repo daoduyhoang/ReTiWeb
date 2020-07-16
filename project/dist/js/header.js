@@ -63,41 +63,39 @@ for (var _i2 = 0; _i2 < childMenu.length; _i2++) {
 }
 
 jQuery('.menu-drd-level-1 > li > a').click(function (e) {
-  jQuery('.bottom-show-menu').click(function (e) {
+  e.preventDefault();
+}); //==================
+// Menu phan loai mobile
+
+var getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
+jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
+
+var appendToMenuMobile = function appendToMenuMobile(idMain, idAppend) {
+  var stringAew = '.menu-phanloai ' + idMain;
+  var getParentIdMain = jQuery(stringAew).parent();
+  var dsaw = document.querySelector(idAppend).children[0].innerHTML;
+  getParentIdMain.append(dsaw);
+};
+
+appendToMenuMobile('#show-noibat', '#noibat');
+appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
+appendToMenuMobile('#show-khuvuc', '#khuvuc');
+jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
+$(document).ready(function () {
+  $(".menu-phanloai li.has-drop > a").on("click", function (e) {
     e.preventDefault();
-  }); //==================
-  // Menu phan loai mobile
 
-  var getMenuHTML = document.querySelector('.menu-dropdown > .menu-drd-level-1').innerHTML;
-  jQuery('.menu-phanloai .menu-drop').append(getMenuHTML);
-
-  var appendToMenuMobile = function appendToMenuMobile(idMain, idAppend) {
-    var stringAew = '.menu-phanloai ' + idMain;
-    var getParentIdMain = jQuery(stringAew).parent();
-    var dsaw = document.querySelector(idAppend).children[0].innerHTML;
-    getParentIdMain.append(dsaw);
-  };
-
-  appendToMenuMobile('#show-noibat', '#noibat');
-  appendToMenuMobile('#show-loaihinhbds', '#loaihinhbds');
-  appendToMenuMobile('#show-khuvuc', '#khuvuc');
-  jQuery('.menu-phanloai .menu-drd-item.has-drop > a').append('<i class="fas fa-chevron-down"></i>');
-  $(document).ready(function () {
-    $(".menu-phanloai li.has-drop > a").on("click", function (e) {
-      e.preventDefault();
-
-      if ($(this).parent().hasClass("active")) {
-        $(this).parent().removeClass("active");
-      } else {
-        $(this).parent().siblings('.has-drop').removeClass("active");
-        $(this).parent().addClass("active");
-      }
-    });
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active");
+    } else {
+      $(this).parent().siblings('.has-drop').removeClass("active");
+      $(this).parent().addClass("active");
+    }
   });
-  jQuery('.menu-phanloai .close-menu').click(function (e) {
-    e.preventDefault();
-    jQuery('.menu-phanloai').removeClass('active');
-  });
+});
+jQuery('.menu-phanloai .close-menu').click(function (e) {
+  e.preventDefault();
+  jQuery('.menu-phanloai').removeClass('active');
 }); //==============
 
 function myFunction(x) {

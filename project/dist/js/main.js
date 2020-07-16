@@ -115,48 +115,43 @@ $('.btn-control button').click(function () {
     $('.control-table').css('display', 'block');
   });
 }); // TOGGLE MAP LIST PROJECT
-
-var ip = document.getElementById('view-map');
-var map = document.getElementById('map');
-var showMap = true;
-var pj = document.querySelector('.list-project-map');
-var card = document.getElementsByClassName('card-media-768');
-var newClassCard = '';
-var oddClassCard = '';
-
-for (var i = 0; i < card.length; i++) {
-  oddClassCard = card[i].getAttribute('class');
-  newClassCard = oddClassCard.replace(/col-4/g, "col-6");
-}
-
-function setAttributeCard() {
-  for (var i = 0; i < card.length; i++) {
-    card[i].setAttribute('class', newClassCard);
-  }
-}
-
-function backAttributeCard() {
-  for (var i = 0; i < card.length; i++) {
-    card[i].setAttribute('class', oddClassCard);
-  }
-}
-
-ip.onclick = function () {
-  var oddClass = pj.getAttribute('class');
-  var newClass = oddClass + " col-8";
-
-  if (showMap) {
-    map.style.display = 'block';
-    pj.setAttribute('class', newClass);
-    setAttributeCard();
-    showMap = false;
-  } else if (showMap === false) {
-    map.style.display = 'none';
-    pj.setAttribute('class', oddClass);
-    backAttributeCard();
-    showMap = true;
-  }
-};
+// var ip = document.getElementById('view-map');
+// var map = document.getElementById('map');
+// var showMap = true;
+// var pj = document.querySelector('.list-project-map');
+// var card = document.getElementsByClassName('card-media-768');
+// var newClassCard = ''
+// var oddClassCard = ''
+// for (var i = 0; i < card.length; i++) {
+//   oddClassCard = card[i].getAttribute('class');
+//   newClassCard = oddClassCard.replace(/col-4/g, "col-6");
+// }
+// function setAttributeCard() {
+//   for (var i = 0; i < card.length; i++) {
+//     card[i].setAttribute('class', newClassCard);
+//   }
+// }
+// function backAttributeCard() {
+//   for (var i = 0; i < card.length; i++) {
+//     card[i].setAttribute('class', oddClassCard);
+//   }
+// }
+// ip.onclick = function () {
+//   var oddClass = pj.getAttribute('class');
+//   var newClass = oddClass + " col-8";
+//   if (showMap) {
+//     map.style.display = 'block';
+//     pj.setAttribute('class', newClass)
+//     setAttributeCard()
+//     showMap = false;
+//   }
+//   else if (showMap === false) {
+//     map.style.display = 'none';
+//     pj.setAttribute('class', oddClass)
+//     backAttributeCard()
+//     showMap = true;
+//   }
+// }
 
 $(document).ready(function () {
   $('.ground-slider-top').slick({
