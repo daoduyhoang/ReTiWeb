@@ -50,6 +50,9 @@ table {
 a:hover {
   text-decoration: none; }
 
+button:focus {
+  outline: none; }
+
 /* Header */
 .stick {
   -webkit-animation-duration: 1s;
@@ -530,7 +533,7 @@ body {
   position: relative; }
 
 .menu-phanloai {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -554,6 +557,7 @@ body {
     animation-name: slidemenuback; }
   .menu-phanloai.active {
     display: block;
+    overflow-y: scroll;
     -webkit-animation-duration: 1s;
     -moz-animation-duration: 1s;
     -o-animation-duration: 1s;
@@ -1443,6 +1447,15 @@ body {
   padding: 10px 15px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
+  .filter-control .btn-filter.active {
+    background-color: #56C4CF;
+    color: #fff;
+    outline: none; }
+
+.filter-control .control-table {
+  display: none; }
+  .filter-control .control-table.active {
+    display: block; }
 
 .filter-control i {
   font-size: 12px; }

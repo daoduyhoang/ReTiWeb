@@ -9,11 +9,9 @@ let offSetHeader = getHeader.offsetHeight;
 window.addEventListener("scroll",function(){
     if(window.pageYOffset > offSetHeader){
         getHeader.classList.add('stick');
-        getMenuPl.classList.add('stick');
     }
     else if(window.pageYOffset == 0) {
         getHeader.classList.remove('stick');
-        getMenuPl.classList.remove('stick');
     }
 });
 
@@ -119,6 +117,15 @@ jQuery('.menu-phanloai .close-menu').click(function (e) {
     jQuery('.menu-phanloai').removeClass('active');
     jQuery('.menu-phanloai').addClass('close-animt');
 })
+
+// document.addEventListener('click', function(e) {
+//     var checkMenuPl = e.target.closest('.menu-phanloai');
+//     var checkButtonShow =e.target.closest('.header-bottom-box');
+//     if(checkMenuPl == null || checkButtonShow == null) {
+//         $('.menu-phanloai').removeClass('active');
+//         $('.menu-phanloai').addClass('close-animt');
+//     }
+// })
 
 //==============
 
