@@ -65,6 +65,18 @@
         width: 100%;
     }
 }
+
+/* Reposive */
+@media (max-width: 850px) {
+    [class*="home-section-"] {
+        margin-bottom: 40px;
+    }
+    .home-section {
+        &-1 {
+            margin-bottom: 24px;
+        }
+    }
+}
 @media(min-width:320px) and (max-width:414px){
     .home-banner-small{
         background-size: 100% 100%;
