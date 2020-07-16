@@ -31,6 +31,7 @@
         height: 29px;
         top: 14px;
         left: -6px;
+        z-index: 9;
     }
     &-badge-Group-277{
         position: absolute;
@@ -38,6 +39,7 @@
         right: 8px;
         color: #EF5B40;
         font-size: 20px;
+        z-index: 9;
     }
     &-price{
         line-height: 24px;
@@ -55,5 +57,24 @@
         text-decoration: none;
     }
 }
-
+.card .owl-theme .owl-nav [class*=owl-]:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.card .owl-carousel .owl-nav button.owl-next{
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.card .owl-nav{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card .owl-next {
+    outline: none;
+}
 
