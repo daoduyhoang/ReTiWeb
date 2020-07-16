@@ -1,6 +1,6 @@
 "use strict";
 
-var getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 .menu-drd-item'));
+var getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 > .menu-drd-item'));
 
 for (var i = 0; i < getLiMenu.length; i++) {
   var ads = getLiMenu[i];
@@ -96,6 +96,7 @@ $(document).ready(function () {
 jQuery('.menu-phanloai .close-menu').click(function (e) {
   e.preventDefault();
   jQuery('.menu-phanloai').removeClass('active');
+  jQuery('.menu-phanloai').addClass('close-animt');
 }); //==============
 
 function myFunction(x) {
@@ -128,6 +129,7 @@ function myFunction(x) {
 
     jQuery('.bottom-show-menu').click(function (e) {
       jQuery('.menu-phanloai').addClass('active');
+      jQuery('.menu-phanloai').removeClass('close-animt');
     });
   } else {
     jQuery('.header').removeClass('header-mobile');
