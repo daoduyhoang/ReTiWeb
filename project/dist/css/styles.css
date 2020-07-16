@@ -2554,6 +2554,170 @@ body {
 .active-item {
   display: block; }
 
+/* ĐƠN HÀNG*/
+.title-order {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 40px;
+  color: #333132; }
+
+.order form label {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  color: #000000; }
+
+.order form input, .order form textarea {
+  border: 1px solid #E0E0E0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.order .note {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #4F4F4F; }
+
+.order .confim {
+  background: #56C4CF;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  width: 425px;
+  height: 52px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 52px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: block; }
+
+.info-order-top img {
+  width: 100%; }
+
+.info-order-bottom .text-adress {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #8D8D8D;
+  margin-bottom: 14px; }
+
+.info-order-bottom .text-info-order {
+  font-family: "Roboto Slab", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333132;
+  width: 304px; }
+
+.details-info .row {
+  margin-left: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-right: 0; }
+
+.details-info .headings {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000; }
+
+.details-info .result {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+  color: #000000; }
+
+.details-top {
+  padding-bottom: 16px;
+  margin-bottom: 17px;
+  border-bottom: 1px solid #E0E0E0; }
+  .details-top .row {
+    margin-bottom: 8px; }
+
+.price {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 15px; }
+  .price .row {
+    margin-bottom: 6px; }
+  .price .mini-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-style: italic; }
+
+.discount {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #E0E0E0;
+  margin-bottom: 16px; }
+  .discount input {
+    width: 207px; }
+  .discount .row {
+    margin-bottom: 16px; }
+  .discount .bold {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000; }
+  .discount .mini-text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    font-style: italic; }
+  .discount .orange {
+    color: #EF5B40; }
+
+.deposit .deposit-headings {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  color: #000000; }
+
+.deposit .orange {
+  color: #EF5B40; }
+
+.deposit .result {
+  font-size: 20px; }
+
+.info-order {
+  border: 1px solid #BDBDBD;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px; }
+  .info-order .content-order {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px; }
+
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
   margin-top: 30px; }
@@ -2657,4 +2821,42 @@ body {
       -moz-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
       -o-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%); } }
+      transform: translateX(-50%) translateY(-50%); }
+  .home-section-1 {
+    margin-bottom: 50px; } }
+
+/*ĐƠN HÀNG PAGE*/
+#order-page .pt-16 {
+  padding-top: 16px; }
+
+#order-page .partner_reti {
+  margin-bottom: 30px; }
+
+#order-page .space {
+  width: 100%;
+  max-height: 379px; }
+
+#order-page .mb-379 {
+  margin-bottom: 379px; }
+
+@media (min-width: 1024px) {
+  .no-wrap-ipad {
+    -webkit-flex-wrap: nowrap !important;
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .wrap-revert {
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; }
+  .order {
+    margin-top: 40px; }
+  #order-page .mb-379 {
+    margin-bottom: 40px; } }
+
+@media (max-width: 414px) {
+  .order-page {
+    padding: 0 10px; }
+  .order .confim {
+    width: 343px; } }
