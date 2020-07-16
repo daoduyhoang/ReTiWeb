@@ -51,6 +51,25 @@ a:hover {
   text-decoration: none; }
 
 /* Header */
+.stick {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: fixed !important;
+  -webkit-animation-name: fadeDown;
+  -moz-animation-name: fadeDown;
+  -o-animation-name: fadeDown;
+  animation-name: fadeDown;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
+  top: 0; }
+
 .header-main-box {
   display: -webkit-box;
   display: -webkit-flex;
@@ -183,7 +202,7 @@ a:hover {
   -ms-flex-align: center;
   align-items: center;
   position: relative;
-  padding: 17px 0; }
+  padding: 17px 15px; }
   .header-bottom-box .bottom-show-menu.active a {
     color: #56C4CF; }
   .header-bottom-box .bottom-show-menu.active .icon-dropdown i {
@@ -193,7 +212,8 @@ a:hover {
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
   .header-bottom-box .bottom-show-menu a {
-    color: #333132; }
+    color: #333132;
+    cursor: pointer; }
     .header-bottom-box .bottom-show-menu a:hover {
       color: #56C4CF; }
   .header-bottom-box .bottom-show-menu .icon-dropdown i {
@@ -381,6 +401,42 @@ a:hover {
     opacity: 1;
     left: 190px; }
 
+@-o-keyframes fadeDown {
+  from {
+    transform: translate3d(0, -70px, 0); }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@keyframes fadeDown {
+  from {
+    -webkit-transform: translate3d(0, -70px, 0);
+    -moz-transform: translate3d(0, -70px, 0);
+    transform: translate3d(0, -70px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@-moz-keyframes fadeDown {
+  from {
+    -moz-transform: translate3d(0, -70px, 0);
+    transform: translate3d(0, -70px, 0); }
+  to {
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+@-webkit-keyframes fadeDown {
+  from {
+    -webkit-transform: translate3d(0, -70px, 0);
+    transform: translate3d(0, -70px, 0); }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
 @-o-keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0); }
@@ -480,19 +536,22 @@ body {
   left: 0;
   width: 100%;
   z-index: 999999;
-  background-color: #fff;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -o-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: slidemenuback;
-  -moz-animation-name: slidemenuback;
-  -o-animation-name: slidemenuback;
-  animation-name: slidemenuback; }
+  display: none;
+  background-color: #fff; }
+  .menu-phanloai.close-animt {
+    display: block;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slidemenuback;
+    -moz-animation-name: slidemenuback;
+    -o-animation-name: slidemenuback;
+    animation-name: slidemenuback; }
   .menu-phanloai.active {
     display: block;
     -webkit-animation-duration: 1s;
@@ -526,7 +585,13 @@ body {
     .menu-phanloai .menu-drop li a i {
       display: none; }
     .menu-phanloai .menu-drop li ul a {
-      padding-left: 40px; }
+      padding-left: 40px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      .menu-phanloai .menu-drop li ul a:hover {
+        color: #56C4CF; }
     .menu-phanloai .menu-drop li ul ul a {
       padding-left: 60px; }
   .menu-phanloai .menu-drop .menu-drd-item.has-drop > a {
@@ -551,7 +616,8 @@ body {
       transform: rotate(180deg);
       color: #333132; }
   .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > *:not(a) {
-    display: unset; }
+    display: block;
+    z-index: 99; }
   .menu-phanloai .menu-drop > .has-drop.active > a {
     background-color: #56C4CF;
     color: #fff !important; }
@@ -2715,6 +2781,13 @@ body {
 
 .home-banner-big img {
   width: 100%; }
+
+/* Reposive */
+@media (max-width: 850px) {
+  [class*="home-section-"] {
+    margin-bottom: 40px; }
+  .home-section-1 {
+    margin-bottom: 24px; } }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .home-banner-small {
