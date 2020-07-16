@@ -228,4 +228,29 @@ $('.slide-card').owlCarousel({
     }
   },
   dots: false
-});
+}); // BẢNG SẢN PHẨM
+
+var btnActiveTab = document.querySelectorAll('.list-tab li');
+var tabItem = document.querySelectorAll(".tab-items");
+
+for (var i = 0; i < btnActiveTab.length; i++) {
+  btnActiveTab[i].addEventListener("click", function () {
+    for (var i = 0; i < btnActiveTab.length; i++) {
+      btnActiveTab[i].classList.remove('active-table-tab');
+    }
+
+    this.classList.add('active-table-tab'); //tinh vi tri
+
+    var active = this;
+    var j = 0;
+
+    for (j = 0; active = active.previousElementSibling; j++) {}
+
+    ;
+
+    for (var i = 0; i < tabItem.length; i++) {
+      tabItem[i].classList.remove('active-item-table');
+      tabItem[j].classList.add('active-item-table');
+    }
+  });
+}

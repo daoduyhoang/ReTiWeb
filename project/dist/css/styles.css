@@ -1599,6 +1599,80 @@ body {
   .info-department .policy-department .sharing {
     margin-bottom: 10px; }
 
+.table-product .list-tab {
+  background: #F2F2F2;
+  margin-bottom: 0; }
+  .table-product .list-tab li {
+    width: 256px;
+    display: inline-block;
+    text-align: center;
+    height: 48px; }
+    .table-product .list-tab li a {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 48px;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      color: #333132; }
+  .table-product .list-tab .active-table-tab {
+    background-color: #56C4CF; }
+    .table-product .list-tab .active-table-tab a {
+      color: white; }
+
+.table-product .tab-items {
+  display: none; }
+
+.table-product .active-item-table {
+  display: block; }
+
+.choose {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 20px; }
+  .choose .form-group {
+    width: 256px;
+    height: 48px;
+    margin-right: 20px;
+    margin-bottom: 0; }
+  .choose p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #828282; }
+  .choose select {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #BDBDBD; }
+
+.annotate {
+  padding-top: 20px; }
+  .annotate p {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 9px; }
+  .annotate img {
+    margin-right: 8px; }
+  .annotate .stocking, .annotate .booking {
+    margin-right: 19px; }
+
+/* MAPIFY*/
 /*title-partial_horizontal*/
 .title-partial-horizontal {
   text-align: center;
