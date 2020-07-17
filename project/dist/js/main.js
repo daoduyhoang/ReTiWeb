@@ -99,36 +99,7 @@ $('.btn-prev').click(function () {
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
 });
-$(".js-range-slider").ionRangeSlider(); //start slide khách hàng của Reti
-// $('.khachHangCuaReti-slide').owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev fa-2x'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     480: {
-//       items: 1
-//     },
-//     576: {
-//       items: 1
-//     },
-//     768: {
-//       items: 1
-//     },
-//     992: {
-//       items: 1
-//     },
-//     1000: {
-//       items: 1
-//     }
-//   },
-//   dots: false
-// });
-//end slide khach hang cua reti
-// TIEN ICH
+$(".js-range-slider").ionRangeSlider(); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');

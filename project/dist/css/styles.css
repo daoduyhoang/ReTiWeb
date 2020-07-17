@@ -933,7 +933,8 @@ body {
     -moz-box-pack: start !important;
     -ms-flex-pack: start !important;
     justify-content: flex-start !important;
-    padding-left: 16px; } }
+    padding-left: 16px;
+    margin-bottom: 23px; } }
 
 .card {
   line-height: 14px;
@@ -1138,8 +1139,8 @@ body {
       color: #333132; } }
 
 .card-img-top-size {
-  width: 180px !important;
-  height: 180px;
+  width: 100% !important;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
 
@@ -1194,6 +1195,10 @@ body {
   background: #F5F5F5;
   color: #24B4E6;
   text-decoration: none; }
+
+@media only screen and (max-width: 850px) {
+  .slide-card-duannoibat .owl-prev {
+    display: none !important; } }
 
 .page-link {
   border: none;
@@ -2342,7 +2347,9 @@ body {
   .content2 {
     text-align: center; }
   .columnLeft-button {
-    text-align: center; } }
+    text-align: center; }
+  .mr-mb-0 {
+    margin-right: 0 !important; } }
 
 /*vi sao chon Reti*/
 .container .viSaoChonReti-row1, .khuVucNoiBat .viSaoChonReti-row1 {
@@ -2808,26 +2815,29 @@ body {
   color: #FFFFFF;
   display: block; }
 
-.info-order-top img {
+.info-order-top .img-product {
   width: 100%; }
 
-.info-order-bottom .text-adress {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  color: #8D8D8D;
-  margin-bottom: 14px; }
-
-.info-order-bottom .text-info-order {
-  font-family: "Roboto Slab", serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
-  color: #333132;
-  width: 304px; }
+.info-order-bottom {
+  padding-left: 16px; }
+  .info-order-bottom .text-adress {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #8D8D8D;
+    margin-bottom: 14px;
+    padding-top: 16px;
+    display: inline-block; }
+  .info-order-bottom .text-info-order {
+    font-family: "Roboto Slab", serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333132;
+    width: 304px; }
 
 .details-info .row {
   margin-left: 0;
@@ -2925,6 +2935,21 @@ body {
     padding-top: 16px;
     padding-left: 16px;
     padding-right: 16px; }
+
+#number-duan {
+  font-weight: 500;
+  font-size: 16px; }
+
+#showBoLoc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  display: none; }
+
+@media only screen and (max-width: 850px) {
+  #showBoLoc {
+    display: block; } }
 
 .sales_policy {
   margin-top: 12px;
@@ -3099,3 +3124,45 @@ body {
     padding: 0 10px; }
   .order .confim {
     width: 343px; } }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .info-order-top .img-product {
+    width: 100px;
+    height: 83px; }
+  .info-order-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap-reverse;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; }
+  .info-order-top {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .info-order-bottom .text-info-order {
+    font-size: 16px;
+    line-height: 21px; }
+  .info-order-bottom .text-adress {
+    font-size: 10px;
+    padding-top: 0; }
+  .info-order {
+    padding: 16px 8px !important;
+    width: 386px;
+    margin: auto; }
+  .info-order-bottom .text-info-order {
+    width: 89%; } }
+
+@media (max-width: 375px) {
+  .info-order {
+    width: 360px; }
+  .info-order-bottom .text-adress {
+    font-size: 9px; }
+  .deposit .deposit-headings {
+    font-size: 16px; }
+  .deposit .result {
+    font-size: 14px; } }
