@@ -18,6 +18,9 @@
         padding: 50px 0;
         margin-bottom: 0;
     }
+    &-8 img, &-11 img {
+        width: 100%;
+    }
     
 }
 .home-banner-small{
@@ -62,6 +65,21 @@
         width: 100%;
     }
 }
+.khuVucNoiBat{
+    margin-top: 28px;
+}
+
+/* Reposive */
+@media (max-width: 850px) {
+    [class*="home-section-"] {
+        margin-bottom: 40px;
+    }
+    .home-section {
+        &-1 {
+            margin-bottom: 24px;
+        }
+    }
+}
 @media(min-width:320px) and (max-width:414px){
     .home-banner-small{
         background-size: 100% 100%;
@@ -76,5 +94,8 @@
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
         }
+    }
+    .home-section-1{
+        margin-bottom: 50px;
     }
 }

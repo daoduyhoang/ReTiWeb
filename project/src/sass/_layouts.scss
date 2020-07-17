@@ -7,9 +7,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-}
-body{
-    font-size: $roboto !important;
+    font-family: $roboto;
 }
 article,
 aside,
@@ -24,7 +22,6 @@ nav,
 section {
     display: block;
 }
-
 ol,
 ul {
     list-style: none;
@@ -58,4 +55,8 @@ table {
 
 a:hover {
     text-decoration: none;
+}
+
+button:focus {
+    outline: none;
 }
