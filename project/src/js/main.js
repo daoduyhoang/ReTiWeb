@@ -201,26 +201,6 @@ ip.addEventListener('click', function () {
     showMap = true;
   }
 });
-$(document).ready(function () {
-  $('.ground-slider-top').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: false,
-    asNavFor: '.ground-slider-bottom',
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-  });
-  $('.ground-slider-bottom').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    asNavFor: '.ground-slider-top',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    arrows: false,
-  });
-});
 
 // MATBANGDUAN
 var btn = document.querySelectorAll('.tab ul .tab-item');
