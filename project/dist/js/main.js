@@ -147,7 +147,36 @@ $(".btn-control .btn-filter").click(function () {
     $(this).siblings('.control-table').addClass("active");
     $(this).addClass("active");
   }
-}); //============================
+});
+
+var refreshBtn = function refreshBtn(btn, checked) {
+  var buttonRefresh = document.querySelectorAll(btn);
+  var checkedBox = Array.from(document.querySelectorAll(checked));
+
+  if (buttonRefresh.length !== 1) {
+    $(btn).click(function (e) {
+      var asda = $(this).parents(checked);
+      var dsw = asda[0].querySelectorAll('[type=checkbox]');
+
+      for (var _i = 0; _i < dsw.length; _i++) {
+        dsw[_i].checked = false;
+      }
+    });
+  } else {
+    buttonRefresh = buttonRefresh[0];
+    buttonRefresh.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      for (var _i2 = 0; _i2 < checkedBox.length; _i2++) {
+        checkedBox[_i2].checked = false;
+      }
+    });
+  }
+};
+
+refreshBtn('#delete-filter', '.control-table [type=checkbox]');
+refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
+refreshBtn('.btn-delete', '.control-table'); //============================
 // TOGGLE MAP LIST PROJECT
 
 var ip = document.getElementById('view-map');
@@ -272,7 +301,7 @@ function myFunction(x) {
     }); //======================
     // Reponsive Filter
 
-    $('.filter-control').addClass('filter-control-mobile');
+    $('#filter-control').addClass('filter-control-mobile');
     $('.justify-content-end').removeClass('row'); //==================
   } else {
     // Header
@@ -286,7 +315,7 @@ function myFunction(x) {
     }); //===================
     // Filter 
 
-    $('.filter-control').removeClass('filter-control-mobile');
+    $('#filter-control').removeClass('filter-control-mobile');
     $('.justify-content-end').addClass('row'); //================
   }
 }

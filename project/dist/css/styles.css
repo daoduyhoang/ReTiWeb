@@ -1449,6 +1449,9 @@ body {
 .paging-table:first-child {
   padding: 0 15px; }
 
+.filter-control .fileter-control-mobile-header {
+  display: none; }
+
 .filter-control .btn-filter {
   border: none;
   -webkit-border-radius: 2px;
@@ -1518,24 +1521,57 @@ body {
   width: 377px;
   left: 26%;
   top: 50px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .price-range {
   position: absolute;
   left: 33%;
   top: 51px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .filter-more {
   position: absolute;
   width: 752px;
   left: 12%;
   top: 50px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .btn-active {
   color: white;
   background-color: #56C4CF; }
+
+.filter-control-mobile .fileter-control-mobile-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid #EDEDED;
+  margin-bottom: 10px;
+  margin-left: -15px;
+  margin-right: -15px; }
+  .filter-control-mobile .fileter-control-mobile-header > * {
+    width: 33.33333337%; }
+  .filter-control-mobile .fileter-control-mobile-header h4 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 0; }
+  .filter-control-mobile .fileter-control-mobile-header #close-filter {
+    color: #000; }
+    .filter-control-mobile .fileter-control-mobile-header #close-filter i {
+      font-size: 18px; }
 
 .filter-control-mobile .btn-filter {
   display: none; }
@@ -1569,6 +1605,12 @@ body {
     display: none; }
   .filter-control-mobile .control-table .btn-show-result-htm {
     display: block; }
+
+.filter-control-mobile .filter-top {
+  border-bottom: none; }
+
+.filter-control-mobile .delete-filter, .filter-control-mobile .save-search, .filter-control-mobile .view-map {
+  display: none; }
 
 .info-department {
   background: #FFFFFF;

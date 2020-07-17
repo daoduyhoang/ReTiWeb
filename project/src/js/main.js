@@ -157,6 +157,34 @@ $(".btn-control .btn-filter").click(function () {
   }
 });
 
+var refreshBtn = function(btn, checked) {
+  let buttonRefresh = document.querySelectorAll(btn);
+  let checkedBox = Array.from(document.querySelectorAll(checked));
+
+  if(buttonRefresh.length !== 1) {
+    $(btn).click(function(e) {
+      var asda = $(this).parents(checked);
+      var dsw = asda[0].querySelectorAll('[type=checkbox]');
+      for(let i = 0; i < dsw.length; i++) {
+        dsw[i].checked = false;
+      }
+    })
+
+  } else {
+    buttonRefresh = buttonRefresh[0];
+    buttonRefresh.addEventListener('click', function(e){
+      e.preventDefault();
+      for(let i = 0; i < checkedBox.length; i++) {
+        checkedBox[i].checked = false;
+      }
+    })
+  }
+
+}
+
+refreshBtn('#delete-filter', '.control-table [type=checkbox]');
+refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
+refreshBtn('.btn-delete', '.control-table');
 
 
 
@@ -281,7 +309,7 @@ function myFunction(x) {
       //======================
 
       // Reponsive Filter
-      $('.filter-control').addClass('filter-control-mobile');
+      $('#filter-control').addClass('filter-control-mobile');
       $('.justify-content-end').removeClass('row');
 
 
@@ -300,7 +328,7 @@ function myFunction(x) {
       //===================
 
       // Filter 
-      $('.filter-control').removeClass('filter-control-mobile');
+      $('#filter-control').removeClass('filter-control-mobile');
       $('.justify-content-end').addClass('row');
 
 
