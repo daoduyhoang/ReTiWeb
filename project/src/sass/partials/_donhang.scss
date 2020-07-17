@@ -78,11 +78,12 @@
     }
 }
 .info-order-top{
-    img{
+    .img-product{
         width: 100%;
     }
 }
 .info-order-bottom{
+    padding-left: 16px;
     .text-adress{
         font-family: $roboto;
         font-style: normal;
@@ -91,6 +92,8 @@
         line-height: 14px;
         color: #8D8D8D;
         margin-bottom: 14px;
+        padding-top: 16px;
+        display: inline-block;
     }
     .text-info-order{
         font-family: $roboto_slab;
