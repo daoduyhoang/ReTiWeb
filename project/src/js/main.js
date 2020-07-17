@@ -28,6 +28,35 @@ $('.slide-card-duannoibat').owlCarousel({
 });
 //end slide du an noi bat
 
+// SLIDER CARD
+$('.slide-card').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  dots: false
+});
+
 $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
@@ -116,7 +145,7 @@ $(".btn-mobile-utilities a").click(function () {
 
 // FLITER
 
-$(".btn-control .btn-filter").on("click", function () {
+$(".btn-control .btn-filter").click(function () {
   if ($(this).siblings('.control-table').hasClass("active")) {
       $(this).siblings('.control-table').removeClass("active");
       $(this).removeClass('active');
@@ -127,6 +156,11 @@ $(".btn-control .btn-filter").on("click", function () {
       $(this).addClass("active");
   }
 });
+
+
+
+
+//============================
 
 // TOGGLE MAP LIST PROJECT
 var ip = document.getElementById('view-map');
@@ -151,7 +185,7 @@ function backAttributeCard() {
     card[i].setAttribute('class', oddClassCard);
   }
 }
-ip.onclick = function () {
+ip.addEventListener('click', function () {
   var oddClass = pj.getAttribute('class');
   var newClass = oddClass + " col-8";
   if (showMap) {
@@ -166,7 +200,7 @@ ip.onclick = function () {
     backAttributeCard()
     showMap = true;
   }
-}
+});
 $(document).ready(function () {
   $('.ground-slider-top').slick({
     slidesToShow: 1,
@@ -207,31 +241,3 @@ for (var i = 0; i < btn.length; i++) {
     }
   });
 }
-// SLIDER CARD
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-});
