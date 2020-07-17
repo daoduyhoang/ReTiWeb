@@ -228,7 +228,7 @@ $('.slide-card').owlCarousel({
       items: 1
     }
   },
-  dots: false
+  dots: true
 });
 
 // BẢNG SẢN PHẨM

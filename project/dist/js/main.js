@@ -227,7 +227,7 @@ $('.slide-card').owlCarousel({
       items: 1
     }
   },
-  dots: false
+  dots: true
 }); // BẢNG SẢN PHẨM
 
 var btnActiveTab = document.querySelectorAll('.list-tab li');
