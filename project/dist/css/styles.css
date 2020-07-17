@@ -1019,8 +1019,8 @@ a:hover {
       color: #333132; } }
 
 .card-img-top-size {
-  width: 180px !important;
-  height: 180px;
+  width: 100% !important;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
 
@@ -1075,6 +1075,10 @@ a:hover {
   background: #F5F5F5;
   color: #24B4E6;
   text-decoration: none; }
+
+@media only screen and (max-width: 768px) {
+  .slide-card-duannoibat .owl-prev {
+    display: none !important; } }
 
 .page-link {
   border: none;
@@ -2436,6 +2440,21 @@ a:hover {
 
 .active-item {
   display: block; }
+
+#number-duan {
+  font-weight: 500;
+  font-size: 16px; }
+
+#showBoLoc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  #showBoLoc {
+    display: block; } }
 
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {

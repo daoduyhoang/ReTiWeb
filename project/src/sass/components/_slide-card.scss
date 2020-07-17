@@ -1,7 +1,7 @@
 .card{
     &-img-top-size{
-        width: 180px !important;
-        height: 180px;
+        width: 100% !important;
+        height: 100%;
         object-fit:cover;
     }
 }
@@ -46,5 +46,13 @@
         background: #F5F5F5;
         color: #24B4E6;
         text-decoration: none; 
+    }
+}
+
+@include Responsive(SM){
+    .slide-card-duannoibat{
+        .owl-prev{
+            display: none !important;
+        }
     }
 }
