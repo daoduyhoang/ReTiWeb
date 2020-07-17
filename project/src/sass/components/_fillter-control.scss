@@ -12,10 +12,32 @@
             outline: none;
         }
     }
+    .btn-show-result-htm {
+        display: none;
+        button {
+            background-color: $main-color;
+            color: #fff;
+            border: unset;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            width: 100%;
+            height: 48px;
+            border-radius: 5px;
+            &:focus {
+                background-color: #4d9ea5;
+                color: $gray-color;
+            }
+        }
+    }
     .control-table {
         display: none;
         &.active {
             display: block;
+        }
+        form {
+            padding: 0;
+            max-width: unset;
         }
     }
     i{
@@ -59,5 +81,46 @@
     .btn-active{
         color: white;
         background-color: #56C4CF;
+    }
+}
+
+
+// Filter mobile 
+.filter-control-mobile {
+    .btn-filter {
+        display: none;
+    }
+    .control {
+        display: none;
+    }
+    .control-table {
+        display: block;
+        position: unset;
+        padding: 0;
+        width: 100%;
+        max-height: unset;
+        min-height: unset;
+        height: fit-content;
+        border: unset;
+        box-shadow: unset;
+        &::before {
+            content: unset;
+        }
+        .custom-control-label {
+            &::before {
+                width: 14px;
+                height: 14px;
+            }
+            &::after {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        .custom-switch {
+            display: none;
+        }
+        .btn-show-result-htm {
+            display: block;
+        }
     }
 }

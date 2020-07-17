@@ -123,6 +123,7 @@ function myFunction(x) {
   var searchPlh = jQuery('.header-search input');
 
   if (x.matches) {
+    // Reponsive Header
     jQuery('.header').addClass('header-mobile');
     jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
       e.preventDefault();
@@ -149,8 +150,13 @@ function myFunction(x) {
     jQuery('.bottom-show-menu').click(function (e) {
       jQuery('.menu-phanloai').addClass('active');
       jQuery('.menu-phanloai').removeClass('close-animt');
-    });
+    }); //======================
+    // Reponsive Filter
+
+    $('.filter-control').addClass('filter-control-mobile');
+    $('.filter-control-mobile .justify-content-end').removeClass('row'); //==================
   } else {
+    // Header
     jQuery('.header').removeClass('header-mobile');
     jQuery('.header-bottom-box').append(searchBtm);
     searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
@@ -158,7 +164,10 @@ function myFunction(x) {
       e.preventDefault();
       jQuery('.bottom-show-menu').toggleClass('active');
       jQuery('.menu-dropdown').toggleClass('active');
-    });
+    }); //===================
+    // Filter 
+
+    $('.filter-control').removeClass('filter-control-mobile'); //================
   }
 }
 
