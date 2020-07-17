@@ -1,5 +1,62 @@
 "use strict";
 
+//start slide du an noi bat
+$('.slide-card-duannoibat').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 2
+    },
+    1000: {
+      items: 2
+    }
+  },
+  dots: false
+}); //end slide du an noi bat
+// SLIDER CARD
+
+$('.slide-card').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  dots: false
+});
 $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
@@ -41,66 +98,8 @@ $('.btn-prev').click(function () {
   // With optional speed parameter
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
-}); //start slide du an noi bat
-
-$('.slide-card-duannoibat').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 2
-    },
-    1000: {
-      items: 2
-    }
-  },
-  dots: false
-}); //end slide du an noi bat
-
-$(".js-range-slider").ionRangeSlider(); //start slide khách hàng của Reti
-
-$('.khachHangCuaReti-slide').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev fa-2x'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-}); //end slide khach hang cua reti
-// TIEN ICH
+});
+$(".js-range-slider").ionRangeSlider(); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -109,14 +108,18 @@ $(".btn-mobile-utilities a").click(function () {
   console.log(child);
 }); // FLITER
 
-$('.btn-control button').click(function () {
-  // $('.control-table').each(function () {
-  //   $(this).css('display', 'none');
-  // })
-  $(this).siblings('.control-table').toggle(function () {
-    $('.control-table').css('display', 'block');
-  });
-}); // TOGGLE MAP LIST PROJECT
+$(".btn-control .btn-filter").click(function () {
+  if ($(this).siblings('.control-table').hasClass("active")) {
+    $(this).siblings('.control-table').removeClass("active");
+    $(this).removeClass('active');
+  } else {
+    $('.control-table').removeClass("active");
+    $('.btn-control .btn-filter').removeClass("active");
+    $(this).siblings('.control-table').addClass("active");
+    $(this).addClass("active");
+  }
+}); //============================
+// TOGGLE MAP LIST PROJECT
 
 var ip = document.getElementById('view-map');
 var map = document.getElementById('map');
@@ -143,23 +146,22 @@ function backAttributeCard() {
   }
 }
 
-ip.onclick = function () {
+ip.addEventListener('click', function () {
   var oddClass = pj.getAttribute('class');
   var newClass = oddClass + " col-8";
 
   if (showMap) {
     map.style.display = 'block';
-    pj.setAttribute('class', newClass);
+    pj.classList.add('col-8');
     setAttributeCard();
     showMap = false;
   } else if (showMap === false) {
     map.style.display = 'none';
-    pj.setAttribute('class', oddClass);
+    pj.classList.remove('col-8');
     backAttributeCard();
     showMap = true;
   }
-};
-
+});
 $(document).ready(function () {
   $('.ground-slider-top').slick({
     slidesToShow: 1,
@@ -232,5 +234,88 @@ $('.slide-card').owlCarousel({
       items: 1
     }
   },
-  dots: false
-});
+  dots: true
+}); // BẢNG SẢN PHẨM
+
+var btnActiveTab = document.querySelectorAll('.list-tab li');
+var tabItem = document.querySelectorAll(".tab-items");
+
+for (var i = 0; i < btnActiveTab.length; i++) {
+  btnActiveTab[i].addEventListener("click", function () {
+    for (var i = 0; i < btnActiveTab.length; i++) {
+      btnActiveTab[i].classList.remove('active-table-tab');
+    }
+
+    this.classList.add('active-table-tab'); //tinh vi tri
+
+    var active = this;
+    var j = 0;
+
+    for (j = 0; active = active.previousElementSibling; j++) {}
+
+    ;
+
+    for (var i = 0; i < tabItem.length; i++) {
+      tabItem[i].classList.remove('active-item-table');
+      tabItem[j].classList.add('active-item-table');
+    }
+  });
+}
+
+function myFunction(x) {
+  var searchBtm = jQuery('.header-search');
+  var searchPlh = jQuery('.header-search input');
+
+  if (x.matches) {
+    // Reponsive Header
+    jQuery('.header').addClass('header-mobile');
+    jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
+      e.preventDefault();
+      jQuery('.header-main-box').toggleClass('active');
+    });
+    jQuery('.header-menu-box').append(searchBtm);
+    searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
+    $(document).ready(function () {
+      $(".has-menu-btn-show").on("click", function () {
+        if ($(this).parent().hasClass("active")) {
+          $(this).parent().removeClass("active");
+        } else {
+          $(".has-menu-drp").removeClass("active");
+          $(this).parent().addClass("active");
+        }
+      });
+    });
+
+    var appendMenuDrd = function appendMenuDrd(idMain, idAppend) {
+      var getParentIdMain = idMain.parent();
+      var getChildMenu;
+    };
+
+    jQuery('.bottom-show-menu').click(function (e) {
+      jQuery('.menu-phanloai').addClass('active');
+      jQuery('.menu-phanloai').removeClass('close-animt');
+    }); //======================
+    // Reponsive Filter
+
+    $('.filter-control').addClass('filter-control-mobile');
+    $('.justify-content-end').removeClass('row'); //==================
+  } else {
+    // Header
+    jQuery('.header').removeClass('header-mobile');
+    jQuery('.header-bottom-box').append(searchBtm);
+    searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
+    jQuery('.bottom-show-menu').click(function (e) {
+      e.preventDefault();
+      jQuery('.bottom-show-menu').toggleClass('active');
+      jQuery('.menu-dropdown').toggleClass('active');
+    }); //===================
+    // Filter 
+
+    $('.filter-control').removeClass('filter-control-mobile');
+    $('.justify-content-end').addClass('row'); //================
+  }
+}
+
+var x = window.matchMedia("(max-width: 850px)");
+myFunction(x);
+x.addListener(myFunction); //======================
