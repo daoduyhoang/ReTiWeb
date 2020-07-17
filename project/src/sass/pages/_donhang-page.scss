@@ -1,7 +1,7 @@
 /*ĐƠN HÀNG PAGE*/
 #order-page{
     .pt-16{
-        padding-top: 16px;
+        padding-top: 45px;
     }
     .partner_reti{
         margin-bottom: 30px;
@@ -36,5 +36,48 @@
     }
     .order .confim{
         width: 343px;
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .info-order-top .img-product {
+        width: 100px;
+        height: 83px;
+    }
+    .info-order-bottom{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .info-order-top{
+        display: flex;
+    }
+    .info-order-bottom .text-info-order {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .info-order-bottom .text-adress {
+        font-size: 10px;
+        padding-top: 0;
+    }
+    .info-order{
+        padding: 16px 8px !important;
+        width: 386px;
+        margin: auto;
+    }
+    .info-order-bottom .text-info-order {
+        width: 89%;
+    }
+}
+@media(max-width:375px){
+    .info-order {
+        width: 360px;
+    }
+    .info-order-bottom .text-adress {
+        font-size: 9px;
+    }
+    .deposit .deposit-headings {
+        font-size: 16px;
+    }
+    .deposit .result {
+        font-size: 14px;
     }
 }

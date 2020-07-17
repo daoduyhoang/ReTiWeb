@@ -99,36 +99,7 @@ $('.btn-prev').click(function () {
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
 });
-$(".js-range-slider").ionRangeSlider(); //start slide khách hàng của Reti
-// $('.khachHangCuaReti-slide').owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev fa-2x'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     480: {
-//       items: 1
-//     },
-//     576: {
-//       items: 1
-//     },
-//     768: {
-//       items: 1
-//     },
-//     992: {
-//       items: 1
-//     },
-//     1000: {
-//       items: 1
-//     }
-//   },
-//   dots: false
-// });
-//end slide khach hang cua reti
-// TIEN ICH
+$(".js-range-slider").ionRangeSlider(); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -233,6 +204,60 @@ for (var i = 0; i < btn.length; i++) {
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove('active-item');
       tabs[j].classList.add('active-item');
+    }
+  });
+} // SLIDER CARD
+
+
+$('.slide-card').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  dots: true
+}); // BẢNG SẢN PHẨM
+
+var btnActiveTab = document.querySelectorAll('.list-tab li');
+var tabItem = document.querySelectorAll(".tab-items");
+
+for (var i = 0; i < btnActiveTab.length; i++) {
+  btnActiveTab[i].addEventListener("click", function () {
+    for (var i = 0; i < btnActiveTab.length; i++) {
+      btnActiveTab[i].classList.remove('active-table-tab');
+    }
+
+    this.classList.add('active-table-tab'); //tinh vi tri
+
+    var active = this;
+    var j = 0;
+
+    for (j = 0; active = active.previousElementSibling; j++) {}
+
+    ;
+
+    for (var i = 0; i < tabItem.length; i++) {
+      tabItem[i].classList.remove('active-item-table');
+      tabItem[j].classList.add('active-item-table');
     }
   });
 }

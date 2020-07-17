@@ -8,7 +8,9 @@
     color: #333132
 }
 .order{
-    
+    input{
+        height: 40px;
+    }
     form{
         label{
             font-family: $roboto;
@@ -21,6 +23,33 @@
         input,textarea{
             border: 1px solid #E0E0E0;
             border-radius: 4px;
+        }
+        sup{
+            color: red;
+        }
+        select{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+        input:placeholder-shown{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
+        }
+        textarea:placeholder-shown{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 24px;
+            color: #E0E0E0;
         }
     }
     .note{
@@ -49,11 +78,12 @@
     }
 }
 .info-order-top{
-    img{
+    .img-product{
         width: 100%;
     }
 }
 .info-order-bottom{
+    padding-left: 16px;
     .text-adress{
         font-family: $roboto;
         font-style: normal;
@@ -62,6 +92,8 @@
         line-height: 14px;
         color: #8D8D8D;
         margin-bottom: 14px;
+        padding-top: 16px;
+        display: inline-block;
     }
     .text-info-order{
         font-family: $roboto_slab;
@@ -101,6 +133,10 @@
 .details-top{
     padding-bottom: 16px;
     margin-bottom: 17px;
+    sup{
+        font-size: 12px;
+        font-weight: bold;
+    }
     .row{
         margin-bottom: 8px;
     }
@@ -110,6 +146,10 @@
     padding-bottom: 16px;
     border-bottom: 1px solid #E0E0E0;
     margin-bottom: 15px;
+    sup{
+        font-size: 12px;
+        font-weight: bold;
+    }
     .row{
         margin-bottom: 6px;
     }

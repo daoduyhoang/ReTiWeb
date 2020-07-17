@@ -30,7 +30,11 @@
     height: 10px;
     border-radius: 50%;
 }
-
+#carouselControls .center-text{
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+}
 @include Responsive(XS){
     .carousel-control-prev,.carousel-control-next{
         display: none;
@@ -39,7 +43,8 @@
 @media(min-width:769px){
     #slider{
         #carouselControls .carousel-indicators li{
-            width: 33.33%;
+            // width: 33.33%;
+            width: 265px;
             border-radius: unset;
             height: unset;
             display: flex;
