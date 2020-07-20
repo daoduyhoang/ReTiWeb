@@ -67,7 +67,7 @@ button:focus {
   -o-animation-name: fadeDown;
   animation-name: fadeDown;
   width: 100%;
-  z-index: 9999;
+  z-index: 100;
   background-color: #fff;
   top: 0; }
 
@@ -547,7 +547,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 999999;
+  z-index: 200;
   display: none;
   background-color: #fff; }
   .menu-phanloai.close-animt {
@@ -1472,6 +1472,9 @@ body {
 .paging-table:first-child {
   padding: 0 15px; }
 
+.filter-control .fileter-control-mobile-header {
+  display: none; }
+
 .filter-control .btn-filter {
   border: none;
   -webkit-border-radius: 2px;
@@ -1513,7 +1516,8 @@ body {
     max-width: unset; }
 
 .filter-control i {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: 13px; }
 
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .filter-control img {
   padding-right: 10px;
@@ -1541,57 +1545,127 @@ body {
   width: 377px;
   left: 26%;
   top: 50px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .price-range {
   position: absolute;
   left: 33%;
   top: 51px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .filter-more {
   position: absolute;
   width: 752px;
   left: 12%;
   top: 50px;
-  z-index: 9; }
+  z-index: 20; }
 
 .filter-control .btn-active {
   color: white;
   background-color: #56C4CF; }
 
-.filter-control-mobile .btn-filter {
-  display: none; }
-
-.filter-control-mobile .control {
-  display: none; }
-
-.filter-control-mobile .control-table {
-  display: block;
-  position: unset;
-  padding: 0;
-  width: 100%;
-  max-height: unset;
-  min-height: unset;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border: unset;
-  -webkit-box-shadow: unset;
-  -moz-box-shadow: unset;
-  box-shadow: unset; }
-  .filter-control-mobile .control-table::before {
-    content: unset; }
-  .filter-control-mobile .control-table .custom-control-label::before {
-    width: 14px;
-    height: 14px; }
-  .filter-control-mobile .control-table .custom-control-label::after {
-    width: 14px;
-    height: 14px; }
-  .filter-control-mobile .control-table .custom-switch {
+.filter-control-mobile {
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background-color: #fff;
+  bottom: 0;
+  display: none;
+  overflow-y: scroll; }
+  .filter-control-mobile.close-animt {
+    display: block;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slidemenuback;
+    -moz-animation-name: slidemenuback;
+    -o-animation-name: slidemenuback;
+    animation-name: slidemenuback; }
+  .filter-control-mobile.active {
+    display: block;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: slidemenushow;
+    -moz-animation-name: slidemenushow;
+    -o-animation-name: slidemenushow;
+    animation-name: slidemenushow; }
+  .filter-control-mobile .fileter-control-mobile-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #EDEDED;
+    margin-bottom: 10px;
+    margin-left: -15px;
+    margin-right: -15px; }
+    .filter-control-mobile .fileter-control-mobile-header > * {
+      width: 33.33333337%; }
+    .filter-control-mobile .fileter-control-mobile-header h4 {
+      font-weight: 500;
+      font-size: 16px;
+      color: #000;
+      margin-bottom: 0; }
+    .filter-control-mobile .fileter-control-mobile-header #close-filter {
+      color: #000; }
+      .filter-control-mobile .fileter-control-mobile-header #close-filter i {
+        font-size: 18px; }
+  .filter-control-mobile .btn-filter {
     display: none; }
-  .filter-control-mobile .control-table .btn-show-result-htm {
-    display: block; }
+  .filter-control-mobile .control {
+    display: none; }
+  .filter-control-mobile .control-table {
+    display: block;
+    position: unset;
+    padding: 0;
+    width: 100%;
+    max-height: unset;
+    min-height: unset;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: unset;
+    -webkit-box-shadow: unset;
+    -moz-box-shadow: unset;
+    box-shadow: unset; }
+    .filter-control-mobile .control-table::before {
+      content: unset; }
+    .filter-control-mobile .control-table .custom-control-label::before {
+      width: 14px;
+      height: 14px; }
+    .filter-control-mobile .control-table .custom-control-label::after {
+      width: 14px;
+      height: 14px; }
+    .filter-control-mobile .control-table .custom-switch {
+      display: none; }
+    .filter-control-mobile .control-table .btn-show-result-htm {
+      display: block; }
+  .filter-control-mobile .filter-top {
+    border-bottom: none; }
+  .filter-control-mobile .delete-filter, .filter-control-mobile .save-search, .filter-control-mobile .view-map {
+    display: none; }
 
 .info-department {
   width: 455px;
@@ -1712,14 +1786,14 @@ body {
       margin-right: 20px; }
       .info-department .policy-department .share .save i {
         color: #2D9CDB; }
-      .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .share .save img {
+      .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .share .save i {
         color: #333132;
         font-size: 14px;
         font-style: normal;
         font-weight: 600; }
   .info-department .policy-department .sharing {
     margin-bottom: 10px; }
-    .info-department .policy-department .sharing a, .info-department .policy-department .sharing .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .sharing img {
+    .info-department .policy-department .sharing a, .info-department .policy-department .sharing .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .sharing i {
       color: #333132;
       font-style: normal;
       font-weight: 600; }
@@ -3236,7 +3310,8 @@ body {
 
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
 
 #pay-home {
   padding: 35px 0;
@@ -3248,6 +3323,46 @@ body {
 
 #map {
   padding-top: 15px; }
+
+#filter-control {
+  margin-top: 10px; }
+
+#list_project {
+  margin-top: 60px; }
+
+#pay-home {
+  margin-top: 50px; }
+
+@media (max-width: 768px) {
+  #list_project {
+    margin-top: 20px; }
+  #list_project .slide-card-duannoibat {
+    margin-top: 16px;
+    margin-bottom: 20px; } }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  #list_project .title-partial-horizontal {
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex; }
+    #list_project .title-partial-horizontal .icon-title-horizontal {
+      margin-right: 20px; }
+    #list_project .title-partial-horizontal h2 {
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 32px;
+      color: #333132;
+      margin: 0; }
+    #list_project .title-partial-horizontal img {
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+      transform: rotate(0);
+      margin-bottom: unset; } }
 
 /* Home Page */
 [class*="home-section-"] {

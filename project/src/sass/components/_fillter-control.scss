@@ -1,4 +1,7 @@
 .filter-control{
+    .fileter-control-mobile-header {
+        display: none;
+    }
     .btn-filter{
         border: none;
         border-radius: 2px;   
@@ -42,6 +45,7 @@
     }
     i{
         font-size: 12px;
+        margin-left: 13px;
     }
     a{
         padding-right: 10px;
@@ -63,20 +67,20 @@
         width: 377px;
         left: 26%;
         top: 50px;
-        z-index: 9;
+        z-index: 20;
     }
     .price-range{
         position: absolute;
         left: 33%;
         top: 51px;
-        z-index: 9;
+        z-index: 20;
     }
     .filter-more{
         position: absolute;
         width: 752px;
         left: 12%;
         top: 50px;
-        z-index: 9;
+        z-index: 20;
     }
     .btn-active{
         color: white;
@@ -87,6 +91,50 @@
 
 // Filter mobile 
 .filter-control-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: #fff;
+    bottom: 0;
+    display: none;
+    overflow-y: scroll;
+    &.close-animt {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenuback;
+    }
+    &.active {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenushow;
+    }
+    .fileter-control-mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 15px;
+        border-bottom: 1px solid #EDEDED;
+        margin-bottom: 10px;
+        margin-left: -15px;
+        margin-right: -15px;
+        & > * {
+            width: 33.33333337%;
+        }
+        h4 {
+            font-weight: 500;
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 0;
+        }
+        #close-filter {
+            color: #000;
+            i {
+                font-size: 18px;
+            }
+        }
+    }
     .btn-filter {
         display: none;
     }
@@ -122,5 +170,11 @@
         .btn-show-result-htm {
             display: block;
         }
+    }
+    .filter-top {
+        border-bottom: none;
+    }
+    .delete-filter, .save-search, .view-map {
+        display: none;
     }
 }

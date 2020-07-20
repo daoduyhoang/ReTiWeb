@@ -127,8 +127,45 @@ $(".btn-control .btn-filter").click(function () {
   }
 });
 
+var refreshBtn = function(btn, checked) {
+  let buttonRefresh = document.querySelectorAll(btn);
+  let checkedBox = Array.from(document.querySelectorAll(checked));
 
+  if(buttonRefresh.length !== 1) {
+    $(btn).click(function(e) {
+      var asda = $(this).parents(checked);
+      var dsw = asda[0].querySelectorAll('[type=checkbox]');
+      for(let i = 0; i < dsw.length; i++) {
+        dsw[i].checked = false;
+      }
+    })
 
+  } else {
+    buttonRefresh = buttonRefresh[0];
+    buttonRefresh.addEventListener('click', function(e){
+      e.preventDefault();
+      for(let i = 0; i < checkedBox.length; i++) {
+        checkedBox[i].checked = false;
+      }
+    })
+  }
+
+}
+
+refreshBtn('#delete-filter', '.control-table [type=checkbox]');
+refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
+refreshBtn('.btn-delete', '.control-table');
+
+jQuery('#showBoLoc').click(function(e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').addClass('active');
+})
+
+jQuery('#close-filter').click(function (e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').removeClass('active');
+  jQuery('.filter-control-mobile').addClass('close-animt');
+})
 
 //============================
 
@@ -171,6 +208,26 @@ ip.addEventListener('click', function () {
     showMap = true;
   }
 });
+// $(document).ready(function () {
+//   $('.ground-slider-top').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     fade: false,
+//     asNavFor: '.ground-slider-bottom',
+//     // autoplay: true,
+//     // autoplaySpeed: 2000,
+//   });
+//   $('.ground-slider-bottom').slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     asNavFor: '.ground-slider-top',
+//     dots: false,
+//     centerMode: true,
+//     focusOnSelect: true,
+//     arrows: false,
+//   });
+// });
 
 // MATBANGDUAN
 var btn = document.querySelectorAll('.tab ul .tab-item');
@@ -280,31 +337,31 @@ function myFunction(x) {
     });
     //======================
 
-    // Reponsive Filter
-    $('.filter-control').addClass('filter-control-mobile');
-    $('.justify-content-end').removeClass('row');
+      // Reponsive Filter
+      $('#filter-control').addClass('filter-control-mobile');
+      $('.justify-content-end').removeClass('row');
 
 
     //==================
 
   } else {
-    // Header
-    jQuery('.header').removeClass('header-mobile');
-    jQuery('.header-bottom-box').append(searchBtm);
-    searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
-    jQuery('.bottom-show-menu').click(function (e) {
-      e.preventDefault();
-      jQuery('.bottom-show-menu').toggleClass('active');
-      jQuery('.menu-dropdown').toggleClass('active');
-    });
-    //===================
+      // Header
+      jQuery('.header').removeClass('header-mobile');
+      jQuery('.header-bottom-box').append(searchBtm);
+      searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
+      jQuery('.bottom-show-menu').click(function (e) {
+          e.preventDefault();
+          jQuery('.bottom-show-menu').toggleClass('active');
+          jQuery('.menu-dropdown').toggleClass('active');
+      });
+      //===================
 
-    // Filter 
-    $('.filter-control').removeClass('filter-control-mobile');
-    $('.justify-content-end').addClass('row');
+      // Filter 
+      $('#filter-control').removeClass('filter-control-mobile');
+      $('.justify-content-end').addClass('row');
 
 
-    //================
+      //================
 
   }
 }
