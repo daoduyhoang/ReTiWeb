@@ -1786,14 +1786,14 @@ body {
       margin-right: 20px; }
       .info-department .policy-department .share .save i {
         color: #2D9CDB; }
-      .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .share .save i {
+      .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .share .save img {
         color: #333132;
         font-size: 14px;
         font-style: normal;
         font-weight: 600; }
   .info-department .policy-department .sharing {
     margin-bottom: 10px; }
-    .info-department .policy-department .sharing a, .info-department .policy-department .sharing .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .sharing i {
+    .info-department .policy-department .sharing a, .info-department .policy-department .sharing .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .sharing img {
       color: #333132;
       font-style: normal;
       font-weight: 600; }
@@ -3307,6 +3307,96 @@ body {
           width: 100%; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .policy-department .share {
           visibility: hidden; } }
+
+/*bang hang - mobile*/
+@media only screen and (max-width: 850px) {
+  .container .banghang-partial .banghang-tabs, .khuVucNoiBat .banghang-partial .banghang-tabs {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    padding-top: 30px; }
+    .container .banghang-partial .banghang-tabs .danhsach, .khuVucNoiBat .banghang-partial .banghang-tabs .danhsach, .container .banghang-partial .banghang-tabs .matbang, .khuVucNoiBat .banghang-partial .banghang-tabs .matbang {
+      width: 50%;
+      text-align: center;
+      background-color: #56C4CF; }
+      .container .banghang-partial .banghang-tabs .danhsach p, .khuVucNoiBat .banghang-partial .banghang-tabs .danhsach p, .container .banghang-partial .banghang-tabs .matbang p, .khuVucNoiBat .banghang-partial .banghang-tabs .matbang p {
+        margin: 8px 22px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 32px;
+        color: #FFFFFF; }
+    .container .banghang-partial .banghang-tabs .matbang, .khuVucNoiBat .banghang-partial .banghang-tabs .matbang {
+      background-color: #F2F2F2; }
+      .container .banghang-partial .banghang-tabs .matbang p, .khuVucNoiBat .banghang-partial .banghang-tabs .matbang p {
+        color: #BDBDBD; }
+  .container .banghang-partial .danhsach-table .danhsach-items, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items {
+    border-bottom: 1px solid #E5E5E5; }
+    .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1 {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      padding: 8px 0px; }
+      .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1 .blue-side, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1 .blue-side {
+        color: #0C77C6; }
+      .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1 .red-side, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r1 .red-side {
+        color: #EF5B40;
+        font-weight: 600; }
+    .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2 {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      -ms-flex-pack: space-between;
+      padding-bottom: 8px; }
+      .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2 .danhsach-details .details-border, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2 .danhsach-details .details-border {
+        color: #E5E5E5; }
+      .container .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2 .blue-side, .khuVucNoiBat .banghang-partial .danhsach-table .danhsach-items .danhsach-items-r2 .blue-side {
+        text-decoration: underline; }
+  .container .banghang-partial .danhsach-paging, .khuVucNoiBat .banghang-partial .danhsach-paging {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    padding: 20px 0px; }
+    .container .banghang-partial .danhsach-paging span, .khuVucNoiBat .banghang-partial .danhsach-paging span {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto; }
+    .container .banghang-partial .danhsach-paging .paging-vector .vectorleft, .khuVucNoiBat .banghang-partial .danhsach-paging .paging-vector .vectorleft {
+      padding-left: 0;
+      padding-right: 15px; }
+    .container .banghang-partial .danhsach-paging .paging-vector .vectorright, .khuVucNoiBat .banghang-partial .danhsach-paging .paging-vector .vectorright {
+      padding-left: 15px;
+      padding-right: 20px; } }
 
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
