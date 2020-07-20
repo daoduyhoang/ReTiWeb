@@ -45,7 +45,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-a:hover {
+a:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover {
   text-decoration: none; }
 
 button:focus {
@@ -114,14 +114,14 @@ button:focus {
     margin-bottom: unset; }
     .header-menu-box ul li {
       float: left; }
-      .header-menu-box ul li a {
+      .header-menu-box ul li a, .header-menu-box ul li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-menu-box ul li i {
         padding: 10px 15px;
         color: #333132; }
-        .header-menu-box ul li a:hover {
+        .header-menu-box ul li a:hover, .header-menu-box ul li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-menu-box ul li i:hover {
           color: #0C77C6; }
-    .header-menu-box ul.header-fnc a {
+    .header-menu-box ul.header-fnc a, .header-menu-box ul.header-fnc .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-menu-box ul.header-fnc i {
       color: #56C4CF; }
-      .header-menu-box ul.header-fnc a:hover {
+      .header-menu-box ul.header-fnc a:hover, .header-menu-box ul.header-fnc .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-menu-box ul.header-fnc i:hover {
         color: #56C4CF;
         -webkit-text-fill-color: #56C4CF;
         -webkit-text-stroke-width: 1px;
@@ -135,7 +135,7 @@ button:focus {
     top: -webkit-calc(100% + 7px);
     top: -moz-calc(100% + 7px);
     top: calc(100% + 7px); }
-  .header .nav-menu li a .icon {
+  .header .nav-menu li a .icon, .header .nav-menu li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i .icon, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .nav-menu li i .icon {
     display: none; }
 
 .header .nav-menu > li {
@@ -180,7 +180,7 @@ button:focus {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s; }
-  .header .nav-menu ul a {
+  .header .nav-menu ul a, .header .nav-menu ul .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .nav-menu ul i {
     display: block; }
 
 .header-bottom-bar {
@@ -204,7 +204,7 @@ button:focus {
   align-items: center;
   position: relative;
   padding: 17px 15px; }
-  .header-bottom-box .bottom-show-menu.active a {
+  .header-bottom-box .bottom-show-menu.active a, .header-bottom-box .bottom-show-menu.active .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-bottom-box .bottom-show-menu.active i {
     color: #56C4CF; }
   .header-bottom-box .bottom-show-menu.active .icon-dropdown i {
     -webkit-transform: rotate(180deg);
@@ -212,12 +212,12 @@ button:focus {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg); }
-  .header-bottom-box .bottom-show-menu a {
+  .header-bottom-box .bottom-show-menu a, .header-bottom-box .bottom-show-menu .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-bottom-box .bottom-show-menu i {
     color: #000;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold; }
-    .header-bottom-box .bottom-show-menu a:hover {
+    .header-bottom-box .bottom-show-menu a:hover, .header-bottom-box .bottom-show-menu .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-bottom-box .bottom-show-menu i:hover {
       color: #56C4CF; }
   .header-bottom-box .bottom-show-menu .icon-dropdown i {
     color: #56C4CF;
@@ -315,17 +315,17 @@ button:focus {
     -o-transition: all .4s;
     -moz-transition: all .4s;
     transition: all .4s; }
-    .header .menu-dropdown li a {
+    .header .menu-dropdown li a, .header .menu-dropdown li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-dropdown li i {
       color: #333132;
       padding: 12px 16px;
       width: 100%;
       display: block; }
-      .header .menu-dropdown li a i.fas {
+      .header .menu-dropdown li a i.fas, .header .menu-dropdown li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i i.fas, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-dropdown li i i.fas {
         margin-right: 15px;
         color: #56C4CF; }
-    .header .menu-dropdown li:hover > a {
+    .header .menu-dropdown li:hover > a, .header .menu-dropdown .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn li:hover > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-dropdown li:hover > i {
       color: #56C4CF; }
-    .header .menu-dropdown li.active > a {
+    .header .menu-dropdown li.active > a, .header .menu-dropdown .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn li.active > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-dropdown li.active > i {
       color: #fff;
       background-color: #56C4CF; }
 
@@ -340,15 +340,15 @@ button:focus {
 .header .menu-drd-level-1 {
   width: 280px;
   background: #fff; }
-  .header .menu-drd-level-1 > li.active > a {
+  .header .menu-drd-level-1 > li.active > a, .header .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-level-1 > li.active > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-drd-level-1 > li.active > i {
     background-color: #56C4CF;
     color: #fff; }
-    .header .menu-drd-level-1 > li.active > a i.fas {
+    .header .menu-drd-level-1 > li.active > a i.fas, .header .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-level-1 > li.active > i i.fas, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-drd-level-1 > li.active > i i.fas {
       color: #fff; }
-  .header .menu-drd-level-1 > li:hover > a {
+  .header .menu-drd-level-1 > li:hover > a, .header .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-level-1 > li:hover > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-drd-level-1 > li:hover > i {
     background-color: #56C4CF;
     color: #fff; }
-    .header .menu-drd-level-1 > li:hover > a i.fas {
+    .header .menu-drd-level-1 > li:hover > a i.fas, .header .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-level-1 > li:hover > i i.fas, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-drd-level-1 > li:hover > i i.fas {
       color: #fff; }
 
 .header .menu-style-2 {
@@ -362,9 +362,9 @@ button:focus {
     width: 185px;
     height: 100%;
     background-color: #fff; }
-    .header .menu-style-2 .menu-drd-level-1 li > a {
+    .header .menu-style-2 .menu-drd-level-1 li > a, .header .menu-style-2 .menu-drd-level-1 .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn li > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-style-2 .menu-drd-level-1 li > i {
       position: relative; }
-      .header .menu-style-2 .menu-drd-level-1 li > a::after {
+      .header .menu-style-2 .menu-drd-level-1 li > a::after, .header .menu-style-2 .menu-drd-level-1 .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn li > i::after, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header .menu-style-2 .menu-drd-level-1 li > i::after {
         content: "";
         display: block;
         height: 100%;
@@ -591,26 +591,26 @@ body {
       display: inline-block; }
   .menu-phanloai .menu-drop li {
     border-top: 1px solid #EDEDED; }
-    .menu-phanloai .menu-drop li a {
+    .menu-phanloai .menu-drop li a, .menu-phanloai .menu-drop li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop li i {
       padding: 22px 15px;
       color: #333132;
       display: block; }
-      .menu-phanloai .menu-drop li a i.fa-chevron-right {
+      .menu-phanloai .menu-drop li a i.fa-chevron-right, .menu-phanloai .menu-drop li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i i.fa-chevron-right, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop li i i.fa-chevron-right {
         display: none !important; }
-    .menu-phanloai .menu-drop li ul a {
+    .menu-phanloai .menu-drop li ul a, .menu-phanloai .menu-drop li ul .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop li ul i {
       padding-left: 40px;
       -webkit-transition: all 0.3s;
       -moz-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
-      .menu-phanloai .menu-drop li ul a:hover {
+      .menu-phanloai .menu-drop li ul a:hover, .menu-phanloai .menu-drop li ul .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop li ul i:hover {
         color: #56C4CF; }
-    .menu-phanloai .menu-drop li ul ul a {
+    .menu-phanloai .menu-drop li ul ul a, .menu-phanloai .menu-drop li ul ul .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop li ul ul i {
       padding-left: 60px; }
-  .menu-phanloai .menu-drop .menu-drd-item.has-drop > a {
+  .menu-phanloai .menu-drop .menu-drd-item.has-drop > a, .menu-phanloai .menu-drop .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-item.has-drop > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop .menu-drd-item.has-drop > i {
     font-weight: 500;
     color: #000; }
-    .menu-phanloai .menu-drop .menu-drd-item.has-drop > a i {
+    .menu-phanloai .menu-drop .menu-drd-item.has-drop > a i, .menu-phanloai .menu-drop .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-item.has-drop > i i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop .menu-drd-item.has-drop > i i {
       display: unset;
       float: right;
       -webkit-transition: all 0.5s;
@@ -619,9 +619,9 @@ body {
       transition: all 0.5s; }
   .menu-phanloai .menu-drop .menu-drd-item.has-drop > *:not(a) {
     display: none; }
-  .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > a {
+  .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > a, .menu-phanloai .menu-drop .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-item.has-drop.active > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > i {
     color: #56C4CF; }
-    .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > a i {
+    .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > a i, .menu-phanloai .menu-drop .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drd-item.has-drop.active > i i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > i i {
       -webkit-transform: rotate(180deg);
       -moz-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -631,7 +631,7 @@ body {
   .menu-phanloai .menu-drop .menu-drd-item.has-drop.active > *:not(a) {
     display: block;
     z-index: 99; }
-  .menu-phanloai .menu-drop > .has-drop.active > a {
+  .menu-phanloai .menu-drop > .has-drop.active > a, .menu-phanloai .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-drop > .has-drop.active > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .menu-phanloai .menu-drop > .has-drop.active > i {
     background-color: #56C4CF;
     color: #fff !important; }
 
@@ -692,9 +692,9 @@ body {
   .header-mobile .nav-menu > li {
     border-top: 1px solid #EDEDED;
     padding: 20px 0; }
-    .header-mobile .nav-menu > li > a {
+    .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > i {
       padding: 10px 0; }
-      .header-mobile .nav-menu > li > a .icon {
+      .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > i .icon, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > i .icon {
         margin-right: 10px; }
   .header-mobile .nav-menu li {
     float: unset;
@@ -837,7 +837,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 8px 0; }
-  .header-mobile .header-bottom-box a {
+  .header-mobile .header-bottom-box a, .header-mobile .header-bottom-box .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .header-bottom-box i {
     text-transform: unset; }
 
 .header-mobile .menu-drd-level-1 {
@@ -871,15 +871,15 @@ body {
 
 .info-footer ul li {
   padding-bottom: 15px; }
-  .info-footer ul li a {
+  .info-footer ul li a, .info-footer ul li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-footer ul li i {
     color: #000;
     font-size: 12px; }
 
-.project-footer li a {
+.project-footer li a, .project-footer li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .project-footer li i {
   font-weight: bold;
   font-size: 16px !important; }
 
-.view-all a {
+.view-all a, .view-all .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .view-all i {
   color: #0C77C6 !important; }
 
 .bottom-footer {
@@ -943,7 +943,7 @@ body {
   padding: 15px 10px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
-  .card a {
+  .card a, .card .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .card i {
     text-decoration: none; }
   .card-title {
     color: #0C77C6;
@@ -1515,7 +1515,7 @@ body {
 .filter-control i {
   font-size: 12px; }
 
-.filter-control a {
+.filter-control a, .filter-control .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .filter-control i {
   padding-right: 10px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
@@ -1656,7 +1656,7 @@ body {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 10px; }
-    .info-department .control-buy a {
+    .info-department .control-buy a, .info-department .control-buy .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .control-buy i {
       width: 100%;
       display: block;
       padding: 10px 20px; }
@@ -1708,7 +1708,7 @@ body {
     display: inline-block;
     text-align: center;
     height: 48px; }
-    .table-product .list-tab li a {
+    .table-product .list-tab li a, .table-product .list-tab li .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .table-product .list-tab li i {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       font-weight: 500;
@@ -1722,7 +1722,7 @@ body {
       color: #333132; }
   .table-product .list-tab .active-table-tab {
     background-color: #56C4CF; }
-    .table-product .list-tab .active-table-tab a {
+    .table-product .list-tab .active-table-tab a, .table-product .list-tab .active-table-tab .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .table-product .list-tab .active-table-tab i {
       color: white; }
 
 .table-product .tab-items {
@@ -1950,7 +1950,7 @@ body {
 
 .duannoibat-home-showall {
   margin-top: 29px; }
-  .duannoibat-home-showall a {
+  .duannoibat-home-showall a, .duannoibat-home-showall .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .duannoibat-home-showall i {
     background: #56C4CF;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -2218,15 +2218,15 @@ body {
       -moz-box-flex: 1;
       -ms-flex: auto;
       flex: auto; }
-      .project_classification .project ul a {
+      .project_classification .project ul a, .project_classification .project ul .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .project_classification .project ul i {
         color: black;
         font-size: 12px; }
-    .project_classification .project a:hover {
+    .project_classification .project a:hover, .project_classification .project .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i:hover, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .project_classification .project i:hover {
       text-decoration: none; }
   .project_classification .icon-more {
     font-size: 9px;
     margin-left: .9rem; }
-  .project_classification a {
+  .project_classification a, .project_classification .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .project_classification i {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -2978,6 +2978,146 @@ body {
     margin-right: 31px; }
   .sales_policy .row {
     margin-bottom: 8px; }
+
+.chitietduan-partial {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .chitietduan-partial .chitietduan-leftcolumn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    -ms-flex-pack: space-between;
+    width: 645px;
+    height: 554px; }
+    .chitietduan-partial .chitietduan-leftcolumn .slick-slide img {
+      display: block;
+      width: 100%; }
+    .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-top .chitietduan-slider-item img {
+      height: 480px; }
+    .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bot {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -moz-justify-content: space-between;
+      -ms-justify-content: space-between;
+      -webkit-box-pack: justify;
+      -moz-box-pack: justify;
+      justify-content: space-between;
+      -ms-flex-pack: space-between; }
+    .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bottom {
+      padding-bottom: 0;
+      padding-left: 17px;
+      width: 432px;
+      height: 74px; }
+      .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bottom .slick-list {
+        height: 120px; }
+      .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bottom .slick-slide {
+        margin: 5px 5px 0px 0px; }
+      .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bottom img {
+        height: 69px;
+        width: 100px; }
+    .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      width: 196px;
+      padding-top: 5px; }
+      .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        flex-direction: column;
+        margin-left: 5px;
+        width: 93px;
+        height: 69px;
+        border: none;
+        background-color: #56C4CF; }
+        .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn a, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i {
+          color: white;
+          margin: auto;
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 130.08%;
+          color: #FFFFFF; }
+        .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i {
+          margin-top: auto;
+          margin-bottom: auto; }
+    .chitietduan-partial .chitietduan-leftcolumn .slick-prev {
+      background-color: #333333;
+      width: 12px;
+      height: 69px;
+      z-index: 9;
+      background-image: url(../images/chitietduan/VectorLeft.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      left: 0;
+      top: 54%; }
+    .chitietduan-partial .chitietduan-leftcolumn .slick-next {
+      right: -4%;
+      background-color: #333333;
+      width: 12px;
+      height: 69px;
+      z-index: 9;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/chitietduan/VectorRight.png);
+      top: 54%; }
+    .chitietduan-partial .chitietduan-leftcolumn .slick-prev:before {
+      color: #56C6D0;
+      display: none; }
+    .chitietduan-partial .chitietduan-leftcolumn .slick-next::before {
+      display: none; }
+  .chitietduan-partial .chitietduan-rightcolumn {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    padding-left: 20px;
+    width: 455px;
+    height: 554px; }
 
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
