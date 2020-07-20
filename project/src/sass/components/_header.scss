@@ -32,7 +32,7 @@
             li {
                 float: left;
                 a {
-                    padding: 10px 15px;
+                    padding: 10px 20px;
                     color: $text-color;
                     &:hover {
                         color: $link-color;
@@ -61,6 +61,12 @@
             }
             a .icon {
                 display: none;
+            }
+        }
+        & > .has-menu-drp {
+            margin-right: 15px;
+            & > i {
+                margin-left: -13px;
             }
         }
         & > li {
@@ -572,6 +578,8 @@ body {
             padding: 20px 0;
             & > a {
                 padding: 10px 0;
+                font-weight: bold;
+                color: #000;
                 .icon {
                     margin-right: 10px;
                 }
