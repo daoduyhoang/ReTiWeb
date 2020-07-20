@@ -3,7 +3,6 @@ $col4: 98%/3;
 .container{
     .viSaoChonReti-row1{
         margin-top: 90px;
-        margin-bottom: 30px;
     }
     .viSaoChonReti-row2{
         @include flexbox();
@@ -11,6 +10,7 @@ $col4: 98%/3;
         .viSaoChonReti-col1{
             width: $col4;
             text-align: center;
+            margin-bottom: 30px;
             .check{
                 @include flexbox();
                 @include justify-content(center);
@@ -53,6 +53,7 @@ $col4: 98%/3;
             @include flex-direction(column);
             .viSaoChonReti-col1{
                 width: 100%;
+                margin-bottom: 30px;
             }
         }
     }

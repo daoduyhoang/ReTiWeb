@@ -5,6 +5,9 @@
     .project{
         display: flex;
         flex-direction: column;
+        h6 {
+            font-weight: bold;
+        }
        ul{
            flex: auto;
         a{
@@ -26,5 +29,13 @@
         font-weight: 500;
         font-size: 13px;
         color: #0C77C6;
+    }
+}
+
+@media(max-width: 850px) {
+    .project_classification {
+        .project {
+            margin-bottom: 30px;
+        }
     }
 }
