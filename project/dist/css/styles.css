@@ -1516,7 +1516,8 @@ body {
     max-width: unset; }
 
 .filter-control i {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: 13px; }
 
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .filter-control i {
   padding-right: 10px;
@@ -1785,14 +1786,14 @@ body {
       margin-right: 20px; }
       .info-department .policy-department .share .save i {
         color: #2D9CDB; }
-      .info-department .policy-department .share .save a {
+      .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .share .save i {
         color: #333132;
         font-size: 14px;
         font-style: normal;
         font-weight: 600; }
   .info-department .policy-department .sharing {
     margin-bottom: 10px; }
-    .info-department .policy-department .sharing a {
+    .info-department .policy-department .sharing a, .info-department .policy-department .sharing .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .info-department .policy-department .sharing i {
       color: #333132;
       font-style: normal;
       font-weight: 600; }
