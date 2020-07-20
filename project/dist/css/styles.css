@@ -1557,7 +1557,8 @@ body {
     max-width: unset; }
 
 .filter-control i {
-  font-size: 12px; }
+  font-size: 12px;
+  margin-left: 13px; }
 
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn i, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .filter-control i {
   padding-right: 10px;
