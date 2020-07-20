@@ -8,3 +8,7 @@
   line-height: 16px;
   color: black;
   display: none; }
+
+@media (max-width: 850px) {
+  #showBoLoc {
+    display: block; } }
