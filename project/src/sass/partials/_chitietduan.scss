@@ -1,0 +1,108 @@
+.chitietduan-partial{
+    @include flexbox();
+    .chitietduan-leftcolumn{
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-between);
+        width: 645px;
+        height: 554px;
+        .slick-slide img {
+            display: block;
+            width: 100%;
+        }
+        .chitietduan-slider-top{
+            .chitietduan-slider-item{
+                img{
+                    height: 480px;
+                }
+            }
+        }
+        .chitietduan-slider-bot{
+            @include flexbox();
+            @include justify-content(space-between);
+        }
+        .chitietduan-slider-bottom{
+            padding-bottom: 0;
+            padding-left: 17px;
+            width: 432px;
+            height: 74px;
+            .slick-list{
+                height: 120px;
+            }
+            .slick-slide{
+                margin: 5px 5px 0px 0px;
+            }
+            img{
+                height: 69px;
+                width: 100px;
+            }
+        }
+        .chitietduan-button{
+            @include flexbox();
+            width: 196px;
+            padding-top: 5px;
+            .chitietduan-btn{
+                @include flexbox();
+                @include flex-direction(column);
+                margin-left: 5px;
+                width: 93px;
+                height: 69px;
+                border: none;
+                background-color: $main-color;
+                a{
+                    color: white;
+                    margin: auto;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 130.08%;
+                    color: #FFFFFF;
+                }
+                i{
+                    @extend a;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    
+                }
+            }
+        }
+        .slick-prev{
+            background-color: #333333;
+            width: 12px;
+            height: 69px;
+            z-index: 9;
+            background-image: url(../images/chitietduan/VectorLeft.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            top: 54%;
+        }
+        .slick-next{
+            right: -4%;
+            background-color: #333333;
+            width: 12px;
+            height: 69px;
+            z-index: 9;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-image: url(../images/chitietduan/VectorRight.png);
+            top: 54%;
+        }
+        .slick-prev:before{
+            color: #56C6D0;
+            display: none;
+        }
+        .slick-next::before{
+            display: none;
+        }
+    }
+    .chitietduan-rightcolumn{
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content(space-around);
+        padding-left: 20px;;
+        width: 455px;
+        height: 554px;
+    }
+}
