@@ -139,6 +139,19 @@
         height: 30px;
         transform: translate(-26%, -50%);
     }
+    .khachHangCuaReti-slide .owl-nav{
+        top: 98%;
+        justify-content: flex-end;
+    }
+    .partner_reti-content {
+        box-shadow: 0px 1px 40px rgba(112, 112, 112, 0.2);
+    }
+    .khachHangCuaReti-slide .owl-next{
+        left: 97%;
+    }
+    .khachHangCuaReti-slide .owl-prev{
+        left: 84%;
+    }
 }
 @media(max-width:375px){
     .height-partner_reti {
