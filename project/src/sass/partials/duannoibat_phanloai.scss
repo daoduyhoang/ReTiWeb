@@ -9,7 +9,7 @@
     color: black;
     display: none;
 }
-@include Responsive(SM){
+@media(max-width:850px){
     #showBoLoc{
         display: block;
     }
