@@ -1,0 +1,77 @@
+.table-product{
+    .list-tab{
+        background: #F2F2F2;
+        margin-bottom: 0;
+        li{
+            width: 256px;
+            display: inline-block;
+            text-align: center;
+            height: 48px;
+            a{
+                font-family: $roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 48px;
+                align-items: center;
+                color: #333132
+            }
+        }
+        .active-table-tab{
+            background-color: #56C4CF;
+            a{
+                color: white;
+            }
+        }
+    }
+    .tab-items{
+        display: none;
+    }
+    .active-item-table{
+        display: block;
+    }
+}
+.choose {
+    align-items: center;
+    padding-top: 20px;
+    .form-group{
+        width: 256px;
+        height: 48px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #828282;
+    }
+    select{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #BDBDBD;
+    }
+}
+.annotate{
+    padding-top: 20px;
+    p{
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        margin-bottom: 9px;
+    }
+    img{
+        margin-right: 8px;
+    }
+    .stocking,.booking{
+        margin-right: 19px;
+    }
+}

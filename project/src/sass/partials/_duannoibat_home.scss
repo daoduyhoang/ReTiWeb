@@ -20,6 +20,10 @@
             font-weight: 500;    
         }
     }
+    .view-all{
+        width: 170px;
+        height: 45px;
+    }
 }
 @include Responsive(MD){
     .card {

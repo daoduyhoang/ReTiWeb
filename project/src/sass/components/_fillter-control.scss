@@ -90,6 +90,25 @@
 
 // Filter mobile 
 .filter-control-mobile {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    background-color: #fff;
+    bottom: 0;
+    display: none;
+    overflow-y: scroll;
+    &.close-animt {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenuback;
+    }
+    &.active {
+        display: block;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        animation-name: slidemenushow;
+    }
     .fileter-control-mobile-header {
         display: flex;
         justify-content: space-between;

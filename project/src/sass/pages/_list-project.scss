@@ -2,6 +2,7 @@
 #list_project{
     .slide-card-duannoibat{
         margin-top: 30px;
+        margin-bottom: 50px;
     }
 }
 #pay-home{
@@ -12,6 +13,44 @@
 #form-contact{
     margin-bottom: 50px;
 }
-#map{
+#map {
     padding-top: 15px;
+}
+
+#filter-control {
+    margin-top: 10px;
+}
+#list_project {
+    margin-top: 60px;
+}
+#pay-home {
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    #list_project {
+        margin-top: 20px;
+    }
+    
+    #list_project .slide-card-duannoibat{
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+}
+@media(min-width:320px) and (max-width:768px) {
+    #list_project .title-partial-horizontal{
+        text-align: center;
+        display: flex;
+        .icon-title-horizontal{
+            margin-right: 20px;
+        }
+        h2{
+            @include title_partials();
+            margin: 0;
+        }
+        img{
+            transform: rotate(0);
+            margin-bottom: unset;
+        }
+    }
 }

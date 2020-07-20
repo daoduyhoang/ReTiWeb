@@ -99,36 +99,7 @@ $('.btn-prev').click(function () {
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
 });
-$(".js-range-slider").ionRangeSlider(); //start slide khách hàng của Reti
-// $('.khachHangCuaReti-slide').owlCarousel({
-//   loop: true,
-//   margin: 10,
-//   nav: true,
-//   navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev fa-2x'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-//   responsive: {
-//     0: {
-//       items: 1
-//     },
-//     480: {
-//       items: 1
-//     },
-//     576: {
-//       items: 1
-//     },
-//     768: {
-//       items: 1
-//     },
-//     992: {
-//       items: 1
-//     },
-//     1000: {
-//       items: 1
-//     }
-//   },
-//   dots: false
-// });
-//end slide khach hang cua reti
-// TIEN ICH
+$(".js-range-slider").ionRangeSlider(); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -176,7 +147,16 @@ var refreshBtn = function refreshBtn(btn, checked) {
 
 refreshBtn('#delete-filter', '.control-table [type=checkbox]');
 refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
-refreshBtn('.btn-delete', '.control-table'); //============================
+refreshBtn('.btn-delete', '.control-table');
+jQuery('#showBoLoc').click(function (e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').addClass('active');
+});
+jQuery('#close-filter').click(function (e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').removeClass('active');
+  jQuery('.filter-control-mobile').addClass('close-animt');
+}); //============================
 // TOGGLE MAP LIST PROJECT
 
 var ip = document.getElementById('view-map');
@@ -219,27 +199,27 @@ ip.addEventListener('click', function () {
     backAttributeCard();
     showMap = true;
   }
-});
-$(document).ready(function () {
-  $('.ground-slider-top').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: false,
-    asNavFor: '.ground-slider-bottom' // autoplay: true,
-    // autoplaySpeed: 2000,
-
-  });
-  $('.ground-slider-bottom').slick({
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    asNavFor: '.ground-slider-top',
-    dots: false,
-    centerMode: true,
-    focusOnSelect: true,
-    arrows: false
-  });
-}); // MATBANGDUAN
+}); // $(document).ready(function () {
+//   $('.ground-slider-top').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     fade: false,
+//     asNavFor: '.ground-slider-bottom',
+//     // autoplay: true,
+//     // autoplaySpeed: 2000,
+//   });
+//   $('.ground-slider-bottom').slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     asNavFor: '.ground-slider-top',
+//     dots: false,
+//     centerMode: true,
+//     focusOnSelect: true,
+//     arrows: false,
+//   });
+// });
+// MATBANGDUAN
 
 var btn = document.querySelectorAll('.tab ul .tab-item');
 var tabs = document.querySelectorAll(".content-tab-item");
@@ -262,6 +242,60 @@ for (var i = 0; i < btn.length; i++) {
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove('active-item');
       tabs[j].classList.add('active-item');
+    }
+  });
+} // SLIDER CARD
+
+
+$('.slide-card').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    },
+    1000: {
+      items: 1
+    }
+  },
+  dots: true
+}); // BẢNG SẢN PHẨM
+
+var btnActiveTab = document.querySelectorAll('.list-tab li');
+var tabItem = document.querySelectorAll(".tab-items");
+
+for (var i = 0; i < btnActiveTab.length; i++) {
+  btnActiveTab[i].addEventListener("click", function () {
+    for (var i = 0; i < btnActiveTab.length; i++) {
+      btnActiveTab[i].classList.remove('active-table-tab');
+    }
+
+    this.classList.add('active-table-tab'); //tinh vi tri
+
+    var active = this;
+    var j = 0;
+
+    for (j = 0; active = active.previousElementSibling; j++) {}
+
+    ;
+
+    for (var i = 0; i < tabItem.length; i++) {
+      tabItem[i].classList.remove('active-item-table');
+      tabItem[j].classList.add('active-item-table');
     }
   });
 }

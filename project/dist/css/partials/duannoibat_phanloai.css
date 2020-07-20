@@ -1,0 +1,14 @@
+#number-duan {
+  font-weight: 500;
+  font-size: 16px; }
+
+#showBoLoc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: black;
+  display: none; }
+
+@media (max-width: 850px) {
+  #showBoLoc {
+    display: block; } }
