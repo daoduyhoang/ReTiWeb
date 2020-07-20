@@ -118,6 +118,44 @@ $(".btn-control .btn-filter").click(function () {
     $(this).siblings('.control-table').addClass("active");
     $(this).addClass("active");
   }
+});
+
+var refreshBtn = function refreshBtn(btn, checked) {
+  var buttonRefresh = document.querySelectorAll(btn);
+  var checkedBox = Array.from(document.querySelectorAll(checked));
+
+  if (buttonRefresh.length !== 1) {
+    $(btn).click(function (e) {
+      var asda = $(this).parents(checked);
+      var dsw = asda[0].querySelectorAll('[type=checkbox]');
+
+      for (var _i = 0; _i < dsw.length; _i++) {
+        dsw[_i].checked = false;
+      }
+    });
+  } else {
+    buttonRefresh = buttonRefresh[0];
+    buttonRefresh.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      for (var _i2 = 0; _i2 < checkedBox.length; _i2++) {
+        checkedBox[_i2].checked = false;
+      }
+    });
+  }
+};
+
+refreshBtn('#delete-filter', '.control-table [type=checkbox]');
+refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
+refreshBtn('.btn-delete', '.control-table');
+jQuery('#showBoLoc').click(function (e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').addClass('active');
+});
+jQuery('#close-filter').click(function (e) {
+  e.preventDefault();
+  jQuery('.filter-control-mobile').removeClass('active');
+  jQuery('.filter-control-mobile').addClass('close-animt');
 }); //============================
 // TOGGLE MAP LIST PROJECT
 
@@ -161,7 +199,27 @@ ip.addEventListener('click', function () {
     backAttributeCard();
     showMap = true;
   }
-}); // MATBANGDUAN
+}); // $(document).ready(function () {
+//   $('.ground-slider-top').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     fade: false,
+//     asNavFor: '.ground-slider-bottom',
+//     // autoplay: true,
+//     // autoplaySpeed: 2000,
+//   });
+//   $('.ground-slider-bottom').slick({
+//     slidesToShow: 6,
+//     slidesToScroll: 1,
+//     asNavFor: '.ground-slider-top',
+//     dots: false,
+//     centerMode: true,
+//     focusOnSelect: true,
+//     arrows: false,
+//   });
+// });
+// MATBANGDUAN
 
 var btn = document.querySelectorAll('.tab ul .tab-item');
 var tabs = document.querySelectorAll(".content-tab-item");
@@ -277,7 +335,7 @@ function myFunction(x) {
     }); //======================
     // Reponsive Filter
 
-    $('.filter-control').addClass('filter-control-mobile');
+    $('#filter-control').addClass('filter-control-mobile');
     $('.justify-content-end').removeClass('row'); //==================
   } else {
     // Header
@@ -291,7 +349,7 @@ function myFunction(x) {
     }); //===================
     // Filter 
 
-    $('.filter-control').removeClass('filter-control-mobile');
+    $('#filter-control').removeClass('filter-control-mobile');
     $('.justify-content-end').addClass('row'); //================
   }
 }

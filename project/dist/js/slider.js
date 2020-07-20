@@ -26,7 +26,6 @@ $('.slide-card').owlCarousel({
     }
   },
   dots: true
-<<<<<<< HEAD
 }); // mat bang du an
 
 $(document).ready(function () {
@@ -69,8 +68,6 @@ $(document).ready(function () {
     focusOnSelect: true,
     arrows: true
   });
-});
-=======
 }); //start slide khách hàng của Reti
 
 $('.khachHangCuaReti-slide').owlCarousel({
@@ -100,4 +97,3 @@ $('.khachHangCuaReti-slide').owlCarousel({
   },
   dots: false
 }); //end slide khach hang cua reti
->>>>>>> develop

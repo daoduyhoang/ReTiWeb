@@ -25,51 +25,49 @@ $('.slide-card').owlCarousel({
     },
     dots: true
 });
-<<<<<<< HEAD
 // mat bang du an
 $(document).ready(function () {
     $('.ground-slider-top').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      fade: false,
-      asNavFor: '.ground-slider-bottom',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        asNavFor: '.ground-slider-bottom',
       // autoplay: true,
       // autoplaySpeed: 2000,
     });
     $('.ground-slider-bottom').slick({
-      slidesToShow: 6,
-      slidesToScroll: 1,
-      asNavFor: '.ground-slider-top',
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: false,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.ground-slider-top',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: false,
     });
-  });
+});
 
   // chi tiet du an
 $(document).ready(function () {
     $('.chitietduan-slider-top').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: false,
-      asNavFor: '.chitietduan-slider-bottom',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.chitietduan-slider-bottom',
       // autoplay: true,
       // autoplaySpeed: 2000,
     });
     $('.chitietduan-slider-bottom').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.chitietduan-slider-top',
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.chitietduan-slider-top',
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        arrows: true,
     });
-  });
-=======
+});
 //start slide khách hàng của Reti
 $('.khachHangCuaReti-slide').owlCarousel({
     loop: true,
@@ -99,4 +97,3 @@ $('.khachHangCuaReti-slide').owlCarousel({
     dots: false
 });
   //end slide khach hang cua reti
->>>>>>> develop
