@@ -52,7 +52,7 @@ $(document).ready(function () {
     $('.chitietduan-slider-top').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      arrows: true,
       fade: false,
       asNavFor: '.chitietduan-slider-bottom',
       // autoplay: true,
