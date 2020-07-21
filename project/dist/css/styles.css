@@ -697,19 +697,11 @@ body {
   .header-mobile .nav-menu > li {
     border-top: 1px solid #EDEDED;
     padding: 20px 0; }
-<<<<<<< HEAD
-    .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img {
-      padding: 10px 0;
-      font-weight: bold;
-      color: #000; }
-      .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img .icon {
-=======
     .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img {
       padding: 10px 0;
       font-weight: bold;
       color: #000; }
       .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img .icon {
->>>>>>> develop
         margin-right: 10px; }
   .header-mobile .nav-menu li {
     float: unset;
