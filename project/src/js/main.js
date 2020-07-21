@@ -100,7 +100,7 @@ $('.btn-prev').click(function () {
   owl.trigger('prev.owl.carousel', [300]);
 })
 
-$(".js-range-slider").ionRangeSlider();
+
 
 // TIEN ICH
 
@@ -170,26 +170,7 @@ jQuery('#close-filter').click(function (e) {
 //============================
 
 
-// $(document).ready(function () {
-//   $('.ground-slider-top').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: false,
-//     asNavFor: '.ground-slider-bottom',
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//   });
-//   $('.ground-slider-bottom').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.ground-slider-top',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     arrows: false,
-//   });
-// });
+
 
 // MATBANGDUAN
 var btn = document.querySelectorAll('.tab ul .tab-item');
@@ -211,33 +192,6 @@ for (var i = 0; i < btn.length; i++) {
   });
 }
 // SLIDER CARD
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: true
-});
 
 // BẢNG SẢN PHẨM
 
@@ -335,7 +289,26 @@ x.addListener(myFunction);
 
 
 //======================
-
+$(document).ready(function () {
+  $('.chitietduan-slider-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+    asNavFor: '.chitietduan-slider-bottom',
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+  });
+  $('.chitietduan-slider-bottom').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.chitietduan-slider-top',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      arrows: true,
+  });
+});
 
 // TOGGLE MAP LIST PROJECT
 var ip = document.getElementById('view-map');
@@ -376,3 +349,6 @@ ip.addEventListener('click', function () {
     showMap = true;
   }
 });
+
+
+$(".js-range-slider").ionRangeSlider();

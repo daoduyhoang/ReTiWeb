@@ -697,19 +697,11 @@ body {
   .header-mobile .nav-menu > li {
     border-top: 1px solid #EDEDED;
     padding: 20px 0; }
-<<<<<<< HEAD
-    .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img {
-      padding: 10px 0;
-      font-weight: bold;
-      color: #000; }
-      .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img .icon {
-=======
     .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img {
       padding: 10px 0;
       font-weight: bold;
       color: #000; }
       .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img .icon {
->>>>>>> develop
         margin-right: 10px; }
   .header-mobile .nav-menu li {
     float: unset;
@@ -1861,6 +1853,7 @@ body {
   margin-right: 15px; }
 
 .table-product .list-tab {
+  margin-top: 30px;
   background: #F2F2F2;
   margin-bottom: 0; }
   .table-product .list-tab li {
@@ -2892,6 +2885,7 @@ body {
     transition: .5s; } }
 
 .ground {
+  margin-top: 30px;
   margin-bottom: 50px; }
   .ground .slick-slide img {
     display: block;
@@ -3675,9 +3669,9 @@ body {
       padding-right: 20px; } }
 
 /*mo ta du an*/
-.container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
+.motaduan-partial {
   width: 50%; }
-  .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
+  .motaduan-partial .motaduan-content {
     margin-top: 16px;
     width: 100%;
     font-family: "Roboto", sans-serif;
@@ -3685,7 +3679,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px; }
-  .container .motaduan-partial .motaduan-link, .khuVucNoiBat .motaduan-partial .motaduan-link {
+  .motaduan-partial .motaduan-link {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -3955,3 +3949,22 @@ main {
 @media (max-width: 768px) {
   .discount .form-control {
     font-size: 12px; } }
+
+/*detail project*/
+.utilities {
+  margin-top: 60px; }
+
+.table-product {
+  margin-top: 60px; }
+
+.sales_policy {
+  margin-top: 30px; }
+
+.project_classification {
+  margin-top: 60px; }
+
+.top-footer {
+  margin-top: 60px; }
+
+.duantuongtu-partial {
+  margin-top: 60px; }
