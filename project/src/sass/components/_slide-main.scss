@@ -1,4 +1,21 @@
 /* COMPONENT SLIDER MAIN*/ 
+.custom-indicators {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: $gray-color;
+        height: 100%;
+        width: 100%;
+    }
+}
 .carousel-control-prev{
     width: 40px;
     height: 40px;
@@ -62,8 +79,6 @@
             top: 100%;
             bottom: unset;
             background: #F2F2F2;
-            margin-right: unset;
-            margin-left: 13%;
         }
         .carousel-indicators li::before,.carousel-indicators li::after{
             display: none;

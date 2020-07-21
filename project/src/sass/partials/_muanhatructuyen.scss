@@ -15,6 +15,8 @@
             }
             .title-partial-horizontal{
                 margin-bottom: 30px;
+                display: flex;
+                align-items: center;
                 h2{
                     @include title_partials();
                 } 

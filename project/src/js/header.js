@@ -7,7 +7,7 @@ let getHeader = document.querySelector('.header');
 let getMenuPl = document.querySelector('.menu-phanloai');
 let offSetHeader = getHeader.offsetHeight;
 window.addEventListener("scroll",function(){
-    if(window.pageYOffset > offSetHeader){
+    if(window.pageYOffset >= offSetHeader){
         getHeader.classList.add('stick');
     }
     else if(window.pageYOffset == 0) {
