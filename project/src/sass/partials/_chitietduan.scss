@@ -14,6 +14,7 @@
         .chitietduan-slider-top{
             .chitietduan-slider-item{
                 img{
+                    position: relative;
                     height: 480px;
                 }
             }
@@ -35,6 +36,10 @@
                 visibility: hidden;
             }
         }
+        .stroke{
+            display: none;
+        }
+    }
         .chitietduan-slider-bot{
             @include flexbox();
             @include justify-content(space-between);
@@ -60,31 +65,31 @@
             width: 196px;
             padding-top: 5px;
             .chitietduan-btn{
-                @include flexbox();
-                @include flex-direction(column);
                 margin-left: 5px;
                 width: 93px;
                 height: 69px;
                 border: none;
                 border-radius: 2px;
                 background-color: $main-color;
-                a{
-                    color: white;
+                div{
+                    display: flex;
+                    flex-direction: column;
                     margin-left: auto;
-                    margin-right: auto;
-                    font-family: Roboto;
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 12px;
-                    line-height: 130.08%;
-                    color: #FFFFFF;
-                }
-                img{
-                    @extend a;
-                    padding-top: 18px;
-                    // margin-top: auto;
-                    // margin-bottom: auto;
-                    
+                    margin-right: auto; 
+                    a{
+                        color: white;
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 130.08%;
+                        color: #FFFFFF;
+                    }
+                    img{
+                        @extend a;
+                    }
                 }
             }
         }
@@ -131,7 +136,6 @@
             margin-top: 15px;
         }
     }
-}
 
 /*chi tiet du an - responsive*/
 @include Responsive(SM){
@@ -139,7 +143,13 @@
         @include flex-wrap(wrap);
         .chitietduan-leftcolumn{
             width: 100%;
+            height: auto;
             .chitietduan-slider-top{
+                .chitietduan-slider-item{
+                    img{
+                        height: auto;
+                    }
+                }
                 .slick-next{
                     visibility: visible;
                 }
@@ -159,6 +169,40 @@
                     }
                 }
             }
+            .chitietduan-button{
+                @include flexbox();
+                width: 196px;
+                padding-top: 5px;
+                .chitietduan-btn{
+                    display: block;
+                    margin-left: 5px;
+                    width: 93px;
+                    height: 38px;
+                    border: none;
+                    border-radius: 2px;
+                    background-color: $main-color;
+                    a{
+                        color: white;
+                        margin-left: auto;
+                        margin-right: auto;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 130.08%;
+                        color: #FFFFFF;
+                    }
+                    img{
+                        color: white;
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 12px;
+                        line-height: 130.08%;
+                        color: #FFFFFF;
+                        
+                    }
+                }
         }
         .chitietduan-rightcolumn{
             width: 100%;
@@ -184,3 +228,119 @@
         }
     }
 }
+
+@media (min-width:320px) and (max-width: 414px){
+    .chitietduan-partial{
+        @include flex-wrap(wrap);
+        .chitietduan-leftcolumn{
+            padding: 0px 5px;
+            width: 100%;
+            .chitietduan-slider-top{
+                .slick-next{
+                    visibility: visible;
+                }
+            }
+            .stroke{
+                display: inline-block;
+                top: 18px;
+                z-index: 9;
+                position: absolute;
+                right: 40px;
+                img{
+                    margin-left: 12px;
+                }
+            }
+            .chitietduan-slider-bot{
+                .chitietduan-slider-bottom{
+                    display: none;
+                }
+                .chitietduan-button{
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    width: 100%;
+                    .chitietduan-btn{
+                        margin-left: 0;
+                        width: 49%;
+                        div{
+                            @include flex-direction(row);
+                            display: inline-block;
+                            img{
+                                padding-top: 0px;
+                                padding-right: 5px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        .chitietduan-rightcolumn{
+            width: 100%;
+            margin-top: 0;
+            .info-department{
+                width: 100%;
+                border: none;
+                .details{
+                    .control-buy{
+                        margin-top: 23px;
+                        .buy-now{
+                            border-radius: 4px;
+                            height: 52px;
+                            width: 100%;
+                            padding-top: 15px;
+                            a{
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                        .sign{
+                            border-radius: 4px;
+                            height: 52px;
+                            width: 100%;
+                            padding-top: 15px;
+                            a{
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+                .policy-department{
+                    .calculator{
+                        a{
+                            padding-left: 7px;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #0C77C6;
+                        }
+                    }
+                    .policy-sell{
+                        a{
+                            padding-left: 7px;
+                            font-family: Roboto;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #0C77C6;
+                        }
+                    }
+                    .share{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
