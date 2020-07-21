@@ -98,6 +98,27 @@
         }
     }
 @media(min-width:320px) and (max-width:768px){
+    .container{
+        .muaNhaTrucTuyen-row{
+            .muaNhaTrucTuyen-columnLeft{
+                .title-partial-horizontal{
+                    text-align: center;
+                    display: block;
+                    .icon-title-horizontal{
+                        margin-right: 0;
+                    }
+                    h2{
+                        @include title_partials_mobile();
+                        margin: 0;
+                    }
+                    img{
+                        transform: rotate(90deg);
+                        margin-bottom: 16px;
+                    }
+            }
+        }
+        }
+    }
     .muaNhaTrucTuyen-img{
         img{
             width: 100%;
