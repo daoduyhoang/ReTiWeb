@@ -697,11 +697,19 @@ body {
   .header-mobile .nav-menu > li {
     border-top: 1px solid #EDEDED;
     padding: 20px 0; }
+<<<<<<< HEAD
+    .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img {
+      padding: 10px 0;
+      font-weight: bold;
+      color: #000; }
+      .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn .header-mobile .nav-menu > li > img .icon {
+=======
     .header-mobile .nav-menu > li > a, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img {
       padding: 10px 0;
       font-weight: bold;
       color: #000; }
       .header-mobile .nav-menu > li > a .icon, .header-mobile .chitietduan-partial .chitietduan-button .chitietduan-btn div .nav-menu > li > img .icon, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-mobile .nav-menu > li > img .icon {
+>>>>>>> develop
         margin-right: 10px; }
   .header-mobile .nav-menu li {
     float: unset;
@@ -1910,6 +1918,9 @@ body {
     line-height: 16px;
     color: #BDBDBD; }
 
+.banghang-partial {
+  display: none; }
+
 .annotate {
   padding-top: 20px; }
   .annotate p {
@@ -1924,6 +1935,30 @@ body {
     margin-right: 8px; }
   .annotate .stocking, .annotate .booking {
     margin-right: 19px; }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .table-product .list-tab {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 342px; }
+    .table-product .list-tab li {
+      width: 171px; }
+  .table-product .table-pc {
+    display: none; }
+  .table-product .banghang-partial {
+    display: block; }
+  .table-product .annotate {
+    display: none; }
+  .table-product .choose {
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .table-product .choose .form-group {
+      width: 100%; } }
 
 /* MAPIFY*/
 /*title-partial_horizontal*/
@@ -2825,7 +2860,7 @@ body {
     display: block; }
   .utilities-content {
     overflow: hidden;
-    max-height: 99px;
+    max-height: 95px;
     -webkit-transition: .5s;
     -o-transition: .5s;
     -moz-transition: .5s;
