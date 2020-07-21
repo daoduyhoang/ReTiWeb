@@ -28,34 +28,7 @@ $('.slide-card-duannoibat').owlCarousel({
 });
 //end slide du an noi bat
 
-// SLIDER CARD
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-});
+
 
 $('.partner-reti').owlCarousel({
   loop: true,
@@ -100,7 +73,7 @@ $('.btn-prev').click(function () {
   owl.trigger('prev.owl.carousel', [300]);
 })
 
-$(".js-range-slider").ionRangeSlider();
+
 
 // TIEN ICH
 
@@ -127,24 +100,24 @@ $(".btn-control .btn-filter").click(function () {
   }
 });
 
-var refreshBtn = function(btn, checked) {
+var refreshBtn = function (btn, checked) {
   let buttonRefresh = document.querySelectorAll(btn);
   let checkedBox = Array.from(document.querySelectorAll(checked));
 
-  if(buttonRefresh.length !== 1) {
-    $(btn).click(function(e) {
+  if (buttonRefresh.length !== 1) {
+    $(btn).click(function (e) {
       var asda = $(this).parents(checked);
       var dsw = asda[0].querySelectorAll('[type=checkbox]');
-      for(let i = 0; i < dsw.length; i++) {
+      for (let i = 0; i < dsw.length; i++) {
         dsw[i].checked = false;
       }
     })
 
   } else {
     buttonRefresh = buttonRefresh[0];
-    buttonRefresh.addEventListener('click', function(e){
+    buttonRefresh.addEventListener('click', function (e) {
       e.preventDefault();
-      for(let i = 0; i < checkedBox.length; i++) {
+      for (let i = 0; i < checkedBox.length; i++) {
         checkedBox[i].checked = false;
       }
     })
@@ -156,7 +129,7 @@ refreshBtn('#delete-filter', '.control-table [type=checkbox]');
 refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
 refreshBtn('.btn-delete', '.control-table');
 
-jQuery('#showBoLoc').click(function(e) {
+jQuery('#showBoLoc').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').addClass('active');
 })
@@ -210,34 +183,8 @@ for (var i = 0; i < btn.length; i++) {
     }
   });
 }
-// SLIDER CARD
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: true
-});
+
+
 
 // BẢNG SẢN PHẨM
 
@@ -299,31 +246,31 @@ function myFunction(x) {
     });
     //======================
 
-      // Reponsive Filter
-      $('#filter-control').addClass('filter-control-mobile');
-      $('.justify-content-end').removeClass('row');
+    // Reponsive Filter
+    $('#filter-control').addClass('filter-control-mobile');
+    $('.justify-content-end').removeClass('row');
 
 
     //==================
 
   } else {
-      // Header
-      jQuery('.header').removeClass('header-mobile');
-      jQuery('.header-bottom-box').append(searchBtm);
-      searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
-      jQuery('.bottom-show-menu').click(function (e) {
-          e.preventDefault();
-          jQuery('.bottom-show-menu').toggleClass('active');
-          jQuery('.menu-dropdown').toggleClass('active');
-      });
-      //===================
+    // Header
+    jQuery('.header').removeClass('header-mobile');
+    jQuery('.header-bottom-box').append(searchBtm);
+    searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
+    jQuery('.bottom-show-menu').click(function (e) {
+      e.preventDefault();
+      jQuery('.bottom-show-menu').toggleClass('active');
+      jQuery('.menu-dropdown').toggleClass('active');
+    });
+    //===================
 
-      // Filter 
-      $('#filter-control').removeClass('filter-control-mobile');
-      $('.justify-content-end').addClass('row');
+    // Filter 
+    $('#filter-control').removeClass('filter-control-mobile');
+    $('.justify-content-end').addClass('row');
 
 
-      //================
+    //================
 
   }
 }
@@ -376,3 +323,4 @@ ip.addEventListener('click', function () {
     showMap = true;
   }
 });
+$(".js-range-slider").ionRangeSlider();

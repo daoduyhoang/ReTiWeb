@@ -28,35 +28,7 @@ $('.slide-card-duannoibat').owlCarousel({
   },
   dots: false
 }); //end slide du an noi bat
-// SLIDER CARD
 
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-});
 $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
@@ -98,8 +70,7 @@ $('.btn-prev').click(function () {
   // With optional speed parameter
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
-});
-$(".js-range-slider").ionRangeSlider(); // TIEN ICH
+}); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -202,36 +173,8 @@ for (var i = 0; i < btn.length; i++) {
       tabs[j].classList.add('active-item');
     }
   });
-} // SLIDER CARD
+} // BẢNG SẢN PHẨM
 
-
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: true
-}); // BẢNG SẢN PHẨM
 
 var btnActiveTab = document.querySelectorAll('.list-tab li');
 var tabItem = document.querySelectorAll(".tab-items");
@@ -358,3 +301,4 @@ ip.addEventListener('click', function () {
     showMap = true;
   }
 });
+$(".js-range-slider").ionRangeSlider();

@@ -57,6 +57,16 @@
         display: none;
     }
 }
+.custom-indicators::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 100%;
+}
 @media(min-width:769px){
     #slider{
         #carouselControls .carousel-indicators li{
