@@ -2,15 +2,20 @@
 .title-partial-horizontal{
     text-align: center;
     display: flex;
+    align-items: baseline;
     .icon-title-horizontal{
         margin-right: 20px;
+        width: 13px;
+        height: 25px;
     }
     h2{
         @include title_partials();
         margin: 0;
     }
+
+
 }
-// @media(min-width:320px) and (max-width:768px){
+// @media(min-width:320px) and (max-width:414px){
 //     .title-partial-horizontal{
 //         text-align: center;
 //         display: block;
