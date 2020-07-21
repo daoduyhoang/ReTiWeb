@@ -22,6 +22,21 @@
     <link rel="stylesheet" href="../../lib/mapyfy/build/jquery.mapify.css">
     <style type="text/css">
         /* Mapify custom popOver example */
+        #big {
+            font-family: arial, sans-serif;
+            font-weight: 400;
+            background: #fff;
+            font-size: 12px;
+            text-align: center;
+            margin: 0px;
+            padding: 0px;
+            cursor: default;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
         .mapify-popOver strong {
             font-weight: 400;
             font-size: 24px;
@@ -60,6 +75,30 @@
             stroke: #fff;
             stroke-width: 2;
         }
+
+        .scale-15 {
+            transform: scale(1.5);
+            transition: .1s;
+            transform-origin: center;
+        }
+
+        .scale-2 {
+            transform: scale(2);
+            transition: .1s;
+            transform-origin: center;
+        }
+
+        .scale-2-5 {
+            transform: scale(2.5);
+            transition: .1s;
+            transform-origin: center;
+        }
+
+        .scale-3 {
+            transform: scale(3);
+            transition: .1s;
+            transform-origin: center;
+        }
     </style>
 </head>
 
@@ -71,7 +110,7 @@
                 <li><a href="#">Xem theo mặt hàng</a></li>
             </ul>
             <div class="content-table-product">
-                <div class="table-content tab-items">
+                <div class="table-content tab-items active-item-table">
                     <div class="table-pc">
                         <table class="table hover-table">
                             <thead>
@@ -180,8 +219,222 @@
                             </div>
                         </div>
                     </div>
+                    <!-- BANG HANG MOBILE -->
+                    <div class="banghang-partial">
+                        <div class="danhsach-table">
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                            <div class="danhsach-items">
+                                <div class="danhsach-items-r1">
+                                    <span class="blue-side">Mã căn: 1201</span>
+                                    <span class="red-side">3.169.000.000</span>
+                                </div>
+                                <div class="danhsach-items-r2">
+                                    <div class="danhsach-details">
+                                        <span class="details">S1</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">T12</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">Tây Nam</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">139 m2</span>
+                                        <span class="details-border">|</span>
+                                        <span class="details">3PN</span>
+                                    </div>
+                                    <span class="blue-side"><a href="#">Chi tiết</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="danhsach-paging">
+                            <span>1-10 trong 100 căn hộ</span>
+                            <div class="paging-vector">
+                                <img class="vectorleft" src="../../images/banghang-mobile/Vector.png" alt=""><a
+                                    href="#"></a>
+                                <img class="vectorright" src="../../images/banghang-mobile/Vectorr.png" alt=""><a
+                                    href="#"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="svg-content tab-items active-item-table">
+                <div class="svg-content tab-items">
                     <div class="d-flex justify-content-between">
                         <div class="choose d-flex">
                             <div class="form-group">
@@ -224,8 +477,10 @@
                             </div>
                         </div>
                     </div>
-                    <img src="../../lib/mapyfy/example/map.svg" width="578px" height="716px" border="0"
-                        usemap="#Map2" />
+                    <div id="big">
+                        <img src="../../lib/mapyfy/example/map.svg" width="578px" height="716px" border="0"
+                            usemap="#Map2" />
+                    </div>
 
                     <map name="Map2" id="Map2">
 
@@ -335,9 +590,11 @@
     </div>
 
     <!--Framework JS-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="../../lib/mapyfy/build/jquery.mapify.js"></script>
     <script src="../../lib/slick/slick.min.js"></script>
     <script type="text/javascript"
@@ -347,11 +604,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="../../js/zoom.js"></script>
     <!-- <script src="../../js/header.js"></script> -->
     <script src="../../js/main.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
     <script type="text/javascript">
         $(function () {
 

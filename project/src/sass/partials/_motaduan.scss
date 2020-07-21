@@ -1,0 +1,35 @@
+/*mo ta du an*/
+.container{
+    .motaduan-partial{
+        width: 50%;
+        .motaduan-content{
+            margin-top: 16px;
+            width: 100%;
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        .motaduan-link{
+            font-family: $roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 163.42%;
+            text-decoration-line: underline;
+             color: #0C77C6;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width: 414px){
+    .container{
+        .motaduan-partial{
+            width: 100%;
+            .motaduan-content{
+                width: 100%;
+        }
+    }
+}
+}
