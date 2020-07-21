@@ -9,6 +9,24 @@
     color: black;
     display: none;
 }
+@media (min-width:320px) and (max-width: 414px){
+    .card-price{
+        padding-left: 0!important;
+        font-size: 14px;
+        .card-price-vnd {
+            font-size: 10px;
+        }
+    }
+    .card-buy{
+        font-size: 10px;
+    }
+    .card-body{
+        padding-left: 0!important;
+        padding-right: 0!important;
+    }
+}
+
+
 @media(max-width:850px){
     #showBoLoc{
         display: block;

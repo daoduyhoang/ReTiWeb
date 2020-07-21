@@ -1968,9 +1968,16 @@ body {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline; }
   .title-partial-horizontal .icon-title-horizontal {
-    margin-right: 20px; }
+    margin-right: 20px;
+    width: 13px;
+    height: 25px; }
   .title-partial-horizontal h2 {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
@@ -2538,6 +2545,24 @@ body {
     overflow: scroll; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal {
+    text-align: center;
+    display: block; }
+    .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal .icon-title-horizontal, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal .icon-title-horizontal {
+      margin-right: 0; }
+    .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal h2, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal h2 {
+      font-family: "Roboto Slab", serif;
+      font-weight: bold;
+      font-size: 26px;
+      color: #333132;
+      margin: 0; }
+    .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal img, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal img {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      margin-bottom: 16px; }
   .muaNhaTrucTuyen-img img {
     width: 100%; }
   .paging {
@@ -3161,6 +3186,18 @@ body {
   color: black;
   display: none; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .card-price {
+    padding-left: 0 !important;
+    font-size: 14px; }
+    .card-price .card-price-vnd {
+      font-size: 10px; }
+  .card-buy {
+    font-size: 10px; }
+  .card-body {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
 @media (max-width: 850px) {
   #showBoLoc {
     display: block; } }
@@ -3636,6 +3673,34 @@ body {
     .container .banghang-partial .danhsach-paging .paging-vector .vectorright, .khuVucNoiBat .banghang-partial .danhsach-paging .paging-vector .vectorright {
       padding-left: 15px;
       padding-right: 20px; } }
+
+/*mo ta du an*/
+.container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
+  width: 50%; }
+  .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
+    margin-top: 16px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px; }
+  .container .motaduan-partial .motaduan-link, .khuVucNoiBat .motaduan-partial .motaduan-link {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 163.42%;
+    -webkit-text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #0C77C6; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
+    width: 100%; }
+    .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
+      width: 100%; } }
 
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
