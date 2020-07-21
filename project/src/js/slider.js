@@ -50,11 +50,11 @@ $(document).ready(function () {
   // chi tiet du an
 $(document).ready(function () {
     $('.chitietduan-slider-top').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: false,
-        asNavFor: '.chitietduan-slider-bottom',
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: true,
+      fade: false,
+      asNavFor: '.chitietduan-slider-bottom',
       // autoplay: true,
       // autoplaySpeed: 2000,
     });
