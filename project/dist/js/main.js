@@ -355,3 +355,4 @@ if (ip) {
     }
   });
 }
+jQuery('.js-range-slider').ionRangeSlider();
