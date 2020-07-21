@@ -918,6 +918,9 @@ body {
 .top-footer {
   border-bottom: 1px solid #EDEDED; }
 
+.bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
+  margin-bottom: 62px; }
+
 @media (min-width: 415px) and (max-width: 768px) {
   .footer-nowrap {
     -webkit-flex-wrap: nowrap !important;
@@ -957,7 +960,9 @@ body {
     margin-right: 0; }
   .bottom-footer {
     margin-left: 15px;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  .bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
+    margin-bottom: unset; } }
 
 .card {
   line-height: 14px;
@@ -1116,6 +1121,16 @@ body {
 @media only screen and (max-width: 480px) {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
+
+.custom-indicators::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #F2F2F2;
+  height: 100%;
+  width: 100%; }
 
 @media (min-width: 769px) {
   #slider #carouselControls .carousel-indicators li {
@@ -2126,6 +2141,9 @@ body {
 @media (max-width: 850px) {
   .image-thumbail {
     padding-top: 90% !important; } }
+
+.city p, .count p {
+  font-weight: bold; }
 
 .duannoibat-home-title {
   line-height: 40px;
