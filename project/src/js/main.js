@@ -75,6 +75,10 @@ $('.btn-prev').click(function () {
   owl.trigger('prev.owl.carousel', [300]);
 })
 
+let rangeSlide = jQuery('.js-range-slider');
+if (rangeSlide) {
+  jQuery('.js-range-slider').ionRangeSlider();
+}
 
 
 // TIEN ICH

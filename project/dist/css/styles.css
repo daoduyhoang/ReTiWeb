@@ -518,28 +518,28 @@ button:focus {
   from {
     left: 0; }
   to {
-    left: -100%;
+    left: -150%;
     display: none; } }
 
 @keyframes slidemenuback {
   from {
     left: 0; }
   to {
-    left: -100%;
+    left: -150%;
     display: none; } }
 
 @-moz-keyframes slidemenuback {
   from {
     left: 0; }
   to {
-    left: -100%;
+    left: -150%;
     display: none; } }
 
 @-webkit-keyframes slidemenuback {
   from {
     left: 0; }
   to {
-    left: -100%;
+    left: -150%;
     display: none; } }
 
 /* Menu phân loại */
@@ -3910,6 +3910,8 @@ input[type=checkbox]:checked + label {
 @media (max-width: 768px) {
   #list_project {
     margin-top: 20px; }
+  #filter-control {
+    margin-top: 0; }
   #list_project .slide-card-duannoibat {
     margin-top: 16px;
     margin-bottom: 20px; } }
