@@ -980,8 +980,8 @@ body {
 .card {
   line-height: 14px;
   display: inline-block;
-  border: none;
   padding: 15px 10px;
+  border: none;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
   .card a, .card .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .card img {
@@ -3483,11 +3483,78 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
-.card {
-  border: none !important; }
-
 .duantuongtu-partial .similar_projects {
   margin-top: 30px; }
+
+#slider-main .card-text, #slider-main .card-buy {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+#slider-main .card-text i {
+  margin-right: 6px; }
+
+#slider-main .card-body {
+  border: none;
+  padding: 15px 5px 5px 5px !important; }
+  #slider-main .card-body div p:nth-child(2) {
+    margin-bottom: 1rem; }
+
+#slider-main .slick-next {
+  right: -4%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/Shape.png); }
+
+#slider-main .slick-prev {
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-image: url(../images/matbangduan/lefy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  left: -4%; }
+
+#slider-main .slick-prev:before {
+  color: #56C6D0;
+  display: none; }
+
+#slider-main .slick-next::before {
+  display: none; }
+
+#slider-main .card {
+  border: none !important; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  #slider-main .slick-prev {
+    display: none !important; }
+  #slider-main .slick-next {
+    right: -4%;
+    background: #F5F5F5;
+    width: 30px;
+    height: 30px;
+    top: 31%;
+    background-image: url(../images/matbangduan/Shape.png);
+    background-repeat: no-repeat;
+    background-position: center; } }
 
 /*chi tiet du an*/
 .chitietduan-partial {
@@ -4018,6 +4085,9 @@ body {
 
 .info-project {
   display: none; }
+  .info-project .matbangduan-partial {
+    padding-top: 0;
+    margin-bottom: 40px; }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .info-project {
@@ -4127,7 +4197,7 @@ main {
   overflow: hidden; }
 
 .home-section-1 {
-  margin-bottom: 100px; }
+  margin-bottom: 150px; }
 
 .home-section-5 {
   background-color: #F2F2F2;
@@ -4190,6 +4260,12 @@ main {
 .khuVucNoiBat {
   margin-top: 28px; }
 
+.home-section-3 {
+  margin-bottom: 100px; }
+
+.duannoibat-home .title-partial {
+  padding-bottom: 15px; }
+
 /* Reposive */
 @media (max-width: 850px) {
   [class*="home-section-"] {
@@ -4234,7 +4310,25 @@ main {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   .home-section-1 {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  .home-banner-big {
+    height: 250px; }
+    .home-banner-big img {
+      height: 100%; }
+  .home-section-8 {
+    margin-bottom: 8px; }
+  .container-form {
+    padding: 35px 0; }
+  .home-section-10 .project_classification {
+    margin-top: 40px; }
+  #footer .top-footer {
+    margin-top: 0; }
+  .home-section-11 {
+    margin-bottom: 22px; }
+  .home-section-7 {
+    margin-bottom: 0; }
+  .duannoibat-home .title-partial {
+    padding-bottom: 0; } }
 
 /*ĐƠN HÀNG PAGE*/
 #order-page .pt-16 {
@@ -4252,6 +4346,9 @@ main {
 
 #Textarea1 {
   height: 126px; }
+
+.discount .form-control {
+  font-size: 12px; }
 
 @media (min-width: 1024px) {
   .no-wrap-ipad {
@@ -4368,6 +4465,12 @@ main {
 .progress-box {
   margin-top: 60px; }
 
+.active-fixed {
+  position: fixed;
+  right: 13.2%;
+  top: 22%;
+  z-index: 9; }
+
 .matbangduan-partial {
   padding-top: 30px; }
   @media (min-width: 320px) and (max-width: 414px) {
@@ -4413,4 +4516,9 @@ main {
     .chitietduan-rightcolumn .info-department {
       min-height: unset; }
   .motaduan-partial {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .active-fixed {
+    position: unset;
+    right: 13.2%;
+    top: 22%;
+    z-index: 9; } }

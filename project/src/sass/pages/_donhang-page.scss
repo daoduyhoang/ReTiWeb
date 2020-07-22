@@ -17,6 +17,12 @@
 #Textarea1{
     height: 126px;
 }
+.discount{
+    .form-control{
+        font-size: 12px;
+    }
+}
+
 @media(min-width:1024px){
     .no-wrap-ipad{
         flex-wrap: nowrap !important;

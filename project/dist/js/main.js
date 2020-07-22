@@ -344,11 +344,28 @@ if (ip) {
 
 
 if (map) {
+  var payHome = document.getElementById('pay-home').offsetTop;
   window.addEventListener('scroll', function () {
-    if (window.pageYOffset > 272 && window.pageYOffset < 1170) {
+    if (window.pageYOffset > 272 && window.pageYOffset < payHome) {
       map.classList.add('map-fixed');
-    } else if (window.pageYOffset < 272 || window.pageYOffset > 1170) {
+    } else if (window.pageYOffset < 272 || window.pageYOffset > payHome) {
       map.classList.remove('map-fixed');
+    }
+  });
+} // STICK CHITIETCANHO
+
+
+var infoHome = document.querySelector('.chitietduan-rightcolumn');
+
+if (infoHome) {
+  var stopStick = document.querySelector('.end-info').offsetTop;
+  window.addEventListener('scroll', function () {
+    console.log(stopStick);
+
+    if (window.pageYOffset > 200 && window.pageYOffset < stopStick - 430) {
+      infoHome.classList.add('active-fixed');
+    } else if (window.pageYOffset < 200 || window.pageYOffset > stopStick - 430) {
+      infoHome.classList.remove('active-fixed');
     }
   });
 }

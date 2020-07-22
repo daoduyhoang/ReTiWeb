@@ -6,6 +6,10 @@
 }
 .info-project{
     display: none;
+    .matbangduan-partial{
+        padding-top: 0;
+        margin-bottom: 40px;
+    }
 }
 @media(min-width:320px) and (max-width:768px){
     .info-project{
