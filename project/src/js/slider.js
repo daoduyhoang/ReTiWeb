@@ -33,8 +33,8 @@ $(document).ready(function () {
         arrows: true,
         fade: false,
         asNavFor: '.ground-slider-bottom',
-      // autoplay: true,
-      // autoplaySpeed: 2000,
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
     $('.ground-slider-bottom').slick({
         slidesToShow: 6,
@@ -47,16 +47,16 @@ $(document).ready(function () {
     });
 });
 
-  // chi tiet du an
+// chi tiet du an
 $(document).ready(function () {
     $('.chitietduan-slider-top').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      fade: false,
-      asNavFor: '.chitietduan-slider-bottom',
-      // autoplay: true,
-      // autoplaySpeed: 2000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        asNavFor: '.chitietduan-slider-bottom',
+        // autoplay: true,
+        // autoplaySpeed: 2000,
     });
     $('.chitietduan-slider-bottom').slick({
         slidesToShow: 3,

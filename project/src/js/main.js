@@ -28,34 +28,7 @@ $('.slide-card-duannoibat').owlCarousel({
 });
 //end slide du an noi bat
 
-// SLIDER CARD
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-});
+
 
 $('.partner-reti').owlCarousel({
   loop: true,
@@ -127,24 +100,24 @@ $(".btn-control .btn-filter").click(function () {
   }
 });
 
-var refreshBtn = function(btn, checked) {
+var refreshBtn = function (btn, checked) {
   let buttonRefresh = document.querySelectorAll(btn);
   let checkedBox = Array.from(document.querySelectorAll(checked));
 
-  if(buttonRefresh.length !== 1) {
-    $(btn).click(function(e) {
+  if (buttonRefresh.length !== 1) {
+    $(btn).click(function (e) {
       var asda = $(this).parents(checked);
       var dsw = asda[0].querySelectorAll('[type=checkbox]');
-      for(let i = 0; i < dsw.length; i++) {
+      for (let i = 0; i < dsw.length; i++) {
         dsw[i].checked = false;
       }
     })
 
   } else {
     buttonRefresh = buttonRefresh[0];
-    buttonRefresh.addEventListener('click', function(e){
+    buttonRefresh.addEventListener('click', function (e) {
       e.preventDefault();
-      for(let i = 0; i < checkedBox.length; i++) {
+      for (let i = 0; i < checkedBox.length; i++) {
         checkedBox[i].checked = false;
       }
     })
@@ -156,7 +129,7 @@ refreshBtn('#delete-filter', '.control-table [type=checkbox]');
 refreshBtn('#refresh-fileter', '.control-table [type=checkbox]');
 refreshBtn('.btn-delete', '.control-table');
 
-jQuery('#showBoLoc').click(function(e) {
+jQuery('#showBoLoc').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').addClass('active');
 })
@@ -191,7 +164,8 @@ for (var i = 0; i < btn.length; i++) {
     }
   });
 }
-// SLIDER CARD
+
+
 
 // BẢNG SẢN PHẨM
 
@@ -225,9 +199,10 @@ function myFunction(x) {
 
     // Reponsive Header
     jQuery('.header').addClass('header-mobile');
-    jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
-      e.preventDefault();
+    jQuery('.header-mobile .header-logo-box i.fas').click(function (e) {
+      // e.preventDefault();
       jQuery('.header-main-box').toggleClass('active');
+      jQuery('.header-mobile').toggleClass('full-height');
     });
     jQuery('.header-menu-box').append(searchBtm);
     searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
@@ -253,31 +228,67 @@ function myFunction(x) {
     });
     //======================
 
-      // Reponsive Filter
-      $('#filter-control').addClass('filter-control-mobile');
-      $('.justify-content-end').removeClass('row');
-
-
+    // Reponsive Filter
+    $('#filter-control').addClass('filter-control-mobile');
+    $('.justify-content-end').removeClass('row');
     //==================
 
+    // Progress
+    let progressStatus = Array.from(document.querySelectorAll('.progress-status'));
+    let barPer = document.querySelector('.progress-per');
+    let ecs = 0;
+    progressStatus.forEach((el, inx) => {
+      let cdas = ecs += 17;
+      cdas = cdas -= 17;
+      el.style.top = cdas + '%';
+      setInterval(function () {
+        var getHeight = parseFloat(barPer.dataset.progress);
+        for (var i = 0; i <= getHeight; i++) {
+          barPer.style.height = i + '%';
+          let daw = parseFloat(el.style.top);
+          if (i >= daw) {
+            el.classList.add('active');
+          }
+        }
+      }, 500);
+    });
+
   } else {
-      // Header
-      jQuery('.header').removeClass('header-mobile');
-      jQuery('.header-bottom-box').append(searchBtm);
-      searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
-      jQuery('.bottom-show-menu').click(function (e) {
-          e.preventDefault();
-          jQuery('.bottom-show-menu').toggleClass('active');
-          jQuery('.menu-dropdown').toggleClass('active');
-      });
-      //===================
+    // Header
+    jQuery('.header').removeClass('header-mobile');
+    jQuery('.header-bottom-box').append(searchBtm);
+    searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
+    jQuery('.bottom-show-menu').click(function (e) {
+      e.preventDefault();
+      jQuery('.bottom-show-menu').toggleClass('active');
+      jQuery('.menu-dropdown').toggleClass('active');
+    });
+    //===================
 
-      // Filter 
-      $('#filter-control').removeClass('filter-control-mobile');
-      $('.justify-content-end').addClass('row');
+    // Filter 
+    $('#filter-control').removeClass('filter-control-mobile');
+    $('.justify-content-end').addClass('row');
+    //================
 
-
-      //================
+    // Progress
+    let progressStatus = Array.from(document.querySelectorAll('.progress-status'));
+    let barPer = document.querySelector('.progress-per');
+    let ecs = 7;
+    progressStatus.forEach((el, inx) => {
+      let cdas = ecs += 11;
+      cdas = cdas -= 11;
+      el.style.left = cdas + '%';
+      setInterval(function () {
+        var getWidth = parseFloat(barPer.dataset.progress);
+        for (var i = 0; i <= getWidth; i++) {
+          barPer.style.width = i + '%';
+          let daw = parseFloat(el.style.left);
+          if (i >= daw) {
+            el.classList.add('active');
+          }
+        }
+      }, 500);
+    });
 
   }
 }
@@ -333,22 +344,47 @@ function backAttributeCard() {
     card[i].setAttribute('class', oddClassCard);
   }
 }
-ip.addEventListener('click', function () {
-  var oddClass = pj.getAttribute('class');
-  var newClass = oddClass + " col-8";
-  if (showMap) {
-    map.style.display = 'block';
-    pj.classList.add('col-8');
-    setAttributeCard()
-    showMap = false;
-  }
-  else if (showMap === false) {
-    map.style.display = 'none';
-    pj.classList.remove('col-8');
-    backAttributeCard()
-    showMap = true;
-  }
-});
+// ip.addEventListener('click', function () {
+//   var oddClass = pj.getAttribute('class');
+//   var newClass = oddClass + " col-8";
+//   if (showMap) {
+//     map.style.display = 'block';
+//     pj.classList.add('col-8');
+//     setAttributeCard()
+//     showMap = false;
+//   }
+//   else if (showMap === false) {
+//     map.style.display = 'none';
+//     pj.classList.remove('col-8');
+//     backAttributeCard()
+//     showMap = true;
+//   }
+// });
 
 
 $(".js-range-slider").ionRangeSlider();
+// if (ip) {
+//   ip.addEventListener('click', function () {
+//     var oddClass = pj.getAttribute('class');
+//     var newClass = oddClass + " col-8";
+//     if (showMap) {
+//       map.style.display = 'block';
+//       pj.classList.add('col-8');
+//       setAttributeCard()
+//       showMap = false;
+//     }
+//     else if (showMap === false) {
+//       map.style.display = 'none';
+//       pj.classList.remove('col-8');
+//       backAttributeCard()
+//       showMap = true;
+//     }
+//   });
+// }
+
+
+
+
+
+
+

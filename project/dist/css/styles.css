@@ -641,6 +641,19 @@ body {
     color: #fff !important; }
 
 /* Header for mobile */
+.header-mobile.full-height {
+  height: 100%;
+  position: fixed !important;
+  overflow-y: scroll;
+  width: 100%;
+  z-index: 99999;
+  background-color: #fff; }
+  .header-mobile.full-height.stick {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none; }
+
 .header-mobile .header-logo-box {
   -webkit-box-align: end;
   -webkit-align-items: flex-end;
@@ -918,6 +931,9 @@ body {
 .top-footer {
   border-bottom: 1px solid #EDEDED; }
 
+.bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
+  margin-bottom: 62px; }
+
 @media (min-width: 415px) and (max-width: 768px) {
   .footer-nowrap {
     -webkit-flex-wrap: nowrap !important;
@@ -957,7 +973,9 @@ body {
     margin-right: 0; }
   .bottom-footer {
     margin-left: 15px;
-    margin-right: 15px; } }
+    margin-right: 15px; }
+  .bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
+    margin-bottom: unset; } }
 
 .card {
   line-height: 14px;
@@ -1116,6 +1134,16 @@ body {
 @media only screen and (max-width: 480px) {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
+
+.custom-indicators::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #F2F2F2;
+  height: 100%;
+  width: 100%; }
 
 @media (min-width: 769px) {
   #slider #carouselControls .carousel-indicators li {
@@ -1978,6 +2006,103 @@ body {
     color: #333132;
     margin: 0; }
 
+/* Progress */
+.progress-barc {
+  height: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #E0E0E0;
+  margin: 100px 0;
+  position: relative; }
+  .progress-barc span.progress-per {
+    display: block;
+    height: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #56C4CF;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: width 2s ease-out;
+    -o-transition: width 2s ease-out;
+    -moz-transition: width 2s ease-out;
+    transition: width 2s ease-out; }
+
+.progress-status {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .progress-status .tick-complete {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 32px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 32px;
+    background-color: #E0E0E0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+    .progress-status .tick-complete i {
+      display: none; }
+  .progress-status.active .tick-complete {
+    background-color: #56C4CF; }
+    .progress-status.active .tick-complete i {
+      display: unset; }
+  .progress-status .date-status {
+    position: absolute;
+    top: 130%;
+    text-align: center;
+    -webkit-transform: translateX(-35%);
+    -moz-transform: translateX(-35%);
+    -ms-transform: translateX(-35%);
+    -o-transform: translateX(-35%);
+    transform: translateX(-35%); }
+    .progress-status .date-status .date {
+      padding: 0 10px; }
+    .progress-status .date-status .status {
+      font-size: 12px;
+      font-style: italic; }
+  .progress-status:nth-child(odd) .date-status {
+    top: unset;
+    bottom: 130%; }
+
+@media (max-width: 550px) {
+  .progress-barc {
+    height: 400px;
+    width: 4px;
+    margin: 30px 17px; }
+    .progress-barc .progress-per {
+      width: 100%; }
+  .progress-status {
+    top: unset;
+    left: 50%; }
+    .progress-status .date-status {
+      top: -2px;
+      left: 260%;
+      text-align: left; }
+      .progress-status .date-status .date {
+        padding: 0 60px 0 0; }
+    .progress-status:nth-child(odd) .date-status {
+      top: -2px;
+      bottom: unset; } }
+
 /*KHU VUC NOI BAT*/
 .image-thumbail {
   position: relative; }
@@ -2127,6 +2252,9 @@ body {
 @media (max-width: 850px) {
   .image-thumbail {
     padding-top: 90% !important; } }
+
+.city p, .count p {
+  font-weight: bold; }
 
 .duannoibat-home-title {
   line-height: 40px;

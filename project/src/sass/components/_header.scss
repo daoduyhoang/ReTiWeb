@@ -536,6 +536,17 @@ body {
 
 /* Header for mobile */
 .header-mobile {
+    &.full-height {
+        height: 100%;
+        position: fixed !important;
+        overflow-y: scroll;
+        width: 100%;
+        z-index: 99999;
+        background-color: #fff;
+        &.stick {
+            animation: none;
+        }
+    }
     .header-logo-box {
         align-items: flex-end;
         display: flex;

@@ -28,35 +28,7 @@ $('.slide-card-duannoibat').owlCarousel({
   },
   dots: false
 }); //end slide du an noi bat
-// SLIDER CARD
 
-$('.slide-card').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: true,
-  navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 1
-    },
-    768: {
-      items: 1
-    },
-    992: {
-      items: 1
-    },
-    1000: {
-      items: 1
-    }
-  },
-  dots: false
-});
 $('.partner-reti').owlCarousel({
   loop: true,
   margin: 10,
@@ -181,8 +153,7 @@ for (var i = 0; i < btn.length; i++) {
       tabs[j].classList.add('active-item');
     }
   });
-} // SLIDER CARD
-// BẢNG SẢN PHẨM
+} // BẢNG SẢN PHẨM
 
 
 var btnActiveTab = document.querySelectorAll('.list-tab li');
@@ -217,9 +188,10 @@ function myFunction(x) {
   if (x.matches) {
     // Reponsive Header
     jQuery('.header').addClass('header-mobile');
-    jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
-      e.preventDefault();
+    jQuery('.header-mobile .header-logo-box i.fas').click(function (e) {
+      // e.preventDefault();
       jQuery('.header-main-box').toggleClass('active');
+      jQuery('.header-mobile').toggleClass('full-height');
     });
     jQuery('.header-menu-box').append(searchBtm);
     searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
@@ -247,6 +219,28 @@ function myFunction(x) {
 
     $('#filter-control').addClass('filter-control-mobile');
     $('.justify-content-end').removeClass('row'); //==================
+    // Progress
+
+    var progressStatus = Array.from(document.querySelectorAll('.progress-status'));
+    var barPer = document.querySelector('.progress-per');
+    var ecs = 0;
+    progressStatus.forEach(function (el, inx) {
+      var cdas = ecs += 17;
+      cdas = cdas -= 17;
+      el.style.top = cdas + '%';
+      setInterval(function () {
+        var getHeight = parseFloat(barPer.dataset.progress);
+
+        for (var i = 0; i <= getHeight; i++) {
+          barPer.style.height = i + '%';
+          var daw = parseFloat(el.style.top);
+
+          if (i >= daw) {
+            el.classList.add('active');
+          }
+        }
+      }, 500);
+    });
   } else {
     // Header
     jQuery('.header').removeClass('header-mobile');
@@ -261,6 +255,31 @@ function myFunction(x) {
 
     $('#filter-control').removeClass('filter-control-mobile');
     $('.justify-content-end').addClass('row'); //================
+    // Progress
+
+    var _progressStatus = Array.from(document.querySelectorAll('.progress-status'));
+
+    var _barPer = document.querySelector('.progress-per');
+
+    var _ecs = 7;
+
+    _progressStatus.forEach(function (el, inx) {
+      var cdas = _ecs += 11;
+      cdas = cdas -= 11;
+      el.style.left = cdas + '%';
+      setInterval(function () {
+        var getWidth = parseFloat(_barPer.dataset.progress);
+
+        for (var i = 0; i <= getWidth; i++) {
+          _barPer.style.width = i + '%';
+          var daw = parseFloat(el.style.left);
+
+          if (i >= daw) {
+            el.classList.add('active');
+          }
+        }
+      }, 500);
+    });
   }
 }
 
@@ -312,22 +331,39 @@ function backAttributeCard() {
   for (var i = 0; i < card.length; i++) {
     card[i].setAttribute('class', oddClassCard);
   }
-}
+} // ip.addEventListener('click', function () {
+//   var oddClass = pj.getAttribute('class');
+//   var newClass = oddClass + " col-8";
+//   if (showMap) {
+//     map.style.display = 'block';
+//     pj.classList.add('col-8');
+//     setAttributeCard()
+//     showMap = false;
+//   }
+//   else if (showMap === false) {
+//     map.style.display = 'none';
+//     pj.classList.remove('col-8');
+//     backAttributeCard()
+//     showMap = true;
+//   }
+// });
 
-ip.addEventListener('click', function () {
-  var oddClass = pj.getAttribute('class');
-  var newClass = oddClass + " col-8";
 
-  if (showMap) {
-    map.style.display = 'block';
-    pj.classList.add('col-8');
-    setAttributeCard();
-    showMap = false;
-  } else if (showMap === false) {
-    map.style.display = 'none';
-    pj.classList.remove('col-8');
-    backAttributeCard();
-    showMap = true;
-  }
-});
-$(".js-range-slider").ionRangeSlider();
+$(".js-range-slider").ionRangeSlider(); // if (ip) {
+//   ip.addEventListener('click', function () {
+//     var oddClass = pj.getAttribute('class');
+//     var newClass = oddClass + " col-8";
+//     if (showMap) {
+//       map.style.display = 'block';
+//       pj.classList.add('col-8');
+//       setAttributeCard()
+//       showMap = false;
+//     }
+//     else if (showMap === false) {
+//       map.style.display = 'none';
+//       pj.classList.remove('col-8');
+//       backAttributeCard()
+//       showMap = true;
+//     }
+//   });
+// }
