@@ -97,3 +97,8 @@ $('.khachHangCuaReti-slide').owlCarousel({
   },
   dots: false
 }); //end slide khach hang cua reti
+// $('.same-project').slick({
+//     infinite: true,
+//     slidesToShow: 3,
+//     slidesToScroll: 3
+// });

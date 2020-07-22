@@ -1582,13 +1582,12 @@
                 </div>
             </div>
         </div>
-        <<<<<<< HEAD </main>
-            <!-- LIBS -->
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-            <script src="../../lib/slick/slick.min.js"></script>
-            =======
+        </main>
+        <!-- LIBS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="../../lib/slick/slick.min.js"></script>
     </div>
     </div>
     <!-- LIBS -->
@@ -1597,7 +1596,6 @@
     <script src="../../lib/slick/slick.min.js"></script>
     <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <script src="../../lib/mapyfy/build/jquery.mapify.js"></script>
-    >>>>>>> develop
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
@@ -1605,52 +1603,50 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <<<<<<< HEAD <script src="../../js/header.js">
-        </script>
-        <script src="../../js/main.js"></script>
-        <script src="../../js/slider.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        =======
-        <script src="../../js/slider.js"></script>
-        <script src="../../js/main.js"></script>
-        <script src="../../js/zoom.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            $(function () {
+    <script src="../../js/header.js">
+    </script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="../../js/slider.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/zoom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(function () {
 
-                // $("img[usemap]:first").mapify({
-                // 	hoverClass: "drop-hover"
-                // });
+            // $("img[usemap]:first").mapify({
+            // 	hoverClass: "drop-hover"
+            // });
 
-                $("img[usemap]:first").mapify({
-                    popOver: {
-                        content: function (zone) {
-                            return "<strong>" + zone.attr("data-title") + "</strong>" + zone.attr("data-nbmembre") + " Members";
-                        },
-                        delay: 0.7,
-                        margin: "15px",
-                        height: "130px",
-                        width: "260px"
+            $("img[usemap]:first").mapify({
+                popOver: {
+                    content: function (zone) {
+                        return "<strong>" + zone.attr("data-title") + "</strong>" + zone.attr("data-nbmembre") + " Members";
                     },
-                    onAreaHighlight: function () {
-                        console.log("onAreaHighlight callback");
-                    },
-                    onMapClear: function () {
-                        console.log("onMapClear callback");
-                    }
-                });
-
-                $("#dynamicClassChange").click(function () {
-                    $(this).attr("data-hover-class", "hover-green");
-                });
-
+                    delay: 0.7,
+                    margin: "15px",
+                    height: "130px",
+                    width: "260px"
+                },
+                onAreaHighlight: function () {
+                    console.log("onAreaHighlight callback");
+                },
+                onMapClear: function () {
+                    console.log("onMapClear callback");
+                }
             });
-        </script>
-        >>>>>>> develop
+
+            $("#dynamicClassChange").click(function () {
+                $(this).attr("data-hover-class", "hover-green");
+            });
+
+        });
+    </script>
 </body>
 
 </html>

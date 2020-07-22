@@ -3385,6 +3385,14 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
+.duantuongtu-partial .same-project {
+  overflow: hidden; }
+
+.duantuongtu-partial .slick-prev {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
 /*chi tiet du an*/
 .chitietduan-partial {
   display: -webkit-box;
@@ -4175,3 +4183,6 @@ main {
 
 .duantuongtu-partial {
   margin-top: 60px; }
+
+.save-search a, .save-search .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .save-search img {
+  color: #000000; }
