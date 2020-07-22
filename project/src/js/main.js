@@ -300,91 +300,58 @@ x.addListener(myFunction);
 
 
 //======================
-$(document).ready(function () {
-  $('.chitietduan-slider-top').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    fade: false,
-    asNavFor: '.chitietduan-slider-bottom',
-    // autoplay: true,
-    // autoplaySpeed: 2000,
-  });
-  $('.chitietduan-slider-bottom').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.chitietduan-slider-top',
-      dots: false,
-      centerMode: true,
-      focusOnSelect: true,
-      arrows: true,
-  });
-});
-
 // TOGGLE MAP LIST PROJECT
 var ip = document.getElementById('view-map');
 var map = document.getElementById('map');
+var category = document.querySelector('.card-category');
+var listCard = document.querySelectorAll('.items');
+var block = document.querySelector('.flex-map');
 var showMap = true;
-var pj = document.querySelector('.list-project-map');
-
-var card = document.getElementsByClassName('card-media-768');
-var newClassCard = ''
-var oddClassCard = ''
-for (var i = 0; i < card.length; i++) {
-  oddClassCard = card[i].getAttribute('class');
+var newClassCard = '';
+var oddClassCard = '';
+var mapPosition;
+for (var i = 0; i < listCard.length; i++) {
+  oddClassCard = listCard[i].getAttribute('class');
   newClassCard = oddClassCard.replace(/col-4/g, "col-6");
 }
 function setAttributeCard() {
-  for (var i = 0; i < card.length; i++) {
-    card[i].setAttribute('class', newClassCard);
+  for (var i = 0; i < listCard.length; i++) {
+    listCard[i].setAttribute('class', newClassCard);
   }
 }
 function backAttributeCard() {
-  for (var i = 0; i < card.length; i++) {
-    card[i].setAttribute('class', oddClassCard);
+  for (var i = 0; i < listCard.length; i++) {
+    listCard[i].setAttribute('class', oddClassCard);
   }
 }
-// ip.addEventListener('click', function () {
-//   var oddClass = pj.getAttribute('class');
-//   var newClass = oddClass + " col-8";
-//   if (showMap) {
-//     map.style.display = 'block';
-//     pj.classList.add('col-8');
-//     setAttributeCard()
-//     showMap = false;
-//   }
-//   else if (showMap === false) {
-//     map.style.display = 'none';
-//     pj.classList.remove('col-8');
-//     backAttributeCard()
-//     showMap = true;
-//   }
-// });
+if (ip) {
+  ip.onclick = function () {
+    if (showMap) {
+      map.style.cssText = 'display:block;';
+      category.style.width = '70%';
+      setAttributeCard();
+      block.style.display = 'flex';
+      mapPosition = map.offsetTop;
 
+      showMap = false;
+    }
+    else if (showMap === false) {
+      map.style.cssText = 'display:none';
+      category.style.width = '100%';
+      backAttributeCard();
+      block.style.display = 'block';
+      showMap = true;
+    }
+  }
+}
+// STICK MAP
 
-$(".js-range-slider").ionRangeSlider();
-// if (ip) {
-//   ip.addEventListener('click', function () {
-//     var oddClass = pj.getAttribute('class');
-//     var newClass = oddClass + " col-8";
-//     if (showMap) {
-//       map.style.display = 'block';
-//       pj.classList.add('col-8');
-//       setAttributeCard()
-//       showMap = false;
-//     }
-//     else if (showMap === false) {
-//       map.style.display = 'none';
-//       pj.classList.remove('col-8');
-//       backAttributeCard()
-//       showMap = true;
-//     }
-//   });
-// }
-
-
-
-
-
-
-
+window.addEventListener('scroll', function () {
+  console.log(window.pageYOffset);
+  if ((window.pageYOffset > 272) && (window.pageYOffset < 1170)) {
+    map.classList.add('map-fixed');
+  }
+  else if ((window.pageYOffset < 272) || (window.pageYOffset > 1170)) {
+    map.classList.remove('map-fixed');
+  }
+})
