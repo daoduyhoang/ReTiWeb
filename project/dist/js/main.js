@@ -70,11 +70,7 @@ $('.btn-prev').click(function () {
   // With optional speed parameter
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
-}); // let rangeSlide = jQuery('.js-range-slider');
-// if (rangeSlide) {
-//   jQuery('.js-range-slider').ionRangeSlider();
-// }
-// TIEN ICH
+}); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -132,26 +128,6 @@ jQuery('#close-filter').click(function (e) {
   jQuery('.filter-control-mobile').removeClass('active');
   jQuery('.filter-control-mobile').addClass('close-animt');
 }); //============================
-// $(document).ready(function () {
-//   $('.ground-slider-top').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: false,
-//     asNavFor: '.ground-slider-bottom',
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//   });
-//   $('.ground-slider-bottom').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.ground-slider-top',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     arrows: false,
-//   });
-// });
 // MATBANGDUAN
 
 var btn = document.querySelectorAll('.tab ul .tab-item');
@@ -310,7 +286,27 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 850px)");
 myFunction(x);
 x.addListener(myFunction); //======================
-// TOGGLE MAP LIST PROJECT
+
+$(document).ready(function () {
+  $('.chitietduan-slider-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+    asNavFor: '.chitietduan-slider-bottom' // autoplay: true,
+    // autoplaySpeed: 2000,
+
+  });
+  $('.chitietduan-slider-bottom').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.chitietduan-slider-top',
+    dots: false,
+    centerMode: true,
+    focusOnSelect: true,
+    arrows: true
+  });
+}); // TOGGLE MAP LIST PROJECT
 
 var ip = document.getElementById('view-map');
 var map = document.getElementById('map');
@@ -335,23 +331,39 @@ function backAttributeCard() {
   for (var i = 0; i < card.length; i++) {
     card[i].setAttribute('class', oddClassCard);
   }
-}
+} // ip.addEventListener('click', function () {
+//   var oddClass = pj.getAttribute('class');
+//   var newClass = oddClass + " col-8";
+//   if (showMap) {
+//     map.style.display = 'block';
+//     pj.classList.add('col-8');
+//     setAttributeCard()
+//     showMap = false;
+//   }
+//   else if (showMap === false) {
+//     map.style.display = 'none';
+//     pj.classList.remove('col-8');
+//     backAttributeCard()
+//     showMap = true;
+//   }
+// });
 
-if (ip) {
-  ip.addEventListener('click', function () {
-    var oddClass = pj.getAttribute('class');
-    var newClass = oddClass + " col-8";
 
-    if (showMap) {
-      map.style.display = 'block';
-      pj.classList.add('col-8');
-      setAttributeCard();
-      showMap = false;
-    } else if (showMap === false) {
-      map.style.display = 'none';
-      pj.classList.remove('col-8');
-      backAttributeCard();
-      showMap = true;
-    }
-  });
-}
+$(".js-range-slider").ionRangeSlider(); // if (ip) {
+//   ip.addEventListener('click', function () {
+//     var oddClass = pj.getAttribute('class');
+//     var newClass = oddClass + " col-8";
+//     if (showMap) {
+//       map.style.display = 'block';
+//       pj.classList.add('col-8');
+//       setAttributeCard()
+//       showMap = false;
+//     }
+//     else if (showMap === false) {
+//       map.style.display = 'none';
+//       pj.classList.remove('col-8');
+//       backAttributeCard()
+//       showMap = true;
+//     }
+//   });
+// }

@@ -73,10 +73,6 @@ $('.btn-prev').click(function () {
   owl.trigger('prev.owl.carousel', [300]);
 })
 
-// let rangeSlide = jQuery('.js-range-slider');
-// if (rangeSlide) {
-//   jQuery('.js-range-slider').ionRangeSlider();
-// }
 
 
 // TIEN ICH
@@ -147,26 +143,7 @@ jQuery('#close-filter').click(function (e) {
 //============================
 
 
-// $(document).ready(function () {
-//   $('.ground-slider-top').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: false,
-//     asNavFor: '.ground-slider-bottom',
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//   });
-//   $('.ground-slider-bottom').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.ground-slider-top',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     arrows: false,
-//   });
-// });
+
 
 // MATBANGDUAN
 var btn = document.querySelectorAll('.tab ul .tab-item');
@@ -323,7 +300,26 @@ x.addListener(myFunction);
 
 
 //======================
-
+$(document).ready(function () {
+  $('.chitietduan-slider-top').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: false,
+    asNavFor: '.chitietduan-slider-bottom',
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+  });
+  $('.chitietduan-slider-bottom').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.chitietduan-slider-top',
+      dots: false,
+      centerMode: true,
+      focusOnSelect: true,
+      arrows: true,
+  });
+});
 
 // TOGGLE MAP LIST PROJECT
 var ip = document.getElementById('view-map');
@@ -348,24 +344,43 @@ function backAttributeCard() {
     card[i].setAttribute('class', oddClassCard);
   }
 }
-if (ip) {
-  ip.addEventListener('click', function () {
-    var oddClass = pj.getAttribute('class');
-    var newClass = oddClass + " col-8";
-    if (showMap) {
-      map.style.display = 'block';
-      pj.classList.add('col-8');
-      setAttributeCard()
-      showMap = false;
-    }
-    else if (showMap === false) {
-      map.style.display = 'none';
-      pj.classList.remove('col-8');
-      backAttributeCard()
-      showMap = true;
-    }
-  });
-}
+// ip.addEventListener('click', function () {
+//   var oddClass = pj.getAttribute('class');
+//   var newClass = oddClass + " col-8";
+//   if (showMap) {
+//     map.style.display = 'block';
+//     pj.classList.add('col-8');
+//     setAttributeCard()
+//     showMap = false;
+//   }
+//   else if (showMap === false) {
+//     map.style.display = 'none';
+//     pj.classList.remove('col-8');
+//     backAttributeCard()
+//     showMap = true;
+//   }
+// });
+
+
+$(".js-range-slider").ionRangeSlider();
+// if (ip) {
+//   ip.addEventListener('click', function () {
+//     var oddClass = pj.getAttribute('class');
+//     var newClass = oddClass + " col-8";
+//     if (showMap) {
+//       map.style.display = 'block';
+//       pj.classList.add('col-8');
+//       setAttributeCard()
+//       showMap = false;
+//     }
+//     else if (showMap === false) {
+//       map.style.display = 'none';
+//       pj.classList.remove('col-8');
+//       backAttributeCard()
+//       showMap = true;
+//     }
+//   });
+// }
 
 
 
