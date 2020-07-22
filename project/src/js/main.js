@@ -73,10 +73,6 @@ $('.btn-prev').click(function () {
   owl.trigger('prev.owl.carousel', [300]);
 })
 
-// let rangeSlide = jQuery('.js-range-slider');
-// if (rangeSlide) {
-//   jQuery('.js-range-slider').ionRangeSlider();
-// }
 
 
 // TIEN ICH
@@ -147,26 +143,7 @@ jQuery('#close-filter').click(function (e) {
 //============================
 
 
-// $(document).ready(function () {
-//   $('.ground-slider-top').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: false,
-//     asNavFor: '.ground-slider-bottom',
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//   });
-//   $('.ground-slider-bottom').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.ground-slider-top',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     arrows: false,
-//   });
-// });
+
 
 // MATBANGDUAN
 var btn = document.querySelectorAll('.tab ul .tab-item');

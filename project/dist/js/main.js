@@ -70,11 +70,7 @@ $('.btn-prev').click(function () {
   // With optional speed parameter
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
-}); // let rangeSlide = jQuery('.js-range-slider');
-// if (rangeSlide) {
-//   jQuery('.js-range-slider').ionRangeSlider();
-// }
-// TIEN ICH
+}); // TIEN ICH
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -132,26 +128,6 @@ jQuery('#close-filter').click(function (e) {
   jQuery('.filter-control-mobile').removeClass('active');
   jQuery('.filter-control-mobile').addClass('close-animt');
 }); //============================
-// $(document).ready(function () {
-//   $('.ground-slider-top').slick({
-//     slidesToShow: 1,
-//     slidesToScroll: 1,
-//     arrows: true,
-//     fade: false,
-//     asNavFor: '.ground-slider-bottom',
-//     // autoplay: true,
-//     // autoplaySpeed: 2000,
-//   });
-//   $('.ground-slider-bottom').slick({
-//     slidesToShow: 6,
-//     slidesToScroll: 1,
-//     asNavFor: '.ground-slider-top',
-//     dots: false,
-//     centerMode: true,
-//     focusOnSelect: true,
-//     arrows: false,
-//   });
-// });
 // MATBANGDUAN
 
 var btn = document.querySelectorAll('.tab ul .tab-item');
