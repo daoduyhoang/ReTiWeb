@@ -478,7 +478,7 @@
                                 <p class="text-filter">Khoảng giá (Tỷ VNĐ)</p>
                                 <div class="range pb-20">
                                     <input type="text" class="js-range-slider" name="my_range" value=""
-                                        data-type="double" data-min="0" data-max="1000" data-from="200" data-to="500"
+                                        data-type="double" data-min="0" data-max="40" data-from="0" data-to="12"
                                         data-grid="true" />
                                 </div>
                                 <div class="control">
@@ -496,9 +496,8 @@
                                     <div class="acreage col-12 col-lg-6">
                                         <p class="text-filter">Diện tích (M2)</p>
                                         <div class="range pb-20">
-                                            <input type="text" class="js-range-slider" name="my_range" value=""
-                                                data-type="double" data-min="0" data-max="1000" data-from="200"
-                                                data-to="500" data-grid="true" />
+                                            <input type="text" class="js-range-slider2" name="my_range" value=""
+                                                data-type="double" data-min="0" data-max="1000" data-grid="true" />
                                         </div>
                                     </div>
                                     <div class="buy-online col-12 col-lg-6">
@@ -508,8 +507,8 @@
                                         </div>
                                         <div class="custom-control custom-switch">
                                             <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                            <label class="custom-control-label" for="customSwitch1">Hình thức mua
-                                                online</label>
+                                            <label class="custom-control-label" for="customSwitch1">Mua nhà trực
+                                                tuyến</label>
                                         </div>
                                     </div>
                                 </div>
@@ -604,27 +603,28 @@
                     <h2>Dự án nổi bật</h2>
                 </div>
                 <div class="owl-carousel owl-theme slide-card-duannoibat mt-3">
-                    <div class="card item d-flex flex-row">
-                        <div class="position-relative col-6 pl-0">
+                    <div class="card item-slide d-flex flex-row">
+                        <div class="position-relative pl-0 img-container">
                             <img class="card-img-top card-img-top-size" src="../../images/Rectangle 280.png"
                                 alt="Card image cap">
                         </div>
-                        <div class="card-body p-2 col-6">
+                        <div class="card-body card-body-slide">
                             <a href="#">
                                 <h5 class="card-title font-weight-bold"> The Terra An Hưng</h5>
                             </a>
-                            <p class="card-text"><i class="card-text-location"><img src="../../images/map-pin.png"
-                                        alt=""></i> Pho Hue,
+                            <p class="card-text ov"><i class="card-text-location"><img src="../../images/map-pin.png"
+                                        alt=""></i>
+                                Pho Hue,
                                 Hoan Kiem, Hanoi</p>
-                            <p class="card-text"><i class="card-text-apartment"><img
+                            <p class="card-text ov"><i class="card-text-apartment"><img
                                         src="../../images/number of apartment.png" alt=""></i> Chung cư, Shop house,
                                 Condotel</p>
                             <div class="row m-0 justify-content-between">
                                 <p class="card-text"><i class="card-text-shape"><img
                                             src="../../images/shape-square 4.png" alt=""></i> 120 -
-                                    350m</p>
-                                <p class="card-text"><i class="card-text-group274"><img src="../../images/Group 274.png"
-                                            alt=""></i>
+                                    350m<sup>2</sup></p>
+                                <p class="card-text text-date"><i class="card-text-group274"><img
+                                            src="../../images/Group 274.png" alt=""></i>
                                     15/09/2020</p>
                             </div>
                             <div class="row m-0 justify-content-between align-items-center">
@@ -635,27 +635,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card item d-flex flex-row">
-                        <div class="position-relative col-6 pl-0">
+                    <div class="card item-slide d-flex flex-row">
+                        <div class="position-relative pl-0 img-container">
                             <img class="card-img-top card-img-top-size" src="../../images/Rectangle 280.png"
                                 alt="Card image cap">
                         </div>
-                        <div class="card-body p-2 col-6">
+                        <div class="card-body card-body-slide">
                             <a href="#">
                                 <h5 class="card-title font-weight-bold"> The Terra An Hưng</h5>
                             </a>
-                            <p class="card-text"><i class="card-text-location"><img src="../../images/map-pin.png"
-                                        alt=""></i> Pho Hue,
+                            <p class="card-text ov"><i class="card-text-location"><img src="../../images/map-pin.png"
+                                        alt=""></i>
+                                Pho Hue,
                                 Hoan Kiem, Hanoi</p>
-                            <p class="card-text"><i class="card-text-apartment"><img
+                            <p class="card-text ov"><i class="card-text-apartment"><img
                                         src="../../images/number of apartment.png" alt=""></i> Chung cư, Shop house,
                                 Condotel</p>
                             <div class="row m-0 justify-content-between">
                                 <p class="card-text"><i class="card-text-shape"><img
                                             src="../../images/shape-square 4.png" alt=""></i> 120 -
-                                    350m</p>
-                                <p class="card-text"><i class="card-text-group274"><img src="../../images/Group 274.png"
-                                            alt=""></i>
+                                    350m<sup>2</sup></p>
+                                <p class="card-text text-date"><i class="card-text-group274"><img
+                                            src="../../images/Group 274.png" alt=""></i>
                                     15/09/2020</p>
                             </div>
                             <div class="row m-0 justify-content-between align-items-center">
@@ -666,58 +667,28 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card item d-flex flex-row">
-                        <div class="position-relative col-6 pl-0">
+                    <div class="card item-slide d-flex flex-row">
+                        <div class="position-relative pl-0 img-container">
                             <img class="card-img-top card-img-top-size" src="../../images/Rectangle 280.png"
                                 alt="Card image cap">
                         </div>
-                        <div class="card-body p-2 col-6">
+                        <div class="card-body card-body-slide">
                             <a href="#">
                                 <h5 class="card-title font-weight-bold"> The Terra An Hưng</h5>
                             </a>
-                            <p class="card-text"><i class="card-text-location"><img src="../../images/map-pin.png"
-                                        alt=""></i> Pho Hue,
+                            <p class="card-text ov"><i class="card-text-location"><img src="../../images/map-pin.png"
+                                        alt=""></i>
+                                Pho Hue,
                                 Hoan Kiem, Hanoi</p>
-                            <p class="card-text"><i class="card-text-apartment"><img
+                            <p class="card-text ov"><i class="card-text-apartment"><img
                                         src="../../images/number of apartment.png" alt=""></i> Chung cư, Shop house,
                                 Condotel</p>
                             <div class="row m-0 justify-content-between">
                                 <p class="card-text"><i class="card-text-shape"><img
                                             src="../../images/shape-square 4.png" alt=""></i> 120 -
-                                    350m</p>
-                                <p class="card-text"><i class="card-text-group274"><img src="../../images/Group 274.png"
-                                            alt=""></i>
-                                    15/09/2020</p>
-                            </div>
-                            <div class="row m-0 justify-content-between align-items-center">
-                                <p class="card-price"><span class="card-price-vnd text-white p-1">VNĐ</span> 3,2 - 6 tỷ
-                                </p>
-                                <a class="card-buy text-white p-2" href="#"><i class="card-text-buy"><img
-                                            src="../../images/buy-online 1.png" alt=""></i> Mua Online</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card item d-flex flex-row">
-                        <div class="position-relative col-6 pl-0">
-                            <img class="card-img-top card-img-top-size" src="../../images/Rectangle 280.png"
-                                alt="Card image cap">
-                        </div>
-                        <div class="card-body p-2 col-6">
-                            <a href="#">
-                                <h5 class="card-title font-weight-bold"> The Terra An Hưng</h5>
-                            </a>
-                            <p class="card-text"><i class="card-text-location"><img src="../../images/map-pin.png"
-                                        alt=""></i> Pho Hue,
-                                Hoan Kiem, Hanoi</p>
-                            <p class="card-text"><i class="card-text-apartment"><img
-                                        src="../../images/number of apartment.png" alt=""></i> Chung cư, Shop house,
-                                Condotel</p>
-                            <div class="row m-0 justify-content-between">
-                                <p class="card-text"><i class="card-text-shape"><img
-                                            src="../../images/shape-square 4.png" alt=""></i> 120 -
-                                    350m</p>
-                                <p class="card-text"><i class="card-text-group274"><img src="../../images/Group 274.png"
-                                            alt=""></i>
+                                    350m<sup>2</sup></p>
+                                <p class="card-text text-date"><i class="card-text-group274"><img
+                                            src="../../images/Group 274.png" alt=""></i>
                                     15/09/2020</p>
                             </div>
                             <div class="row m-0 justify-content-between align-items-center">
@@ -745,6 +716,7 @@
                                     <img class="card-img-top" src="../../images/Rectangle 280.png" alt="Card image cap">
                                 </div>
                                 <img class="card-badge-new" src="../../images/badge_ new.png" alt="">
+                                <img class="card-badge-price" src="../../images/badge_ price.png" alt="">
                                 <!-- <i class="fa fa-heart card-badge-Group-277 " aria-hidden="true"></i> -->
                                 <img src="../../images/heart.png" alt="heart" class="card-badge-Group-277">
                             </div>
@@ -948,14 +920,16 @@
                 <div class="row justify-content-center">
                     <nav aria-label="Page navigation duannoibat-pagination">
                         <ul class="pagination">
-                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-arrow-left"></i></a>
+                            <li class="page-item"><a class="page-link pre-page" href="#"><i class="fas fa-arrow-left"
+                                        style="visibility: hidden;"></i></a>
                             </li>
                             <li class="page-item"><a class="page-link" href="#">1</a></li>
                             <li class="page-item"><a class="page-link" href="#">2</a></li>
                             <li class="page-item"><a class="page-link" href="#">3</a></li>
                             <li class="page-item"><a class="page-link" href="#">...</a></li>
                             <li class="page-item"><a class="page-link" href="#">12</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><i class="fas fa-arrow-right"></i></a>
+                            <li class="page-item"><a class="page-link next-page" href="#"><i
+                                        class="fas fa-arrow-right"></i></a>
                             </li>
                         </ul>
                     </nav>

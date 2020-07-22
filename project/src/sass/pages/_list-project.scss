@@ -4,6 +4,8 @@
         margin-top: 30px;
         margin-bottom: 50px;
     }
+    
+   
 }
 #pay-home{
     padding: 35px 0;
@@ -28,6 +30,31 @@
 }
 #pay-home {
     margin-top: 50px;
+}
+.price-range{
+        .irs-min,.irs-max,.irs-grid-text{
+            display: none !important;
+        }
+}
+.filter-more .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #56C4CF;
+}
+input[type=checkbox]:checked + label {
+    font-weight: 600;    
+} 
+.next-page:hover{
+    background-color: #333132;
+}
+.pre-page:hover{
+    background-color: #333132;
+}
+.card-badge-price{
+    position: absolute;
+    width: 73px;
+    height: 29px;
+    top: 48px;
+    left: -6px;
+    z-index: 9;
 }
 
 @media (max-width: 768px) {

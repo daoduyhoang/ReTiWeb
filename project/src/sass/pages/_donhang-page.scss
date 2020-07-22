@@ -14,6 +14,9 @@
         margin-bottom: 379px;
     }
 }
+#Textarea1{
+    height: 126px;
+}
 @media(min-width:1024px){
     .no-wrap-ipad{
         flex-wrap: nowrap !important;
@@ -66,7 +69,11 @@
     .info-order-bottom .text-info-order {
         width: 89%;
     }
+    #Textarea1{
+        height: 90px;
+    }
 }
+
 @media(max-width:375px){
     .info-order {
         width: 360px;
