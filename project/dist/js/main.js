@@ -344,3 +344,4 @@ window.addEventListener('scroll', function () {
     map.classList.remove('map-fixed');
   }
 });
+$(".js-range-slider").ionRangeSlider();
