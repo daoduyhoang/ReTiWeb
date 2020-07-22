@@ -196,8 +196,8 @@ function myFunction(x) {
   if (x.matches) {
     // Reponsive Header
     jQuery('.header').addClass('header-mobile');
-    jQuery('.header-mobile .header-logo-box i.fas').click(function (e) {
-      // e.preventDefault();
+    jQuery('.header-mobile .header-logo-box').click(function (e) {
+      e.preventDefault();
       jQuery('.header-main-box').toggleClass('active');
       jQuery('.header-mobile').toggleClass('full-height');
     });
