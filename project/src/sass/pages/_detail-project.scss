@@ -110,3 +110,19 @@
     @media (min-width:320px) and (max-width: 414px){
         margin-top: 30px;
 }}
+.tick-complete{
+    .fa-check{
+        color: white;
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .chitietduan-rightcolumn{
+        height: unset;
+        .info-department{
+            min-height: unset;
+        }
+    }
+    .motaduan-partial{
+        margin-top: 40px;
+    }
+}

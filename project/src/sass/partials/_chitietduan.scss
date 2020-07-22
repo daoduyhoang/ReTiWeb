@@ -1,5 +1,49 @@
 /*chi tiet du an*/
 .chitietduan-partial{
+    .slick-next:hover {
+        right: -4%;
+        background-color: #333333;
+        width: 12px;
+        height: 69px;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/chitietduan/VectorRight.png);
+        top: 54%;
+    }
+    .slick-next:focus {
+        right: -4%;
+        background-color: #333333;
+        width: 12px;
+        height: 69px;
+        z-index: 9;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/chitietduan/VectorRight.png);
+        top: 54%;
+    }
+    .slick-prev:hover {
+        background-color: #333333;
+        width: 12px;
+        height: 69px;
+        z-index: 9;
+        background-image: url(../images/chitietduan/VectorLeft.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+        top: 54%;
+    }
+    .slick-prev::before {
+        background-color: #333333;
+        width: 12px;
+        height: 69px;
+        z-index: 9;
+        background-image: url(../images/chitietduan/VectorLeft.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        left: 0;
+        top: 54%;
+    }
     @include flexbox();
     .chitietduan-leftcolumn{
         @include flexbox();

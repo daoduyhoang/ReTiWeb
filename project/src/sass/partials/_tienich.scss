@@ -57,6 +57,9 @@
         h2{
             font-size: 26px;
         }
+        .utilities-content{
+            width: 100% !important;
+        }
     }
     .btn-mobile-utilities{
         display: block;
@@ -65,7 +68,6 @@
         overflow: hidden;
         max-height: 95px;
         transition: .5s;
-        
     }
     
 }

@@ -97,8 +97,24 @@ $('.khachHangCuaReti-slide').owlCarousel({
   },
   dots: false
 }); //end slide khach hang cua reti
-// $('.same-project').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3
+// $('#slider-main').owlCarousel({
+//     items: 1,
+//     loop: true,
+//     nav: false,
+//     nestedItemSelector: 'slide-card',
+//     margin: 10,
+//     responsive: {
+//         480: {
+//             items: 2
+//         },
+//         678: {
+//             items: 4
+//         },
+//         960: {
+//             items: 5
+//         },
+//         1200: {
+//             items: 6
+//         }
+//     }
 // });

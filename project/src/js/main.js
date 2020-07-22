@@ -83,12 +83,11 @@ if (rangeSlide) {
 
 // TIEN ICH
 
-$(".btn-mobile-utilities a").click(function () {
+$(".btn-mobile-utilities a").click(function (e) {
+  e.preventDefault();
   var parent = $(this).parents('.utilities');
   var child = parent.children('.utilities-content');
   child.toggleClass('show-item');
-  console.log(child);
-
 });
 
 

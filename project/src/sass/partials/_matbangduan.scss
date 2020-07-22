@@ -94,3 +94,64 @@
         color: #0C77C6;
     }
 }
+.ground .slick-next:hover{
+    right: 1%;
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/matbangduan/Shape.png);
+}
+.ground .slick-next:focus {
+    right: 1%;
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/matbangduan/Shape.png);
+
+}
+.ground .slick-prev:hover{
+    right: 1%;
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/matbangduan/lefy.png);
+}
+.ground .slick-prev:focus {
+    right: 1%;
+    background: rgba(245, 245, 245, 0.35);
+    width: 50px;
+    height: 50px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    background-image: url(../images/matbangduan/lefy.png);
+}
+@media(min-width:320px) and (max-width:414px){
+    .text-center-mb{
+        padding-left: 10px !important;
+    }
+    .ground .slick-prev{
+        display: none !important;
+    }
+    .ground .slick-next {
+        width: 30px;
+        height: 30px;
+        background-color: #000000;
+        opacity: 0.3;
+        background-image: url(../images/arrw.png);
+    }
+    
+}

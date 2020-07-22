@@ -1185,6 +1185,14 @@ body {
     font-size: 14px;
     text-align: center; } }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  #slider .carousel-inner {
+    height: 255px; }
+    #slider .carousel-inner .carousel-item {
+      height: 255px; }
+      #slider .carousel-inner .carousel-item img {
+        height: 100%; } }
+
 /* TITLE PAGE */
 .title-partial {
   text-align: center; }
@@ -1900,11 +1908,15 @@ body {
       -moz-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      color: #333132; }
+      color: #333132;
+      text-decoration: none;
+      cursor: pointer; }
   .table-product .list-tab .active-table-tab {
     background-color: #56C4CF; }
     .table-product .list-tab .active-table-tab a, .table-product .list-tab .active-table-tab .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .table-product .list-tab .active-table-tab img {
       color: white; }
+      .table-product .list-tab .active-table-tab a:hover, .table-product .list-tab .active-table-tab .chitietduan-partial .chitietduan-button .chitietduan-btn div img:hover, .chitietduan-partial .chitietduan-button .chitietduan-btn div .table-product .list-tab .active-table-tab img:hover {
+        color: white; }
 
 .table-product .tab-items {
   display: none; }
@@ -3011,6 +3023,8 @@ body {
       transition: .5s; }
     .utilities h2 {
       font-size: 26px; }
+    .utilities .utilities-content {
+      width: 100% !important; }
   .btn-mobile-utilities {
     display: block; }
   .utilities-content {
@@ -3113,6 +3127,70 @@ body {
   -moz-text-decoration-line: underline;
   text-decoration-line: underline;
   color: #0C77C6; }
+
+.ground .slick-next:hover {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/Shape.png); }
+
+.ground .slick-next:focus {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/Shape.png); }
+
+.ground .slick-prev:hover {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/lefy.png); }
+
+.ground .slick-prev:focus {
+  right: 1%;
+  background: rgba(245, 245, 245, 0.35);
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url(../images/matbangduan/lefy.png); }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .text-center-mb {
+    padding-left: 10px !important; }
+  .ground .slick-prev {
+    display: none !important; }
+  .ground .slick-next {
+    width: 30px;
+    height: 30px;
+    background-color: #000000;
+    opacity: 0.3;
+    background-image: url(../images/arrw.png); } }
 
 /* ĐƠN HÀNG*/
 .title-order {
@@ -3405,13 +3483,6 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
-.duantuongtu-partial .same-project {
-  overflow: hidden; }
-
-.duantuongtu-partial .slick-prev {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
 .card {
   border: none !important; }
 
@@ -3425,6 +3496,46 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
+  .chitietduan-partial .slick-next:hover {
+    right: -4%;
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/chitietduan/VectorRight.png);
+    top: 54%; }
+  .chitietduan-partial .slick-next:focus {
+    right: -4%;
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/chitietduan/VectorRight.png);
+    top: 54%; }
+  .chitietduan-partial .slick-prev:hover {
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-image: url(../images/chitietduan/VectorLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 54%; }
+  .chitietduan-partial .slick-prev::before {
+    background-color: #333333;
+    width: 12px;
+    height: 69px;
+    z-index: 9;
+    background-image: url(../images/chitietduan/VectorLeft.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    top: 54%; }
   .chitietduan-partial .chitietduan-leftcolumn {
     display: -webkit-box;
     display: -moz-box;
@@ -3899,6 +4010,19 @@ body {
     .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
       width: 100%; } }
 
+.text-info-project {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  height: 166px;
+  overflow: hidden; }
+
+.info-project {
+  display: none; }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .info-project {
+    display: block; } }
+
 /*LIST PROJECT*/
 #list_project .slide-card-duannoibat {
   margin-top: 30px;
@@ -4110,7 +4234,7 @@ main {
       -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   .home-section-1 {
-    margin-bottom: 50px; } }
+    margin-bottom: 25px; } }
 
 /*ĐƠN HÀNG PAGE*/
 #order-page .pt-16 {
@@ -4273,8 +4397,20 @@ main {
 
 .save-search a, .save-search .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .save-search img {
   color: #000000; }
+
 .home-section-11 {
   margin-top: 50px; }
   @media (min-width: 320px) and (max-width: 414px) {
     .home-section-11 {
       margin-top: 30px; } }
+
+.tick-complete .fa-check {
+  color: white; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .chitietduan-rightcolumn {
+    height: unset; }
+    .chitietduan-rightcolumn .info-department {
+      min-height: unset; }
+  .motaduan-partial {
+    margin-top: 40px; } }
