@@ -24,7 +24,9 @@ $('.slide-card-duannoibat').owlCarousel({
       items: 2
     }
   },
-  dots: false
+  dots: false,
+  autoplay: true,
+  autoplayTimeout: 6000,
 });
 //end slide du an noi bat
 
@@ -349,13 +351,20 @@ if (ip) {
   }
 }
 // STICK MAP
+if (map) {
+  window.addEventListener('scroll', function () {
+    if ((window.pageYOffset > 272) && (window.pageYOffset < 1170)) {
+      map.classList.add('map-fixed');
+    }
+    else if ((window.pageYOffset < 272) || (window.pageYOffset > 1170)) {
+      map.classList.remove('map-fixed');
+    }
+  })
+}
 
-window.addEventListener('scroll', function () {
-  console.log(window.pageYOffset);
-  if ((window.pageYOffset > 272) && (window.pageYOffset < 1170)) {
-    map.classList.add('map-fixed');
-  }
-  else if ((window.pageYOffset < 272) || (window.pageYOffset > 1170)) {
-    map.classList.remove('map-fixed');
-  }
-})
+$(".js-range-slider").ionRangeSlider();
+$(".js-range-slider2").ionRangeSlider({
+  from: 250,
+  to: 500,
+});
+
