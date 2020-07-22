@@ -2006,6 +2006,15 @@ body {
     color: #333132;
     margin: 0; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .title-partial-horizontal h2 {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 40px;
+    margin: 0; } }
+
 /* Progress */
 .progress-barc {
   height: 8px;
@@ -3094,6 +3103,17 @@ body {
 .active-item {
   display: block; }
 
+.content-tab-item a, .content-tab-item .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .content-tab-item img {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 163.42%;
+  -webkit-text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+  color: #0C77C6; }
+
 /* ĐƠN HÀNG*/
 .title-order {
   font-family: "Roboto Slab", serif;
@@ -3352,6 +3372,12 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
+.card {
+  border: none !important; }
+
+.duantuongtu-partial .similar_projects {
+  margin-top: 30px; }
+
 /*chi tiet du an*/
 .chitietduan-partial {
   display: -webkit-box;
@@ -3378,7 +3404,7 @@ body {
     -moz-box-pack: justify;
     justify-content: space-between;
     -ms-flex-pack: space-between;
-    width: 645px;
+    width: 635px;
     height: 554px; }
     .chitietduan-partial .chitietduan-leftcolumn .slick-slide img {
       display: block;
@@ -3436,11 +3462,18 @@ body {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    justify-content: flex-end;
+    -ms-flex-pack: flex-end;
     width: 196px;
     padding-top: 5px; }
     .chitietduan-partial .chitietduan-button .chitietduan-btn {
       margin-left: 5px;
-      width: 93px;
+      width: 88px;
       height: 69px;
       border: none;
       -webkit-border-radius: 2px;
@@ -3529,7 +3562,8 @@ body {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 0; }
     .chitietduan-partial .chitietduan-leftcolumn {
       width: 100%;
       height: auto; }
@@ -3609,7 +3643,8 @@ body {
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-top: 0; }
     .chitietduan-partial .chitietduan-leftcolumn {
       padding: 0px 5px;
       width: 100%; }
@@ -4079,11 +4114,64 @@ main {
     font-size: 12px; } }
 
 /*detail project*/
+.chitietduan-partial {
+  margin-top: 50px; }
+  @media (min-width: 320px) and (max-width: 414px) {
+    .chitietduan-partial {
+      margin-top: 0px; } }
+  @media (min-width: 320px) and (max-width: 414px) {
+    .chitietduan-partial .chitietduan-leftcolumn .stroke {
+      top: 125px; } }
+
+.header .header-main-bar .header-main-box .header-menu-box .header-fnc a, .header .header-main-bar .header-main-box .header-menu-box .header-fnc .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header .header-main-bar .header-main-box .header-menu-box .header-fnc img {
+  padding-right: 0; }
+
+.motaduan-partial {
+  margin-top: 50px; }
+  @media (min-width: 320px) and (max-width: 414px) {
+    .motaduan-partial {
+      margin-top: 0; } }
+  .motaduan-partial .motaduan-content {
+    width: 50%; }
+    @media (min-width: 320px) and (max-width: 414px) {
+      .motaduan-partial .motaduan-content {
+        width: 100%; } }
+
 .utilities {
   margin-top: 60px; }
+  .utilities .utilities-content {
+    width: 50%; }
+  .utilities .btn-mobile-utilities a, .utilities .btn-mobile-utilities .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .utilities .btn-mobile-utilities img {
+    color: #007bff;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 163.42%; }
 
 .table-product {
   margin-top: 60px; }
+  .table-product .paging-table {
+    padding: 0px 15px; }
+
+.progress-box {
+  margin-top: 60px; }
+
+.matbangduan-partial {
+  padding-top: 30px; }
+  @media (min-width: 320px) and (max-width: 414px) {
+    .matbangduan-partial .ground-slider-top {
+      margin-bottom: 40px; }
+      .matbangduan-partial .ground-slider-top img {
+        height: 220px; }
+    .matbangduan-partial .ground-slider-bottom {
+      display: none; }
+    .matbangduan-partial .tab .content-tab .content-tab-item .shark-content {
+      width: 100%; } }
+
+.chinhsachbanhang-partial {
+  margin-top: 50px; }
 
 .sales_policy {
   margin-top: 30px; }
@@ -4096,3 +4184,9 @@ main {
 
 .duantuongtu-partial {
   margin-top: 60px; }
+
+.home-section-11 {
+  margin-top: 50px; }
+  @media (min-width: 320px) and (max-width: 414px) {
+    .home-section-11 {
+      margin-top: 30px; } }

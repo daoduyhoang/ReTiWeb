@@ -5,7 +5,7 @@
         @include flexbox();
         @include flex-direction(column);
         @include justify-content(space-between);
-        width: 645px;
+        width: 635px;
         height: 554px;
         .slick-slide img {
             display: block;
@@ -62,11 +62,12 @@
         }
         .chitietduan-button{
             @include flexbox();
+            @include justify-content(flex-end);
             width: 196px;
             padding-top: 5px;
             .chitietduan-btn{
                 margin-left: 5px;
-                width: 93px;
+                width: 88px;
                 height: 69px;
                 border: none;
                 border-radius: 2px;
@@ -141,6 +142,7 @@
 @include Responsive(SM){
     .chitietduan-partial{
         @include flex-wrap(wrap);
+        margin-top: 0;
         .chitietduan-leftcolumn{
             width: 100%;
             height: auto;
@@ -232,6 +234,7 @@
 @media (min-width:320px) and (max-width: 414px){
     .chitietduan-partial{
         @include flex-wrap(wrap);
+        margin-top: 0;
         .chitietduan-leftcolumn{
             padding: 0px 5px;
             width: 100%;
