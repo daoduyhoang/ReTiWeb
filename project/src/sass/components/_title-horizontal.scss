@@ -12,8 +12,20 @@
         @include title_partials();
         margin: 0;
     }
-
-
+}
+@media(min-width:320px) and (max-width:414px){
+    .title-partial-horizontal{
+        .icon-title-horizontal{
+        }
+        h2{
+            font-family: Roboto Slab;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 40px;
+            margin: 0;
+        }
+    }
 }
 // @media(min-width:320px) and (max-width:414px){
 //     .title-partial-horizontal{

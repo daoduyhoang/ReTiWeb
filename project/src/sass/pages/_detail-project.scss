@@ -1,9 +1,92 @@
 /*detail project*/
+.chitietduan-partial{
+    margin-top: 50px;
+    @media (min-width:320px) and (max-width: 414px){
+        margin-top: 0px;}
+    .chitietduan-leftcolumn{
+        @media (min-width:320px) and (max-width: 414px){
+            .stroke{
+                top:125px;
+            }
+        }
+    }
+}
+.header{
+    .header-main-bar{
+        .header-main-box{
+            .header-menu-box{
+                .header-fnc{
+                    a{
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.motaduan-partial{
+    margin-top: 50px;
+    @media (min-width:320px) and (max-width: 414px){
+        margin-top: 0;
+    }
+    .motaduan-content{
+        width: 50%;
+        @media (min-width:320px) and (max-width: 414px){
+            width: 100%;
+        }
+    }
+}
 .utilities{
     margin-top: 60px;
+    .utilities-content{
+        width: 50%;
+    }
+    .btn-mobile-utilities{
+        a{
+            color: #007bff;
+            text-decoration: underline;
+            font-family: "Roboto", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 163.42%;
+        }
+    }
 }
 .table-product{
     margin-top: 60px;
+    .paging-table{
+        padding: 0px 15px;
+    }
+}
+.progress-box{
+    margin-top: 60px;
+}
+.matbangduan-partial{
+    padding-top: 30px;
+    @media (min-width:320px) and (max-width: 414px){
+        .ground-slider-top{
+            margin-bottom: 40px;
+            img{
+                height: 220px;
+            }
+        }
+        .ground-slider-bottom{
+            display: none;
+        }
+        .tab{
+            .content-tab{
+                .content-tab-item{
+                    .shark-content{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}   
+.chinhsachbanhang-partial{
+    margin-top: 50px;
 }
 .sales_policy{
     margin-top: 30px;
@@ -17,3 +100,8 @@
 .duantuongtu-partial{
     margin-top: 60px;
 }
+.home-section-11{
+    margin-top: 50px;
+    @media (min-width:320px) and (max-width: 414px){
+        margin-top: 30px;
+}}
