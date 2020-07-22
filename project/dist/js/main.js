@@ -70,11 +70,13 @@ $('.btn-prev').click(function () {
   // With optional speed parameter
   // Parameters has to be in square bracket '[]'
   owl.trigger('prev.owl.carousel', [300]);
-}); // let rangeSlide = jQuery('.js-range-slider');
-// if (rangeSlide) {
-//   jQuery('.js-range-slider').ionRangeSlider();
-// }
-// TIEN ICH
+});
+var rangeSlide = jQuery('.js-range-slider');
+
+if (rangeSlide) {
+  jQuery('.js-range-slider').ionRangeSlider();
+} // TIEN ICH
+
 
 $(".btn-mobile-utilities a").click(function () {
   var parent = $(this).parents('.utilities');
@@ -355,4 +357,3 @@ if (ip) {
     }
   });
 }
-jQuery('.js-range-slider').ionRangeSlider();
