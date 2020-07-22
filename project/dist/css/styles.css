@@ -3405,13 +3405,6 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
-.duantuongtu-partial .same-project {
-  overflow: hidden; }
-
-.duantuongtu-partial .slick-prev {
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
 .card {
   border: none !important; }
 
@@ -4273,6 +4266,7 @@ main {
 
 .save-search a, .save-search .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .save-search img {
   color: #000000; }
+
 .home-section-11 {
   margin-top: 50px; }
   @media (min-width: 320px) and (max-width: 414px) {
