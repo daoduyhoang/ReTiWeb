@@ -1881,6 +1881,7 @@ body {
   margin-right: 15px; }
 
 .table-product .list-tab {
+  margin-top: 30px;
   background: #F2F2F2;
   margin-bottom: 0; }
   .table-product .list-tab li {
@@ -3012,6 +3013,7 @@ body {
     transition: .5s; } }
 
 .ground {
+  margin-top: 30px;
   margin-bottom: 50px; }
   .ground .slick-slide img {
     display: block;
@@ -3795,9 +3797,9 @@ body {
       padding-right: 20px; } }
 
 /*mo ta du an*/
-.container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
+.motaduan-partial {
   width: 50%; }
-  .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
+  .motaduan-partial .motaduan-content {
     margin-top: 16px;
     width: 100%;
     font-family: "Roboto", sans-serif;
@@ -3805,7 +3807,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 26px; }
-  .container .motaduan-partial .motaduan-link, .khuVucNoiBat .motaduan-partial .motaduan-link {
+  .motaduan-partial .motaduan-link {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -3880,7 +3882,20 @@ body {
       -ms-transform: rotate(0);
       -o-transform: rotate(0);
       transform: rotate(0);
-      margin-bottom: unset; } }
+      margin-bottom: unset; }
+  #map {
+    display: none; } }
+
+#map {
+  margin-left: 20px;
+  display: none;
+  width: 30%; }
+
+.map-fixed {
+  position: fixed;
+  top: 20%;
+  width: 333px !important;
+  right: 14%; }
 
 /* Home Page */
 [class*="home-section-"] {
@@ -3905,6 +3920,9 @@ main {
 
 .home-section-8 img, .home-section-11 img {
   width: 100%; }
+
+.home-section .title-partial h2 {
+  margin-bottom: 30px !important; }
 
 .home-banner-small {
   min-height: 200px;
@@ -4077,3 +4095,22 @@ main {
 @media (max-width: 768px) {
   .discount .form-control {
     font-size: 12px; } }
+
+/*detail project*/
+.utilities {
+  margin-top: 60px; }
+
+.table-product {
+  margin-top: 60px; }
+
+.sales_policy {
+  margin-top: 30px; }
+
+.project_classification {
+  margin-top: 60px; }
+
+.top-footer {
+  margin-top: 60px; }
+
+.duantuongtu-partial {
+  margin-top: 60px; }

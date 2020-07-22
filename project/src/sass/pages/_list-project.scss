@@ -58,4 +58,18 @@
             margin-bottom: unset;
         }
     }
+    #map{
+        display: none;
+    }
+}
+#map{
+    margin-left: 20px;
+    display: none;
+    width:30%
+}
+.map-fixed{
+    position: fixed;
+    top: 20%;
+    width: 333px !important;
+    right: 14%;
 }

@@ -97,3 +97,4 @@ $('.khachHangCuaReti-slide').owlCarousel({
     dots: false
 });
   //end slide khach hang cua reti
+  
