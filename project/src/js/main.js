@@ -307,17 +307,17 @@ x.addListener(myFunction);
 let getExcept = document.querySelector('.except-more');
 let getBtnShow = document.querySelector('.btn-more-less');
 
-getBtnShow.addEventListener('click', event=>{
-    const linkText = event.target.textContent.toLowerCase();
-    event.preventDefault();
+getBtnShow.addEventListener('click', event => {
+  const linkText = event.target.textContent.toLowerCase();
+  event.preventDefault();
 
-    if (linkText == "xem chi tiết") {
-        getBtnShow.innerText = "Ẩn bớt";
-        getExcept.classList.add('show');
-    } else {
-        getBtnShow.innerText = "Xem chi tiết";
-        getExcept.classList.remove('show');
-    }
+  if (linkText == "xem chi tiết") {
+    getBtnShow.innerText = "Ẩn bớt";
+    getExcept.classList.add('show');
+  } else {
+    getBtnShow.innerText = "Xem chi tiết";
+    getExcept.classList.remove('show');
+  }
 });
 
 //======================
@@ -392,9 +392,5 @@ if (infoHome) {
     }
   })
 }
-$(".js-range-slider").ionRangeSlider();
-$(".js-range-slider2").ionRangeSlider({
-  from: 250,
-  to: 500,
-});
+
 

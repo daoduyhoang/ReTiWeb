@@ -2081,6 +2081,144 @@ body {
     line-height: 40px;
     margin: 0; } }
 
+/* CARD SLIDE*/
+.card-slider {
+  max-width: 550px;
+  min-height: 170px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .card-slider .card-slider-img img {
+    height: 100%;
+    width: 170px; }
+  .card-slider .card-info-title {
+    margin-bottom: 9px; }
+    .card-slider .card-info-title h5 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      color: #0C77C6; }
+  .card-slider .text-card-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333132; }
+  .card-slider .card-info-project {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 23px; }
+  .card-slider .card-price-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .card-slider .card-price-slide .price-card {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .card-slider .card-price-slide .price-card .vnd {
+        background: #EF5B40;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 2px 8px;
+        margin-right: 6px; }
+      .card-slider .card-price-slide .price-card .amount {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #EF5B40; }
+  .card-slider .card-slide-info {
+    width: -webkit-calc(100% - 170px);
+    width: -moz-calc(100% - 170px);
+    width: calc(100% - 170px);
+    padding: 15px 10px 17px 20px; }
+  .card-slider .mg-card {
+    margin-bottom: 8px; }
+  .card-slider .card-price-slide .purchase {
+    background: #0C77C6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2px 10px 2px 8px;
+    line-height: 16px; }
+  .card-slider .card-price-slide span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF; }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .card-slider {
+    min-height: 175px; }
+    .card-slider .card-slider-img img {
+      width: 128px; }
+    .card-slider .card-slide-info {
+      padding: 8px 8px 19px 18px;
+      width: -webkit-calc(100% - 128px);
+      width: -moz-calc(100% - 128px);
+      width: calc(100% - 128px); }
+    .card-slider .card-adress, .card-slider .card-type {
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .card-slider .card-price-slide .price-card .vnd {
+      font-size: 10px;
+      padding: 3px 5px; }
+    .card-slider .card-price-slide .price-card .amount {
+      font-size: 14px; }
+    .card-slider .card-info-project {
+      margin-bottom: 12px; }
+    .card-slider .card-price-slide .purchase {
+      background: #0C77C6;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      padding: 2px 4px; }
+    .card-slider .card-price-slide span {
+      font-size: 10px; }
+    .card-slider .card-info-project {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .card-slider .card-info-project .card-acreage {
+        width: 100%;
+        margin-bottom: 8px; } }
+
 /* Progress */
 .progress-barc {
   height: 8px;
@@ -3476,8 +3614,8 @@ body {
     padding-right: 16px; }
 
 #number-duan {
-  font-weight: 500;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
 
 #showBoLoc {
   font-weight: 500;

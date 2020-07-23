@@ -123,3 +123,8 @@ $('#slider-main').slick({
     }
   }]
 });
+$(".js-range-slider").ionRangeSlider();
+$(".js-range-slider2").ionRangeSlider({
+  from: 250,
+  to: 500
+});
