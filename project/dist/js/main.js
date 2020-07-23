@@ -295,7 +295,21 @@ function myFunction(x) {
 
 var x = window.matchMedia("(max-width: 850px)");
 myFunction(x);
-x.addListener(myFunction); //======================
+x.addListener(myFunction);
+var getExcept = document.querySelector('.except-more');
+var getBtnShow = document.querySelector('.btn-more-less');
+getBtnShow.addEventListener('click', function (event) {
+  var linkText = event.target.textContent.toLowerCase();
+  event.preventDefault();
+
+  if (linkText == "xem chi tiết") {
+    getBtnShow.innerText = "Ẩn bớt";
+    getExcept.classList.add('show');
+  } else {
+    getBtnShow.innerText = "Xem chi tiết";
+    getExcept.classList.remove('show');
+  }
+}); //======================
 // TOGGLE MAP LIST PROJECT
 
 var ip = document.getElementById('view-map');

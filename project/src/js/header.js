@@ -18,7 +18,6 @@ window.addEventListener("scroll", function () {
 
 //===============
 
-
 let getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 > .menu-drd-item'));
 
 for (var i = 0; i < getLiMenu.length; i++) {
