@@ -111,7 +111,9 @@
         }
     }
 }
-
+.none-scroll{
+    overflow-y: hidden !important;
+}
 .header {
     &-bottom-bar {
         background-color: $gray-color;

@@ -188,6 +188,9 @@ button:focus {
   .header .nav-menu ul a, .header .nav-menu ul .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header .nav-menu ul img {
     display: block; }
 
+.none-scroll {
+  overflow-y: hidden !important; }
+
 .header-bottom-bar {
   background-color: #F2F2F2; }
 
