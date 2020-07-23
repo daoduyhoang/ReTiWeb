@@ -1114,6 +1114,9 @@ body {
 .card-body .card-text {
   margin-bottom: 8px; }
 
+.card-body div .card-text {
+  margin-bottom: 17px !important; }
+
 /* COMPONENT SLIDER MAIN*/
 .custom-indicators {
   right: unset;
