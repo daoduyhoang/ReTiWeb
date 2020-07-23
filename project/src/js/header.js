@@ -6,18 +6,17 @@
 let getHeader = document.querySelector('.header');
 let getMenuPl = document.querySelector('.menu-phanloai');
 let offSetHeader = getHeader.offsetHeight;
-window.addEventListener("scroll",function(){
-    if(window.pageYOffset >= offSetHeader){
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= offSetHeader) {
         getHeader.classList.add('stick');
     }
-    else if(window.pageYOffset == 0) {
+    else if (window.pageYOffset == 0) {
         getHeader.classList.remove('stick');
     }
 });
 
 
 //===============
-
 
 let getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 > .menu-drd-item'));
 
