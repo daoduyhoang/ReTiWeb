@@ -869,7 +869,9 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  z-index: 9; }
 
 /* Reponsive */
 @media (min-width: 750px) {
