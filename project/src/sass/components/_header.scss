@@ -111,9 +111,6 @@
         }
     }
 }
-.none-scroll{
-    overflow-y: hidden !important;
-}
 .header {
     &-bottom-bar {
         background-color: $gray-color;
@@ -737,7 +734,9 @@ body {
     z-index: 9;
 }
 /* Reponsive */
-
+.none-scroll{
+    overflow-y: unset;
+}
 @media (min-width: 750px) {
     .menu-phanloai {
         width: 50%;
@@ -778,4 +777,9 @@ body {
     right: 0;
     padding-top: 15%;
     z-index: 99;
+}
+@media(max-width:768px){
+    .none-scroll{
+        overflow-y: hidden !important;
+    }
 }

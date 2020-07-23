@@ -6,11 +6,11 @@
 let getHeader = document.querySelector('.header');
 let getMenuPl = document.querySelector('.menu-phanloai');
 let offSetHeader = getHeader.offsetHeight;
-window.addEventListener("scroll",function(){
-    if(window.pageYOffset >= offSetHeader){
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= offSetHeader) {
         getHeader.classList.add('stick');
     }
-    else if(window.pageYOffset == 0) {
+    else if (window.pageYOffset == 0) {
         getHeader.classList.remove('stick');
     }
 });
@@ -114,6 +114,7 @@ $(document).ready(function () {
 });
 jQuery('.menu-phanloai .close-menu').click(function (e) {
     e.preventDefault();
+    jQuery('body').removeClass('none-scroll');
     jQuery('.menu-phanloai').removeClass('active');
     jQuery('.menu-phanloai').addClass('close-animt');
 })
