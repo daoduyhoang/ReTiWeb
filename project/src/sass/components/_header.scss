@@ -761,3 +761,11 @@ body {
 .menu-drop{
     background-color: #fff;
 }
+.header-mobile .nav-menu li.has-menu-drp .has-menu-btn-show {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    right: 0;
+    padding-top: 15%;
+    z-index: 99;
+}

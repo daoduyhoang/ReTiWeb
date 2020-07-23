@@ -875,6 +875,14 @@ body {
 .menu-drop {
   background-color: #fff; }
 
+.header-mobile .nav-menu li.has-menu-drp .has-menu-btn-show {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  right: 0;
+  padding-top: 15%;
+  z-index: 99; }
+
 /* FOOTER*/
 .logo {
   margin-bottom: 10px; }
@@ -885,16 +893,21 @@ body {
 .social-network img {
   padding-right: 15px; }
 
+.sologan {
+  font-size: 15px;
+  font-weight: 500; }
+
 .info-footer .title-footer {
   font-size: 16px;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-bottom: 16px; }
 
 .info-footer > [class*="col-lg-"] {
   padding-left: 0;
   padding-right: 0; }
 
 .info-footer ul li {
-  padding-bottom: 15px; }
+  padding-bottom: 16px; }
   .info-footer ul li a, .info-footer ul li .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-footer ul li img {
     color: #000;
     font-size: 12px; }
@@ -4336,7 +4349,11 @@ main {
   .home-section-7 {
     margin-bottom: 0; }
   .duannoibat-home .title-partial {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .home-section-6 {
+    margin-bottom: 0; }
+  .none-mobile {
+    display: none; } }
 
 /*ĐƠN HÀNG PAGE*/
 #order-page .pt-16 {
