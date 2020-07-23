@@ -947,6 +947,14 @@ body {
 .bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
   margin-bottom: 62px; }
 
+.close-menu i {
+  color: #000; }
+
+.menu-phanloai .menu-drop li a, .menu-phanloai .menu-drop li .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .menu-phanloai .menu-drop li img {
+  height: 60px;
+  padding: 19px 15px;
+  font-weight: 500; }
+
 @media (min-width: 415px) and (max-width: 768px) {
   .footer-nowrap {
     -webkit-flex-wrap: nowrap !important;
@@ -4541,7 +4549,9 @@ main {
     .chitietduan-rightcolumn .info-department {
       min-height: unset; }
   .motaduan-partial {
-    margin-top: 40px; }
+    margin-top: 40px; } }
+
+@media (max-width: 768px) {
   .active-fixed {
     position: unset;
     right: 13.2%;
