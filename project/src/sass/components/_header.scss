@@ -780,6 +780,7 @@ body {
 }
 @media(max-width:768px){
     .none-scroll{
+        position:relative;
         overflow-y: hidden !important;
     }
 }
