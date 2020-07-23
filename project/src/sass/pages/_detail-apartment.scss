@@ -22,3 +22,17 @@
         background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 1) 100% );
     }
 }
+.chitietduan-partial{
+    .chitietduan-rightcolumn{
+        max-width: 475px;
+        }
+    }        .active-fixed{
+        right: 13.5%;
+    }
+
+
+// @media (min-width:320px) and (max-width: 414px){
+//     .fa-chevron-right{
+//         display: none;
+//     }
+// }
