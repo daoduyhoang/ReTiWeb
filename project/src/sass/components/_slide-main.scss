@@ -107,4 +107,16 @@
         }
     }
 }
-
+@media(min-width:320px) and (max-width:414px){
+    #slider{
+        .carousel-inner{
+            height: 255px;
+            .carousel-item{
+                height: 255px;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

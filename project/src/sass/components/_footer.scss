@@ -10,10 +10,15 @@
         padding-right: 15px;
     }
 }
+.sologan{
+    font-size: 15px;
+    font-weight: 500;
+}
 .info-footer{
     .title-footer{
         font-size: 16px;
         font-weight: bold;
+        margin-bottom: 16px;
     }
     & > [class*="col-lg-"] {
         padding-left: 0;
@@ -21,7 +26,7 @@
     }
     ul{
         li{
-            padding-bottom: 15px;
+            padding-bottom: 16px;
             a{
                 color: #000;
                 font-size: 12px;

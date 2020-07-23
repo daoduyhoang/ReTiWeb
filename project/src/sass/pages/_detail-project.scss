@@ -62,6 +62,12 @@
 .progress-box{
     margin-top: 60px;
 }
+.active-fixed{
+    position: fixed;
+    right: 13.2%;
+    top: 22%;
+    z-index: 9;
+}
 .matbangduan-partial{
     padding-top: 30px;
     @media (min-width:320px) and (max-width: 414px){
@@ -83,6 +89,7 @@
                 }
             }
         }
+        
     }
 }   
 .chinhsachbanhang-partial{
@@ -110,3 +117,25 @@
     @media (min-width:320px) and (max-width: 414px){
         margin-top: 30px;
 }}
+.tick-complete{
+    .fa-check{
+        color: white;
+    }
+}
+@media(min-width:320px) and (max-width:414px){
+    .chitietduan-rightcolumn{
+        height: unset;
+        .info-department{
+            min-height: unset;
+        }
+    }
+    .motaduan-partial{
+        margin-top: 40px;
+    }
+    .active-fixed{
+        position: unset;
+        right: 13.2%;
+        top: 22%;
+        z-index: 9;
+    }
+}

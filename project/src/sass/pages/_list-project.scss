@@ -56,6 +56,14 @@ input[type=checkbox]:checked + label {
     left: -6px;
     z-index: 9;
 }
+.card-badge-hightlight{
+    position: absolute;
+    width: 73px;
+    height: 29px;
+    top: 81px;
+    left: -6px;
+    z-index: 9;
+}
 
 @media (max-width: 768px) {
     #list_project {
