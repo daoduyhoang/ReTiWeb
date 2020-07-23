@@ -132,9 +132,9 @@ button:focus {
   .header .nav-menu li:hover > ul {
     opacity: 1;
     pointer-events: auto;
-    top: -webkit-calc(100% + 7px);
-    top: -moz-calc(100% + 7px);
-    top: calc(100% + 7px); }
+    top: -webkit-calc(100% + 10px);
+    top: -moz-calc(100% + 10px);
+    top: calc(100% + 10px); }
   .header .nav-menu li a .icon, .header .nav-menu li .chitietduan-partial .chitietduan-button .chitietduan-btn div img .icon, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header .nav-menu li img .icon {
     display: none; }
 
@@ -181,6 +181,9 @@ button:focus {
   left: 0;
   opacity: 0;
   pointer-events: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -877,6 +880,9 @@ body {
 .none-scroll {
   overflow-y: unset; }
 
+.bottom-show-menu a span, .bottom-show-menu .chitietduan-partial .chitietduan-button .chitietduan-btn div img span, .chitietduan-partial .chitietduan-button .chitietduan-btn div .bottom-show-menu img span {
+  margin-right: 10px; }
+
 @media (min-width: 750px) {
   .menu-phanloai {
     width: 50%; } }
@@ -898,6 +904,7 @@ body {
 
 @media (max-width: 768px) {
   .none-scroll {
+    position: relative;
     overflow-y: hidden !important; } }
 
 /* FOOTER*/
@@ -971,6 +978,9 @@ body {
   height: 60px;
   padding: 19px 15px;
   font-weight: 500; }
+
+.font-size-bottom {
+  color: #8D8D8D; }
 
 @media (min-width: 415px) and (max-width: 768px) {
   .footer-nowrap {
@@ -1100,6 +1110,9 @@ body {
 
 .card-price-vnd {
   font-size: 16px; }
+
+.card-body .card-text {
+  margin-bottom: 8px; }
 
 /* COMPONENT SLIDER MAIN*/
 .custom-indicators {
@@ -2417,6 +2430,10 @@ body {
     color: #56C4CF;
     cursor: pointer; }
 
+.partner-reti {
+  max-width: 930px;
+  margin: auto; }
+
 @media only screen and (max-width: 480px) {
   .owl-nav .btn-prev, .owl-nav .btn-next {
     color: black;
@@ -2484,6 +2501,10 @@ body {
   .owl-nav .btn-prev i, .owl-nav .btn-next i {
     color: #56C4CF;
     cursor: pointer; }
+
+.partner-reti {
+  max-width: 930px;
+  margin: auto; }
 
 @media only screen and (max-width: 480px) {
   .owl-nav .btn-prev, .owl-nav .btn-next {
@@ -2588,7 +2609,8 @@ body {
       -webkit-flex: auto;
       -moz-box-flex: 1;
       -ms-flex: auto;
-      flex: auto; }
+      flex: auto;
+      margin-bottom: 56px; }
       .project_classification .project ul a, .project_classification .project ul .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .project_classification .project ul img {
         color: black;
         font-size: 12px; }
@@ -2607,6 +2629,10 @@ body {
 @media (max-width: 850px) {
   .project_classification .project {
     margin-bottom: 30px; } }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .project_classification .project ul {
+    margin-bottom: 16px; } }
 
 /*mua nha truc tuyen*/
 .container .muaNhaTrucTuyen-row, .khuVucNoiBat .muaNhaTrucTuyen-row {
@@ -2754,6 +2780,14 @@ body {
   .mr-mb-0 {
     margin-right: 0 !important; } }
 
+.line {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333132; }
+
 /*vi sao chon Reti*/
 .container .viSaoChonReti-row1, .khuVucNoiBat .viSaoChonReti-row1 {
   margin-top: 90px; }
@@ -2858,7 +2892,10 @@ body {
   border-radius: 8px;
   padding: 30px;
   position: absolute;
-  left: 20px; }
+  left: 3px;
+  height: 432px;
+  padding: 80px 47px 50px 75px;
+  top: 2px; }
   .partner_reti-content .mb-30 {
     margin-bottom: 30px; }
 
@@ -3006,7 +3043,9 @@ body {
   .khachHangCuaReti-slide .owl-next {
     left: 97%; }
   .khachHangCuaReti-slide .owl-prev {
-    left: 84%; } }
+    left: 84%; }
+  .partner_reti-content {
+    height: 277px; } }
 
 @media (max-width: 375px) {
   .height-partner_reti {
@@ -4349,6 +4388,11 @@ main {
       .home-section-7 .btn-prev i, .home-section-7 .btn-next i {
         line-height: 30px; } }
 
+.home-section-7 {
+  margin-bottom: 0; }
+  .home-section-7 .partner_reti {
+    margin-bottom: 16px; }
+
 @media (min-width: 320px) and (max-width: 414px) {
   .home-banner-small {
     -webkit-background-size: 100% 100%;
@@ -4387,6 +4431,8 @@ main {
     margin-bottom: 22px; }
   .home-section-7 {
     margin-bottom: 0; }
+    .home-section-7 .partner_reti {
+      margin-bottom: 16px; }
   .duannoibat-home .title-partial {
     padding-bottom: 0; }
   .home-section-6 {

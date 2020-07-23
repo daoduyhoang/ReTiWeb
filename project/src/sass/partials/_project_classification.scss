@@ -10,6 +10,7 @@
         }
        ul{
            flex: auto;
+           margin-bottom: 56px;
         a{
             color: black;
             font-size: 12px;
@@ -38,4 +39,14 @@
             margin-bottom: 30px;
         }
     }
+}
+@media(min-width:320px) and (max-width:414px){
+    .project_classification{
+        .project{
+            ul{
+                margin-bottom: 16px;
+            }
+        }
+    }
+    
 }

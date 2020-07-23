@@ -113,6 +113,12 @@ main {
         }
     }
 }
+.home-section-7{
+    margin-bottom: 0;
+    .partner_reti{
+        margin-bottom: 16px;
+    }
+}
 @media(min-width:320px) and (max-width:414px){
     .home-banner-small{
         background-size: 100% 100%;
@@ -156,6 +162,9 @@ main {
     }
     .home-section-7{
         margin-bottom: 0;
+        .partner_reti{
+            margin-bottom: 16px;
+        }
     }
     .duannoibat-home{
         .title-partial{

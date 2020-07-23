@@ -30,6 +30,10 @@
         cursor: pointer;
     }
 }
+.partner-reti{
+    max-width: 930px;
+    margin: auto;
+}
 @include Responsive(XS){
     .owl-nav{
         .btn-prev, .btn-next{
