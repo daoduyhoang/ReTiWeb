@@ -35,7 +35,7 @@
                     padding: 10px 20px;
                     color: $text-color;
                     &:hover {
-                        color: $link-color;
+                        color: $main-color;
                     }
                 }
             }
@@ -551,7 +551,7 @@ body {
         align-items: flex-end;
         display: flex;
         align-items: center;
-        padding: 15px 0;
+        padding: 16px 0;
         @include transition(0.4s);
         .header-logo-box-big {
             display: none;
@@ -564,9 +564,10 @@ body {
         }
         & > span {
             display: unset;
-            margin-left: 5px;
+            margin-left: 8px;
             i {
                 @include transition(.5s);
+                font-size: 12px;
             }
         }
     }
@@ -694,6 +695,7 @@ body {
                 display: unset;
                 width: auto;
                 opacity: 1;
+                margin-right: 16px;
             }
             .header-phone-btn {
                 opacity: 1;
@@ -725,7 +727,11 @@ body {
         width: 100%;
     }
 }
-
+.menu-phanloai-header{
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+}
 /* Reponsive */
 
 @media (min-width: 750px) {

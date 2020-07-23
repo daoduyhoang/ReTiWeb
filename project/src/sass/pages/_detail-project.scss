@@ -122,6 +122,33 @@
         color: white;
     }
 }
+.btn-zoom{
+    position: absolute;
+    right: 0;
+    top: 12%;
+    width: 36px;
+    height: 73px;
+    border-radius: 2px;
+    z-index: 9;
+    button:focus{
+        outline: none;
+    }
+    .up-map{
+        width: 100%;
+        height: 50%;
+        border: 1px solid #D3D3D3;
+        border-bottom: 1px solid #D3D3D3;
+    }
+    .down-map{
+        width: 100%;
+        height: 50%;
+        border: 1px solid #D3D3D3;
+        border-top: none;
+    }
+}
+.svg-content{
+    position: relative;
+}
 @media(min-width:320px) and (max-width:414px){
     .chitietduan-rightcolumn{
         height: unset;
