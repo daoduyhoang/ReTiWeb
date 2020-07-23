@@ -4548,6 +4548,34 @@ main {
     top: 22%;
     z-index: 9; } }
 
+.except-more p {
+  height: 7rem;
+  overflow: hidden;
+  position: relative; }
+
+.except-more.show p {
+  height: auto;
+  position: unset; }
+  .except-more.show p::after {
+    content: unset; }
+
+.except-more p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+  width: 100%;
+  height: 64px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(white));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, white 100%);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, white 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.4) 0%, white 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4) 0%, white 100%); }
+
 .chitietduan-partial .chitietduan-rightcolumn {
   max-width: 475px; }
 
