@@ -123,8 +123,83 @@ $('#slider-main').slick({
     }
   }]
 });
+$('.slide-apartment').owlCarousel({
+  loop: true,
+  margin: 10,
+  responsive: {
+    0: {
+      items: 1,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 6000
+    },
+    480: {
+      items: 1,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 6000
+    },
+    576: {
+      items: 1
+    },
+    768: {
+      items: 1
+    },
+    992: {
+      items: 1
+    },
+    1000: {
+      items: 1,
+      nav: true,
+      navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"]
+    }
+  },
+  dots: true
+});
 $(".js-range-slider").ionRangeSlider();
 $(".js-range-slider2").ionRangeSlider({
   from: 250,
   to: 500
+});
+$('.partner-reti-slider').owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: false,
+  stagePadding: 4,
+  autoplay: true,
+  autoplayTimeout: 6000,
+  items: 4,
+  responsive: {
+    0: {
+      items: 1
+    },
+    480: {
+      items: 1
+    },
+    576: {
+      items: 3
+    },
+    768: {
+      items: 4
+    },
+    992: {
+      items: 4
+    },
+    1000: {
+      items: 4
+    }
+  },
+  dots: false
+});
+var owl = $('.partner-reti-slider');
+owl.owlCarousel(); // Go to the next item
+
+$('.btn-next').click(function () {
+  owl.trigger('next.owl.carousel');
+}); // Go to the previous item
+
+$('.btn-prev').click(function () {
+  // With optional speed parameter
+  // Parameters has to be in square bracket '[]'
+  owl.trigger('prev.owl.carousel', [300]);
 });

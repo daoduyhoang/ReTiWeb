@@ -139,6 +139,21 @@
     border-radius: 50%;
     background-image: url(../images/matbangduan/lefy.png);
 }
+// .ground-slider-bottom{
+//     .slider-item-bb{
+//         position: relative;
+//         &::before{
+//             position: absolute;
+//             content: '';
+//             display: block;
+//             width: 100%;
+//             height: 100%;
+//             background: black;
+//             opacity: .5;
+//             z-index: 9;
+//         }
+//     }
+// }
 @media(min-width:320px) and (max-width:414px){
     .text-center-mb{
         padding-left: 10px !important;

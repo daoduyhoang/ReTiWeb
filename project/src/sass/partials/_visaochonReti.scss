@@ -8,9 +8,9 @@ $col4: 98%/3;
         @include flexbox();
         @include justify-content(space-between);
         .viSaoChonReti-col1{
-            width: $col4;
+            width: 330px;
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 49px;
             .check{
                 @include flexbox();
                 @include justify-content(center);
@@ -32,9 +32,16 @@ $col4: 98%/3;
             .viSaoChonReti-content{
                 @include text_description();
             }
+            &:nth-child(1){
+                margin-right: 49px;
+            }
+            &:nth-child(2){
+                margin-right: 49px;
+            }
         }
     }
 }
+
 @include Responsive(XS){
     .container{
         .viSaoChonReti-row2{

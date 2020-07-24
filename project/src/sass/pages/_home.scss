@@ -118,6 +118,17 @@ main {
     .partner_reti{
         margin-bottom: 16px;
     }
+    .text-partner_reti{
+        max-width: 930px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    // .owl-stage-outer{
+    //     width: 1005px;
+    // }
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        overflow: hidden !important;
+    }
 }
 @media(min-width:320px) and (max-width:414px){
     .home-banner-small{

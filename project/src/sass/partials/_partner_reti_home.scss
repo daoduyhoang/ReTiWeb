@@ -2,7 +2,9 @@
     text-align: center;
     @include text_description();
 }
-.partner-reti{
+.partner-reti-slider{
+    max-width: 1005px;
+    margin: auto;
     .item{
         width: 130px;
         margin: auto;
@@ -34,6 +36,11 @@
     max-width: 930px;
     margin: auto;
 }
+// .slider-partner{
+//     .owl-nav{
+//         padding: 0 50px;
+//     }
+// }
 @include Responsive(XS){
     .owl-nav{
         .btn-prev, .btn-next{
@@ -52,4 +59,11 @@
         }
     }
     
+}
+@media(min-width:320px) and (max-width:450px){
+    .slider-partner{
+        .owl-nav{
+            padding: 0;
+        }
+    }
 }

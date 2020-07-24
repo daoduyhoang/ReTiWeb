@@ -31,48 +31,6 @@ $('.slide-card-duannoibat').owlCarousel({
   autoplayTimeout: 6000
 }); //end slide du an noi bat
 
-$('.partner-reti').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  stagePadding: 4,
-  autoplay: true,
-  autoplayTimeout: 6000,
-  items: 4,
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 3
-    },
-    768: {
-      items: 4
-    },
-    992: {
-      items: 4
-    },
-    1000: {
-      items: 4
-    }
-  },
-  dots: false
-});
-var owl = $('.partner-reti');
-owl.owlCarousel(); // Go to the next item
-
-$('.btn-next').click(function () {
-  owl.trigger('next.owl.carousel');
-}); // Go to the previous item
-
-$('.btn-prev').click(function () {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl.trigger('prev.owl.carousel', [300]);
-});
 var rangeSlide = jQuery('.js-range-slider');
 
 if (rangeSlide) {
