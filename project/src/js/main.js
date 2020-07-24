@@ -230,6 +230,17 @@ function myFunction(x) {
       jQuery('.bottom-show-menu').toggleClass('active');
       jQuery('.menu-dropdown').toggleClass('active');
     });
+
+    document.addEventListener('click', e => {
+      let checkoutMenu1 = e.target.closest('.header');
+      let getMenuDrop = document.querySelector('.menu-dropdown');
+      let cvArryDrpdo = getMenuDrop.getAttribute('class').split(' ');
+      if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
+        getMenuDrop.classList.remove('active');
+      }
+    });
+
+
     //===================
 
     // Filter 
@@ -264,21 +275,68 @@ var x = window.matchMedia("(max-width: 850px)");
 myFunction(x);
 x.addListener(myFunction);
 
-let getExcept = document.querySelector('.except-more');
-let getBtnShow = document.querySelector('.btn-more-less');
+// let getExcept = document.querySelector('.except-more');
+// let getBtnShow = document.querySelector('.btn-more-less');
 
-getBtnShow.addEventListener('click', event => {
-  const linkText = event.target.textContent.toLowerCase();
-  event.preventDefault();
+// getBtnShow.addEventListener('click', event=>{
+//     const linkText = event.target.textContent.toLowerCase();
+//     event.preventDefault();
 
-  if (linkText == "xem chi tiết") {
-    getBtnShow.innerText = "Ẩn bớt";
-    getExcept.classList.add('show');
-  } else {
-    getBtnShow.innerText = "Xem chi tiết";
-    getExcept.classList.remove('show');
+//     if (linkText == "xem chi tiết") {
+//         getBtnShow.innerText = "Ẩn bớt";
+//         getExcept.classList.add('show');
+//     } else {
+//         getBtnShow.innerText = "Xem chi tiết";
+//         getExcept.classList.remove('show');
+//     }
+// });
+
+
+// Testtttttttttt
+
+const Utils = {
+
+
+  lessExcerpt: function (element) {
+    return element.slice(0, 300);
+  },
+
+  showMore: function (btn, excerpt, excerptO) {
+    btn.addEventListener("click", e => {
+      const linkText = e.target.textContent.toLowerCase();
+      e.preventDefault();
+      // console.log(excerpt)
+      if (linkText == "xem chi tiết") {
+        btn.innerText = "Ẩn bớt";
+        excerpt.textContent = excerptO;
+      } else {
+        btn.innerText = "Xem chi tiết";
+        excerpt.textContent = this.lessExcerpt(excerptO) + ' ...';
+      }
+    });
   }
-});
+};
+
+const ExcerptWidget = {
+  showMore: function (btnShowLes, excerptTarget) {
+    const showMoreBtn = document.querySelectorAll(btnShowLes);
+    showMoreBtn.forEach(function (link) {
+      const excerpt = link.parentElement.parentElement.querySelector(excerptTarget);
+      let excerptO = link.parentElement.parentElement.querySelector(excerptTarget).textContent;
+      excerpt.textContent = excerptO.slice(0, 300) + ' ...';
+      Utils.showMore(link, excerpt, excerptO);
+    });
+  }
+};
+
+ExcerptWidget.showMore('.btn-more-less', '.except-more');
+
+
+
+
+//testttttttttttttttt============
+
+
 
 //======================
 // TOGGLE MAP LIST PROJECT
