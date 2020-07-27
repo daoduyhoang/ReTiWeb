@@ -65,6 +65,7 @@ $(".btn-control .btn-filter").click(function () {
   }
 });
 
+
 var refreshBtn = function (btn, checked) {
   let buttonRefresh = document.querySelectorAll(btn);
   let checkedBox = Array.from(document.querySelectorAll(checked));
@@ -97,17 +98,21 @@ refreshBtn('.btn-delete', '.control-table');
 jQuery('#showBoLoc').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').addClass('active');
+  jQuery('body').addClass('none-scroll');
 })
 
 jQuery('#close-filter').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').removeClass('active');
   jQuery('.filter-control-mobile').addClass('close-animt');
+  jQuery('body').removeClass('none-scroll');
 })
 
 //============================
 
-
+jQuery('.like-product-card').click(function() {
+  jQuery(this).toggleClass('liked');
+});
 
 
 // MATBANGDUAN
@@ -231,15 +236,24 @@ function myFunction(x) {
       jQuery('.menu-dropdown').toggleClass('active');
     });
 
-    document.addEventListener('click', e => {
-      let checkoutMenu1 = e.target.closest('.header');
-      let getMenuDrop = document.querySelector('.menu-dropdown');
-      let cvArryDrpdo = getMenuDrop.getAttribute('class').split(' ');
-      if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
-        getMenuDrop.classList.remove('active');
-      }
-    });
+    function clickDocToClose(class1, class2) {
+      document.addEventListener('click', e => {
+        let checkoutMenu1 = e.target.closest(class1);
+        let getMenuDrop = document.querySelectorAll(class2);
+        getMenuDrop.forEach(val => {
+          let cvArryDrpdo = val.getAttribute('class').split(' ');
+          if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
+            val.classList.remove('active');
+          }
+        })
+      });
+    }
+    clickDocToClose('.header', '.menu-dropdown');
+    clickDocToClose('.header', '.bottom-show-menu');
 
+    clickDocToClose('.btn-control', '.control-table');
+    clickDocToClose('.btn-control', '.btn-filter');
+    
 
     //===================
 

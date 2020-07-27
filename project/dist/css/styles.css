@@ -1053,13 +1053,24 @@ body {
     top: 14px;
     left: -6px;
     z-index: 9; }
-  .card-badge-Group-277 {
+  .card-favourite {
     position: absolute;
     top: 14px;
     right: 8px;
     color: #EF5B40;
     font-size: 20px;
     z-index: 9; }
+    .card-favourite .like-product-card {
+      background: none;
+      border: none;
+      color: #ffffff00;
+      -webkit-text-stroke: 2px #fff;
+      -webkit-transition: all 0.2s;
+      -moz-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s; }
+      .card-favourite .like-product-card.liked {
+        color: #EF5B40; }
   .card-price {
     line-height: 24px;
     color: #EF5B40;
@@ -1341,12 +1352,20 @@ body {
 .page-link {
   border: none;
   color: black; }
-
-.page-link:hover {
-  color: white;
-  text-decoration: none;
-  background-color: #56C4CF;
-  border-color: #dee2e6; }
+  .page-link:focus {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  .page-link:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #56C4CF;
+    border-color: #dee2e6; }
+  .page-link.active {
+    color: white;
+    text-decoration: none;
+    background-color: #56C4CF;
+    border-color: #dee2e6; }
 
 /* TITLE PAGE */
 .title-partial {
@@ -1761,9 +1780,17 @@ body {
     border-bottom: 1px solid #EDEDED;
     margin-bottom: 10px;
     margin-left: -15px;
-    margin-right: -15px; }
+    margin-right: -15px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border: 1px solid #EDEDED;
+    z-index: 9; }
     .filter-control-mobile .fileter-control-mobile-header > * {
       width: 33.33333337%; }
+    .filter-control-mobile .fileter-control-mobile-header .refresh-btn a, .filter-control-mobile .fileter-control-mobile-header .refresh-btn .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control-mobile .fileter-control-mobile-header .refresh-btn img {
+      color: #0C77C6; }
     .filter-control-mobile .fileter-control-mobile-header h4 {
       font-weight: 500;
       font-size: 16px;
@@ -4451,10 +4478,11 @@ input[type=checkbox]:checked + label {
   width: 30%; }
 
 .map-fixed {
-  position: fixed;
-  top: 20%;
-  width: 333px !important;
-  right: 14%; }
+  position: relative; }
+  .map-fixed iframe {
+    position: fixed;
+    top: 20%;
+    width: 333px; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .card-category .card-price {
