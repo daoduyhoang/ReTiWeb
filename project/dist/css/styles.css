@@ -1158,6 +1158,13 @@ body {
   height: 100%;
   width: 100%; }
 
+.ground .slick-slide, .chitietduan-leftcolumn .slick-slide {
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5); }
+  .ground .slick-slide.slick-current, .chitietduan-leftcolumn .slick-slide.slick-current {
+    -webkit-filter: none;
+    filter: none; }
+
 @media (min-width: 769px) {
   #slider #carouselControls .carousel-indicators li {
     width: 265px;

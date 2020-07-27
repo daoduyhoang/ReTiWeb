@@ -67,6 +67,16 @@
     height: 100%;
     width: 100%;
 }
+.ground, .chitietduan-leftcolumn {
+    .slick-slide {
+        filter: brightness(0.5);
+        &.slick-current {
+            filter: none;
+        }
+    }
+}
+
+
 @media(min-width:769px){
     #slider{
         #carouselControls .carousel-indicators li{
