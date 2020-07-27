@@ -2,11 +2,18 @@
     .fileter-control-mobile-header {
         display: none;
     }
+    .btn-update {
+        width: 86px;
+        margin-left: 12px;
+    }
+    .btn-control {
+        position: relative;
+    }
     .btn-filter{
         border: none;
         border-radius: 2px;   
         margin-right: 20px;
-        padding: 10px 15px;
+        padding: 9px 10px;
         font-size: 12px;
         font-family: $roboto;
         &.active {
@@ -35,6 +42,10 @@
     }
     .control-table {
         display: none;
+        position: absolute;
+        z-index: 20;
+        top: 50px;
+        right: 0;
         &.active {
             display: block;
         }
@@ -45,12 +56,15 @@
     }
     i{
         font-size: 12px;
-        margin-left: 13px;
+        margin-left: 12.5px;
     }
     a{
         padding-right: 10px;
         font-size: 12px;
         font-family: $roboto;
+    }
+    .delete-filter a {
+        color: $link-color;
     }
     .view-map{
         display: flex;
@@ -63,24 +77,13 @@
     }
     
     .property-type{
-        position: absolute;
         width: 377px;
-        left: 26%;
-        top: 50px;
-        z-index: 20;
     }
     .price-range{
-        position: absolute;
-        left: 33%;
         top: 51px;
-        z-index: 20;
     }
     .filter-more{
-        position: absolute;
         width: 752px;
-        left: 12%;
-        top: 50px;
-        z-index: 20;
     }
     .btn-active{
         color: white;

@@ -1509,7 +1509,7 @@ body {
 .furniture .mb-15, .project .mb-15 {
   margin-bottom: 15px; }
 
-.buy-online .custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
   border-color: #56C4CF;
   background-color: #56C4CF; }
 
@@ -1572,13 +1572,20 @@ body {
 .filter-control .fileter-control-mobile-header {
   display: none; }
 
+.filter-control .btn-update {
+  width: 86px;
+  margin-left: 12px; }
+
+.filter-control .btn-control {
+  position: relative; }
+
 .filter-control .btn-filter {
   border: none;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin-right: 20px;
-  padding: 10px 15px;
+  padding: 9px 10px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
   .filter-control .btn-filter.active {
@@ -1605,7 +1612,11 @@ body {
       color: #F2F2F2; }
 
 .filter-control .control-table {
-  display: none; }
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 50px;
+  right: 0; }
   .filter-control .control-table.active {
     display: block; }
   .filter-control .control-table form {
@@ -1614,12 +1625,15 @@ body {
 
 .filter-control i {
   font-size: 12px;
-  margin-left: 13px; }
+  margin-left: 12.5px; }
 
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control img {
   padding-right: 10px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
+
+.filter-control .delete-filter a, .filter-control .delete-filter .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control .delete-filter img {
+  color: #0C77C6; }
 
 .filter-control .view-map {
   display: -webkit-box;
@@ -1638,24 +1652,13 @@ body {
     padding-right: 5px; }
 
 .filter-control .property-type {
-  position: absolute;
-  width: 377px;
-  left: 26%;
-  top: 50px;
-  z-index: 20; }
+  width: 377px; }
 
 .filter-control .price-range {
-  position: absolute;
-  left: 33%;
-  top: 51px;
-  z-index: 20; }
+  top: 51px; }
 
 .filter-control .filter-more {
-  position: absolute;
-  width: 752px;
-  left: 12%;
-  top: 50px;
-  z-index: 20; }
+  width: 752px; }
 
 .filter-control .btn-active {
   color: white;
@@ -4143,8 +4146,14 @@ body {
 .price-range .irs-min, .price-range .irs-max, .price-range .irs-grid-text {
   display: none !important; }
 
-.filter-more .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #56C4CF; }
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #56C4CF;
+  border-color: #56C4CF !important; }
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: unset;
+  -moz-box-shadow: unset;
+  box-shadow: unset; }
 
 input[type=checkbox]:checked + label {
   font-weight: 600; }
