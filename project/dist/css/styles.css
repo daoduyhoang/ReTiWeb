@@ -1578,11 +1578,22 @@ body {
 
 .table-pc .table thead th {
   font-size: 12px;
-  text-align: center; }
+  text-align: center;
+  padding: 0 !important;
+  padding-bottom: 9px !important;
+  height: 48px; }
 
 .table-pc .table td, .table-pc .table th {
   font-size: 12px;
   text-align: center; }
+
+.table-pc .table td {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000; }
 
 .table-pc .custom-badge {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
@@ -1594,7 +1605,8 @@ body {
   -moz-border-radius: 4px;
   border-radius: 4px;
   padding: 7px 15px;
-  color: #3CC13B; }
+  color: #3CC13B;
+  font-weight: 500; }
 
 .table-pc .detai-table {
   text-decoration: underline; }
@@ -2338,10 +2350,12 @@ body {
     -o-transform: translateX(-35%);
     transform: translateX(-35%); }
     .progress-status .date-status .date {
-      padding: 0 10px; }
+      padding: 0 10px;
+      color: #000; }
     .progress-status .date-status .status {
       font-size: 12px;
-      font-style: italic; }
+      font-style: italic;
+      color: #8D8D8D; }
   .progress-status:nth-child(odd) .date-status {
     top: unset;
     bottom: 130%; }
@@ -3474,7 +3488,8 @@ body {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px; }
+    font-size: 16px;
+    color: #1A1A1A; }
 
 .shark-content {
   font-family: "Roboto";
@@ -3857,6 +3872,9 @@ body {
   .sales_policy .row {
     margin-bottom: 8px; }
 
+.chinhsachbanhang-partial h2 {
+  color: #000000; }
+
 .duantuongtu-partial .similar_projects {
   margin-top: 30px; }
 
@@ -3892,7 +3910,8 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-image: url(../images/matbangduan/Shape.png); }
+  background-image: url(../images/matbangduan/Shape.png);
+  top: 32%; }
 
 #slider-main .slick-prev {
   background: rgba(245, 245, 245, 0.35);
@@ -3905,7 +3924,8 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  left: -4%; }
+  left: -4%;
+  top: 32%; }
 
 #slider-main .slick-prev:before {
   color: #56C6D0;
@@ -4969,6 +4989,9 @@ main {
 .svg-content {
   position: relative; }
 
+.like-product-card:focus {
+  outline: none; }
+
 @media (min-width: 320px) and (max-width: 414px) {
   .chitietduan-rightcolumn {
     height: unset; }
@@ -4977,8 +5000,8 @@ main {
   .motaduan-partial {
     margin-top: 40px; }
   .btn-zoom {
-    right: 20px;
-    top: 18%; } }
+    right: 16px;
+    top: 179px; } }
 
 @media (max-width: 768px) {
   .active-fixed {

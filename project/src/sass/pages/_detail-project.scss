@@ -156,6 +156,9 @@
 .svg-content{
     position: relative;
 }
+.like-product-card:focus{
+    outline: none;
+}
 @media(min-width:320px) and (max-width:414px){
     .chitietduan-rightcolumn{
         height: unset;
@@ -167,8 +170,8 @@
         margin-top: 40px;
     }
     .btn-zoom{
-        right: 20px;
-        top: 18%;
+        right: 16px;
+    top: 179px;
     }
 }
 @media(max-width:768px){

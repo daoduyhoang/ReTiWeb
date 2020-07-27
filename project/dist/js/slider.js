@@ -121,6 +121,12 @@ $('#slider-main').slick({
       slidesToShow: 1,
       slidesToScroll: 1
     }
+  }, {
+    breakpoint: 375,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
   }]
 });
 $('.slide-apartment').owlCarousel({
