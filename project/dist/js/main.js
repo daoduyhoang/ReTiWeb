@@ -31,48 +31,6 @@ $('.slide-card-duannoibat').owlCarousel({
   autoplayTimeout: 6000
 }); //end slide du an noi bat
 
-$('.partner-reti').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  stagePadding: 4,
-  autoplay: true,
-  autoplayTimeout: 6000,
-  items: 4,
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 3
-    },
-    768: {
-      items: 4
-    },
-    992: {
-      items: 4
-    },
-    1000: {
-      items: 4
-    }
-  },
-  dots: false
-});
-var owl = $('.partner-reti');
-owl.owlCarousel(); // Go to the next item
-
-$('.btn-next').click(function () {
-  owl.trigger('next.owl.carousel');
-}); // Go to the previous item
-
-$('.btn-prev').click(function () {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl.trigger('prev.owl.carousel', [300]);
-});
 var rangeSlide = jQuery('.js-range-slider');
 
 if (rangeSlide) {
@@ -198,6 +156,7 @@ function myFunction(x) {
     jQuery('.header').addClass('header-mobile');
     jQuery('.header-mobile .header-logo-box').click(function (e) {
       e.preventDefault();
+      jQuery('body').toggleClass('none-scroll');
       jQuery('.header-main-box').toggleClass('active');
       jQuery('.header-mobile').toggleClass('full-height');
     });
@@ -220,6 +179,7 @@ function myFunction(x) {
     };
 
     jQuery('.bottom-show-menu').click(function (e) {
+      jQuery('body').addClass('none-scroll');
       jQuery('.menu-phanloai').addClass('active');
       jQuery('.menu-phanloai').removeClass('close-animt');
     }); //======================
@@ -426,9 +386,3 @@ if (infoHome) {
     }
   });
 }
-
-$(".js-range-slider").ionRangeSlider();
-$(".js-range-slider2").ionRangeSlider({
-  from: 250,
-  to: 500
-});

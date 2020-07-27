@@ -46,7 +46,7 @@ table {
   border-spacing: 0; }
 
 a:hover, .chitietduan-partial .chitietduan-button .chitietduan-btn div img:hover {
-  text-decoration: none; }
+  text-decoration: none !important; }
 
 button:focus {
   outline: none; }
@@ -118,7 +118,7 @@ button:focus {
         padding: 10px 20px;
         color: #333132; }
         .header-menu-box ul li a:hover, .header-menu-box ul li .chitietduan-partial .chitietduan-button .chitietduan-btn div img:hover, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-menu-box ul li img:hover {
-          color: #0C77C6; }
+          color: #56C4CF; }
     .header-menu-box ul.header-fnc a, .header-menu-box ul.header-fnc .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-menu-box ul.header-fnc img {
       color: #56C4CF; }
       .header-menu-box ul.header-fnc a:hover, .header-menu-box ul.header-fnc .chitietduan-partial .chitietduan-button .chitietduan-btn div img:hover, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header-menu-box ul.header-fnc img:hover {
@@ -132,9 +132,9 @@ button:focus {
   .header .nav-menu li:hover > ul {
     opacity: 1;
     pointer-events: auto;
-    top: -webkit-calc(100% + 7px);
-    top: -moz-calc(100% + 7px);
-    top: calc(100% + 7px); }
+    top: -webkit-calc(100% + 10px);
+    top: -moz-calc(100% + 10px);
+    top: calc(100% + 10px); }
   .header .nav-menu li a .icon, .header .nav-menu li .chitietduan-partial .chitietduan-button .chitietduan-btn div img .icon, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header .nav-menu li img .icon {
     display: none; }
 
@@ -181,6 +181,9 @@ button:focus {
   left: 0;
   opacity: 0;
   pointer-events: none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -670,7 +673,7 @@ body {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 15px 0;
+  padding: 16px 0;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
@@ -687,12 +690,13 @@ body {
     display: block; }
   .header-mobile .header-logo-box > span {
     display: unset;
-    margin-left: 5px; }
+    margin-left: 8px; }
     .header-mobile .header-logo-box > span i {
       -webkit-transition: all 0.5s;
       -moz-transition: all 0.5s;
       -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      transition: all 0.5s;
+      font-size: 12px; }
 
 .header-mobile .header-phone-btn {
   display: block; }
@@ -822,7 +826,8 @@ body {
   .header-mobile .header-main-box.active .header-logo-box-big {
     display: unset;
     width: auto;
-    opacity: 1; }
+    opacity: 1;
+    margin-right: 16px; }
   .header-mobile .header-main-box.active .header-phone-btn {
     opacity: 1;
     pointer-events: auto;
@@ -863,7 +868,21 @@ body {
 .header-mobile .menu-drd-level-1 {
   width: 100%; }
 
+.menu-phanloai-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  border: 1px solid #EDEDED;
+  z-index: 9; }
+
 /* Reponsive */
+.none-scroll {
+  overflow-y: unset; }
+
+.bottom-show-menu a span, .bottom-show-menu .chitietduan-partial .chitietduan-button .chitietduan-btn div img span, .chitietduan-partial .chitietduan-button .chitietduan-btn div .bottom-show-menu img span {
+  margin-right: 10px; }
+
 @media (min-width: 750px) {
   .menu-phanloai {
     width: 50%; } }
@@ -882,6 +901,11 @@ body {
   right: 0;
   padding-top: 15%;
   z-index: 99; }
+
+@media (max-width: 768px) {
+  .none-scroll {
+    position: relative;
+    overflow-y: hidden !important; } }
 
 /* FOOTER*/
 .logo {
@@ -946,6 +970,17 @@ body {
 
 .bottom-footer .container:nth-child(1), .bottom-footer .khuVucNoiBat:nth-child(1) {
   margin-bottom: 62px; }
+
+.close-menu i {
+  color: #000; }
+
+.menu-phanloai .menu-drop li a, .menu-phanloai .menu-drop li .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .menu-phanloai .menu-drop li img {
+  height: 60px;
+  padding: 19px 15px;
+  font-weight: 500; }
+
+.font-size-bottom {
+  color: #8D8D8D; }
 
 @media (min-width: 415px) and (max-width: 768px) {
   .footer-nowrap {
@@ -1075,6 +1110,12 @@ body {
 
 .card-price-vnd {
   font-size: 16px; }
+
+.card-body .card-text {
+  margin-bottom: 8px; }
+
+.card-body div .card-text {
+  margin-bottom: 17px !important; }
 
 /* COMPONENT SLIDER MAIN*/
 .custom-indicators {
@@ -1356,15 +1397,15 @@ body {
     position: absolute;
     border-top: 1px solid #D3D3D3;
     border-left: 1px solid #D3D3D3;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 97%;
+    bottom: 98%;
     right: 9%;
     background-color: white; }
 
@@ -2050,6 +2091,144 @@ body {
     line-height: 40px;
     margin: 0; } }
 
+/* CARD SLIDE*/
+.card-slider {
+  max-width: 550px;
+  min-height: 170px;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .card-slider .card-slider-img img {
+    height: 100%;
+    width: 170px; }
+  .card-slider .card-info-title {
+    margin-bottom: 9px; }
+    .card-slider .card-info-title h5 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      color: #0C77C6; }
+  .card-slider .text-card-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333132; }
+  .card-slider .card-info-project {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 23px; }
+  .card-slider .card-price-slide {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .card-slider .card-price-slide .price-card {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .card-slider .card-price-slide .price-card .vnd {
+        background: #EF5B40;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: white;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 2px 8px;
+        margin-right: 6px; }
+      .card-slider .card-price-slide .price-card .amount {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #EF5B40; }
+  .card-slider .card-slide-info {
+    width: -webkit-calc(100% - 170px);
+    width: -moz-calc(100% - 170px);
+    width: calc(100% - 170px);
+    padding: 15px 10px 17px 20px; }
+  .card-slider .mg-card {
+    margin-bottom: 8px; }
+  .card-slider .card-price-slide .purchase {
+    background: #0C77C6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 2px 10px 2px 8px;
+    line-height: 16px; }
+  .card-slider .card-price-slide span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: #FFFFFF; }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .card-slider {
+    min-height: 175px; }
+    .card-slider .card-slider-img img {
+      width: 128px; }
+    .card-slider .card-slide-info {
+      padding: 8px 8px 19px 18px;
+      width: -webkit-calc(100% - 128px);
+      width: -moz-calc(100% - 128px);
+      width: calc(100% - 128px); }
+    .card-slider .card-adress, .card-slider .card-type {
+      white-space: nowrap;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    .card-slider .card-price-slide .price-card .vnd {
+      font-size: 10px;
+      padding: 3px 5px; }
+    .card-slider .card-price-slide .price-card .amount {
+      font-size: 14px; }
+    .card-slider .card-info-project {
+      margin-bottom: 12px; }
+    .card-slider .card-price-slide .purchase {
+      background: #0C77C6;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      padding: 2px 4px; }
+    .card-slider .card-price-slide span {
+      font-size: 10px; }
+    .card-slider .card-info-project {
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .card-slider .card-info-project .card-acreage {
+        width: 100%;
+        margin-bottom: 8px; } }
+
 /* Progress */
 .progress-barc {
   height: 8px;
@@ -2362,23 +2541,25 @@ body {
   font-size: 14px;
   line-height: 26px; }
 
-.partner-reti .item {
-  width: 130px;
+.partner-reti-slider {
+  max-width: 1005px;
   margin: auto; }
-  .partner-reti .item img {
-    width: 100%; }
-
-.partner-reti .owl-stage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  .partner-reti-slider .item {
+    width: 130px;
+    margin: auto; }
+    .partner-reti-slider .item img {
+      width: 100%; }
+  .partner-reti-slider .owl-stage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .slider-partner {
   position: relative; }
@@ -2402,6 +2583,10 @@ body {
     color: #56C4CF;
     cursor: pointer; }
 
+.partner-reti {
+  max-width: 930px;
+  margin: auto; }
+
 @media only screen and (max-width: 480px) {
   .owl-nav .btn-prev, .owl-nav .btn-next {
     color: black;
@@ -2421,6 +2606,10 @@ body {
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
       line-height: 30px; } }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .slider-partner .owl-nav {
+    padding: 0; } }
 
 .text-partner_reti {
   text-align: center;
@@ -2430,23 +2619,25 @@ body {
   font-size: 14px;
   line-height: 26px; }
 
-.partner-reti .item {
-  width: 130px;
+.partner-reti-slider {
+  max-width: 1005px;
   margin: auto; }
-  .partner-reti .item img {
-    width: 100%; }
-
-.partner-reti .owl-stage {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  .partner-reti-slider .item {
+    width: 130px;
+    margin: auto; }
+    .partner-reti-slider .item img {
+      width: 100%; }
+  .partner-reti-slider .owl-stage {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
 
 .slider-partner {
   position: relative; }
@@ -2470,6 +2661,10 @@ body {
     color: #56C4CF;
     cursor: pointer; }
 
+.partner-reti {
+  max-width: 930px;
+  margin: auto; }
+
 @media only screen and (max-width: 480px) {
   .owl-nav .btn-prev, .owl-nav .btn-next {
     color: black;
@@ -2489,6 +2684,10 @@ body {
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
       line-height: 30px; } }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .slider-partner .owl-nav {
+    padding: 0; } }
 
 /* FORM*/
 .container-form {
@@ -2513,7 +2712,11 @@ body {
       -moz-border-radius: 4px;
       border-radius: 4px;
       color: #fff;
-      border: none; }
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      font-family: "Roboto", sans-serif; }
     .container-form .form-web .form-email {
       width: 67%;
       margin-right: 3%; }
@@ -2573,7 +2776,8 @@ body {
       -webkit-flex: auto;
       -moz-box-flex: 1;
       -ms-flex: auto;
-      flex: auto; }
+      flex: auto;
+      margin-bottom: 56px; }
       .project_classification .project ul a, .project_classification .project ul .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .project_classification .project ul img {
         color: black;
         font-size: 12px; }
@@ -2593,6 +2797,10 @@ body {
   .project_classification .project {
     margin-bottom: 30px; } }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .project_classification .project ul {
+    margin-bottom: 16px; } }
+
 /*mua nha truc tuyen*/
 .container .muaNhaTrucTuyen-row, .khuVucNoiBat .muaNhaTrucTuyen-row {
   width: 100%;
@@ -2611,6 +2819,7 @@ body {
   .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft {
     width: 49.5%;
     height: auto;
+    margin-right: 20px;
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
     -ms-flex-direction: column;
@@ -2662,7 +2871,6 @@ body {
     padding: 5px 10px;
     margin-right: 30px; }
   .container .muaNhaTrucTuyen-row .paging .line, .khuVucNoiBat .muaNhaTrucTuyen-row .paging .line {
-    font-weight: bold;
     margin-right: 30px; }
   .container .muaNhaTrucTuyen-row .content2 .content2-title, .khuVucNoiBat .muaNhaTrucTuyen-row .content2 .content2-title {
     font-weight: bold; }
@@ -2739,6 +2947,14 @@ body {
   .mr-mb-0 {
     margin-right: 0 !important; } }
 
+.line {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333132; }
+
 /*vi sao chon Reti*/
 .container .viSaoChonReti-row1, .khuVucNoiBat .viSaoChonReti-row1 {
   margin-top: 90px; }
@@ -2757,9 +2973,9 @@ body {
   justify-content: space-between;
   -ms-flex-pack: space-between; }
   .container .viSaoChonReti-row2 .viSaoChonReti-col1, .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1 {
-    width: 32.66667%;
+    width: 330px;
     text-align: center;
-    margin-bottom: 30px; }
+    margin-bottom: 49px; }
     .container .viSaoChonReti-row2 .viSaoChonReti-col1 .check, .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1 .check {
       display: -webkit-box;
       display: -moz-box;
@@ -2797,6 +3013,10 @@ body {
       font-weight: normal;
       font-size: 14px;
       line-height: 26px; }
+    .container .viSaoChonReti-row2 .viSaoChonReti-col1:nth-child(1), .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1:nth-child(1) {
+      margin-right: 49px; }
+    .container .viSaoChonReti-row2 .viSaoChonReti-col1:nth-child(2), .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1:nth-child(2) {
+      margin-right: 49px; }
 
 @media only screen and (max-width: 480px) {
   .container .viSaoChonReti-row2, .khuVucNoiBat .viSaoChonReti-row2 {
@@ -2843,7 +3063,9 @@ body {
   border-radius: 8px;
   padding: 30px;
   position: absolute;
-  left: 20px; }
+  left: 3px;
+  height: 432px;
+  padding: 80px 47px 50px 75px; }
   .partner_reti-content .mb-30 {
     margin-bottom: 30px; }
 
@@ -2991,7 +3213,9 @@ body {
   .khachHangCuaReti-slide .owl-next {
     left: 97%; }
   .khachHangCuaReti-slide .owl-prev {
-    left: 84%; } }
+    left: 84%; }
+  .partner_reti-content {
+    height: 277px; } }
 
 @media (max-width: 375px) {
   .height-partner_reti {
@@ -3419,8 +3643,8 @@ body {
     padding-right: 16px; }
 
 #number-duan {
-  font-weight: 500;
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold; }
 
 #showBoLoc {
   font-weight: 500;
@@ -3570,14 +3794,20 @@ body {
   #slider-main .slick-prev {
     display: none !important; }
   #slider-main .slick-next {
-    right: -4%;
+    right: 0%;
     background: #F5F5F5;
     width: 30px;
     height: 30px;
     top: 31%;
     background-image: url(../images/matbangduan/Shape.png);
     background-repeat: no-repeat;
-    background-position: center; } }
+    background-position: center; }
+  #slider-main .card-price {
+    font-size: 20px; }
+    #slider-main .card-price .card-price-vnd {
+      font-size: 16px; }
+  #slider-main .card-buy {
+    font-size: 12px; } }
 
 /*chi tiet du an*/
 .chitietduan-partial {
@@ -4226,6 +4456,14 @@ input[type=checkbox]:checked + label {
   width: 333px !important;
   right: 14%; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .card-category .card-price {
+    font-size: 20px; }
+    .card-category .card-price .card-price-vnd {
+      font-size: 16px; }
+  .card-category .card-buy {
+    font-size: 12px; } }
+
 /* Home Page */
 [class*="home-section-"] {
   margin-bottom: 50px; }
@@ -4326,6 +4564,17 @@ main {
       .home-section-7 .btn-prev i, .home-section-7 .btn-next i {
         line-height: 30px; } }
 
+.home-section-7 {
+  margin-bottom: 0; }
+  .home-section-7 .partner_reti {
+    margin-bottom: 16px; }
+  .home-section-7 .text-partner_reti {
+    max-width: 930px;
+    margin: auto;
+    margin-bottom: 30px; }
+  .home-section-7 .no-js .owl-carousel, .home-section-7 .owl-carousel.owl-loaded {
+    overflow: hidden !important; }
+
 @media (min-width: 320px) and (max-width: 414px) {
   .home-banner-small {
     -webkit-background-size: 100% 100%;
@@ -4364,12 +4613,20 @@ main {
     margin-bottom: 22px; }
   .home-section-7 {
     margin-bottom: 0; }
+    .home-section-7 .partner_reti {
+      margin-bottom: 16px; }
   .duannoibat-home .title-partial {
     padding-bottom: 0; }
   .home-section-6 {
     margin-bottom: 0; }
   .none-mobile {
-    display: none; } }
+    display: none; }
+  .home-section-2 .card-price {
+    font-size: 20px; }
+    .home-section-2 .card-price .card-price-vnd {
+      font-size: 16px; }
+  .home-section-2 .card-buy {
+    font-size: 12px; } }
 
 /*ĐƠN HÀNG PAGE*/
 #order-page .pt-16 {
@@ -4551,6 +4808,32 @@ main {
 .tick-complete .fa-check {
   color: white; }
 
+.btn-zoom {
+  position: absolute;
+  right: 0;
+  top: 12%;
+  width: 36px;
+  height: 73px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  z-index: 9; }
+  .btn-zoom button:focus {
+    outline: none; }
+  .btn-zoom .up-map {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3; }
+  .btn-zoom .down-map {
+    width: 100%;
+    height: 50%;
+    border: 1px solid #D3D3D3;
+    border-top: none; }
+
+.svg-content {
+  position: relative; }
+
 @media (min-width: 320px) and (max-width: 414px) {
   .chitietduan-rightcolumn {
     height: unset; }
@@ -4558,6 +4841,11 @@ main {
       min-height: unset; }
   .motaduan-partial {
     margin-top: 40px; }
+  .btn-zoom {
+    right: 20px;
+    top: 18%; } }
+
+@media (max-width: 768px) {
   .active-fixed {
     position: unset;
     right: 13.2%;

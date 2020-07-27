@@ -111,3 +111,16 @@ input[type=checkbox]:checked + label {
     width: 333px !important;
     right: 14%;
 }
+@media(min-width:320px) and (max-width:414px) {
+    .card-category{
+        .card-price {
+            font-size: 20px;
+            .card-price-vnd {
+                font-size: 16px;
+            }
+        }
+        .card-buy{
+            font-size: 12px;
+        }
+    }
+}
