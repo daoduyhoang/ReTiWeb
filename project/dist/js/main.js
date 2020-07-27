@@ -88,13 +88,18 @@ refreshBtn('.btn-delete', '.control-table');
 jQuery('#showBoLoc').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').addClass('active');
+  jQuery('body').addClass('none-scroll');
 });
 jQuery('#close-filter').click(function (e) {
   e.preventDefault();
   jQuery('.filter-control-mobile').removeClass('active');
   jQuery('.filter-control-mobile').addClass('close-animt');
+  jQuery('body').removeClass('none-scroll');
 }); //============================
-// MATBANGDUAN
+
+jQuery('.like-product-card').click(function () {
+  jQuery(this).toggleClass('liked');
+}); // MATBANGDUAN
 
 var btn = document.querySelectorAll('.tab ul .tab-item');
 var tabs = document.querySelectorAll(".content-tab-item");
@@ -210,6 +215,20 @@ function myFunction(x) {
       }, 500);
     });
   } else {
+    var clickDocToClose = function clickDocToClose(class1, class2) {
+      document.addEventListener('click', function (e) {
+        var checkoutMenu1 = e.target.closest(class1);
+        var getMenuDrop = document.querySelectorAll(class2);
+        getMenuDrop.forEach(function (val) {
+          var cvArryDrpdo = val.getAttribute('class').split(' ');
+
+          if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
+            val.classList.remove('active');
+          }
+        });
+      });
+    };
+
     // Header
     jQuery('.header').removeClass('header-mobile');
     jQuery('.header-bottom-box').append(searchBtm);
@@ -219,15 +238,10 @@ function myFunction(x) {
       jQuery('.bottom-show-menu').toggleClass('active');
       jQuery('.menu-dropdown').toggleClass('active');
     });
-    document.addEventListener('click', function (e) {
-      var checkoutMenu1 = e.target.closest('.header');
-      var getMenuDrop = document.querySelector('.menu-dropdown');
-      var cvArryDrpdo = getMenuDrop.getAttribute('class').split(' ');
-
-      if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
-        getMenuDrop.classList.remove('active');
-      }
-    }); //===================
+    clickDocToClose('.header', '.menu-dropdown');
+    clickDocToClose('.header', '.bottom-show-menu');
+    clickDocToClose('.btn-control', '.control-table');
+    clickDocToClose('.btn-control', '.btn-filter'); //===================
     // Filter 
 
     $('#filter-control').removeClass('filter-control-mobile');
