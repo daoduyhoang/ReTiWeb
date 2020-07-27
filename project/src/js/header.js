@@ -113,6 +113,7 @@ $(document).ready(function () {
 });
 jQuery('.menu-phanloai .close-menu').click(function (e) {
     e.preventDefault();
+    jQuery('body').removeClass('none-scroll');
     jQuery('.menu-phanloai').removeClass('active');
     jQuery('.menu-phanloai').addClass('close-animt');
 })

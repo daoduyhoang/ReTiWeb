@@ -32,48 +32,8 @@ $('.slide-card-duannoibat').owlCarousel({
 
 
 
-$('.partner-reti').owlCarousel({
-  loop: true,
-  margin: 10,
-  nav: false,
-  stagePadding: 4,
-  autoplay: true,
-  autoplayTimeout: 6000,
-  items: 4,
-  responsive: {
-    0: {
-      items: 1
-    },
-    480: {
-      items: 1
-    },
-    576: {
-      items: 3
-    },
-    768: {
-      items: 4
-    },
-    992: {
-      items: 4
-    },
-    1000: {
-      items: 4
-    }
-  },
-  dots: false
-})
-var owl = $('.partner-reti');
-owl.owlCarousel();
-// Go to the next item
-$('.btn-next').click(function () {
-  owl.trigger('next.owl.carousel');
-})
-// Go to the previous item
-$('.btn-prev').click(function () {
-  // With optional speed parameter
-  // Parameters has to be in square bracket '[]'
-  owl.trigger('prev.owl.carousel', [300]);
-})
+
+
 
 let rangeSlide = jQuery('.js-range-slider');
 if (rangeSlide) {
@@ -206,6 +166,7 @@ function myFunction(x) {
     jQuery('.header').addClass('header-mobile');
     jQuery('.header-mobile .header-logo-box').click(function (e) {
       e.preventDefault();
+      jQuery('body').toggleClass('none-scroll');
       jQuery('.header-main-box').toggleClass('active');
       jQuery('.header-mobile').toggleClass('full-height');
     });
@@ -228,6 +189,7 @@ function myFunction(x) {
     };
 
     jQuery('.bottom-show-menu').click(function (e) {
+      jQuery('body').addClass('none-scroll');
       jQuery('.menu-phanloai').addClass('active');
       jQuery('.menu-phanloai').removeClass('close-animt');
     });
@@ -273,12 +235,12 @@ function myFunction(x) {
       let checkoutMenu1 = e.target.closest('.header');
       let getMenuDrop = document.querySelector('.menu-dropdown');
       let cvArryDrpdo = getMenuDrop.getAttribute('class').split(' ');
-      if(checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
+      if (checkoutMenu1 == null && cvArryDrpdo.indexOf('active') !== -1) {
         getMenuDrop.classList.remove('active');
       }
     });
-    
-    
+
+
     //===================
 
     // Filter 
@@ -334,35 +296,35 @@ x.addListener(myFunction);
 
 const Utils = {
 
-  
-  lessExcerpt: function(element) {
-      return element.slice(0, 300);
+
+  lessExcerpt: function (element) {
+    return element.slice(0, 300);
   },
 
-  showMore: function(btn, excerpt, excerptO) {
+  showMore: function (btn, excerpt, excerptO) {
     btn.addEventListener("click", e => {
-        const linkText = e.target.textContent.toLowerCase();
-        e.preventDefault();
-        // console.log(excerpt)
-        if (linkText == "xem chi tiết") {
-            btn.innerText = "Ẩn bớt";
-            excerpt.textContent = excerptO;
-        } else {
-            btn.innerText = "Xem chi tiết";
-            excerpt.textContent = this.lessExcerpt(excerptO) + ' ...';
-        }
+      const linkText = e.target.textContent.toLowerCase();
+      e.preventDefault();
+      // console.log(excerpt)
+      if (linkText == "xem chi tiết") {
+        btn.innerText = "Ẩn bớt";
+        excerpt.textContent = excerptO;
+      } else {
+        btn.innerText = "Xem chi tiết";
+        excerpt.textContent = this.lessExcerpt(excerptO) + ' ...';
+      }
     });
   }
 };
 
 const ExcerptWidget = {
-  showMore: function(btnShowLes, excerptTarget) {
+  showMore: function (btnShowLes, excerptTarget) {
     const showMoreBtn = document.querySelectorAll(btnShowLes);
-    showMoreBtn.forEach(function(link) {
-        const excerpt = link.parentElement.parentElement.querySelector(excerptTarget);
-        let excerptO = link.parentElement.parentElement.querySelector(excerptTarget).textContent;
-        excerpt.textContent = excerptO.slice(0, 300) + ' ...';
-        Utils.showMore(link, excerpt, excerptO);
+    showMoreBtn.forEach(function (link) {
+      const excerpt = link.parentElement.parentElement.querySelector(excerptTarget);
+      let excerptO = link.parentElement.parentElement.querySelector(excerptTarget).textContent;
+      excerpt.textContent = excerptO.slice(0, 300) + ' ...';
+      Utils.showMore(link, excerpt, excerptO);
     });
   }
 };
@@ -373,7 +335,6 @@ ExcerptWidget.showMore('.btn-more-less', '.except-more');
 
 
 //testttttttttttttttt============
-
 
 
 
@@ -449,9 +410,5 @@ if (infoHome) {
     }
   })
 }
-$(".js-range-slider").ionRangeSlider();
-$(".js-range-slider2").ionRangeSlider({
-  from: 250,
-  to: 500,
-});
+
 

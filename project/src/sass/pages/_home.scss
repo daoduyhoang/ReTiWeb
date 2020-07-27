@@ -113,6 +113,23 @@ main {
         }
     }
 }
+.home-section-7{
+    margin-bottom: 0;
+    .partner_reti{
+        margin-bottom: 16px;
+    }
+    .text-partner_reti{
+        max-width: 930px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    // .owl-stage-outer{
+    //     width: 1005px;
+    // }
+    .no-js .owl-carousel, .owl-carousel.owl-loaded {
+        overflow: hidden !important;
+    }
+}
 @media(min-width:320px) and (max-width:414px){
     .home-banner-small{
         background-size: 100% 100%;
@@ -156,6 +173,9 @@ main {
     }
     .home-section-7{
         margin-bottom: 0;
+        .partner_reti{
+            margin-bottom: 16px;
+        }
     }
     .duannoibat-home{
         .title-partial{
@@ -167,6 +187,17 @@ main {
     }
     .none-mobile{
         display: none;
+    }
+    .home-section-2{
+        .card-price {
+            font-size: 20px;
+            .card-price-vnd {
+                font-size: 16px;
+            }
+        }
+        .card-buy{
+            font-size: 12px;
+        }
     }
     
 }
