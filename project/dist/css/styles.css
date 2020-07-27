@@ -1390,15 +1390,15 @@ body {
     position: absolute;
     border-top: 1px solid #D3D3D3;
     border-left: 1px solid #D3D3D3;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 97%;
+    bottom: 98%;
     right: 9%;
     background-color: white; }
 
@@ -1611,8 +1611,7 @@ body {
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  margin-right: 20px;
-  padding: 10px 15px;
+  padding: 9px 10px;
   font-size: 12px;
   font-family: "Roboto", sans-serif; }
   .filter-control .btn-filter.active {
@@ -1647,8 +1646,8 @@ body {
     max-width: unset; }
 
 .filter-control i {
-  font-size: 12px;
-  margin-left: 13px; }
+  font-size: 7px;
+  margin-left: 12px; }
 
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control img {
   padding-right: 10px;
@@ -4824,7 +4823,10 @@ main {
     .chitietduan-rightcolumn .info-department {
       min-height: unset; }
   .motaduan-partial {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .btn-zoom {
+    right: 20px;
+    top: 18%; } }
 
 @media (max-width: 768px) {
   .active-fixed {
