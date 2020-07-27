@@ -401,14 +401,16 @@ var infoHome = document.querySelector('.chitietduan-rightcolumn');
 if (infoHome) {
   var stopStick = document.querySelector('.end-info').offsetTop;
   window.addEventListener('scroll', function () {
-    console.log(stopStick);
-    if ((window.pageYOffset > 200) && (window.pageYOffset < stopStick - 430)) {
+    console.log(window.pageYOffset);
+    if ((window.pageYOffset > 150) && (window.pageYOffset < stopStick - 800)) {
       infoHome.classList.add('active-fixed');
     }
-    else if ((window.pageYOffset < 200) || (window.pageYOffset > stopStick - 430)) {
+    else if ((window.pageYOffset < 150) || (window.pageYOffset > stopStick - 800)) {
       infoHome.classList.remove('active-fixed');
     }
   })
 }
-
-
+//draggable
+document.getElementById('big').onclick = function () {
+  jQuery(".mapify-holder").draggable();
+}
