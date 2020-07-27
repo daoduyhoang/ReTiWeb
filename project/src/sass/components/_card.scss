@@ -33,13 +33,23 @@
         left: -6px;
         z-index: 9;
     }
-    &-badge-Group-277{
+    &-favourite {
         position: absolute;
         top: 14px;
         right: 8px;
         color: #EF5B40;
         font-size: 20px;
         z-index: 9;
+        .like-product-card {
+            background: none;
+            border: none;
+            color: #ffffff00;
+            -webkit-text-stroke: 2px #fff;
+            @include transition(.2s);
+            &.liked {
+                color: #EF5B40;
+            }
+        }
     }
     &-price{
         line-height: 24px;
