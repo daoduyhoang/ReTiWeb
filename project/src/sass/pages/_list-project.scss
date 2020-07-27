@@ -5,7 +5,6 @@
         margin-bottom: 50px;
     }
     
-   
 }
 #pay-home{
     padding: 35px 0;
@@ -36,11 +35,15 @@
             display: none !important;
         }
 }
-.filter-more .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #56C4CF;
+    border-color: $main-color !important;
+}
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: unset;
 }
 input[type=checkbox]:checked + label {
-    font-weight: 600;    
+    font-weight: 600;
 } 
 .next-page:hover{
     background-color: #333132;
