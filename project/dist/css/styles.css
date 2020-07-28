@@ -1868,8 +1868,8 @@ body {
 .info-department {
   width: 455px;
   min-height: 554px;
-  background: #FFFFFF;
-  border: 1px solid #BDBDBD;
+  background: #ffffff;
+  border: 1px solid #bdbdbd;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px; }
@@ -1882,15 +1882,17 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    color: #333132;
+    color: #8d8d8d;
     display: inline-block; }
   .info-department .department-name {
     font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
     color: #333132;
     margin-left: 14px; }
+    @media only screen and (max-width: 414px) and (max-width: 850px) and (min-width: 320px) {
+      .info-department .department-name {
+        font-size: 18px; } }
   .info-department .price-department {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1909,8 +1911,33 @@ body {
       font-family: "Roboto";
       font-style: normal;
       font-weight: bold;
-      font-size: 26px;
-      color: #EF5B40; }
+      font-size: 18px;
+      color: #ef5b40; }
+    .info-department .price-department span.price-department__type {
+      font-size: 12px;
+      color: #fff;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -moz-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 41px;
+      height: 21px;
+      background-color: #ef5b40;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      margin-right: 8px; }
   .info-department .info-details {
     margin-bottom: 10px;
     margin-top: 20px; }
@@ -1927,7 +1954,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     color: #333132;
-    margin-top: 20px;
+    margin-top: 22px;
     line-height: 24px; }
   .info-department .details span {
     font-family: "Roboto";
@@ -1936,30 +1963,29 @@ body {
     font-size: 14px;
     color: #333132; }
   .info-department .details .cl-orange {
-    color: #EF5B40; }
+    color: #ef5b40; }
   .info-department .control-buy {
     text-align: center;
     margin-top: 69px;
     margin-bottom: 10px; }
     .info-department .control-buy a, .info-department .control-buy .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .control-buy img {
-      width: 100%;
+      width: 343px;
+      height: 52px;
       display: block;
       padding: 10px 20px; }
     .info-department .control-buy .buy-now {
-      background: #56C4CF;
+      background: #56c4cf;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
       color: #fff;
       margin-bottom: 15px;
-      width: 425px;
-      height: 52px;
       margin-left: auto;
       margin-right: auto;
       font-weight: bold; }
     .info-department .control-buy .sign {
-      background: #FFFFFF;
-      border: 1px solid #BDBDBD;
+      background: #ffffff;
+      border: 1px solid #bdbdbd;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
@@ -1968,8 +1994,6 @@ body {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      width: 425px;
-      height: 52px;
       margin-left: auto;
       margin-right: auto; }
   .info-department .policy-department .share {
@@ -1987,7 +2011,7 @@ body {
     .info-department .policy-department .share .save {
       margin-right: 20px; }
       .info-department .policy-department .share .save i {
-        color: #2D9CDB; }
+        color: #2d9cdb; }
       .info-department .policy-department .share .save a, .info-department .policy-department .share .save .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .share .save img {
         color: #333132;
         font-size: 14px;
@@ -1999,19 +2023,23 @@ body {
       color: #333132;
       font-style: normal;
       font-weight: 600; }
-  .info-department .policy-department .policy-sell a, .info-department .policy-department .policy-sell .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .policy-sell img, .info-department .policy-department .calculator a, .info-department .policy-department .calculator .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .calculator img {
+  .info-department .policy-department .policy-sell a, .info-department .policy-department .policy-sell .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .policy-sell img,
+  .info-department .policy-department .calculator a,
+  .info-department .policy-department .calculator .chitietduan-partial .chitietduan-button .chitietduan-btn div img,
+  .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .calculator img {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 20px;
-    color: #0C77C6; }
+    color: #0c77c6; }
   .info-department .mb-10 {
     margin-bottom: 10px; }
   .info-department .ml-15 {
     margin-left: 15px; }
 
-.acreage, .apartment {
+.acreage,
+.apartment {
   margin-left: 17px; }
 
 .calculator {
@@ -2022,7 +2050,7 @@ body {
 
 .table-product .list-tab {
   margin-top: 30px;
-  background: #F2F2F2;
+  background: #f2f2f2;
   margin-bottom: 0; }
   .table-product .list-tab li {
     width: 265px;
@@ -2044,7 +2072,7 @@ body {
       text-decoration: none;
       cursor: pointer; }
   .table-product .list-tab .active-table-tab {
-    background-color: #56C4CF; }
+    background-color: #56c4cf; }
     .table-product .list-tab .active-table-tab a, .table-product .list-tab .active-table-tab .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .table-product .list-tab .active-table-tab img {
       color: white; }
       .table-product .list-tab .active-table-tab a:hover, .table-product .list-tab .active-table-tab .chitietduan-partial .chitietduan-button .chitietduan-btn div img:hover, .chitietduan-partial .chitietduan-button .chitietduan-btn div .table-product .list-tab .active-table-tab img:hover {
@@ -2067,7 +2095,26 @@ body {
     width: 265px;
     height: 48px;
     margin-right: 20px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative; }
+    .choose .form-group::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      right: 15px;
+      background-image: url("../images/chevron-down.png");
+      width: 12px;
+      height: 12px;
+      pointer-events: none; }
+    .choose .form-group select {
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none; }
   .choose p {
     font-family: "Roboto";
     font-style: normal;
@@ -2081,7 +2128,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #BDBDBD; }
+    color: #bdbdbd; }
   .choose .form-control {
     height: 48px !important; }
 
@@ -2100,7 +2147,8 @@ body {
     margin-bottom: 9px; }
   .annotate img {
     margin-right: 8px; }
-  .annotate .stocking, .annotate .booking {
+  .annotate .stocking,
+  .annotate .booking {
     margin-right: 19px; }
   .annotate .item-annotate span {
     font-size: 12px; }
@@ -2307,7 +2355,7 @@ body {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   margin: 100px 0;
   position: relative; }
   .progress-barc span.progress-per {
@@ -2350,7 +2398,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     height: 32px;
-    background-color: #E0E0E0;
+    background-color: #e0e0e0;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%; }
@@ -2375,7 +2423,7 @@ body {
     .progress-status .date-status .status {
       font-size: 12px;
       font-style: italic;
-      color: #8D8D8D; }
+      color: #8d8d8d; }
   .progress-status:nth-child(odd) .date-status {
     top: unset;
     bottom: 130%; }
@@ -2395,7 +2443,8 @@ body {
       left: 260%;
       text-align: left; }
       .progress-status .date-status .date {
-        padding: 0 60px 0 0; }
+        padding: 0 60px 0 0;
+        font-size: 16px; }
     .progress-status:nth-child(odd) .date-status {
       top: -2px;
       bottom: unset; } }
@@ -3478,7 +3527,7 @@ body {
     border-radius: 50%;
     background-image: url(../images/matbangduan/Shape.png); }
   .ground .slick-prev:before {
-    color: #56C6D0;
+    color: #56c6d0;
     display: none; }
   .ground .slick-next::before {
     display: none; }
@@ -3489,14 +3538,14 @@ body {
   font-weight: 500;
   font-size: 13px;
   padding: 10px 20px;
-  color: #7A7A7A;
-  border-bottom: 1px solid #EDEDED;
+  color: #7a7a7a;
+  border-bottom: 1px solid #ededed;
   cursor: pointer; }
 
 .active-tab {
   color: black;
   font-weight: bold;
-  border-bottom: 2px solid #56C4CF; }
+  border-bottom: 2px solid #56c4cf; }
 
 .shark-title {
   -webkit-box-align: center;
@@ -3509,7 +3558,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    color: #1A1A1A; }
+    color: #1a1a1a; }
 
 .shark-content {
   font-family: "Roboto";
@@ -3520,7 +3569,9 @@ body {
   width: 50%;
   margin: 10px 0; }
 
-.shark, .developer, .monitoring {
+.shark,
+.developer,
+.monitoring {
   display: none; }
 
 .active-item {
@@ -3535,7 +3586,7 @@ body {
   -webkit-text-decoration-line: underline;
   -moz-text-decoration-line: underline;
   text-decoration-line: underline;
-  color: #0C77C6; }
+  color: #0c77c6; }
 
 .ground .slick-next:hover {
   right: 1%;
@@ -3590,6 +3641,16 @@ body {
   background-image: url(../images/matbangduan/lefy.png); }
 
 @media (min-width: 320px) and (max-width: 414px) {
+  .tab-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0;
+    height: 37px;
+    min-width: 114px;
+    text-align: center; }
   .text-center-mb {
     padding-left: 10px !important; }
   .ground .slick-prev {
@@ -4142,7 +4203,7 @@ body {
           font-weight: normal;
           font-size: 12px;
           line-height: 130.08%;
-          color: #FFFFFF; }
+          color: #ffffff; }
   .chitietduan-partial .slick-prev {
     background-color: #333333;
     width: 12px;
@@ -4164,7 +4225,7 @@ body {
     background-image: url(../images/chitietduan/VectorRight.png);
     top: 54%; }
   .chitietduan-partial .slick-prev:before {
-    color: #56C6D0;
+    color: #56c6d0;
     display: none; }
   .chitietduan-partial .slick-next::before {
     display: none; }
@@ -4206,7 +4267,8 @@ body {
       width: 100%;
       height: auto; }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-top .chitietduan-slider-item img {
-        height: auto; }
+        height: 230px;
+        max-height: 230px; }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-top .slick-next {
         visibility: visible; }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bot .chitietduan-slider-bottom {
@@ -4255,7 +4317,7 @@ body {
             font-weight: normal;
             font-size: 12px;
             line-height: 130.08%;
-            color: #FFFFFF; }
+            color: #ffffff; }
           .chitietduan-partial .chitietduan-leftcolumn .chitietduan-button .chitietduan-btn img {
             color: white;
             font-family: Roboto;
@@ -4263,7 +4325,7 @@ body {
             font-weight: normal;
             font-size: 12px;
             line-height: 130.08%;
-            color: #FFFFFF; }
+            color: #ffffff; }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-rightcolumn {
         width: 100%; }
         .chitietduan-partial .chitietduan-leftcolumn .chitietduan-rightcolumn .info-department {
@@ -4285,8 +4347,11 @@ body {
     margin-top: 0; }
     .chitietduan-partial .chitietduan-leftcolumn {
       max-width: 375px;
-      padding: 0px 5px;
-      width: 100%; }
+      margin-left: -15px;
+      margin-right: -15px;
+      width: -webkit-calc(100% + 30px);
+      width: -moz-calc(100% + 30px);
+      width: calc(100% + 30px); }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-top .slick-next {
         visibility: visible; }
       .chitietduan-partial .chitietduan-leftcolumn .stroke {
@@ -4312,10 +4377,17 @@ body {
         -moz-box-pack: justify;
         justify-content: space-between;
         -ms-flex-pack: space-between;
-        width: 100%; }
+        width: 100%;
+        margin-left: 8px;
+        margin-right: 8px;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
         .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bot .chitietduan-button .chitietduan-btn {
           margin-left: 0;
-          width: 49%; }
+          min-width: 167px;
+          min-height: 38px;
+          max-width: 167px;
+          max-height: 38px; }
           .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-bot .chitietduan-button .chitietduan-btn div {
             -webkit-flex-direction: row;
             -moz-flex-direction: row;
@@ -4340,8 +4412,24 @@ body {
             -moz-border-radius: 4px;
             border-radius: 4px;
             height: 52px;
-            width: 100%;
-            padding-top: 15px; }
+            width: 343px;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0;
+            margin-left: -22.5px; }
             .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .buy-now a, .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .buy-now .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .chitietduan-rightcolumn .info-department .details .control-buy .buy-now img {
               font-family: Roboto;
               font-style: normal;
@@ -4353,8 +4441,24 @@ body {
             -moz-border-radius: 4px;
             border-radius: 4px;
             height: 52px;
-            width: 100%;
-            padding-top: 15px; }
+            width: 343px;
+            display: -webkit-inline-box;
+            display: -webkit-inline-flex;
+            display: -moz-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -moz-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -moz-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding: 0;
+            margin-left: -22.5px; }
             .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .sign a, .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .sign .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .chitietduan-rightcolumn .info-department .details .control-buy .sign img {
               font-family: Roboto;
               font-style: normal;
@@ -4368,7 +4472,7 @@ body {
           font-weight: 500;
           font-size: 14px;
           line-height: 20px;
-          color: #0C77C6; }
+          color: #0c77c6; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .policy-department .policy-sell a, .chitietduan-partial .chitietduan-rightcolumn .info-department .policy-department .policy-sell .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .chitietduan-rightcolumn .info-department .policy-department .policy-sell img {
           padding-left: 7px;
           font-family: Roboto;
@@ -4376,7 +4480,7 @@ body {
           font-weight: 500;
           font-size: 14px;
           line-height: 20px;
-          color: #0C77C6; }
+          color: #0c77c6; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .policy-department .share {
           display: none; } }
 
@@ -4491,7 +4595,10 @@ body {
     -webkit-text-decoration-line: underline;
     -moz-text-decoration-line: underline;
     text-decoration-line: underline;
-    color: #0C77C6; }
+    color: #0c77c6; }
+    .motaduan-partial .motaduan-link a, .motaduan-partial .motaduan-link .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .motaduan-partial .motaduan-link img {
+      color: #0c77c6;
+      font-weight: 500; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
