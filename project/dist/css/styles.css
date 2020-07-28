@@ -1826,10 +1826,22 @@ body {
     .filter-control-mobile .control-table .custom-control-label::after {
       width: 14px;
       height: 14px; }
-    .filter-control-mobile .control-table .custom-switch {
-      display: none; }
-    .filter-control-mobile .control-table .btn-show-result-htm {
-      display: block; }
+    .filter-control-mobile .control-table .custom-switch .custom-control-label::before {
+      width: 1.75rem;
+      height: 1rem; }
+    .filter-control-mobile .control-table .custom-switch .custom-control-label::after {
+      width: -webkit-calc(1rem - 4px);
+      width: -moz-calc(1rem - 4px);
+      width: calc(1rem - 4px);
+      height: -webkit-calc(1rem - 4px);
+      height: -moz-calc(1rem - 4px);
+      height: calc(1rem - 4px); }
+  .filter-control-mobile .btn-show-result-htm {
+    display: block;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    bottom: 0; }
   .filter-control-mobile .filter-top {
     border-bottom: none; }
   .filter-control-mobile .delete-filter, .filter-control-mobile .save-search, .filter-control-mobile .view-map {
