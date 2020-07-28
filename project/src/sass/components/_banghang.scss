@@ -4,7 +4,7 @@
         background: #F2F2F2;
         margin-bottom: 0;
         li{
-            width: 256px;
+            width: 265px;
             display: inline-block;
             text-align: center;
             height: 48px;
@@ -42,7 +42,7 @@
     align-items: center;
     padding-top: 20px;
     .form-group{
-        width: 256px;
+        width: 265px;
         height: 48px;
         margin-right: 20px;
         margin-bottom: 0;
@@ -62,6 +62,9 @@
         font-size: 14px;
         line-height: 16px;
         color: #BDBDBD;
+    }
+    .form-control{
+        height: 48px !important;
     }
 }
 .banghang-partial{
@@ -83,6 +86,11 @@
     }
     .stocking,.booking{
         margin-right: 19px;
+    }
+    .item-annotate{
+        span{
+            font-size: 12px;
+        }
     }
 }
 @media(min-width:320px) and (max-width:450px){

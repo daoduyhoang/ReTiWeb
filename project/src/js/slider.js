@@ -35,6 +35,7 @@ $(document).ready(function () {
         asNavFor: '.ground-slider-bottom',
         // autoplay: true,
         // autoplaySpeed: 2000,
+        variableWidth: true,
     });
     $('.ground-slider-bottom').slick({
         slidesToShow: 6,
@@ -44,6 +45,7 @@ $(document).ready(function () {
         centerMode: true,
         focusOnSelect: true,
         arrows: false,
+        variableWidth: true,
     });
 });
 
@@ -101,7 +103,7 @@ $('.khachHangCuaReti-slide').owlCarousel({
 $('#slider-main').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     accessibility: false,
     responsive: [
         {
@@ -120,6 +122,13 @@ $('#slider-main').slick({
         },
         {
             breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 375,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

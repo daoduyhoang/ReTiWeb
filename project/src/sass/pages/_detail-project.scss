@@ -37,7 +37,7 @@
     }
 }
 .utilities{
-    margin-top: 60px;
+    margin-top: 62px;
     .utilities-content{
         width: 50%;
     }
@@ -54,7 +54,7 @@
     }
 }
 .table-product{
-    margin-top: 60px;
+    margin-top: 50px;
     .paging-table{
         padding: 0px 15px;
     }
@@ -64,7 +64,7 @@
 }
 .active-fixed{
     position: fixed;
-    right: 13.2%;
+    right: 195px !important;
     top: 22%;
     z-index: 9;
 }
@@ -124,12 +124,13 @@
 }
 .btn-zoom{
     position: absolute;
-    right: 0;
-    top: 12%;
+    right: 16px;
+    top: 107px;
     width: 36px;
     height: 73px;
     border-radius: 2px;
     z-index: 9;
+    
     button:focus{
         outline: none;
     }
@@ -138,16 +139,25 @@
         height: 50%;
         border: 1px solid #D3D3D3;
         border-bottom: 1px solid #D3D3D3;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #fff;
     }
     .down-map{
         width: 100%;
         height: 50%;
         border: 1px solid #D3D3D3;
         border-top: none;
+        font-size: 24px;
+        font-weight: bold;
+        background-color: #fff;
     }
 }
 .svg-content{
     position: relative;
+}
+.like-product-card:focus{
+    outline: none;
 }
 @media(min-width:320px) and (max-width:414px){
     .chitietduan-rightcolumn{
@@ -160,8 +170,8 @@
         margin-top: 40px;
     }
     .btn-zoom{
-        right: 20px;
-        top: 18%;
+        right: 16px;
+    top: 179px;
     }
 }
 @media(max-width:768px){

@@ -48,10 +48,12 @@
             transform: translateX(-35%);
             .date {
                 padding: 0 10px;
+                color: #000;
             }
             .status {
                 font-size: 12px;
                 font-style: italic;
+                color: #8D8D8D;
             }
         }
         &:nth-child(odd) .date-status {
