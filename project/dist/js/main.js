@@ -3,7 +3,7 @@
 //start slide du an noi bat
 $('.slide-card-duannoibat').owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 20,
   nav: true,
   navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next'></i>"],
   responsive: {

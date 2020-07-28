@@ -13,13 +13,19 @@
         border: none;
         border-radius: 2px;   
         margin-right: 20px;
-        padding: 9px 10px;
+        // padding: 9px 10px;
+        // width: 88px;
+        height: 32px;
         font-size: 12px;
         font-family: $roboto;
         &.active {
             background-color: $main-color;
             color: #fff;
             outline: none;
+        }
+        i{
+            font-size: 7px;
+            margin-left: 12.5px;
         }
     }
     .btn-show-result-htm {
@@ -45,7 +51,7 @@
         position: absolute;
         z-index: 20;
         top: 50px;
-        right: 0;
+        right: 20px;
         &.active {
             display: block;
         }
@@ -54,10 +60,7 @@
             max-width: unset;
         }
     }
-    i{
-        font-size: 12px;
-        margin-left: 12.5px;
-    }
+    
     a{
         padding-right: 10px;
         font-size: 12px;
@@ -67,6 +70,7 @@
         color: $link-color;
     }
     .view-map{
+        padding-top: 3px;
         display: flex;
         align-items: center;
         span{
@@ -88,6 +92,21 @@
     .btn-active{
         color: white;
         background-color: #56C4CF;
+    }
+    .price-bds{
+        button{
+            width: 114px;
+        }
+    }
+    .price{
+        button{
+            width: 58px;
+        }
+    }
+    .advanced{
+        button{
+            width: 88px;
+        }
     }
 }
 

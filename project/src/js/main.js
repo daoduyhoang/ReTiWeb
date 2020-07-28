@@ -1,7 +1,7 @@
 //start slide du an noi bat
 $('.slide-card-duannoibat').owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 20,
   nav: true,
   navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next'></i>"],
   responsive: {
@@ -110,7 +110,7 @@ jQuery('#close-filter').click(function (e) {
 
 //============================
 
-jQuery('.like-product-card').click(function() {
+jQuery('.like-product-card').click(function () {
   jQuery(this).toggleClass('liked');
 });
 
@@ -253,7 +253,7 @@ function myFunction(x) {
 
     clickDocToClose('.btn-control', '.control-table');
     clickDocToClose('.btn-control', '.btn-filter');
-    
+
 
     //===================
 
