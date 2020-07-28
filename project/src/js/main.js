@@ -411,16 +411,18 @@ if (map) {
   })
 }
 // STICK CHITIETCANHO
+let calWidth = (window.outerWidth - jQuery('.container').innerWidth())/2;
 var infoHome = document.querySelector('.chitietduan-rightcolumn');
 if (infoHome) {
   var stopStick = document.querySelector('.end-info').offsetTop;
   window.addEventListener('scroll', function () {
-    console.log(window.pageYOffset);
     if ((window.pageYOffset > 150) && (window.pageYOffset < stopStick - 800)) {
       infoHome.classList.add('active-fixed');
+      infoHome.style.right = calWidth + 'px';
     }
     else if ((window.pageYOffset < 150) || (window.pageYOffset > stopStick - 800)) {
       infoHome.classList.remove('active-fixed');
+      infoHome.style.right = 'unset';
     }
   })
 }

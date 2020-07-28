@@ -4938,7 +4938,6 @@ main {
 
 .active-fixed {
   position: fixed;
-  right: 195px !important;
   top: 24%;
   z-index: 9; }
 
