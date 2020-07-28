@@ -9,6 +9,7 @@ $('#big').bind('mousewheel', function (e) {
             $('.mapify-holder').removeClass('scale-2');
             $('.mapify-holder').addClass('scale-15');
             $(".mapify-holder").draggable();
+            $('#big').css('overflow', 'hidden')
             pram = 2;
             statusRemove = 1;
             console.log(pram + "-" + statusRemove)
@@ -35,6 +36,7 @@ $('#big').bind('mousewheel', function (e) {
             pram = 1;
             statusRemove = 0;
             // $(".mapify-holder").draggable('destroy');
+            $('#big').css('overflow', 'unset')
             console.log(pram + "-" + statusRemove)
         }
         else if (statusRemove == 2) {
@@ -61,6 +63,7 @@ up.onclick = function () {
     if (pram === 1) {
         $('.mapify-holder').removeClass('scale-2');
         $('.mapify-holder').addClass('scale-15');
+        $('#big').css('overflow', 'hidden')
         // $(".mapify-holder").draggable();
         pram = 2;
         statusRemove = 1;
@@ -87,6 +90,7 @@ down.onclick = function () {
         pram = 1;
         statusRemove = 0;
         // $(".mapify-holder").draggable('destroy');
+        $('#big').css('overflow', 'unset')
         console.log(pram + "-" + statusRemove)
     }
     else if (statusRemove == 2) {

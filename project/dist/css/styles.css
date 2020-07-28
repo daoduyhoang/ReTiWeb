@@ -1573,51 +1573,48 @@ body {
   border-color: #56C4CF;
   background-color: #56C4CF; }
 
-.table-pc .table {
-  border-bottom: 1px solid #dee2e6; }
-
-.table-pc .table thead th {
-  font-size: 12px;
-  text-align: center;
-  padding: 0 !important;
-  padding-bottom: 9px !important;
-  height: 48px; }
-
-.table-pc .table td, .table-pc .table th {
-  font-size: 12px;
-  text-align: center; }
-
-.table-pc .table td {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  color: #000000; }
-
-.table-pc .custom-badge {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 7px 15px;
-  color: #3CC13B;
-  font-weight: 500; }
-
-.table-pc .detai-table {
-  text-decoration: underline; }
-
-.table-pc .hover-table tbody tr:hover {
-  color: #212529;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #0683F9;
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9; }
+.table-pc {
+  font-family: Roboto; }
+  .table-pc .table {
+    border-bottom: 1px solid #dee2e6; }
+  .table-pc .table thead th {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 !important;
+    padding-bottom: 9px !important;
+    height: 48px; }
+  .table-pc .table td, .table-pc .table th {
+    font-size: 12px;
+    text-align: center; }
+  .table-pc .table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000; }
+  .table-pc .custom-badge {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 7px 15px;
+    color: #3CC13B;
+    font-weight: 500;
+    font-family: "Roboto"; }
+  .table-pc .detai-table {
+    text-decoration: underline; }
+  .table-pc .hover-table tbody tr:hover {
+    color: #212529;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #0683F9;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9; }
 
 .paging-table .total-record {
   font-size: 12px;
@@ -1954,7 +1951,7 @@ body {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
-      color: black;
+      color: #333132;
       font-family: "Roboto";
       font-style: normal;
       font-weight: bold;
@@ -2073,6 +2070,8 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: #BDBDBD; }
+  .choose .form-control {
+    height: 48px !important; }
 
 .banghang-partial {
   display: none; }
@@ -4469,7 +4468,8 @@ body {
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px; }
+    line-height: 26px;
+    max-width: 645px; }
   .motaduan-partial .motaduan-link {
     font-family: "Roboto";
     font-style: normal;
@@ -4926,7 +4926,7 @@ main {
 
 .active-fixed {
   position: fixed;
-  right: 13.2%;
+  right: 195px !important;
   top: 22%;
   z-index: 9; }
 
@@ -5029,4 +5029,4 @@ main {
   max-width: 475px; }
 
 .active-fixed {
-  right: 13.5%; }
+  right: 195px; }
