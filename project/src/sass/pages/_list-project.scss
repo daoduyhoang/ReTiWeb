@@ -43,7 +43,7 @@
     box-shadow: unset;
 }
 input[type=checkbox]:checked + label {
-    font-weight: 600;
+    font-weight: 500;
 } 
 .next-page:hover{
     background-color: #333132;
@@ -113,6 +113,9 @@ input[type=checkbox]:checked + label {
         width: 333px;
         // width: 100% !important;
     }
+}
+.card-category{
+    padding: 0 5px;
 }
 @media(min-width:320px) and (max-width:414px) {
     .card-category{

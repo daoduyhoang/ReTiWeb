@@ -23,6 +23,9 @@
             }
         }
     }
+    // .card{
+    //     padding: 0 !important;
+    // }
     .slick-next{
         right: -4%;
         background: rgba(245, 245, 245, 0.35);
@@ -33,6 +36,7 @@
         background-position: center;
         border-radius: 50%;
         background-image: url(../images/matbangduan/Shape.png);
+        top: 32%;
 
     }
     .slick-prev{
@@ -45,6 +49,7 @@
         background-position: center;
         border-radius: 50%;
         left: -4%;
+        top: 32%;
     }
     .slick-prev:before{
         color: #56C6D0;

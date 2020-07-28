@@ -34,9 +34,10 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: true,
     fade: false,
-    asNavFor: '.ground-slider-bottom' // autoplay: true,
+    asNavFor: '.ground-slider-bottom',
+    // autoplay: true,
     // autoplaySpeed: 2000,
-
+    variableWidth: true
   });
   $('.ground-slider-bottom').slick({
     slidesToShow: 6,
@@ -45,7 +46,8 @@ $(document).ready(function () {
     dots: false,
     centerMode: true,
     focusOnSelect: true,
-    arrows: false
+    arrows: false,
+    variableWidth: true
   });
 }); // chi tiet du an
 
@@ -101,7 +103,7 @@ $('.khachHangCuaReti-slide').owlCarousel({
 $('#slider-main').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   accessibility: false,
   responsive: [{
     breakpoint: 768,
@@ -117,6 +119,12 @@ $('#slider-main').slick({
     }
   }, {
     breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }, {
+    breakpoint: 375,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1

@@ -10,7 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto"; }
 
 article,
 aside,
@@ -1031,7 +1031,7 @@ body {
   padding: 15px 10px;
   border: none;
   font-size: 12px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto"; }
   .card a, .card .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .card img {
     text-decoration: none; }
   .card-title {
@@ -1251,7 +1251,7 @@ body {
     border-bottom: 2px solid #24B4E6;
     background-color: unset; }
   #slider .carousel-indicators li span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -1271,7 +1271,7 @@ body {
   .title-partial .icon-title {
     margin-bottom: 30px; }
   .title-partial h2 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 32px;
     color: #333132; }
@@ -1282,7 +1282,7 @@ body {
     .title-partial .icon-title {
       margin-bottom: 16px; }
     .title-partial h2 {
-      font-family: "Roboto Slab", serif;
+      font-family: "Roboto Slab";
       font-weight: bold;
       font-size: 26px;
       color: #333132; } }
@@ -1373,7 +1373,7 @@ body {
   .title-partial .icon-title {
     margin-bottom: 30px; }
   .title-partial h2 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 32px;
     color: #333132; }
@@ -1384,7 +1384,7 @@ body {
     .title-partial .icon-title {
       margin-bottom: 16px; }
     .title-partial h2 {
-      font-family: "Roboto Slab", serif;
+      font-family: "Roboto Slab";
       font-weight: bold;
       font-size: 26px;
       color: #333132; } }
@@ -1424,8 +1424,8 @@ body {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 98%;
-    right: 9%;
+    bottom: 331px;
+    right: 20px;
     background-color: white; }
 
 .property-type form {
@@ -1441,7 +1441,7 @@ body {
 .btn-delete {
   width: 86px;
   height: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -1451,7 +1451,7 @@ body {
 .btn-update {
   width: 125px;
   height: 32px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
@@ -1479,16 +1479,16 @@ body {
     position: absolute;
     border-top: 1px solid #D3D3D3;
     border-left: 1px solid #D3D3D3;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 96%;
-    right: 9%;
+    bottom: 215px;
+    right: 20px;
     background-color: white; }
 
 /* RANGE BAR */
@@ -1522,7 +1522,7 @@ body {
   padding-bottom: 20px; }
 
 .text-filter {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 11px;
@@ -1553,8 +1553,8 @@ body {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 98%;
-    right: 9%;
+    bottom: 328px;
+    right: 20px;
     background-color: white; }
 
 .filter-top {
@@ -1573,39 +1573,48 @@ body {
   border-color: #56C4CF;
   background-color: #56C4CF; }
 
-.table-pc .table {
-  border-bottom: 1px solid #dee2e6; }
-
-.table-pc .table thead th {
-  font-size: 12px;
-  text-align: center; }
-
-.table-pc .table td, .table-pc .table th {
-  font-size: 12px;
-  text-align: center; }
-
-.table-pc .custom-badge {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  padding: 7px 15px;
-  color: #3CC13B; }
-
-.table-pc .detai-table {
-  text-decoration: underline; }
-
-.table-pc .hover-table tbody tr:hover {
-  color: #212529;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #0683F9;
-  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9; }
+.table-pc {
+  font-family: Roboto; }
+  .table-pc .table {
+    border-bottom: 1px solid #dee2e6; }
+  .table-pc .table thead th {
+    font-size: 12px;
+    text-align: center;
+    padding: 0 !important;
+    padding-bottom: 9px !important;
+    height: 48px; }
+  .table-pc .table td, .table-pc .table th {
+    font-size: 12px;
+    text-align: center; }
+  .table-pc .table td {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000; }
+  .table-pc .custom-badge {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 7px 15px;
+    color: #3CC13B;
+    font-weight: 500;
+    font-family: "Roboto"; }
+  .table-pc .detai-table {
+    text-decoration: underline; }
+  .table-pc .hover-table tbody tr:hover {
+    color: #212529;
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #0683F9;
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #0683F9; }
 
 .paging-table .total-record {
   font-size: 12px;
@@ -1645,13 +1654,16 @@ body {
   -moz-border-radius: 2px;
   border-radius: 2px;
   margin-right: 20px;
-  padding: 9px 10px;
+  height: 32px;
   font-size: 12px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto"; }
   .filter-control .btn-filter.active {
     background-color: #56C4CF;
     color: #fff;
     outline: none; }
+  .filter-control .btn-filter i {
+    font-size: 7px;
+    margin-left: 12.5px; }
 
 .filter-control .btn-show-result-htm {
   display: none; }
@@ -1676,26 +1688,23 @@ body {
   position: absolute;
   z-index: 20;
   top: 50px;
-  right: 0; }
+  right: 20px; }
   .filter-control .control-table.active {
     display: block; }
   .filter-control .control-table form {
     padding: 0;
     max-width: unset; }
 
-.filter-control i {
-  font-size: 12px;
-  margin-left: 12.5px; }
-
 .filter-control a, .filter-control .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control img {
   padding-right: 10px;
   font-size: 12px;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto"; }
 
 .filter-control .delete-filter a, .filter-control .delete-filter .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .filter-control .delete-filter img {
   color: #0C77C6; }
 
 .filter-control .view-map {
+  padding-top: 3px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -1708,7 +1717,7 @@ body {
   align-items: center; }
   .filter-control .view-map span {
     font-size: 12px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     padding-right: 5px; }
 
 .filter-control .property-type {
@@ -1723,6 +1732,15 @@ body {
 .filter-control .btn-active {
   color: white;
   background-color: #56C4CF; }
+
+.filter-control .price-bds button {
+  width: 114px; }
+
+.filter-control .price button {
+  width: 58px; }
+
+.filter-control .advanced button {
+  width: 88px; }
 
 .filter-control-mobile {
   position: fixed;
@@ -1860,14 +1878,14 @@ body {
     margin-bottom: 10px;
     margin-left: 17px; }
   .info-department .adress {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     color: #333132;
     display: inline-block; }
   .info-department .department-name {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -1888,7 +1906,7 @@ body {
     .info-department .price-department img {
       margin-right: 10px; }
     .info-department .price-department span {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: bold;
       font-size: 26px;
@@ -1897,25 +1915,28 @@ body {
     margin-bottom: 10px;
     margin-top: 20px; }
     .info-department .info-details span {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
       color: #333132; }
   .info-department .details h5 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     text-transform: uppercase;
     color: #333132;
-    margin-top: 10px; }
+    margin-top: 20px;
+    line-height: 24px; }
   .info-department .details span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     color: #333132; }
+  .info-department .details .cl-orange {
+    color: #EF5B40; }
   .info-department .control-buy {
     text-align: center;
     margin-top: 69px;
@@ -1934,15 +1955,16 @@ body {
       width: 425px;
       height: 52px;
       margin-left: auto;
-      margin-right: auto; }
+      margin-right: auto;
+      font-weight: bold; }
     .info-department .control-buy .sign {
       background: #FFFFFF;
       border: 1px solid #BDBDBD;
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       border-radius: 2px;
-      color: black;
-      font-family: "Roboto", sans-serif;
+      color: #333132;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
@@ -1977,6 +1999,13 @@ body {
       color: #333132;
       font-style: normal;
       font-weight: 600; }
+  .info-department .policy-department .policy-sell a, .info-department .policy-department .policy-sell .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .policy-sell img, .info-department .policy-department .calculator a, .info-department .policy-department .calculator .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .policy-department .calculator img {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0C77C6; }
   .info-department .mb-10 {
     margin-bottom: 10px; }
   .info-department .ml-15 {
@@ -1996,12 +2025,12 @@ body {
   background: #F2F2F2;
   margin-bottom: 0; }
   .table-product .list-tab li {
-    width: 256px;
+    width: 265px;
     display: inline-block;
     text-align: center;
     height: 48px; }
     .table-product .list-tab li a, .table-product .list-tab li .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .table-product .list-tab li img {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: 500;
       font-size: 16px;
@@ -2035,24 +2064,26 @@ body {
   align-items: center;
   padding-top: 20px; }
   .choose .form-group {
-    width: 256px;
+    width: 265px;
     height: 48px;
     margin-right: 20px;
     margin-bottom: 0; }
   .choose p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #828282; }
   .choose select {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #BDBDBD; }
+  .choose .form-control {
+    height: 48px !important; }
 
 .banghang-partial {
   display: none; }
@@ -2060,7 +2091,7 @@ body {
 .annotate {
   padding-top: 20px; }
   .annotate p {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -2071,6 +2102,8 @@ body {
     margin-right: 8px; }
   .annotate .stocking, .annotate .booking {
     margin-right: 19px; }
+  .annotate .item-annotate span {
+    font-size: 12px; }
 
 @media (min-width: 320px) and (max-width: 450px) {
   .table-product .list-tab {
@@ -2115,7 +2148,7 @@ body {
     width: 13px;
     height: 25px; }
   .title-partial-horizontal h2 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 32px;
     color: #333132;
@@ -2337,10 +2370,12 @@ body {
     -o-transform: translateX(-35%);
     transform: translateX(-35%); }
     .progress-status .date-status .date {
-      padding: 0 10px; }
+      padding: 0 10px;
+      color: #000; }
     .progress-status .date-status .status {
       font-size: 12px;
-      font-style: italic; }
+      font-style: italic;
+      color: #8D8D8D; }
   .progress-status:nth-child(odd) .date-status {
     top: unset;
     bottom: 130%; }
@@ -2364,6 +2399,93 @@ body {
     .progress-status:nth-child(odd) .date-status {
       top: -2px;
       bottom: unset; } }
+
+/*POP UP*/
+.popup-hover span {
+  font-size: 14px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 151.16%;
+  color: #000000; }
+
+.popup-hover .items-popup {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.popup-hover .hover-title {
+  margin-bottom: 17px; }
+
+.popup-hover .code-department span {
+  font-size: 16px; }
+
+.popup-hover .code-department .hover-blue {
+  color: #007BFF;
+  font-weight: 500; }
+
+.popup-hover .hover-baged {
+  color: #3CC13B;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.9)), to(rgba(255, 255, 255, 0.9))), #3CC13B;
+  background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #3CC13B;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 8px; }
+
+.popup-hover .hover-bold {
+  font-weight: bold; }
+
+.popup-hover .buy-hover {
+  width: 120px;
+  height: 40px;
+  background: #007BFF;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 7px; }
+  .popup-hover .buy-hover a, .popup-hover .buy-hover .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .popup-hover .buy-hover img {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF; }
+
+.popup-hover .view-details {
+  margin-bottom: 16px; }
+  .popup-hover .view-details a, .popup-hover .view-details .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .popup-hover .view-details img {
+    font-size: 12px;
+    line-height: 16px;
+    -webkit-text-decoration-line: underline;
+    -moz-text-decoration-line: underline;
+    text-decoration-line: underline;
+    color: #2F80ED; }
+
+.popup-hover .viewer {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 12px;
+  color: #828282; }
+
+@media (min-width: 375px) and (max-width: 414px) {
+  .popup-hover .buy-hover {
+    margin-top: 10px; } }
 
 /*KHU VUC NOI BAT*/
 .image-thumbail {
@@ -2400,7 +2522,7 @@ body {
     margin-right: auto;
     margin-bottom: 30px; }
   .khuVucNoiBat .top h2 {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-weight: bold;
     font-size: 32px;
     color: #333132; }
@@ -2520,7 +2642,7 @@ body {
 
 .duannoibat-home-title {
   line-height: 40px;
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-size: 32px; }
 
@@ -2534,7 +2656,7 @@ body {
     width: 143.85px;
     height: 30px;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     text-decoration: none;
     font-weight: 500; }
 
@@ -2574,7 +2696,7 @@ body {
 
 .text-partner_reti {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2652,7 +2774,7 @@ body {
 
 .text-partner_reti {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -2755,7 +2877,7 @@ body {
       font-weight: 500;
       font-size: 14px;
       line-height: 30px;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Roboto"; }
     .container-form .form-web .form-email {
       width: 67%;
       margin-right: 3%; }
@@ -2826,7 +2948,7 @@ body {
     font-size: 9px;
     margin-left: .9rem; }
   .project_classification a, .project_classification .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .project_classification img {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 13px;
@@ -2882,12 +3004,12 @@ body {
     -ms-flex-align: center;
     align-items: center; }
     .container .muaNhaTrucTuyen-row .title-partial-horizontal h2, .khuVucNoiBat .muaNhaTrucTuyen-row .title-partial-horizontal h2 {
-      font-family: "Roboto Slab", serif;
+      font-family: "Roboto Slab";
       font-weight: bold;
       font-size: 32px;
       color: #333132; }
   .container .muaNhaTrucTuyen-row .content, .khuVucNoiBat .muaNhaTrucTuyen-row .content, .container .muaNhaTrucTuyen-row .paging, .khuVucNoiBat .muaNhaTrucTuyen-row .paging {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2914,7 +3036,7 @@ body {
   .container .muaNhaTrucTuyen-row .content2 .content2-title, .khuVucNoiBat .muaNhaTrucTuyen-row .content2 .content2-title {
     font-weight: bold; }
   .container .muaNhaTrucTuyen-row .content2 .content2-body, .khuVucNoiBat .muaNhaTrucTuyen-row .content2 .content2-body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -2922,7 +3044,7 @@ body {
   .container .muaNhaTrucTuyen-row .columnLeft-button, .khuVucNoiBat .muaNhaTrucTuyen-row .columnLeft-button {
     margin-top: 60px; }
     .container .muaNhaTrucTuyen-row .columnLeft-button .button, .khuVucNoiBat .muaNhaTrucTuyen-row .columnLeft-button .button {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -2963,7 +3085,7 @@ body {
     .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal .icon-title-horizontal, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal .icon-title-horizontal {
       margin-right: 0; }
     .container .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal h2, .khuVucNoiBat .muaNhaTrucTuyen-row .muaNhaTrucTuyen-columnLeft .title-partial-horizontal h2 {
-      font-family: "Roboto Slab", serif;
+      font-family: "Roboto Slab";
       font-weight: bold;
       font-size: 26px;
       color: #333132;
@@ -3039,7 +3161,7 @@ body {
         border-radius: 50%;
         padding: 29px 29px 32px 29px; }
     .container .viSaoChonReti-row2 .viSaoChonReti-col1 .viSaoChonReti-title, .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1 .viSaoChonReti-title {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -3047,7 +3169,7 @@ body {
       color: #56C4CF;
       font-weight: bold; }
     .container .viSaoChonReti-row2 .viSaoChonReti-col1 .viSaoChonReti-content, .khuVucNoiBat .viSaoChonReti-row2 .viSaoChonReti-col1 .viSaoChonReti-content {
-      font-family: "Roboto", sans-serif;
+      font-family: "Roboto";
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -3109,7 +3231,7 @@ body {
     margin-bottom: 30px; }
 
 .partner_reti-adress, .advisory {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px; }
@@ -3119,14 +3241,14 @@ body {
   display: inline-block; }
 
 .date {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   text-transform: uppercase; }
 
 .text-partner {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: bold;
   font-size: 24px; }
@@ -3278,7 +3400,7 @@ body {
     .utilities .utilities-content .utilities-item {
       margin-bottom: 20px; }
   .utilities .utilities-item span {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px; }
@@ -3362,7 +3484,7 @@ body {
     display: none; }
 
 .tab-item {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -3383,13 +3505,14 @@ body {
   -ms-flex-align: center;
   align-items: center; }
   .shark-title h2 {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
-    font-size: 16px; }
+    font-size: 16px;
+    color: #1A1A1A; }
 
 .shark-content {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -3480,7 +3603,7 @@ body {
 
 /* ĐƠN HÀNG*/
 .title-order {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -3491,7 +3614,7 @@ body {
   height: 40px; }
 
 .order form label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -3508,7 +3631,7 @@ body {
   color: red; }
 
 .order form select {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -3516,7 +3639,7 @@ body {
   color: #E0E0E0; }
 
 .order form input:placeholder-shown {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -3524,7 +3647,7 @@ body {
   color: #E0E0E0; }
 
 .order form textarea:placeholder-shown {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -3532,7 +3655,7 @@ body {
   color: #E0E0E0; }
 
 .order .note {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: italic;
   font-size: 14px;
   line-height: 26px;
@@ -3566,7 +3689,7 @@ body {
 .info-order-bottom {
   padding-left: 16px; }
   .info-order-bottom .text-adress {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -3576,7 +3699,7 @@ body {
     padding-top: 16px;
     display: inline-block; }
   .info-order-bottom .text-info-order {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -3594,7 +3717,7 @@ body {
   margin-right: 0; }
 
 .details-info .headings {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -3602,7 +3725,7 @@ body {
   color: #000000; }
 
 .details-info .result {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -3644,7 +3767,7 @@ body {
   .discount .row {
     margin-bottom: 16px; }
   .discount .bold {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -3659,7 +3782,7 @@ body {
     color: #EF5B40; }
 
 .deposit .deposit-headings {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -3745,14 +3868,14 @@ body {
   margin-top: 12px;
   padding-left: 15px; }
   .sales_policy .heading-sales_policy {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
     color: #1A1A1A; }
   .sales_policy .result-sales_policy {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -3768,6 +3891,9 @@ body {
     margin-right: 31px; }
   .sales_policy .row {
     margin-bottom: 8px; }
+
+.chinhsachbanhang-partial h2 {
+  color: #000000; }
 
 .duantuongtu-partial .similar_projects {
   margin-top: 30px; }
@@ -3804,7 +3930,8 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  background-image: url(../images/matbangduan/Shape.png); }
+  background-image: url(../images/matbangduan/Shape.png);
+  top: 32%; }
 
 #slider-main .slick-prev {
   background: rgba(245, 245, 245, 0.35);
@@ -3817,7 +3944,8 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  left: -4%; }
+  left: -4%;
+  top: 32%; }
 
 #slider-main .slick-prev:before {
   color: #56C6D0;
@@ -3914,7 +4042,7 @@ body {
     -moz-box-pack: justify;
     justify-content: space-between;
     -ms-flex-pack: space-between;
-    width: 635px;
+    max-width: 645px;
     height: 554px; }
     .chitietduan-partial .chitietduan-leftcolumn .slick-slide img {
       display: block;
@@ -4156,6 +4284,7 @@ body {
     flex-wrap: wrap;
     margin-top: 0; }
     .chitietduan-partial .chitietduan-leftcolumn {
+      max-width: 375px;
       padding: 0px 5px;
       width: 100%; }
       .chitietduan-partial .chitietduan-leftcolumn .chitietduan-slider-top .slick-next {
@@ -4347,13 +4476,14 @@ body {
   .motaduan-partial .motaduan-content {
     margin-top: 16px;
     width: 100%;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
-    line-height: 26px; }
+    line-height: 26px;
+    max-width: 645px; }
   .motaduan-partial .motaduan-link {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -4425,7 +4555,7 @@ body {
   box-shadow: unset; }
 
 input[type=checkbox]:checked + label {
-  font-weight: 600; }
+  font-weight: 500; }
 
 .next-page:hover {
   background-color: #333132; }
@@ -4469,7 +4599,7 @@ input[type=checkbox]:checked + label {
     #list_project .title-partial-horizontal .icon-title-horizontal {
       margin-right: 20px; }
     #list_project .title-partial-horizontal h2 {
-      font-family: "Roboto Slab", serif;
+      font-family: "Roboto Slab";
       font-weight: bold;
       font-size: 32px;
       color: #333132;
@@ -4495,6 +4625,9 @@ input[type=checkbox]:checked + label {
     position: fixed;
     top: 20%;
     width: 333px; }
+
+.card-category {
+  padding: 0 5px; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .card-category .card-price {
@@ -4541,7 +4674,7 @@ main {
   background-size: cover;
   position: relative; }
   .home-banner-small p {
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -4783,7 +4916,7 @@ main {
         width: 100%; } }
 
 .utilities {
-  margin-top: 60px; }
+  margin-top: 62px; }
   .utilities .utilities-content {
     width: 50%; }
   .utilities .btn-mobile-utilities a, .utilities .btn-mobile-utilities .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .utilities .btn-mobile-utilities img {
@@ -4796,7 +4929,7 @@ main {
     line-height: 163.42%; }
 
 .table-product {
-  margin-top: 60px; }
+  margin-top: 50px; }
   .table-product .paging-table {
     padding: 0px 15px; }
 
@@ -4805,8 +4938,8 @@ main {
 
 .active-fixed {
   position: fixed;
-  right: 13.2%;
-  top: 22%;
+  right: 195px !important;
+  top: 24%;
   z-index: 9; }
 
 .matbangduan-partial {
@@ -4850,8 +4983,8 @@ main {
 
 .btn-zoom {
   position: absolute;
-  right: 0;
-  top: 12%;
+  right: 16px;
+  top: 107px;
   width: 36px;
   height: 73px;
   -webkit-border-radius: 2px;
@@ -4864,15 +4997,28 @@ main {
     width: 100%;
     height: 50%;
     border: 1px solid #D3D3D3;
-    border-bottom: 1px solid #D3D3D3; }
+    border-bottom: 1px solid #D3D3D3;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff; }
+    .btn-zoom .up-map img {
+      margin-bottom: 10px; }
   .btn-zoom .down-map {
     width: 100%;
     height: 50%;
     border: 1px solid #D3D3D3;
-    border-top: none; }
+    border-top: none;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #fff; }
+    .btn-zoom .down-map img {
+      margin-bottom: 10px; }
 
 .svg-content {
   position: relative; }
+
+.like-product-card:focus {
+  outline: none; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .chitietduan-rightcolumn {
@@ -4882,8 +5028,8 @@ main {
   .motaduan-partial {
     margin-top: 40px; }
   .btn-zoom {
-    right: 20px;
-    top: 18%; } }
+    right: 16px;
+    top: 179px; } }
 
 @media (max-width: 768px) {
   .active-fixed {
@@ -4899,4 +5045,4 @@ main {
   max-width: 475px; }
 
 .active-fixed {
-  right: 13.5%; }
+  right: 195px; }
