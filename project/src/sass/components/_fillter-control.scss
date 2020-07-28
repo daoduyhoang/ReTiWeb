@@ -196,11 +196,25 @@
             }
         }
         .custom-switch {
-            display: none;
+            // display: none;
+            .custom-control-label {
+                &::before {
+                    width: 1.75rem;
+                    height: 1rem;
+                }
+                &::after {
+                    width: calc(1rem - 4px);
+                    height: calc(1rem - 4px);
+                }
+            }
         }
-        .btn-show-result-htm {
-            display: block;
-        }
+        
+    }
+    .btn-show-result-htm {
+        display: block;
+        position: sticky;
+        width: 100%;
+        bottom: 0;
     }
     .filter-top {
         border-bottom: none;
