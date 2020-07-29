@@ -4608,8 +4608,9 @@ body {
     font-size: 14px;
     line-height: 26px;
     max-width: 645px; }
-    .motaduan-partial .motaduan-content .except-more {
-      width: 645px; }
+    @media (min-width: 998px) {
+      .motaduan-partial .motaduan-content .except-more {
+        width: 645px; } }
   .motaduan-partial .motaduan-link {
     font-family: "Roboto";
     font-style: normal;
@@ -4779,17 +4780,18 @@ main {
   margin-bottom: 150px; }
 
 .home-section-5 {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 50px 0; }
   .home-section-5 .container .viSaoChonReti-row1, .home-section-5 .khuVucNoiBat .viSaoChonReti-row1 {
     margin-top: 0; }
 
 .home-section-7 {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 50px 0;
   margin-bottom: 0; }
 
-.home-section-8 img, .home-section-11 img {
+.home-section-8 img,
+.home-section-11 img {
   width: 100%; }
 
 .home-section .title-partial h2 {
@@ -4809,18 +4811,18 @@ main {
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center; }
   .home-banner-small .blur {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
-    opacity: .3;
+    background-color: #333132;
+    opacity: 0.8;
     z-index: 1; }
   .home-banner-small button {
     border: none;
-    background: #56C4CF;
+    background: #56c4cf;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -4862,10 +4864,12 @@ main {
       -ms-transform: translateY(-50%);
       -o-transform: translateY(-50%);
       transform: translateY(-50%); }
-    .home-section-7 .btn-prev, .home-section-7 .btn-next {
+    .home-section-7 .btn-prev,
+    .home-section-7 .btn-next {
       background-color: #f5f5f5;
       border: none; }
-      .home-section-7 .btn-prev i, .home-section-7 .btn-next i {
+      .home-section-7 .btn-prev i,
+      .home-section-7 .btn-next i {
         line-height: 30px; } }
 
 .home-section-7 {
@@ -4876,7 +4880,8 @@ main {
     max-width: 930px;
     margin: auto;
     margin-bottom: 30px; }
-  .home-section-7 .no-js .owl-carousel, .home-section-7 .owl-carousel.owl-loaded {
+  .home-section-7 .no-js .owl-carousel,
+  .home-section-7 .owl-carousel.owl-loaded {
     overflow: hidden !important; }
 
 @media (min-width: 320px) and (max-width: 414px) {

@@ -385,13 +385,16 @@ if (map) {
 }
 // STICK CHITIETCANHO
 var infoHome = document.querySelector(".chitietduan-rightcolumn");
+let tableProduct = document.querySelector(".table-product");
+
+//Function chạy ở trang detail-project
 let infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 let calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
-if (infoHome) {
-  var stopStick = document.querySelector(".table-product").offsetTop;
+if (tableProduct) {
+  var stopStick = tableProduct.offsetTop;
+
   window.addEventListener("scroll", function () {
-    let infoHomeOffSetY = infoHome.offsetTop + infoHome.clientHeight;
     let header = document.querySelector("header");
 
     if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
@@ -406,7 +409,37 @@ if (infoHome) {
     }
   });
 }
+
+let stickyRight = document.querySelector(".sticky-detailapartment");
+
+let stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
+let stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
+let progressBox = document.querySelector(".progress-box");
+
+//Function chạy ở trang detail-apartment
+if (progressBox) {
+  var stopStick = progressBox.offsetTop;
+  window.addEventListener("scroll", function () {
+    let header = document.querySelector("header");
+
+    if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
+      stickyRight.classList.add("active-fixed");
+      stickyRight.style.right = stickyRightPos - 10 + "px";
+    } else if (
+      window.pageYOffset < 150 ||
+      window.pageYOffset > stopStick - stickyRight.clientHeight - header.clientHeight - 30
+    ) {
+      infoHome.classList.remove("active-fixed");
+      infoHome.style.right = "unset";
+    }
+  });
+}
+
 //draggable
-document.getElementById("big").onclick = function () {
-  jQuery(".mapify-holder").draggable();
-};
+let big = document.querySelector("big");
+
+if (big) {
+  big.onclick = function () {
+    jQuery(".mapify-holder").draggable();
+  };
+}

@@ -383,13 +383,14 @@ if (map) {
 
 
 var infoHome = document.querySelector(".chitietduan-rightcolumn");
+var tableProduct = document.querySelector(".table-product"); //Function chạy ở trang detail-project
+
 var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
-if (infoHome) {
-  var stopStick = document.querySelector(".table-product").offsetTop;
+if (tableProduct) {
+  var stopStick = tableProduct.offsetTop;
   window.addEventListener("scroll", function () {
-    var infoHomeOffSetY = infoHome.offsetTop + infoHome.clientHeight;
     var header = document.querySelector("header");
 
     if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
@@ -400,9 +401,33 @@ if (infoHome) {
       infoHome.style.right = "unset";
     }
   });
+}
+
+var stickyRight = document.querySelector(".sticky-detailapartment");
+var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
+var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
+var progressBox = document.querySelector(".progress-box"); //Function chạy ở trang detail-apartment
+
+if (progressBox) {
+  var stopStick = progressBox.offsetTop;
+  window.addEventListener("scroll", function () {
+    var header = document.querySelector("header");
+
+    if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
+      stickyRight.classList.add("active-fixed");
+      stickyRight.style.right = stickyRightPos - 10 + "px";
+    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - stickyRight.clientHeight - header.clientHeight - 30) {
+      infoHome.classList.remove("active-fixed");
+      infoHome.style.right = "unset";
+    }
+  });
 } //draggable
 
 
-document.getElementById("big").onclick = function () {
-  jQuery(".mapify-holder").draggable();
-};
+var big = document.querySelector("big");
+
+if (big) {
+  big.onclick = function () {
+    jQuery(".mapify-holder").draggable();
+  };
+}
