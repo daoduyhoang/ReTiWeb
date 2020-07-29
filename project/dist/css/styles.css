@@ -1693,7 +1693,7 @@ body {
   display: none;
   position: absolute;
   z-index: 20;
-  top: 50px;
+  top: 46px;
   right: 20px; }
   .filter-control .control-table.active {
     display: block; }
@@ -1730,7 +1730,7 @@ body {
   width: 377px; }
 
 .filter-control .price-range {
-  top: 51px; }
+  top: 46px; }
 
 .filter-control .filter-more {
   width: 752px; }
@@ -2127,7 +2127,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #828282; }
+    color: #828282;
+    margin-bottom: 0; }
   .choose select {
     font-family: "Roboto";
     font-style: normal;
@@ -2179,9 +2180,14 @@ body {
     width: 100%;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-top: 8px; }
     .table-product .choose .form-group {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 8px;
+      margin-right: 4px; }
+    .table-product .choose p {
+      margin-top: 8px; } }
 
 /* MAPIFY*/
 /*title-partial_horizontal*/
@@ -2457,13 +2463,16 @@ body {
 
 @media (min-width: 375px) and (max-width: 414px) {
   .progress-status .date-status {
-    top: 3px;
-    left: 260%;
+    top: 0px;
+    left: 77px;
     text-align: left;
     margin-left: 8px; }
   .progress-status:nth-child(odd) .date-status {
-    top: 4px;
-    bottom: unset; } }
+    top: 1px;
+    bottom: unset; }
+  .progress-status .tick-complete {
+    width: 25px;
+    height: 25px; } }
 
 /*POP UP*/
 .popup-hover span {
@@ -3594,7 +3603,8 @@ body {
   font-size: 14px;
   color: #323232;
   width: 50%;
-  margin: 10px 0; }
+  margin: 10px 0;
+  width: 640px; }
 
 .shark,
 .developer,
@@ -3687,7 +3697,9 @@ body {
     height: 30px;
     background-color: #000000;
     opacity: 0.3;
-    background-image: url(../images/arrw.png); } }
+    background-image: url(../images/arrw.png); }
+  .shark-content {
+    width: 100%; } }
 
 /* ĐƠN HÀNG*/
 .title-order {
@@ -4054,7 +4066,7 @@ body {
   #slider-main .slick-prev {
     display: none !important; }
   #slider-main .slick-next {
-    right: 0%;
+    right: 16px;
     background: #f5f5f5;
     width: 30px;
     height: 30px;
@@ -4638,7 +4650,9 @@ body {
   .container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
     width: 100%; }
     .container .motaduan-partial .motaduan-content, .khuVucNoiBat .motaduan-partial .motaduan-content {
-      width: 100%; } }
+      width: 100%; }
+  .motaduan-partial .motaduan-content .except-more {
+    width: 343px; } }
 
 .text-info-project {
   margin-top: 16px;
