@@ -23,20 +23,19 @@
 //     }
 // }
 .motaduan-link {
-    display: contents;
+  display: contents;
 }
 
-.chitietduan-partial{
-    .chitietduan-rightcolumn{
-        max-width: 475px;
-        }
-    }        .active-fixed{
-        right: 195px;
-    }
+.chitietduan-partial {
+  .chitietduan-rightcolumn {
+    max-width: 475px;
+  }
+}
+ {
+  right: 195px;
+}
 
-
-@media (min-width:320px) and (max-width: 414px){
-    .slide-apartment{
-        
-    }
+@media (min-width: 320px) and (max-width: 414px) {
+  .slide-apartment {
+  }
 }
