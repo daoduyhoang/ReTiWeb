@@ -2127,8 +2127,7 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    color: #828282;
-    margin-bottom: 0; }
+    color: #828282; }
   .choose select {
     font-family: "Roboto";
     font-style: normal;
@@ -2180,14 +2179,9 @@ body {
     width: 100%;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding-top: 8px; }
+    flex-wrap: wrap; }
     .table-product .choose .form-group {
-      width: 100%;
-      margin-bottom: 8px;
-      margin-right: 4px; }
-    .table-product .choose p {
-      margin-top: 8px; } }
+      width: 100%; } }
 
 /* MAPIFY*/
 /*title-partial_horizontal*/
