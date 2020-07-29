@@ -1895,7 +1895,8 @@ body {
     font-style: normal;
     font-weight: bold;
     color: #333132;
-    margin-left: 14px; }
+    margin-left: 14px;
+    margin-bottom: 15px; }
     @media only screen and (max-width: 414px) and (max-width: 850px) and (min-width: 320px) {
       .info-department .department-name {
         font-size: 18px; } }
@@ -1979,6 +1980,9 @@ body {
       height: 52px;
       display: block;
       padding: 10px 20px; }
+      @media (min-width: 992px) {
+        .info-department .control-buy a, .info-department .control-buy .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .control-buy img {
+          width: 425px; } }
     .info-department .control-buy .buy-now {
       background: #56c4cf;
       -webkit-border-radius: 2px;
@@ -5074,17 +5078,8 @@ main {
 
 .active-fixed {
   position: fixed;
-  right: 190px;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
   top: 24%;
-  z-index: 9;
-  -webkit-animation: activeSlideDown 1s;
-  -moz-animation: activeSlideDown 1s;
-  -o-animation: activeSlideDown 1s;
-  animation: activeSlideDown 1s; }
+  z-index: 9; }
 
 .matbangduan-partial {
   padding-top: 30px; }

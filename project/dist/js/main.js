@@ -383,42 +383,89 @@ if (map) {
 
 
 var infoHome = document.querySelector(".chitietduan-rightcolumn");
-var tableProduct = document.querySelector(".table-product"); //Function chạy ở trang detail-project
+var tableProduct = document.querySelector(".table-product");
+var progressBox = document.querySelector(".progress-box");
+var stickyRight = document.querySelector(".sticky-detailapartment");
+var header = document.querySelector("header"); //Function chạy ở trang detail-project
 
 var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
 if (tableProduct) {
   var stopStick = tableProduct.offsetTop;
+  var lastScroll = 0;
+  var endPoint = stopStick - infoHome.clientHeight - header.clientHeight;
   window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
-      infoHome.classList.add("active-fixed");
-      infoHome.style.right = calcRight + "px";
-    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - infoHome.clientHeight - header.clientHeight - 60) {
-      infoHome.classList.remove("active-fixed");
-      infoHome.style.right = "unset";
+    if (currentScroll > 0 && lastScroll <= currentScroll) {
+      lastScroll = currentScroll;
+
+      if (window.pageYOffset > 20 && window.pageYOffset < stopStick - infoHome.clientHeight) {
+        infoHome.classList.add("active-fixed");
+        infoHome.style.right = calcRight + "px";
+      } else if (currentScroll > endPoint) {
+        infoHome.classList.remove("active-fixed");
+        infoHome.style.position = "absolute";
+        infoHome.style.top = stopStick - infoHome.clientHeight + "px";
+      }
+    } else {
+      if (currentScroll < stopStick - infoHome.clientHeight) {
+        infoHome.classList.add("active-fixed");
+        infoHome.style.top = "";
+        infoHome.style.position = "";
+      }
+
+      if (currentScroll <= 116) {
+        infoHome.style.position = "";
+        infoHome.classList.remove("active-fixed");
+        infoHome.style.top = "";
+        infoHome.style.right = "";
+      }
+
+      lastScroll = currentScroll;
     }
   });
-}
+} //Function chạy ở trang detail-apartment
 
-var stickyRight = document.querySelector(".sticky-detailapartment");
-var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
-var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
-var progressBox = document.querySelector(".progress-box"); //Function chạy ở trang detail-apartment
 
-if (progressBox) {
+if (stickyRight) {
+  var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
+  var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
+  var _lastScroll = 0;
   var stopStick = progressBox.offsetTop;
-  window.addEventListener("scroll", function () {
-    var header = document.querySelector("header");
 
-    if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
-      stickyRight.classList.add("active-fixed");
-      stickyRight.style.right = stickyRightPos - 10 + "px";
-    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - stickyRight.clientHeight - header.clientHeight - 30) {
-      infoHome.classList.remove("active-fixed");
-      infoHome.style.right = "unset";
+  var _endPoint = stopStick - stickyRight.clientHeight - header.clientHeight;
+
+  window.addEventListener("scroll", function () {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0 && _lastScroll <= currentScroll) {
+      _lastScroll = currentScroll;
+
+      if (window.pageYOffset > 20 && window.pageYOffset < stopStick - infoHome.clientHeight) {
+        stickyRight.classList.add("active-fixed");
+        stickyRight.style.right = stickyRightPos - 5 + "px";
+      } else if (currentScroll > _endPoint) {
+        stickyRight.classList.remove("active-fixed");
+        stickyRight.style.position = "absolute";
+        stickyRight.style.top = stopStick - stickyRight.clientHeight + "px";
+      }
+    } else {
+      if (currentScroll < stopStick - stickyRight.clientHeight) {
+        stickyRight.classList.add("active-fixed");
+        stickyRight.style.top = "";
+        stickyRight.style.position = "";
+      }
+
+      if (currentScroll <= 116) {
+        stickyRight.style.position = "";
+        stickyRight.classList.remove("active-fixed");
+        stickyRight.style.top = "";
+        stickyRight.style.right = "";
+      }
+
+      _lastScroll = currentScroll;
     }
   });
 } //draggable

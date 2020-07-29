@@ -65,13 +65,10 @@
 }
 .active-fixed {
   position: fixed;
-  right: 190px;
 
-  transition: all 0.5s;
   // right: 195px !important;
   top: 24%;
   z-index: 9;
-  animation: activeSlideDown 1s;
 }
 
 .matbangduan-partial {
