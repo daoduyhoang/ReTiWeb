@@ -2173,9 +2173,14 @@ body {
     width: 100%;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding-top: 8px; }
     .table-product .choose .form-group {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 8px;
+      margin-right: 4px; }
+    .table-product .choose p {
+      margin-top: 8px; } }
 
 /* MAPIFY*/
 /*title-partial_horizontal*/
@@ -2448,6 +2453,16 @@ body {
     .progress-status:nth-child(odd) .date-status {
       top: -2px;
       bottom: unset; } }
+
+@media (min-width: 375px) and (max-width: 414px) {
+  .progress-status .date-status {
+    top: 3px;
+    left: 260%;
+    text-align: left;
+    margin-left: 8px; }
+  .progress-status:nth-child(odd) .date-status {
+    top: 4px;
+    bottom: unset; } }
 
 /*POP UP*/
 .popup-hover span {
@@ -5138,7 +5153,7 @@ main {
     margin-top: 40px; }
   .btn-zoom {
     right: 16px;
-    top: 179px; } }
+    top: 195px; } }
 
 @media (max-width: 768px) {
   .active-fixed {
