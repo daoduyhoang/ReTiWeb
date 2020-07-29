@@ -7,6 +7,7 @@
         .muaNhaTrucTuyen-columnLeft{
             width: 49.5%;
             height: auto;
+            margin-right: 20px;
             @include flex-direction(column);
             @include Responsive(SM){
                 width: 100%;
@@ -15,6 +16,8 @@
             }
             .title-partial-horizontal{
                 margin-bottom: 30px;
+                display: flex;
+                align-items: center;
                 h2{
                     @include title_partials();
                 } 
@@ -44,7 +47,7 @@
                     margin-right: 30px;
                 }
                 .line{
-                    font-weight: bold;
+                    // font-weight: bold;
                     margin-right: 30px;
                 }
             }
@@ -96,6 +99,27 @@
         }
     }
 @media(min-width:320px) and (max-width:768px){
+    .container{
+        .muaNhaTrucTuyen-row{
+            .muaNhaTrucTuyen-columnLeft{
+                .title-partial-horizontal{
+                    text-align: center;
+                    display: block;
+                    .icon-title-horizontal{
+                        margin-right: 0;
+                    }
+                    h2{
+                        @include title_partials_mobile();
+                        margin: 0;
+                    }
+                    img{
+                        transform: rotate(90deg);
+                        margin-bottom: 16px;
+                    }
+            }
+        }
+        }
+    }
     .muaNhaTrucTuyen-img{
         img{
             width: 100%;
@@ -113,4 +137,12 @@
     .mr-mb-0{
         margin-right: 0 !important;
     }
+}
+.line{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333132;
 }

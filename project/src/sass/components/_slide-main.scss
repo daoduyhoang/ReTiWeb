@@ -1,4 +1,21 @@
 /* COMPONENT SLIDER MAIN*/ 
+.custom-indicators {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        background-color: $gray-color;
+        height: 100%;
+        width: 100%;
+    }
+}
 .carousel-control-prev{
     width: 40px;
     height: 40px;
@@ -40,6 +57,26 @@
         display: none;
     }
 }
+.custom-indicators::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 100%;
+}
+.ground, .chitietduan-leftcolumn {
+    .slick-slide {
+        filter: brightness(0.5);
+        &.slick-current {
+            filter: none;
+        }
+    }
+}
+
+
 @media(min-width:769px){
     #slider{
         #carouselControls .carousel-indicators li{
@@ -62,8 +99,6 @@
             top: 100%;
             bottom: unset;
             background: #F2F2F2;
-            margin-right: unset;
-            margin-left: 13%;
         }
         .carousel-indicators li::before,.carousel-indicators li::after{
             display: none;
@@ -82,4 +117,16 @@
         }
     }
 }
-
+@media(min-width:320px) and (max-width:414px){
+    #slider{
+        .carousel-inner{
+            height: 255px;
+            .carousel-item{
+                height: 255px;
+                img{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

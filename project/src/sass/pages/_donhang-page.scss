@@ -14,6 +14,15 @@
         margin-bottom: 379px;
     }
 }
+#Textarea1{
+    height: 126px;
+}
+.discount{
+    .form-control{
+        font-size: 12px;
+    }
+}
+
 @media(min-width:1024px){
     .no-wrap-ipad{
         flex-wrap: nowrap !important;
@@ -66,7 +75,11 @@
     .info-order-bottom .text-info-order {
         width: 89%;
     }
+    #Textarea1{
+        height: 90px;
+    }
 }
+
 @media(max-width:375px){
     .info-order {
         width: 360px;
@@ -79,5 +92,10 @@
     }
     .deposit .result {
         font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .discount .form-control {
+        font-size: 12px;
     }
 }

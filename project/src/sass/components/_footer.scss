@@ -10,14 +10,23 @@
         padding-right: 15px;
     }
 }
+.sologan{
+    font-size: 15px;
+    font-weight: 500;
+}
 .info-footer{
     .title-footer{
         font-size: 16px;
         font-weight: bold;
+        margin-bottom: 16px;
+    }
+    & > [class*="col-lg-"] {
+        padding-left: 0;
+        padding-right: 0;
     }
     ul{
         li{
-            padding-bottom: 15px;
+            padding-bottom: 16px;
             a{
                 color: #000;
                 font-size: 12px;
@@ -61,6 +70,24 @@
 .top-footer{
     border-bottom: 1px solid #EDEDED;
 }
+.bottom-footer{
+    .container{
+        &:nth-child(1){
+            margin-bottom: 62px;
+        }
+    }
+}
+.close-menu i{
+    color: #000;
+}
+.menu-phanloai .menu-drop li a{
+    height: 60px;
+    padding: 19px 15px;
+    font-weight: 500;
+}
+.font-size-bottom{
+    color: #8D8D8D;
+}
 @media(min-width:415px) and (max-width:768px){
     .footer-nowrap{
         flex-wrap: nowrap !important;
@@ -90,5 +117,29 @@
         justify-content: flex-start !important;
         padding-left: 16px;
         margin-bottom: 23px;
+    }
+
+    #footer [class*="col-lg-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .top-footer {
+        border-bottom: unset;
+    }
+    .top-footer .row{
+        border-bottom: 1px solid #EDEDED;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bottom-footer {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .bottom-footer{
+        .container{
+            &:nth-child(1){
+                margin-bottom: unset;
+            }
+        }
     }
 }

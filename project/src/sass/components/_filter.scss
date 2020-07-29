@@ -17,8 +17,8 @@
         height: 15px;
         transform: rotate(45deg);
         transform: rotate(45deg);
-        bottom: 98%;
-        right: 9%;
+        bottom: 328px;
+        right: 20px;
         background-color: white;
     }
 }
@@ -34,7 +34,7 @@
 .furniture .mb-15,.project .mb-15{
     margin-bottom: 15px;
 }
-.buy-online .custom-control-input:checked~.custom-control-label::before{
+.custom-control-input:checked~.custom-control-label::before{
     border-color: #56C4CF;
     background-color: #56C4CF;
 }

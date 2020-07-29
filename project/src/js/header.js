@@ -6,18 +6,17 @@
 let getHeader = document.querySelector('.header');
 let getMenuPl = document.querySelector('.menu-phanloai');
 let offSetHeader = getHeader.offsetHeight;
-window.addEventListener("scroll",function(){
-    if(window.pageYOffset > offSetHeader){
+window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= offSetHeader) {
         getHeader.classList.add('stick');
     }
-    else if(window.pageYOffset == 0) {
+    else if (window.pageYOffset == 0) {
         getHeader.classList.remove('stick');
     }
 });
 
 
 //===============
-
 
 let getLiMenu = Array.from(document.querySelectorAll('.menu-drd-level-1 > .menu-drd-item'));
 
@@ -114,6 +113,7 @@ $(document).ready(function () {
 });
 jQuery('.menu-phanloai .close-menu').click(function (e) {
     e.preventDefault();
+    jQuery('body').removeClass('none-scroll');
     jQuery('.menu-phanloai').removeClass('active');
     jQuery('.menu-phanloai').addClass('close-animt');
 })
@@ -130,69 +130,69 @@ jQuery('.menu-phanloai .close-menu').click(function (e) {
 //==============
 
 
-function myFunction(x) {
-    var searchBtm = jQuery('.header-search');
-    var searchPlh = jQuery('.header-search input');
+// function myFunction(x) {
+//     var searchBtm = jQuery('.header-search');
+//     var searchPlh = jQuery('.header-search input');
 
-    if (x.matches) {
+//     if (x.matches) {
 
-        // Reponsive Header
-        jQuery('.header').addClass('header-mobile');
-        jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
-            e.preventDefault();
-            jQuery('.header-main-box').toggleClass('active');
-        });
-        jQuery('.header-menu-box').append(searchBtm);
-        searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
-        $(document).ready(function () {
-            $(".has-menu-btn-show").on("click", function () {
-                if ($(this).parent().hasClass("active")) {
-                    $(this).parent().removeClass("active");
-                } else {
-                    $(".has-menu-drp").removeClass("active");
-                    $(this).parent().addClass("active");
-                }
-            });
-        });
+//         // Reponsive Header
+//         jQuery('.header').addClass('header-mobile');
+//         jQuery('.header-mobile [class*="header-logo-box-"]').click(function (e) {
+//             e.preventDefault();
+//             jQuery('.header-main-box').toggleClass('active');
+//         });
+//         jQuery('.header-menu-box').append(searchBtm);
+//         searchPlh.attr('placeholder', 'Nhập tên dự án cần tìm kiếm');
+//         $(document).ready(function () {
+//             $(".has-menu-btn-show").on("click", function () {
+//                 if ($(this).parent().hasClass("active")) {
+//                     $(this).parent().removeClass("active");
+//                 } else {
+//                     $(".has-menu-drp").removeClass("active");
+//                     $(this).parent().addClass("active");
+//                 }
+//             });
+//         });
 
-        var appendMenuDrd = function appendMenuDrd(idMain, idAppend) {
-            var getParentIdMain = idMain.parent();
-            var getChildMenu;
-        };
+//         var appendMenuDrd = function appendMenuDrd(idMain, idAppend) {
+//             var getParentIdMain = idMain.parent();
+//             var getChildMenu;
+//         };
 
-        jQuery('.bottom-show-menu').click(function (e) {
-            jQuery('.menu-phanloai').addClass('active');
-            jQuery('.menu-phanloai').removeClass('close-animt');
-        });
-        //======================
+//         jQuery('.bottom-show-menu').click(function (e) {
+//             jQuery('.menu-phanloai').addClass('active');
+//             jQuery('.menu-phanloai').removeClass('close-animt');
+//         });
+//         //======================
 
-        // Reponsive Filter
-        $('.filter-control').addClass('filter-control-mobile');
-        $('.filter-control-mobile .justify-content-end').removeClass('row');
+//         // Reponsive Filter
+//         $('.filter-control').addClass('filter-control-mobile');
+//         $('.filter-control-mobile .justify-content-end').removeClass('row');
 
 
-        //==================
+//         //==================
 
-    } else {
-        // Header
-        jQuery('.header').removeClass('header-mobile');
-        jQuery('.header-bottom-box').append(searchBtm);
-        searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
-        jQuery('.bottom-show-menu').click(function (e) {
-            e.preventDefault();
-            jQuery('.bottom-show-menu').toggleClass('active');
-            jQuery('.menu-dropdown').toggleClass('active');
-        });
-        //===================
+//     } else {
+//         // Header
+//         jQuery('.header').removeClass('header-mobile');
+//         jQuery('.header-bottom-box').append(searchBtm);
+//         searchPlh.attr('placeholder', 'Nhập tên dự án hoặc khu vực bạn muốn tìm');
+//         jQuery('.bottom-show-menu').click(function (e) {
+//             e.preventDefault();
+//             jQuery('.bottom-show-menu').toggleClass('active');
+//             jQuery('.menu-dropdown').toggleClass('active');
+//         });
+//         //===================
 
-        // Filter 
-        $('.filter-control').removeClass('filter-control-mobile');
+//         // Filter 
+//         $('.filter-control').removeClass('filter-control-mobile');
 
-        //================
+//         //================
 
-    }
-}
+//     }
+// }
 
-var x = window.matchMedia("(max-width: 850px)");
-myFunction(x);
-x.addListener(myFunction);
+// var x = window.matchMedia("(max-width: 850px)");
+// myFunction(x);
+// x.addListener(myFunction);
