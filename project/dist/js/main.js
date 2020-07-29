@@ -389,10 +389,13 @@ var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight
 if (infoHome) {
   var stopStick = document.querySelector(".table-product").offsetTop;
   window.addEventListener("scroll", function () {
+    var infoHomeOffSetY = infoHome.offsetTop + infoHome.clientHeight;
+    var header = document.querySelector("header");
+
     if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
       infoHome.classList.add("active-fixed");
       infoHome.style.right = calcRight + "px";
-    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - 640) {
+    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - infoHome.clientHeight - header.clientHeight - 60) {
       infoHome.classList.remove("active-fixed");
       infoHome.style.right = "unset";
     }
