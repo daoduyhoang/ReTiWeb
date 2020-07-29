@@ -103,7 +103,7 @@ $('.khachHangCuaReti-slide').owlCarousel({
 $('#slider-main').slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     accessibility: false,
     responsive: [
         {
@@ -122,13 +122,6 @@ $('#slider-main').slick({
         },
         {
             breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        },
-        {
-            breakpoint: 375,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1

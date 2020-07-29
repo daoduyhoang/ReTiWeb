@@ -9,7 +9,9 @@ $('#big').bind('mousewheel', function (e) {
             $('.mapify-holder').removeClass('scale-2');
             $('.mapify-holder').addClass('scale-15');
             $(".mapify-holder").draggable();
-            $('#big').css('overflow', 'hidden')
+            $('mapify-popOver').addClass('scale-onZoom');
+            $('#big').css('overflow', 'hidden');
+            // $(".mapify-holder").draggable({ containment: 'window' });
             pram = 2;
             statusRemove = 1;
             console.log(pram + "-" + statusRemove)
@@ -37,6 +39,7 @@ $('#big').bind('mousewheel', function (e) {
             statusRemove = 0;
             // $(".mapify-holder").draggable('destroy');
             $('#big').css('overflow', 'unset')
+            // $(".mapify-holder").draggable({ containment: '#big' });
             console.log(pram + "-" + statusRemove)
         }
         else if (statusRemove == 2) {
@@ -109,3 +112,12 @@ down.onclick = function () {
         console.log(pram + "-" + statusRemove)
     }
 }
+// var zoom = document.getElementById('big');
+// zoom.addEventListener('gestureend', function (e) {
+//     if (e.scale < 1.0) {
+
+//         alert('zooo');
+//     } else if (e.scale > 1.0) {
+//         alert('out')
+//     }
+// }, false);
