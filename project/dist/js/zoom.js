@@ -112,12 +112,12 @@ down.onclick = function () {
         console.log(pram + "-" + statusRemove)
     }
 }
-var zoom = document.getElementById('big');
-zoom.addEventListener('gestureend', function (e) {
-    if (e.scale < 1.0) {
+// var zoom = document.getElementById('big');
+// zoom.addEventListener('gestureend', function (e) {
+//     if (e.scale < 1.0) {
 
-        alert('zooo');
-    } else if (e.scale > 1.0) {
-        alert('out')
-    }
-}, false);
+//         alert('zooo');
+//     } else if (e.scale > 1.0) {
+//         alert('out')
+//     }
+// }, false);
