@@ -390,43 +390,50 @@ var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
 if (tableProduct) {
+  //Lấy block cha chứa bảng info
   var parent = infoHome.closest(".position-relative");
-  var _stopStick = tableProduct.offsetTop;
-  var lastScroll = 0;
-  var endPoint = parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight;
+  var lastScroll = 0; //Break point kết thúc event scroll
+
+  var endPoint =
+  /*Parent top pos  + parent height - info height - header height - margin bottom*/
+  parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.offsetHeight - 50;
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
     if (currentScroll > 0 && lastScroll <= currentScroll) {
-      lastScroll = currentScroll;
+      lastScroll = currentScroll; //Bắt sự kiện scroll down
+      //Bắt đầu event khi scroll
 
-      if (currentScroll > 20 && currentScroll < _stopStick - infoHome.clientHeight) {
+      if (currentScroll > parent.offsetTop) {
         infoHome.classList.add("active-fixed");
         infoHome.style.right = calcRight + "px";
-      }
+      } //Check khi scroll qua break point
 
-      if (currentScroll > endPoint) {
+
+      if (currentScroll >= endPoint) {
         infoHome.classList.remove("active-fixed");
         infoHome.style.position = "absolute";
         infoHome.style.bottom = "0";
       }
-    } else {
-      if (currentScroll < _stopStick - infoHome.clientHeight) {
-        infoHome.classList.add("active-fixed");
-        infoHome.style.right = calcRight + "px";
-        infoHome.style.bottom = "";
-        infoHome.style.position = "";
-      }
+    } //Bắt sự kiện scroll up
+    else {
+        //Check khi scroll chạm bottom của bảng info
+        if (currentScroll < parent.offsetTop + parent.offsetHeight) {
+          infoHome.classList.add("active-fixed");
+          infoHome.style.right = calcRight + "px";
+          infoHome.style.bottom = "";
+          infoHome.style.position = "";
+        }
 
-      if (currentScroll <= parent.offsetTop) {
-        infoHome.style.position = "";
-        infoHome.classList.remove("active-fixed");
-        infoHome.style.bottom = "";
-        infoHome.style.right = "";
-      }
+        if (currentScroll <= parent.offsetTop) {
+          infoHome.style.position = "";
+          infoHome.classList.remove("active-fixed");
+          infoHome.style.bottom = "";
+          infoHome.style.right = "";
+        }
 
-      lastScroll = currentScroll;
-    }
+        lastScroll = currentScroll;
+      }
   });
 }
 
@@ -437,11 +444,12 @@ if (stickyRight) {
   var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
   var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
   var _lastScroll = 0;
-  var stopStick = progressBox.offsetTop;
 
   var _parent = stickyRight.closest(".position-relative");
 
-  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight;
+  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.offsetHeight - 50;
+  /* margin -bottom*/
+
 
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -449,7 +457,7 @@ if (stickyRight) {
     if (currentScroll > 0 && _lastScroll <= currentScroll) {
       _lastScroll = currentScroll;
 
-      if (currentScroll > 20 && currentScroll < stopStick - stickyRight.clientHeight) {
+      if (currentScroll >= _parent.offsetTop) {
         stickyRight.classList.add("active-fixed");
         stickyRight.style.right = stickyRightPos - 5 + "px";
       }
@@ -460,7 +468,7 @@ if (stickyRight) {
         stickyRight.style.bottom = "0";
       }
     } else {
-      if (currentScroll < stopStick - stickyRight.clientHeight) {
+      if (currentScroll <= _parent.offsetTop + _parent.offsetHeight) {
         stickyRight.classList.add("active-fixed");
         stickyRight.style.bottom = "";
         stickyRight.style.position = "";

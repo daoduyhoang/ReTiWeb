@@ -393,10 +393,16 @@ let infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 let calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
 if (tableProduct) {
+  //Lấy block cha chứa bảng info
   let parent = infoHome.closest(".position-relative");
-  let stopStick = tableProduct.offsetTop;
+
   let lastScroll = 0;
-  let endPoint = parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight;
+
+  //Break point kết thúc event scroll
+  let endPoint =
+    /*Parent top pos  + parent height - info height - header height - margin bottom*/
+
+    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.offsetHeight - 50;
 
   window.addEventListener("scroll", function () {
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -404,17 +410,24 @@ if (tableProduct) {
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
 
-      if (currentScroll > 20 && currentScroll < stopStick - infoHome.clientHeight) {
+      //Bắt sự kiện scroll down
+      //Bắt đầu event khi scroll
+      if (currentScroll > parent.offsetTop) {
         infoHome.classList.add("active-fixed");
         infoHome.style.right = calcRight + "px";
       }
-      if (currentScroll > endPoint) {
+
+      //Check khi scroll qua break point
+      if (currentScroll >= endPoint) {
         infoHome.classList.remove("active-fixed");
         infoHome.style.position = "absolute";
         infoHome.style.bottom = "0";
       }
-    } else {
-      if (currentScroll < stopStick - infoHome.clientHeight) {
+    }
+    //Bắt sự kiện scroll up
+    else {
+      //Check khi scroll chạm bottom của bảng info
+      if (currentScroll < parent.offsetTop + parent.offsetHeight) {
         infoHome.classList.add("active-fixed");
         infoHome.style.right = calcRight + "px";
         infoHome.style.bottom = "";
@@ -442,9 +455,13 @@ if (stickyRight) {
   let stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
   let stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
   let lastScroll = 0;
-  var stopStick = progressBox.offsetTop;
   let parent = stickyRight.closest(".position-relative");
-  let endPoint = parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight;
+  let endPoint =
+    parent.offsetTop +
+    parent.offsetHeight -
+    stickyRight.offsetHeight -
+    header.offsetHeight -
+    50; /* margin -bottom*/
 
   window.addEventListener("scroll", function () {
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -452,7 +469,7 @@ if (stickyRight) {
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
 
-      if (currentScroll > 20 && currentScroll < stopStick - stickyRight.clientHeight) {
+      if (currentScroll >= parent.offsetTop) {
         stickyRight.classList.add("active-fixed");
         stickyRight.style.right = stickyRightPos - 5 + "px";
       }
@@ -462,7 +479,7 @@ if (stickyRight) {
         stickyRight.style.bottom = "0";
       }
     } else {
-      if (currentScroll < stopStick - stickyRight.clientHeight) {
+      if (currentScroll <= parent.offsetTop + parent.offsetHeight) {
         stickyRight.classList.add("active-fixed");
         stickyRight.style.bottom = "";
         stickyRight.style.position = "";
