@@ -394,7 +394,7 @@ if (infoHome) {
   window.addEventListener('scroll', function () {
     if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
       infoHome.classList.add('active-fixed');
-      infoHome.style.right = calWidth + 'px';
+      infoHome.style.right = calWidth + 15 + 'px';
     } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - 800) {
       infoHome.classList.remove('active-fixed');
       infoHome.style.right = 'unset';
