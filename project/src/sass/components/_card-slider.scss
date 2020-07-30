@@ -1,139 +1,192 @@
 /* CARD SLIDE*/
 
-.card-slider{
-    max-width: 550px;
-    min-height: 170px;
-    background: #FFFFFF;
-    border: 1px solid #E0E0E0;
-    display:flex;
-    .card-slider-img{
-        img{
-            height: 100%;
-            width: 170px;
-        }
+.card-slider {
+  max-width: 550px;
+  min-height: 170px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  .card-slider-img {
+    img {
+      height: 100%;
+      width: 170px;
     }
-    .card-info-title{
-        margin-bottom: 9px;
-        h5{
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 20px;
-            color: #0C77C6;
-        }
+  }
+  .card-info-title {
+    margin-bottom: 9px;
+    h5 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 20px;
+      color: #0c77c6;
     }
-    .text-card-info{
+  }
+  .text-card-info {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: #333132;
+  }
+  .card-info-project {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+  .card-price-slide {
+    display: flex;
+    justify-content: space-between;
+    .price-card {
+      display: flex;
+      align-items: center;
+      .vnd {
+        background: #ef5b40;
+        border-radius: 4px;
+        color: white;
         font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 14px;
-        color: #333132;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 2px 8px;
+        margin-right: 6px;
+      }
+      .amount {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 24px;
+        color: #ef5b40;
+      }
     }
-    .card-info-project{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 23px;
+  }
+  .card-slide-info {
+    width: calc(100% - 170px);
+    padding: 15px 10px 17px 20px;
+  }
+  .mg-card {
+    margin-bottom: 8px;
+  }
+  .card-price-slide {
+    .purchase {
+      background: #0c77c6;
+      border-radius: 4px;
+      padding: 2px 10px 2px 8px;
+      line-height: 16px;
     }
-    .card-price-slide{
-        display: flex;
-        justify-content: space-between;
-        .price-card{
-            display: flex;
-            align-items: center;
-            .vnd{
-                background: #EF5B40;
-                border-radius: 4px;
-                color: white;
-                font-style: normal;
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 20px;
-                padding: 2px 8px;
-                margin-right: 6px;
-            }
-            .amount{
-                font-style: normal;
-                font-weight: bold;
-                font-size: 20px;
-                line-height: 24px;
-                color: #EF5B40;
-            }
-        }
+    span {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      color: #ffffff;
     }
-    .card-slide-info{
-        width: calc(100% - 170px);
-        padding: 15px 10px 17px 20px;
-    }
-    .mg-card{
-        margin-bottom: 8px;
-    }
-    .card-price-slide{
-        .purchase{
-            background: #0C77C6;
-            border-radius: 4px;
-            padding: 2px 10px 2px 8px;
-            line-height: 16px;
-        }
-        span{
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            color: #FFFFFF;
-        }
-    }
+  }
 }
-@media(min-width:320px) and (max-width:450px){
-    .card-slider{
-        // max-width: 343px;
-        min-height: 175px;
-        .card-slider-img{
-            img{
-                // height: 175px;
-                width: 128px;
-            }
-        }
-        .card-slide-info{
-            padding: 8px 8px 19px 18px;
-            width: calc(100% - 128px);
-        }
-        .card-adress,.card-type{
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .card-price-slide{
-            .price-card{
-                .vnd{
-                    font-size: 10px;
-                    padding: 3px 5px;
-                    // height: 16px;
-                }
-                .amount{
-                    font-size: 14px;
-                }
-            }
-        }
-        .card-info-project{
-            margin-bottom: 12px;
-        }
-        .card-price-slide{
-            .purchase{
-                background: #0C77C6;
-                border-radius: 4px;
-                padding: 2px 4px;
-                // height: 16px;
-            }
-            span{
-                font-size: 10px;
-            }
-        }
-        .card-info-project{
-            flex-wrap: wrap;
-            .card-acreage{
-                width: 100%;
-                margin-bottom: 8px;
-            }
-        }
+@media (min-width: 320px) and (max-width: 450px) {
+  .card-slider {
+    // max-width: 343px;
+    min-height: 175px;
+    max-height: 175px;
+    border-radius: 4px;
+
+    .text-card-info {
+      font-size: 10px;
+      line-height: 12px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding-right: 3px;
     }
-    
+
+    .card-slider-img {
+      img {
+        // height: 175px;
+        width: 128px;
+      }
+    }
+    .card-slide-info {
+      padding: 8px 8px 20px 18px;
+      padding-bottom: 0;
+      width: calc(100% - 128px);
+      min-height: 175px;
+      max-height: 175px;
+    }
+
+    .card-info-title {
+      margin-bottom: 16px;
+      h5 {
+        font-weight: 500;
+        font-size: 16px;
+      }
+    }
+
+    .card-adress,
+    .card-type,
+    .card-acreage,
+    .card-date-slider {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+    }
+
+    .card-price-slide {
+      margin-bottom: 20px;
+      .price-card {
+        .vnd {
+          font-size: 10px;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 31px;
+          height: 16px;
+          padding-top: 0;
+          padding-bottom: 0;
+          border-radius: 2px;
+        }
+        .amount {
+          font-size: 14px;
+          line-height: 0;
+        }
+      }
+    }
+    .card-info-project {
+      margin-bottom: 12px;
+    }
+    .card-price-slide {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .purchase {
+        background: #0c77c6;
+        border-radius: 2px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 16px;
+
+        img {
+          height: 9px;
+          width: 6px;
+          margin-right: 3.4px;
+        }
+      }
+      span {
+        font-size: 10px;
+      }
+    }
+    .card-info-project {
+      flex-wrap: wrap;
+      .card-acreage {
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
+  }
 }

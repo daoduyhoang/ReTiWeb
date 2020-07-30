@@ -396,7 +396,7 @@ if (tableProduct) {
 
   var endPoint =
   /*Parent top pos  + parent height - info height - header height - margin bottom*/
-  parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.offsetHeight - 50;
+  parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -447,9 +447,7 @@ if (stickyRight) {
 
   var _parent = stickyRight.closest(".position-relative");
 
-  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.offsetHeight - 50;
-  /* margin -bottom*/
-
+  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
 
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
