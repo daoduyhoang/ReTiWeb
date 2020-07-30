@@ -395,8 +395,7 @@ if (tableProduct) {
   var lastScroll = 0;
   var endPoint = parent.offsetTop + parent.offsetHeight - (infoHome.offsetHeight + header.offsetHeight);
   window.addEventListener("scroll", function () {
-    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log(currentScroll);
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop; // console.log(currentScroll);
 
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
@@ -431,8 +430,8 @@ if (tableProduct) {
   });
 }
 
-var progressBox = document.querySelector(".progress-box");
-console.log(progressBox);
+var progressBox = document.querySelector(".progress-box"); // console.log(progressBox);
+
 var stickyRight = document.querySelector(".sticky-detailapartment"); //Function chạy ở trang detail-apartment
 
 if (stickyRight) {

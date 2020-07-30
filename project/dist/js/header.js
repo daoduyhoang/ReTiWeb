@@ -2,8 +2,8 @@
 
 var getHeader = document.querySelector(".header");
 var getMenuPl = document.querySelector(".menu-phanloai");
-var offSetHeader = getHeader.offsetHeight;
-console.log(offSetHeader);
+var offSetHeader = getHeader.offsetHeight; // console.log(offSetHeader);
+
 window.addEventListener("scroll", function () {
   if (window.pageYOffset >= 20) {
     getHeader.classList.add("stick");

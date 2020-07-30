@@ -402,7 +402,7 @@ if (tableProduct) {
   window.addEventListener("scroll", function () {
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-    console.log(currentScroll);
+    // console.log(currentScroll);
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
 
@@ -436,7 +436,7 @@ if (tableProduct) {
 }
 
 let progressBox = document.querySelector(".progress-box");
-console.log(progressBox);
+// console.log(progressBox);
 let stickyRight = document.querySelector(".sticky-detailapartment");
 
 //Function chạy ở trang detail-apartment
