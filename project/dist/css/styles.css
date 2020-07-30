@@ -10,7 +10,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-family: "Roboto"; }
+  font-family: "Roboto" !important; }
 
 article,
 aside,
@@ -4796,6 +4796,9 @@ body {
   margin-top: 30px;
   margin-bottom: 50px; }
 
+#list_project .card-badge-new {
+  z-index: 8; }
+
 #pay-home {
   padding: 35px 0;
   background-color: #f2f2f2;
@@ -4848,7 +4851,7 @@ input[type="checkbox"]:checked + label {
   height: 29px;
   top: 48px;
   left: -6px;
-  z-index: 9; }
+  z-index: 8; }
 
 .card-badge-hightlight {
   position: absolute;
@@ -4856,7 +4859,7 @@ input[type="checkbox"]:checked + label {
   height: 29px;
   top: 81px;
   left: -6px;
-  z-index: 9; }
+  z-index: 8; }
 
 @media (max-width: 768px) {
   #list_project {

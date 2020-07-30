@@ -447,7 +447,6 @@ if (tableProduct) {
 }
 
 let progressBox = document.querySelector(".progress-box");
-
 let stickyRight = document.querySelector(".sticky-detailapartment");
 
 //Function chạy ở trang detail-apartment
