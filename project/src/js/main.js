@@ -402,15 +402,11 @@ if (tableProduct) {
   let endPoint =
     /*Parent top pos  + parent height - info height - header height - margin bottom*/
 
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.offsetHeight - 50;
+    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
 
   window.addEventListener("scroll", function () {
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-<<<<<<< HEAD
-=======
-    // console.log(currentScroll);
->>>>>>> develop
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
 
@@ -451,11 +447,6 @@ if (tableProduct) {
 }
 
 let progressBox = document.querySelector(".progress-box");
-<<<<<<< HEAD
-
-=======
-// console.log(progressBox);
->>>>>>> develop
 let stickyRight = document.querySelector(".sticky-detailapartment");
 
 //Function chạy ở trang detail-apartment
@@ -465,11 +456,7 @@ if (stickyRight) {
   let lastScroll = 0;
   let parent = stickyRight.closest(".position-relative");
   let endPoint =
-    parent.offsetTop +
-    parent.offsetHeight -
-    stickyRight.offsetHeight -
-    header.offsetHeight -
-    50; /* margin -bottom*/
+    parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
 
   window.addEventListener("scroll", function () {
     let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
