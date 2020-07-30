@@ -91,3 +91,19 @@
     }
   }
 }
+@media(min-width:375px) and (max-width:414px){
+  .progress-status .date-status {
+    top: 0px;
+    left: 77px;
+    text-align: left;
+    margin-left: 8px;
+  }
+  .progress-status:nth-child(odd) .date-status {
+    top: 1px;
+    bottom: unset;
+  }
+  .progress-status .tick-complete{
+    width: 25px;
+    height: 25px;
+  }
+}

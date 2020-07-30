@@ -103,28 +103,22 @@ $('.khachHangCuaReti-slide').owlCarousel({
 $('#slider-main').slick({
   infinite: true,
   slidesToShow: 3,
-  slidesToScroll: 1,
+  slidesToScroll: 3,
   accessibility: false,
   responsive: [{
     breakpoint: 768,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
-    }
-  }, {
-    breakpoint: 600,
-    settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2
-    }
-  }, {
-    breakpoint: 480,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1
     }
   }, {
-    breakpoint: 375,
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }, {
+    breakpoint: 480,
     settings: {
       slidesToShow: 1,
       slidesToScroll: 1
