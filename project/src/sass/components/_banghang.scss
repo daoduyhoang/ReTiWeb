@@ -72,6 +72,7 @@
     font-size: 14px;
     line-height: 16px;
     color: #828282;
+    margin-bottom: 0;
   }
   select {
     font-family: $roboto;
@@ -135,8 +136,14 @@
     .choose {
       width: 100%;
       flex-wrap: wrap;
+      padding-top: 8px;
       .form-group {
         width: 100%;
+        margin-bottom: 8px;
+        margin-right: 4px;
+      }
+      p{
+        margin-top: 8px;
       }
     }
   }

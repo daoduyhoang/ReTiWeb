@@ -10,6 +10,12 @@
     font-size: 14px;
     line-height: 26px;
     max-width: 645px;
+
+    .except-more {
+      @media (min-width: 998px) {
+        width: 645px;
+      }
+    }
   }
   .motaduan-link {
     font-family: $roboto;
@@ -36,4 +42,7 @@
       }
     }
   }
+  .motaduan-partial .motaduan-content .except-more {
+    width: 343px;
+}
 }

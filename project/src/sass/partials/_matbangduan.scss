@@ -76,6 +76,7 @@
   color: #323232;
   width: 50%;
   margin: 10px 0;
+  width: 640px;
 }
 .shark,
 .developer,
@@ -175,5 +176,8 @@
     background-color: #000000;
     opacity: 0.3;
     background-image: url(../images/arrw.png);
+  }
+  .shark-content{
+    width: 100%;
   }
 }
