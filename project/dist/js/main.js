@@ -418,7 +418,7 @@ if (tableProduct) {
     } //Bắt sự kiện scroll up
     else {
         //Check khi scroll chạm bottom của bảng info
-        if (currentScroll < parent.offsetTop + parent.offsetHeight) {
+        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
           infoHome.style.bottom = "";
@@ -468,7 +468,7 @@ if (stickyRight) {
         stickyRight.style.bottom = "0";
       }
     } else {
-      if (currentScroll <= _parent.offsetTop + _parent.offsetHeight) {
+      if (currentScroll <= _parent.offsetTop + _parent.offsetHeight - stickyRight.clientHeight) {
         stickyRight.classList.add("active-fixed");
         stickyRight.style.bottom = "";
         stickyRight.style.position = "";
