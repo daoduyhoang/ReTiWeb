@@ -383,26 +383,108 @@ if (map) {
 
 
 var infoHome = document.querySelector(".chitietduan-rightcolumn");
+var tableProduct = document.querySelector(".table-product");
+var header = document.querySelector("header"); //Function chạy ở trang detail-project
+
 var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
 var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
-if (infoHome) {
-  var stopStick = document.querySelector(".table-product").offsetTop;
+if (tableProduct) {
+  var parent = infoHome.closest(".position-relative");
+  var _stopStick = tableProduct.offsetTop;
+  var lastScroll = 0;
+  var endPoint = parent.offsetTop + parent.offsetHeight - (infoHome.offsetHeight + header.offsetHeight);
   window.addEventListener("scroll", function () {
-    var infoHomeOffSetY = infoHome.offsetTop + infoHome.clientHeight;
-    var header = document.querySelector("header");
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log(currentScroll);
 
-    if (window.pageYOffset > 150 && window.pageYOffset < stopStick - 800) {
-      infoHome.classList.add("active-fixed");
-      infoHome.style.right = calcRight + "px";
-    } else if (window.pageYOffset < 150 || window.pageYOffset > stopStick - infoHome.clientHeight - header.clientHeight - 60) {
-      infoHome.classList.remove("active-fixed");
-      infoHome.style.right = "unset";
+    if (currentScroll > 0 && lastScroll <= currentScroll) {
+      lastScroll = currentScroll;
+
+      if (currentScroll > 20 && currentScroll < _stopStick - infoHome.clientHeight) {
+        infoHome.classList.add("active-fixed");
+        infoHome.style.right = calcRight + "px";
+      }
+
+      if (currentScroll > endPoint) {
+        infoHome.classList.remove("active-fixed");
+        infoHome.style.position = "absolute";
+        infoHome.style.bottom = "0";
+      }
+    } else {
+      if (currentScroll < _stopStick - infoHome.clientHeight) {
+        infoHome.classList.add("active-fixed");
+        infoHome.style.right = calcRight + "px";
+        infoHome.style.bottom = "";
+        infoHome.style.position = "";
+      }
+
+      if (currentScroll <= 116) {
+        infoHome.style.position = "";
+        infoHome.classList.remove("active-fixed");
+        infoHome.style.bottom = "";
+        infoHome.style.right = "";
+      }
+
+      lastScroll = currentScroll;
+    }
+  });
+}
+
+var progressBox = document.querySelector(".progress-box");
+console.log(progressBox);
+var stickyRight = document.querySelector(".sticky-detailapartment"); //Function chạy ở trang detail-apartment
+
+if (stickyRight) {
+  var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
+  var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
+  var _lastScroll = 0;
+  var stopStick = progressBox.offsetTop;
+
+  var _parent = stickyRight.closest(".position-relative");
+
+  var _endPoint = _parent.offsetTop + _parent.offsetHeight - (stickyRight.offsetHeight + header.offsetHeight);
+
+  window.addEventListener("scroll", function () {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0 && _lastScroll <= currentScroll) {
+      _lastScroll = currentScroll;
+
+      if (currentScroll > 20 && currentScroll < stopStick - stickyRight.clientHeight) {
+        stickyRight.classList.add("active-fixed");
+        stickyRight.style.right = stickyRightPos - 5 + "px";
+      }
+
+      if (currentScroll > _endPoint) {
+        stickyRight.classList.remove("active-fixed");
+        stickyRight.style.position = "absolute";
+        stickyRight.style.bottom = "0";
+      }
+    } else {
+      if (currentScroll < stopStick - stickyRight.clientHeight) {
+        stickyRight.classList.add("active-fixed");
+        stickyRight.style.bottom = "";
+        stickyRight.style.position = "";
+      }
+
+      if (currentScroll <= 116) {
+        stickyRight.style.position = "";
+        stickyRight.classList.remove("active-fixed");
+        stickyRight.style.bottom = "";
+        stickyRight.style.right = "";
+      }
+
+      _lastScroll = currentScroll;
     }
   });
 } //draggable
 
 
-document.getElementById("big").onclick = function () {
-  jQuery(".mapify-holder").draggable();
-};
+var big = document.querySelector("big");
+
+if (big) {
+  big.onclick = function () {
+    jQuery(".mapify-holder").draggable();
+  };
+}
