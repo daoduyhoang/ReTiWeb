@@ -4,6 +4,9 @@
         margin-top: 30px;
         margin-bottom: 50px;
     }
+    .card-badge-new{
+        z-index: 8;
+    }
     
 }
 #pay-home{
@@ -57,7 +60,7 @@ input[type=checkbox]:checked + label {
     height: 29px;
     top: 48px;
     left: -6px;
-    z-index: 9;
+    z-index: 8;
 }
 .card-badge-hightlight{
     position: absolute;
@@ -65,7 +68,7 @@ input[type=checkbox]:checked + label {
     height: 29px;
     top: 81px;
     left: -6px;
-    z-index: 9;
+    z-index: 8;
 }
 
 @media (max-width: 768px) {
