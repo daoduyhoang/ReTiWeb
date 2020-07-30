@@ -393,10 +393,9 @@ if (tableProduct) {
   var parent = infoHome.closest(".position-relative");
   var _stopStick = tableProduct.offsetTop;
   var lastScroll = 0;
-  var endPoint = parent.offsetTop + parent.offsetHeight - (infoHome.offsetHeight + header.offsetHeight);
+  var endPoint = parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight;
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log(currentScroll);
 
     if (currentScroll > 0 && lastScroll <= currentScroll) {
       lastScroll = currentScroll;
@@ -419,7 +418,7 @@ if (tableProduct) {
         infoHome.style.position = "";
       }
 
-      if (currentScroll <= 116) {
+      if (currentScroll <= parent.offsetTop) {
         infoHome.style.position = "";
         infoHome.classList.remove("active-fixed");
         infoHome.style.bottom = "";
@@ -432,7 +431,6 @@ if (tableProduct) {
 }
 
 var progressBox = document.querySelector(".progress-box");
-console.log(progressBox);
 var stickyRight = document.querySelector(".sticky-detailapartment"); //Function chạy ở trang detail-apartment
 
 if (stickyRight) {
@@ -443,7 +441,7 @@ if (stickyRight) {
 
   var _parent = stickyRight.closest(".position-relative");
 
-  var _endPoint = _parent.offsetTop + _parent.offsetHeight - (stickyRight.offsetHeight + header.offsetHeight);
+  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight;
 
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -468,7 +466,7 @@ if (stickyRight) {
         stickyRight.style.position = "";
       }
 
-      if (currentScroll <= 116) {
+      if (currentScroll <= _parent.offsetTop) {
         stickyRight.style.position = "";
         stickyRight.classList.remove("active-fixed");
         stickyRight.style.bottom = "";

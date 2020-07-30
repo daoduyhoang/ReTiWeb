@@ -141,8 +141,15 @@
         width: 100%;
         margin-bottom: 8px;
         margin-right: 4px;
+
+        &::before {
+          background-image: url("../images/Vector (Stroke).png");
+          right: 20px;
+          width: 16px;
+          height: 9.14px;
+        }
       }
-      p{
+      p {
         margin-top: 8px;
       }
     }
