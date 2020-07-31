@@ -1161,6 +1161,15 @@ body {
     background-color: #F2F2F2;
     height: 100%;
     width: 100%; }
+  .custom-indicators::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: #F2F2F2;
+    height: 100%;
+    width: 100%; }
 
 .carousel-control-prev, .carousel-control-next {
   width: 40px;
@@ -1213,22 +1222,16 @@ body {
   .carousel-control-prev, .carousel-control-next, .carousel-control-next {
     display: none; } }
 
-.custom-indicators::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  background-color: #F2F2F2;
-  height: 100%;
-  width: 100%; }
-
 .ground .slick-slide, .chitietduan-leftcolumn .slick-slide {
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5); }
   .ground .slick-slide.slick-current, .chitietduan-leftcolumn .slick-slide.slick-current {
     -webkit-filter: none;
     filter: none; }
+
+@media (max-width: 850px) {
+  .custom-indicators::after, .custom-indicators::before {
+    content: unset; } }
 
 @media (min-width: 769px) {
   #slider #carouselControls .carousel-indicators li {
