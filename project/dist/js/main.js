@@ -5,33 +5,30 @@ $(".slide-card-duannoibat").owlCarousel({
   loop: true,
   margin: 20,
   nav: true,
-  navText: [
-    "<i class='fas fa-chevron-left duannoibat-btn-prev'></i>",
-    "<i class='fas fa-chevron-right duannoibat-btn-next'></i>",
-  ],
+  navText: ["<i class='fas fa-chevron-left duannoibat-btn-prev'></i>", "<i class='fas fa-chevron-right duannoibat-btn-next'></i>"],
   responsive: {
     0: {
-      items: 1,
+      items: 1
     },
     480: {
-      items: 1,
+      items: 1
     },
     576: {
-      items: 1,
+      items: 1
     },
     768: {
-      items: 1,
+      items: 1
     },
     992: {
-      items: 2,
+      items: 2
     },
     1000: {
-      items: 2,
-    },
+      items: 2
+    }
   },
   dots: false,
   autoplay: true,
-  autoplayTimeout: 6000,
+  autoplayTimeout: 6000
 }); //end slide du an noi bat
 
 var rangeSlide = jQuery(".js-range-slider");
@@ -39,6 +36,7 @@ var rangeSlide = jQuery(".js-range-slider");
 if (rangeSlide) {
   jQuery(".js-range-slider").ionRangeSlider();
 } // TIEN ICH
+
 
 $(".btn-mobile-utilities a").click(function (e) {
   e.preventDefault();
@@ -117,7 +115,7 @@ for (var i = 0; i < btn.length; i++) {
     var btnActive = this;
     var j = 0;
 
-    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) {}
+    for (j = 0; btnActive = btnActive.previousElementSibling; j++) {}
 
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
@@ -125,6 +123,7 @@ for (var i = 0; i < btn.length; i++) {
     }
   });
 } // BẢNG SẢN PHẨM
+
 
 var btnActiveTab = document.querySelectorAll(".list-tab li");
 var tabItem = document.querySelectorAll(".tab-items");
@@ -140,7 +139,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     var active = this;
     var j = 0;
 
-    for (j = 0; (active = active.previousElementSibling); j++) {}
+    for (j = 0; active = active.previousElementSibling; j++) {}
 
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
@@ -195,7 +194,7 @@ function myFunction(x) {
     var barPer = document.querySelector(".progress-per");
     var ecs = 0;
     progressStatus.forEach(function (el, inx) {
-      var cdas = (ecs += 17);
+      var cdas = ecs += 17;
       cdas = cdas -= 17;
       el.style.top = cdas + "%";
       setInterval(function () {
@@ -252,7 +251,7 @@ function myFunction(x) {
     var _ecs = 7;
 
     _progressStatus.forEach(function (el, inx) {
-      var cdas = (_ecs += 11);
+      var cdas = _ecs += 11;
       cdas = cdas -= 11;
       el.style.left = cdas + "%";
       setInterval(function () {
@@ -307,7 +306,7 @@ var Utils = {
         excerpt.textContent = _this.lessExcerpt(excerptO) + " ...";
       }
     });
-  },
+  }
 };
 var ExcerptWidget = {
   showMore: function showMore(btnShowLes, excerptTarget) {
@@ -318,7 +317,7 @@ var ExcerptWidget = {
       excerpt.textContent = excerptO.slice(0, 300) + " ...";
       Utils.showMore(link, excerpt, excerptO);
     });
-  },
+  }
 };
 ExcerptWidget.showMore(".btn-more-less", ".except-more"); //testttttttttttttttt============
 //======================
@@ -370,6 +369,7 @@ if (ip) {
   };
 } // STICK MAP
 
+
 if (map) {
   var payHome = document.getElementById("pay-home").offsetTop;
   window.addEventListener("scroll", function () {
@@ -380,6 +380,7 @@ if (map) {
     }
   });
 } // STICK CHITIETCANHO
+
 
 var infoHome = document.querySelector(".chitietduan-rightcolumn");
 var tableProduct = document.querySelector(".table-product");
@@ -394,8 +395,8 @@ if (tableProduct) {
   var lastScroll = 0; //Break point kết thúc event scroll
 
   var endPoint =
-    /*Parent top pos  + parent height - info height - header height - margin bottom*/
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
+  /*Parent top pos  + parent height - info height - header height - margin bottom*/
+  parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
@@ -408,6 +409,7 @@ if (tableProduct) {
         infoHome.style.right = calcRight + "px";
       } //Check khi scroll qua break point
 
+
       if (currentScroll >= endPoint) {
         infoHome.classList.remove("active-fixed");
         infoHome.style.position = "absolute";
@@ -415,23 +417,23 @@ if (tableProduct) {
       }
     } //Bắt sự kiện scroll up
     else {
-      //Check khi scroll chạm bottom của bảng info
-      if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
-        infoHome.classList.add("active-fixed");
-        infoHome.style.right = calcRight + "px";
-        infoHome.style.bottom = "";
-        infoHome.style.position = "";
-      }
+        //Check khi scroll chạm bottom của bảng info
+        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
+          infoHome.classList.add("active-fixed");
+          infoHome.style.right = calcRight + "px";
+          infoHome.style.bottom = "";
+          infoHome.style.position = "";
+        }
 
-      if (currentScroll <= parent.offsetTop) {
-        infoHome.style.position = "";
-        infoHome.classList.remove("active-fixed");
-        infoHome.style.bottom = "";
-        infoHome.style.right = "";
-      }
+        if (currentScroll <= parent.offsetTop) {
+          infoHome.style.position = "";
+          infoHome.classList.remove("active-fixed");
+          infoHome.style.bottom = "";
+          infoHome.style.right = "";
+        }
 
-      lastScroll = currentScroll;
-    }
+        lastScroll = currentScroll;
+      }
   });
 }
 
@@ -445,8 +447,7 @@ if (stickyRight) {
 
   var _parent = stickyRight.closest(".position-relative");
 
-  var _endPoint =
-    _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
+  var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
 
   window.addEventListener("scroll", function () {
     var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -482,6 +483,7 @@ if (stickyRight) {
     }
   });
 } //draggable
+
 
 var big = document.querySelector("big");
 
