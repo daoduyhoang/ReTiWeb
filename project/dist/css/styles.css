@@ -1672,6 +1672,8 @@ body {
   .paging-table .next-page button {
     border: none;
     background: none; }
+    .paging-table .next-page button:focus {
+      outline: none; }
     .paging-table .next-page button i {
       color: rgba(0, 0, 0, 0.5); }
 
@@ -2059,7 +2061,8 @@ body {
       margin-left: auto;
       margin-right: auto; }
   .info-department .policy-department .share {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -5115,9 +5118,6 @@ body {
 input[type="checkbox"]:checked + label {
   font-weight: 500; }
 
-.next-page:hover {
-  background-color: #333132; }
-
 .pre-page:hover {
   background-color: #333132; }
 
@@ -5525,7 +5525,7 @@ main {
 
 .active-fixed {
   position: fixed;
-  top: 167px;
+  top: 209px;
   z-index: 9; }
 
 .matbangduan-partial {
