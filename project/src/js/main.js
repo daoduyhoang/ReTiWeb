@@ -384,112 +384,117 @@ if (map) {
   });
 }
 // STICK CHITIETCANHO
-let infoHome = document.querySelector(".chitietduan-rightcolumn");
-let tableProduct = document.querySelector(".table-product");
 
-let header = document.querySelector("header");
-//Function chạy ở trang detail-project
-let infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
-let calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
+if (window.innerWidth > 1200) {
+  let infoHome = document.querySelector(".chitietduan-rightcolumn");
+  let tableProduct = document.querySelector(".table-product");
 
-if (tableProduct) {
-  //Lấy block cha chứa bảng info
-  let parent = infoHome.closest(".position-relative");
+  let header = document.querySelector("header");
+  //Function chạy ở trang detail-project
+  let infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
+  let calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
 
-  let lastScroll = 0;
+  if (tableProduct) {
+    //Lấy block cha chứa bảng info
+    let parent = infoHome.closest(".position-relative");
 
-  //Break point kết thúc event scroll
-  let endPoint =
-    /*Parent top pos  + parent height - info height - header height - margin bottom*/
+    let lastScroll = 0;
 
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
+    //Break point kết thúc event scroll
+    let endPoint =
+      /*Parent top pos  + parent height - info height - header height - margin bottom*/
 
-  window.addEventListener("scroll", function () {
-    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
 
-    if (currentScroll > 0 && lastScroll <= currentScroll) {
-      lastScroll = currentScroll;
+    window.addEventListener("scroll", function () {
+      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-      //Bắt sự kiện scroll down
-      //Bắt đầu event khi scroll
-      if (currentScroll > parent.offsetTop) {
-        infoHome.classList.add("active-fixed");
-        infoHome.style.right = calcRight + "px";
+      if (currentScroll > 0 && lastScroll <= currentScroll) {
+        lastScroll = currentScroll;
+
+        //Bắt sự kiện scroll down
+        //Bắt đầu event khi scroll
+        if (currentScroll > parent.offsetTop) {
+          infoHome.classList.add("active-fixed");
+          infoHome.style.right = calcRight + "px";
+        }
+
+        //Check khi scroll qua break point
+        if (currentScroll >= endPoint) {
+          infoHome.classList.remove("active-fixed");
+          infoHome.style.position = "absolute";
+          infoHome.style.bottom = "0";
+        }
       }
+      //Bắt sự kiện scroll up
+      else {
+        //Check khi scroll chạm bottom của bảng info
+        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
+          infoHome.classList.add("active-fixed");
+          infoHome.style.right = calcRight + "px";
+          infoHome.style.bottom = "";
+          infoHome.style.position = "";
+        }
 
-      //Check khi scroll qua break point
-      if (currentScroll >= endPoint) {
-        infoHome.classList.remove("active-fixed");
-        infoHome.style.position = "absolute";
-        infoHome.style.bottom = "0";
+        if (currentScroll <= parent.offsetTop) {
+          infoHome.style.position = "";
+          infoHome.classList.remove("active-fixed");
+          infoHome.style.bottom = "";
+          infoHome.style.right = "";
+        }
+
+        lastScroll = currentScroll;
       }
-    }
-    //Bắt sự kiện scroll up
-    else {
-      //Check khi scroll chạm bottom của bảng info
-      if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
-        infoHome.classList.add("active-fixed");
-        infoHome.style.right = calcRight + "px";
-        infoHome.style.bottom = "";
-        infoHome.style.position = "";
+    });
+  }
+
+  let stickyRight = document.querySelector(".sticky-detailapartment");
+
+  //Function chạy ở trang detail-apartment
+  if (stickyRight) {
+    let width = stickyRight.clientWidth;
+    let stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
+    let stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
+    let lastScroll = 0;
+    let parent = stickyRight.closest(".position-relative");
+    let endPoint =
+      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
+
+    window.addEventListener("scroll", function () {
+      let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+      if (currentScroll > 0 && lastScroll <= currentScroll) {
+        lastScroll = currentScroll;
+
+        if (currentScroll >= parent.offsetTop) {
+          stickyRight.classList.add("active-fixed");
+          stickyRight.style.right = stickyRightPos - 5 + "px";
+          stickyRight.style.width = width + "px";
+        }
+        if (currentScroll > endPoint) {
+          stickyRight.classList.remove("active-fixed");
+          stickyRight.style.position = "absolute";
+          stickyRight.style.bottom = "0";
+        }
+      } else {
+        if (currentScroll <= parent.offsetTop + parent.offsetHeight - stickyRight.clientHeight) {
+          stickyRight.classList.add("active-fixed");
+          stickyRight.style.bottom = "";
+          stickyRight.style.position = "";
+        }
+
+        if (currentScroll <= parent.offsetTop) {
+          stickyRight.style.position = "";
+          stickyRight.classList.remove("active-fixed");
+          stickyRight.style.bottom = "";
+          stickyRight.style.right = "";
+          stickyRight.style.width = "";
+        }
+
+        lastScroll = currentScroll;
       }
-
-      if (currentScroll <= parent.offsetTop) {
-        infoHome.style.position = "";
-        infoHome.classList.remove("active-fixed");
-        infoHome.style.bottom = "";
-        infoHome.style.right = "";
-      }
-
-      lastScroll = currentScroll;
-    }
-  });
-}
-
-let progressBox = document.querySelector(".progress-box");
-let stickyRight = document.querySelector(".sticky-detailapartment");
-
-//Function chạy ở trang detail-apartment
-if (stickyRight) {
-  let stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
-  let stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
-  let lastScroll = 0;
-  let parent = stickyRight.closest(".position-relative");
-  let endPoint =
-    parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
-
-  window.addEventListener("scroll", function () {
-    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
-
-    if (currentScroll > 0 && lastScroll <= currentScroll) {
-      lastScroll = currentScroll;
-
-      if (currentScroll >= parent.offsetTop) {
-        stickyRight.classList.add("active-fixed");
-        stickyRight.style.right = stickyRightPos - 5 + "px";
-      }
-      if (currentScroll > endPoint) {
-        stickyRight.classList.remove("active-fixed");
-        stickyRight.style.position = "absolute";
-        stickyRight.style.bottom = "0";
-      }
-    } else {
-      if (currentScroll <= parent.offsetTop + parent.offsetHeight - stickyRight.clientHeight) {
-        stickyRight.classList.add("active-fixed");
-        stickyRight.style.bottom = "";
-        stickyRight.style.position = "";
-      }
-
-      if (currentScroll <= parent.offsetTop) {
-        stickyRight.style.position = "";
-        stickyRight.classList.remove("active-fixed");
-        stickyRight.style.bottom = "";
-        stickyRight.style.right = "";
-      }
-
-      lastScroll = currentScroll;
-    }
-  });
+    });
+  }
 }
 
 //draggable
