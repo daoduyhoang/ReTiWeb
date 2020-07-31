@@ -76,7 +76,10 @@
   color: #323232;
   width: 50%;
   margin: 10px 0;
-  width: 640px;
+
+  @media (min-width: 700px) {
+    width: 640px;
+  }
 }
 .shark,
 .developer,
@@ -156,12 +159,18 @@
 //         }
 //     }
 // }
+
+@media (max-width: 699px) {
+  .shark-content {
+    width: 100%;
+  }
+}
 @media (min-width: 320px) and (max-width: 414px) {
   .tab-item {
     flex: 1;
     padding: 0;
     height: 37px;
-    min-width: 114px;
+
     text-align: center;
   }
   .text-center-mb {
@@ -176,8 +185,5 @@
     background-color: #000000;
     opacity: 0.3;
     background-image: url(../images/arrw.png);
-  }
-  .shark-content{
-    width: 100%;
   }
 }

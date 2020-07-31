@@ -127,6 +127,10 @@ input[type="checkbox"]:checked + label {
 }
 .card-category {
   padding: 0 5px;
+
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 @media (min-width: 320px) and (max-width: 414px) {
   .card-category {

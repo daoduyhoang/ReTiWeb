@@ -62,7 +62,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .progress {
     &-barc {
       height: 400px;
@@ -91,7 +91,7 @@
     }
   }
 }
-@media(min-width:375px) and (max-width:414px){
+@media (min-width: 375px) and (max-width: 414px) {
   .progress-status .date-status {
     top: 0px;
     left: 77px;
@@ -102,7 +102,7 @@
     top: 1px;
     bottom: unset;
   }
-  .progress-status .tick-complete{
+  .progress-status .tick-complete {
     width: 25px;
     height: 25px;
   }
