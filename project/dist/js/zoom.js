@@ -2,7 +2,7 @@ var pram = 1;
 var statusRemove = 0;
 
 $('#big').bind('mousewheel', function (e) {
-    e.preventDefault()
+    e.preventDefault();
     if (e.originalEvent.deltaY < 0) {
         zoomMap.zoomUp();
     }
