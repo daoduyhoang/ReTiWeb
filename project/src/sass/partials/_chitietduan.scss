@@ -177,9 +177,12 @@
   // width: 455px;
   height: 554px;
   @include Responsive(SM) {
-    width: 100%;
     padding-left: 0px;
     margin-top: 15px;
+  }
+
+  @media (max-width: 998px) {
+    width: 100%;
   }
 }
 
@@ -189,13 +192,13 @@
     @include flex-wrap(wrap);
     margin-top: 0;
     .chitietduan-leftcolumn {
+      max-width: unset;
       width: 100%;
       height: auto;
       .chitietduan-slider-top {
         .chitietduan-slider-item {
           img {
-            height: 230px;
-            max-height: 230px;
+            height: 500px;
           }
         }
         .slick-next {
@@ -210,25 +213,36 @@
           @include flexbox();
           @include justify-content(space-between);
           width: 100%;
-          margin: 4px 11px;
+          margin: 4px 0;
           .chitietduan-btn {
-            width: 50%;
+            width: calc(50% - 4.5px);
+            margin-left: 0;
+
             // height: 38px;
           }
         }
       }
       .chitietduan-button {
         @include flexbox();
-        width: 196px;
+
         padding-top: 5px;
+
         .chitietduan-btn {
-          display: block;
-          margin-left: 5px;
           width: 93px;
           height: 38px;
           border: none;
           border-radius: 2px;
           background-color: $main-color;
+          display: flex;
+          align-items: center;
+
+          div {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+          }
+
           a {
             color: white;
             margin-left: auto;
@@ -248,14 +262,15 @@
             font-size: 12px;
             line-height: 130.08%;
             color: #ffffff;
+            margin-right: 12px;
           }
         }
       }
       .chitietduan-rightcolumn {
-        width: 100%;
         .info-department {
           width: 100%;
           border: none;
+
           .details {
             .control-buy {
               .buy-now {
@@ -281,8 +296,6 @@
       @include flex-wrap(wrap);
       margin-top: 0;
       .chitietduan-leftcolumn {
-        max-width: 375px;
-
         margin-left: -15px;
         margin-right: -15px;
         width: calc(100% + 30px);
@@ -294,6 +307,7 @@
         .stroke {
           display: inline-block;
           top: 18px;
+          right: 16px;
           z-index: 9;
           position: absolute;
           right: 40px;
@@ -309,15 +323,12 @@
             @include flexbox();
             @include justify-content(space-between);
             width: 100%;
-            margin-left: 8px;
-            margin-right: 8px;
+            margin-left: 16px;
+            margin-right: 16px;
             justify-content: space-between;
             .chitietduan-btn {
               margin-left: 0;
-              min-width: 167px;
-              min-height: 38px;
-              max-width: 167px;
-              max-height: 38px;
+
               div {
                 @include flex-direction(row);
                 display: inline-block;
@@ -336,18 +347,20 @@
         .info-department {
           width: 100%;
           border: none;
+          padding-left: 0;
+          padding-right: 0;
           .details {
             .control-buy {
               margin-top: 23px;
               .buy-now {
                 border-radius: 4px;
                 height: 52px;
-                width: 343px;
+                width: 100%;
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 padding: 0;
-                margin-left: -14.5px;
+
                 a {
                   font-family: Roboto;
                   font-style: normal;
@@ -364,7 +377,7 @@
                 justify-content: center;
                 align-items: center;
                 padding: 0;
-                margin-left: -14.5px;
+                width: 100%;
                 a {
                   font-family: Roboto;
                   font-style: normal;
@@ -401,6 +414,95 @@
             .share {
               display: none;
             }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 999px) and (max-width: 1200px) {
+  .chitietduan-partial {
+    .chitietduan-leftcolumn {
+      width: 50%;
+      margin-bottom: 50px;
+    }
+
+    .chitietduan-rightcolumn {
+      width: 50%;
+    }
+
+    .chitietduan-slider-bot {
+      flex-wrap: wrap;
+    }
+
+    .chitietduan-slider-bottom {
+      width: calc(100% - 20px);
+    }
+
+    .chitietduan-button {
+      justify-content: space-between;
+      width: 100% !important;
+      margin-top: 5px;
+
+      .chitietduan-btn {
+        margin-left: 0;
+        width: calc(50% - 15px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 52px;
+
+        div {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+        }
+
+        img {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 998px) {
+  .chitietduan-partial {
+    flex-wrap: wrap;
+    .chitietduan-leftcolumn {
+      max-width: unset;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    .chitietduan-rightcolumn {
+      width: 100%;
+      max-width: unset;
+      padding-left: 0;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .chitietduan-partial {
+    .chitietduan-leftcolumn {
+      .chitietduan-slider-top {
+        .chitietduan-slider-item {
+          img {
+            height: 230px;
+          }
+        }
+      }
+    }
+
+    .chitietduan-rightcolumn {
+      .info-department {
+        .policy-department {
+          .d-flex {
+            flex-direction: column;
+            align-items: center;
           }
         }
       }
