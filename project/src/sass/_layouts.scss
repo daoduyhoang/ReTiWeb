@@ -61,10 +61,15 @@ button:focus {
   outline: none;
 }
 
-@media (min-width: 320px) and(max-width:450px) {
+@media (min-width: 320px) and(max-width:768px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .container-fluid {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   .row {

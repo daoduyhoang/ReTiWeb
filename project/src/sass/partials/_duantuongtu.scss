@@ -70,6 +70,18 @@
   }
 }
 
+@media (min-width: 415px) and (max-width: 768px) {
+  #slider-main .slick-next {
+    right: -10px;
+    top: 40%;
+  }
+
+  #slider-main .slick-prev {
+    left: -10px;
+    top: 40%;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 414px) {
   #slider-main .slick-prev {
     display: none !important;

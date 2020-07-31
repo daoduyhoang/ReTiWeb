@@ -32,6 +32,11 @@
   }
   .motaduan-content {
     width: 50%;
+
+    @media (min-width: 415px) and (max-width: 768px) {
+      width: 100%;
+    }
+
     @media (min-width: 320px) and (max-width: 414px) {
       width: 100%;
     }
@@ -41,6 +46,11 @@
   margin-top: 62px;
   .utilities-content {
     width: 50%;
+
+    @media (min-width: 415px) and (max-width: 768px) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   .btn-mobile-utilities {
     a {
@@ -86,7 +96,7 @@
     .tab {
       .content-tab {
         .content-tab-item {
-          .shark-content {
+          -content {
             width: 100%;
           }
         }
@@ -178,16 +188,20 @@
   .motaduan-partial {
     margin-top: 40px;
   }
-  .btn-zoom {
-    right: 16px;
-    top: 179px;
-  }
 }
 @media (max-width: 768px) {
+  .container {
+    max-width: unset !important;
+  }
   .active-fixed {
     position: unset;
     right: 13.2%;
     top: 22%;
     z-index: 9;
+  }
+
+  .btn-zoom {
+    right: 16px;
+    top: 179px;
   }
 }
