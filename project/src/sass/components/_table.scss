@@ -49,6 +49,10 @@
     button {
       border: none;
       background: none;
+
+      &:focus {
+        outline: none;
+      }
       i {
         color: rgba(0, 0, 0, 0.5);
       }
