@@ -496,16 +496,18 @@
         }
       }
     }
-
-    .chitietduan-rightcolumn {
-      .info-department {
-        .policy-department {
-          .d-flex {
-            flex-direction: column;
-            align-items: center;
-          }
-        }
-      }
-    }
   }
 }
+
+// @media(max-width:325px){
+//   .chitietduan-rightcolumn {
+//     .info-department {
+//       .policy-department {
+//         .d-flex {
+//           flex-direction: column;
+//           align-items: center;
+//         }
+//       }
+//     }
+//   }
+// }
