@@ -217,5 +217,11 @@
     padding-top: 22px;
     padding-left: 22px;
     padding-right: 16px;
+
+    @media (max-width: 768px) {
+      padding-top: 2px;
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
