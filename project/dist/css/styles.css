@@ -284,10 +284,15 @@ button:focus {
   position: absolute;
   top: 100%;
   background-color: #F2F2F2;
-  left: 0;
+  left: 15px;
   height: 512px;
-  width: 100%;
+  width: -webkit-calc(100% - 30px);
+  width: -moz-calc(100% - 30px);
+  width: calc(100% - 30px);
   z-index: 9;
+  -webkit-border-radius: 0 0 8px 8px;
+  -moz-border-radius: 0 0 8px 8px;
+  border-radius: 0 0 8px 8px;
   display: none;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -349,7 +354,10 @@ button:focus {
       background-color: #56C4CF; }
 
 .header .menu-style-1 {
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-border-radius: 0 0 8px 0;
+  -moz-border-radius: 0 0 8px 0;
+  border-radius: 0 0 8px 0; }
 
 .header [class*="menu-style-"] {
   display: none; }
@@ -358,7 +366,10 @@ button:focus {
 
 .header .menu-drd-level-1 {
   width: 280px;
-  background: #fff; }
+  background: #fff;
+  -webkit-border-radius: 0 0 0 8px;
+  -moz-border-radius: 0 0 0 8px;
+  border-radius: 0 0 0 8px; }
   .header .menu-drd-level-1 > li.active > a, .header .chitietduan-partial .chitietduan-button .chitietduan-btn div .menu-drd-level-1 > li.active > img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .header .menu-drd-level-1 > li.active > img {
     background-color: #56C4CF;
     color: #fff; }
@@ -424,9 +435,9 @@ button:focus {
       -moz-box-orient: horizontal;
       -moz-box-direction: normal;
       -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
-      .header .menu-style-2-child-flex li {
-        width: 48%; }
+      flex-flow: row wrap;
+      padding-left: li;
+        padding-left-width: 48%; }
   .header .menu-style-2 li.active > div {
     pointer-events: auto;
     opacity: 1;
@@ -1974,6 +1985,10 @@ body {
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px; }
+  @media (min-width: 992px) {
+    .info-department {
+      padding-left: 22px !important;
+      padding-right: 22px !important; } }
   .info-department .info-adress {
     margin-top: 17px;
     margin-bottom: 10px;
@@ -1991,7 +2006,8 @@ body {
     font-weight: bold;
     color: #333132;
     margin-left: 14px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    font-size: 24px; }
     @media only screen and (max-width: 414px) and (max-width: 850px) and (min-width: 320px) {
       .info-department .department-name {
         font-size: 18px; } }
@@ -4222,6 +4238,11 @@ body {
     padding-top: 22px;
     padding-left: 22px;
     padding-right: 16px; }
+    @media (max-width: 768px) {
+      .info-order .content-order {
+        padding-top: 2px;
+        padding-left: 0;
+        padding-right: 0; } }
 
 #number-duan {
   font-size: 16px;
@@ -5516,6 +5537,26 @@ main {
 #order-page .mb-379 {
   margin-bottom: 379px; }
 
+#order-page form .form-group:nth-child(1),
+#order-page form .form-group:nth-child(6) {
+  position: relative; }
+  #order-page form .form-group:nth-child(1)::before,
+  #order-page form .form-group:nth-child(6)::before {
+    content: "";
+    position: absolute;
+    top: 50px;
+    right: 12px;
+    background-image: url("../images/Vector (Stroke)-mini.png");
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 6px;
+    pointer-events: none; }
+  #order-page form .form-group:nth-child(1) select,
+  #order-page form .form-group:nth-child(6) select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+
 #Textarea1 {
   height: 126px; }
 
@@ -5589,8 +5630,21 @@ main {
 @media (max-width: 375px) {
   .info-order {
     width: 360px; }
-  .info-order-bottom .text-adress {
-    font-size: 9px; }
+  .info-order-bottom h3 {
+    margin-bottom: 13px; }
+  .info-order-bottom .adress {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .info-order-bottom .adress img {
+      margin-right: 4.75px; }
   .deposit .deposit-headings {
     font-size: 16px; }
   .deposit .result {
