@@ -329,6 +329,8 @@ var category = document.querySelector(".card-category");
 var listCard = document.querySelectorAll(".items");
 var block = document.querySelector(".flex-map");
 var cardFavs = document.querySelectorAll(".card-favourite");
+var button = document.querySelectorAll("#list_project .flex-map .owl-next");
+console.log(button);
 var showMap = true;
 var newClassCard = "";
 var oddClassCard = "";
@@ -363,6 +365,18 @@ function setBackCardPos() {
   }
 }
 
+function setButton() {
+  for (var _i5 = 0; _i5 < button.length; _i5++) {
+    button[_i5].style.marginRight = 15 + "px";
+  }
+}
+
+function setBackButton() {
+  for (var _i6 = 0; _i6 < button.length; _i6++) {
+    button[_i6].style.marginRight = "";
+  }
+}
+
 if (ip) {
   ip.onclick = function () {
     if (showMap) {
@@ -370,6 +384,7 @@ if (ip) {
       category.style.width = "70%";
       setAttributeCard();
       setCardPos();
+      setButton();
       block.style.display = "flex";
       mapPosition = map.offsetTop;
       showMap = false;
@@ -378,6 +393,7 @@ if (ip) {
       category.style.width = "100%";
       backAttributeCard();
       setBackCardPos();
+      setBackButton();
       block.style.display = "block";
       showMap = true;
     }
@@ -387,6 +403,7 @@ if (ip) {
 
 if (map) {
   var payHome = document.getElementById("pay-home").offsetTop;
+  var iframe = map.querySelector(".iframe-map");
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 272 && window.pageYOffset < payHome) {
       map.classList.add("map-fixed");

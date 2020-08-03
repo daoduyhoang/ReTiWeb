@@ -112,7 +112,7 @@ input[type="checkbox"]:checked + label {
 #map {
   margin-left: 20px;
   display: none;
-  width: 30%;
+  width: calc(30% + 10px);
 }
 .map-fixed {
   position: relative;
