@@ -370,7 +370,7 @@ function setBackCardPos() {
 
 function setButton() {
   for (let i = 0; i < button.length; i++) {
-    button[i].style.marginRight = 15 + "px";
+    button[i].style.marginRight = 10 + "px";
   }
 }
 

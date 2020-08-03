@@ -113,13 +113,17 @@ input[type="checkbox"]:checked + label {
   margin-left: 20px;
   display: none;
   width: calc(30% + 10px);
+
+  .iframe-map {
+    width: 100%;
+  }
 }
 .map-fixed {
   position: relative;
   iframe {
     position: fixed;
     top: 20%;
-    width: 333px;
+    width: 343px;
     // width: 100% !important;
   }
 }
