@@ -15,6 +15,16 @@
         height: 100%;
         width: 100%;
     }
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        background-color: #F2F2F2;
+        height: 100%;
+        width: 100%;
+    }
 }
 .carousel-control-prev{
     width: 40px;
@@ -57,16 +67,6 @@
         display: none;
     }
 }
-.custom-indicators::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -100%;
-    background-color: #F2F2F2;
-    height: 100%;
-    width: 100%;
-}
 .ground, .chitietduan-leftcolumn {
     .slick-slide {
         filter: brightness(0.5);
@@ -76,7 +76,13 @@
     }
 }
 
-
+@media(max-width:850px) {
+    .custom-indicators {
+        &::after, &::before {
+            content: unset;
+        }
+    }
+}
 @media(min-width:769px){
     #slider{
         #carouselControls .carousel-indicators li{
