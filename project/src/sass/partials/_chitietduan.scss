@@ -305,14 +305,19 @@
           }
         }
         .stroke {
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
           top: 18px;
-          right: 16px;
+
           z-index: 9;
           position: absolute;
-          right: 40px;
+          right: 16px;
           img {
-            margin-left: 12px;
+            margin-right: 12px;
+          }
+
+          button {
+            font-size: 20px;
           }
         }
         .chitietduan-slider-bot {
