@@ -334,6 +334,9 @@ var map = document.getElementById("map");
 var category = document.querySelector(".card-category");
 var listCard = document.querySelectorAll(".items");
 var block = document.querySelector(".flex-map");
+let cardFavs = document.querySelectorAll(".card-favourite");
+let button = document.querySelectorAll("#list_project .flex-map .owl-next");
+console.log(button);
 var showMap = true;
 var newClassCard = "";
 var oddClassCard = "";
@@ -352,20 +355,48 @@ function backAttributeCard() {
     listCard[i].setAttribute("class", oddClassCard);
   }
 }
+
+function setCardPos() {
+  for (let i = 0; i < cardFavs.length; i++) {
+    cardFavs[i].style.right = 16 + "px";
+  }
+}
+
+function setBackCardPos() {
+  for (let i = 0; i < cardFavs.length; i++) {
+    cardFavs[i].style.right = "";
+  }
+}
+
+function setButton() {
+  for (let i = 0; i < button.length; i++) {
+    button[i].style.marginRight = 10 + "px";
+  }
+}
+
+function setBackButton() {
+  for (let i = 0; i < button.length; i++) {
+    button[i].style.marginRight = "";
+  }
+}
+
 if (ip) {
   ip.onclick = function () {
     if (showMap) {
       map.style.cssText = "display:block;";
       category.style.width = "70%";
       setAttributeCard();
+      setCardPos();
+      setButton();
       block.style.display = "flex";
       mapPosition = map.offsetTop;
-
       showMap = false;
     } else if (showMap === false) {
       map.style.cssText = "display:none";
       category.style.width = "100%";
       backAttributeCard();
+      setBackCardPos();
+      setBackButton();
       block.style.display = "block";
       showMap = true;
     }
@@ -375,6 +406,7 @@ if (ip) {
 
 if (map) {
   var payHome = document.getElementById("pay-home").offsetTop;
+  let iframe = map.querySelector(".iframe-map");
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 272 && window.pageYOffset < payHome) {
       map.classList.add("map-fixed");

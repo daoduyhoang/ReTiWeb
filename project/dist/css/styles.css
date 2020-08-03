@@ -436,8 +436,9 @@ button:focus {
       -moz-box-direction: normal;
       -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-      padding-left: li;
-        padding-left-width: 48%; }
+      width: 100%; }
+      .header .menu-style-2-child-flex .menu-drd-item {
+        width: 50%; }
   .header .menu-style-2 li.active > div {
     pointer-events: auto;
     opacity: 1;
@@ -5345,14 +5346,18 @@ input[type="checkbox"]:checked + label {
 #map {
   margin-left: 20px;
   display: none;
-  width: 30%; }
+  width: -webkit-calc(30% + 10px);
+  width: -moz-calc(30% + 10px);
+  width: calc(30% + 10px); }
+  #map .iframe-map {
+    width: 100%; }
 
 .map-fixed {
   position: relative; }
   .map-fixed iframe {
     position: fixed;
     top: 20%;
-    width: 333px; }
+    width: 343px; }
 
 .card-category {
   padding: 0 5px; }
