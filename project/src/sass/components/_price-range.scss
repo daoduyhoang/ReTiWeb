@@ -30,10 +30,11 @@
         background-color: unset;
     }
     .irs--flat .irs-handle{
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         background-color: #56C4CF;
         border-radius: 50%;
+        top: 20px;
     }
     .irs--flat .irs-from:before,.irs--flat .irs-to:before{
         border-top-color: white;
@@ -46,8 +47,17 @@
     }
     .irs--flat .irs-bar {
         top: 25px;
-        height: 12px;
+        height: 4px;
         background-color: #56C4CF;
+    }
+    .irs--flat .irs-line {
+        height: 4px;
+    }
+    .irs-grid{
+        bottom: 6px;
+    }
+    .irs-grid-pol{
+        width: 2px;
     }
 }
 .pb-20{
