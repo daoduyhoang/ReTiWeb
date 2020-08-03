@@ -1908,7 +1908,8 @@ body {
     position: -webkit-sticky;
     position: sticky;
     width: 100%;
-    bottom: 0; }
+    bottom: 0;
+    padding-bottom: 20px; }
   .filter-control-mobile .filter-top {
     border-bottom: none; }
   .filter-control-mobile .delete-filter, .filter-control-mobile .save-search, .filter-control-mobile .view-map {
