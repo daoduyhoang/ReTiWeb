@@ -76,6 +76,12 @@
 
 .matbangduan-partial {
   padding-top: 30px;
+
+  @media (max-width: 576px) {
+    .ground-slider-bottom {
+      display: none;
+    }
+  }
   @media (min-width: 320px) and (max-width: 414px) {
     .ground-slider-top {
       margin-bottom: 40px;
@@ -83,9 +89,7 @@
         height: 220px;
       }
     }
-    .ground-slider-bottom {
-      display: none;
-    }
+
     .tab {
       .content-tab {
         .content-tab-item {

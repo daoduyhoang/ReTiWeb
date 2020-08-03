@@ -1,18 +1,28 @@
-.text-info-project{
-    margin-top: 16px;
-    margin-bottom: 8px;
-    height: 166px;
-    overflow: hidden;
+.text-info-project {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  overflow: hidden;
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+  }
 }
-.info-project{
-    display: none;
-    .matbangduan-partial{
-        padding-top: 0;
-        margin-bottom: 40px;
-    }
+.info-project {
+  display: none;
+  .matbangduan-partial {
+    padding-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .motaduan-link a {
+    color: #0c77c6 !important;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline !important;
+  }
 }
-@media(min-width:320px) and (max-width:768px){
-    .info-project{
-        display: block;
-    }
+@media (min-width: 320px) and (max-width: 768px) {
+  .info-project {
+    display: block;
+  }
 }

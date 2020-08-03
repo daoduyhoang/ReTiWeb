@@ -8,6 +8,10 @@
   .ground-slider-bottom {
     .slick-list {
       height: 120px;
+
+      .slick-track {
+        margin: 0 -90px;
+      }
     }
     .slick-slide {
       margin: 10px;
