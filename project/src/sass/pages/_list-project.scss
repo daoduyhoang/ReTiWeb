@@ -129,6 +129,7 @@ input[type="checkbox"]:checked + label {
   @media (max-width: 768px) {
     padding: 0;
   }
+  
 }
 @media (min-width: 320px) and (max-width: 414px) {
   .card-category {
@@ -140,6 +141,15 @@ input[type="checkbox"]:checked + label {
     }
     .card-buy {
       font-size: 12px;
+    }
+  }
+  #filter-control {
+    .acreage,
+    .apartment {
+      padding: 0;
+    }
+    .buy-online{
+      padding: 0;
     }
   }
 }
