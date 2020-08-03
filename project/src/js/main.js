@@ -334,6 +334,7 @@ var map = document.getElementById("map");
 var category = document.querySelector(".card-category");
 var listCard = document.querySelectorAll(".items");
 var block = document.querySelector(".flex-map");
+let cardFavs = document.querySelectorAll(".card-favourite");
 var showMap = true;
 var newClassCard = "";
 var oddClassCard = "";
@@ -352,12 +353,26 @@ function backAttributeCard() {
     listCard[i].setAttribute("class", oddClassCard);
   }
 }
+
+function setCardPos() {
+  for (let i = 0; i < cardFavs.length; i++) {
+    cardFavs[i].style.right = 16 + "px";
+  }
+}
+
+function setBackCardPos() {
+  for (let i = 0; i < cardFavs.length; i++) {
+    cardFavs[i].style.right = "";
+  }
+}
+
 if (ip) {
   ip.onclick = function () {
     if (showMap) {
       map.style.cssText = "display:block;";
       category.style.width = "70%";
       setAttributeCard();
+      setCardPos();
       block.style.display = "flex";
       mapPosition = map.offsetTop;
 
@@ -366,6 +381,7 @@ if (ip) {
       map.style.cssText = "display:none";
       category.style.width = "100%";
       backAttributeCard();
+      setBackCardPos();
       block.style.display = "block";
       showMap = true;
     }
