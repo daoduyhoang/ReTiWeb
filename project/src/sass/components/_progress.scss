@@ -62,6 +62,12 @@
   }
 }
 
+@media (min-width: 550px) {
+  span.progress-per {
+    height: 100% !important;
+  }
+}
+
 @media (max-width: 768px) {
   .progress {
     &-barc {
@@ -105,5 +111,8 @@
   .progress-status .tick-complete {
     width: 25px;
     height: 25px;
+  }
+  span.progress-per {
+    width: 100% !important;
   }
 }
