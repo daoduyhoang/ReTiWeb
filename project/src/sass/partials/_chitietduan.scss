@@ -305,14 +305,19 @@
           }
         }
         .stroke {
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
           top: 18px;
-          right: 16px;
+
           z-index: 9;
           position: absolute;
-          right: 40px;
+          right: 16px;
           img {
-            margin-left: 12px;
+            margin-right: 12px;
+          }
+
+          button {
+            font-size: 20px;
           }
         }
         .chitietduan-slider-bot {
@@ -347,11 +352,38 @@
         .info-department {
           width: 100%;
           border: none;
+          padding-top: 10px !important;
           padding-left: 0;
           padding-right: 0;
+
+          & > img:first-child,
+          h3.department-name,
+          .price-department,
+          .info-details,
+          .details h5,
+          .details > .d-flex,
+          .pt-3 p {
+            padding-left: 16px;
+          }
+
+          .info-details {
+            margin-top: 16px;
+          }
+
+          .pt-3 p {
+            font-size: 12px !important;
+            font-style: italic !important;
+            color: #000;
+            font-weight: normal;
+
+            span {
+              font-style: italic !important;
+            }
+          }
+
           .details {
             .control-buy {
-              margin-top: 23px;
+              margin-top: 0;
               .buy-now {
                 border-radius: 4px;
                 height: 52px;
@@ -496,16 +528,18 @@
         }
       }
     }
-
-    .chitietduan-rightcolumn {
-      .info-department {
-        .policy-department {
-          .d-flex {
-            flex-direction: column;
-            align-items: center;
-          }
-        }
-      }
-    }
   }
 }
+
+// @media(max-width:325px){
+//   .chitietduan-rightcolumn {
+//     .info-department {
+//       .policy-department {
+//         .d-flex {
+//           flex-direction: column;
+//           align-items: center;
+//         }
+//       }
+//     }
+//   }
+// }

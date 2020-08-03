@@ -127,7 +127,7 @@
     }
     .sign {
       background: #ffffff;
-      border: 1px solid #bdbdbd;
+      border: 1px solid #333132;
       border-radius: 2px;
       color: #333132;
       font-family: $roboto;
@@ -140,11 +140,13 @@
   }
   .policy-department {
     .share {
-      margin-top: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
       display: flex;
       justify-content: center;
       .save {
         margin-right: 20px;
+
         i {
           color: #2d9cdb;
         }
