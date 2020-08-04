@@ -484,6 +484,7 @@ if (window.innerWidth > 1200) {
   if (tableProduct) {
     //Lấy block cha chứa bảng info
     let parent = infoHome.closest(".position-relative");
+    let width = infoHome.clientWidth;
 
     let lastScroll = 0;
 
@@ -504,6 +505,7 @@ if (window.innerWidth > 1200) {
         if (currentScroll > parent.offsetTop) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
+          infoHome.style.width = width + "px";
         }
 
         //Check khi scroll qua break point
@@ -528,6 +530,7 @@ if (window.innerWidth > 1200) {
           infoHome.classList.remove("active-fixed");
           infoHome.style.bottom = "";
           infoHome.style.right = "";
+          infoHome.style.width = "";
         }
 
         lastScroll = currentScroll;
@@ -555,8 +558,8 @@ if (window.innerWidth > 1200) {
 
         if (currentScroll >= parent.offsetTop) {
           stickyRight.classList.add("active-fixed");
-          stickyRight.style.right = stickyRightPos - 5 + "px";
-          stickyRight.style.width = width + "px";
+          stickyRight.style.right = stickyRightPos + "px";
+          stickyRight.style.width = width - 5 + "px";
         }
         if (currentScroll > endPoint) {
           stickyRight.classList.remove("active-fixed");
