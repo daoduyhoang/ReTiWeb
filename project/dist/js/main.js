@@ -285,7 +285,7 @@ x.addListener(myFunction); // let getExcept = document.querySelector('.except-mo
 //         getExcept.classList.remove('show');
 //     }
 // });
-// Testtttttttttt
+// Testttttttttttgul
 
 var Utils = {
   lessExcerpt: function lessExcerpt(element) {
@@ -330,7 +330,6 @@ var listCard = document.querySelectorAll(".items");
 var block = document.querySelector(".flex-map");
 var cardFavs = document.querySelectorAll(".card-favourite");
 var button = document.querySelectorAll("#list_project .flex-map .owl-next");
-console.log(button);
 var showMap = true;
 var newClassCard = "";
 var oddClassCard = "";
@@ -400,10 +399,11 @@ if (ip) {
   };
 } // STICK MAP
 
+/*
 
 if (map) {
   var payHome = document.getElementById("pay-home").offsetTop;
-  var iframe = map.querySelector(".iframe-map");
+  let iframe = map.querySelector(".iframe-map");
   window.addEventListener("scroll", function () {
     if (window.pageYOffset > 272 && window.pageYOffset < payHome) {
       map.classList.add("map-fixed");
@@ -411,13 +411,69 @@ if (map) {
       map.classList.remove("map-fixed");
     }
   });
+}
+
+*/
+//Sticky Map
+
+
+if (map) {
+  var iframe = map.querySelector(".iframe-map");
+  /* Query iframe */
+
+  /* Change map to display block for get the actual height */
+
+  map.style.display = "block";
+  var iframeHeight = iframe.clientHeight;
+  var header = document.querySelector("header"); //Turn map to display none by defaults
+
+  map.style.display = "";
+  var payHome = document.getElementById("pay-home").offsetTop;
+  var endPoint = payHome - iframeHeight + 272;
+  var lastScroll = 0;
+  window.addEventListener("scroll", function () {
+    var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0 && lastScroll <= currentScroll) {
+      lastScroll = currentScroll; //Bắt sự kiện scroll down
+      //Bắt đầu event khi scroll
+
+      if (currentScroll > 272) {
+        map.classList.add("map-fixed");
+      } //Check khi scroll qua break point
+
+
+      if (currentScroll >= endPoint) {
+        map.classList.remove("map-fixed");
+        map.style.position = "relative";
+        iframe.style.position = "absolute";
+        iframe.style.bottom = 0 + "px";
+      }
+    } //Bắt sự kiện scroll up
+    else {
+        if (currentScroll < payHome) {
+          map.classList.add("map-fixed");
+          map.style.position = "";
+          iframe.style.position = "";
+          iframe.style.bottom = "";
+        }
+
+        if (currentScroll <= 272) {
+          map.classList.remove("map-fixed");
+        }
+
+        lastScroll = currentScroll;
+      }
+  });
 } // STICK CHITIETCANHO
 
 
 if (window.innerWidth > 1200) {
   var infoHome = document.querySelector(".chitietduan-rightcolumn");
   var tableProduct = document.querySelector(".table-product");
-  var header = document.querySelector("header"); //Function chạy ở trang detail-project
+
+  var _header = document.querySelector("header"); //Function chạy ở trang detail-project
+
 
   var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
   var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
@@ -425,16 +481,17 @@ if (window.innerWidth > 1200) {
   if (tableProduct) {
     //Lấy block cha chứa bảng info
     var parent = infoHome.closest(".position-relative");
-    var lastScroll = 0; //Break point kết thúc event scroll
+    var _lastScroll = 0; //Break point kết thúc event scroll
 
-    var endPoint =
+    var _endPoint =
     /*Parent top pos  + parent height - info height - header height - margin bottom*/
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
+    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 100;
+
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-      if (currentScroll > 0 && lastScroll <= currentScroll) {
-        lastScroll = currentScroll; //Bắt sự kiện scroll down
+      if (currentScroll > 0 && _lastScroll <= currentScroll) {
+        _lastScroll = currentScroll; //Bắt sự kiện scroll down
         //Bắt đầu event khi scroll
 
         if (currentScroll > parent.offsetTop) {
@@ -443,7 +500,7 @@ if (window.innerWidth > 1200) {
         } //Check khi scroll qua break point
 
 
-        if (currentScroll >= endPoint) {
+        if (currentScroll >= _endPoint) {
           infoHome.classList.remove("active-fixed");
           infoHome.style.position = "absolute";
           infoHome.style.bottom = "0";
@@ -465,7 +522,7 @@ if (window.innerWidth > 1200) {
             infoHome.style.right = "";
           }
 
-          lastScroll = currentScroll;
+          _lastScroll = currentScroll;
         }
     });
   }
@@ -476,17 +533,17 @@ if (window.innerWidth > 1200) {
     var width = stickyRight.clientWidth;
     var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
     var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
-    var _lastScroll = 0;
+    var _lastScroll2 = 0;
 
     var _parent = stickyRight.closest(".position-relative");
 
-    var _endPoint = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
+    var _endPoint2 = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - _header.clientHeight - 100;
 
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
 
-      if (currentScroll > 0 && _lastScroll <= currentScroll) {
-        _lastScroll = currentScroll;
+      if (currentScroll > 0 && _lastScroll2 <= currentScroll) {
+        _lastScroll2 = currentScroll;
 
         if (currentScroll >= _parent.offsetTop) {
           stickyRight.classList.add("active-fixed");
@@ -494,7 +551,7 @@ if (window.innerWidth > 1200) {
           stickyRight.style.width = width + "px";
         }
 
-        if (currentScroll > _endPoint) {
+        if (currentScroll > _endPoint2) {
           stickyRight.classList.remove("active-fixed");
           stickyRight.style.position = "absolute";
           stickyRight.style.bottom = "0";
@@ -514,7 +571,7 @@ if (window.innerWidth > 1200) {
           stickyRight.style.width = "";
         }
 
-        _lastScroll = currentScroll;
+        _lastScroll2 = currentScroll;
       }
     });
   }
