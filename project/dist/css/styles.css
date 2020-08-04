@@ -3857,17 +3857,16 @@ body {
     height: 520px; } }
 
 /* TIEN ICH*/
-.utilities {
-  width: 50%; }
-  .utilities .utilities-content {
-    margin-top: 30px; }
-    .utilities .utilities-content .utilities-item {
-      margin-bottom: 20px; }
-  .utilities .utilities-item span {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px; }
+.utilities .utilities-content {
+  margin-top: 30px; }
+  .utilities .utilities-content .utilities-item {
+    margin-bottom: 20px; }
+
+.utilities .utilities-item span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px; }
 
 .btn-mobile-utilities {
   display: none; }
@@ -5216,33 +5215,32 @@ body {
     font-size: 0.75rem; } }
 
 /*mo ta du an*/
-.motaduan-partial {
-  width: 50%; }
-  .motaduan-partial .motaduan-content {
-    margin-top: 16px;
-    width: 100%;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 26px;
-    max-width: 645px; }
-    @media (min-width: 998px) {
-      .motaduan-partial .motaduan-content .except-more {
-        width: 645px; } }
-    @media (max-width: 576px) {
-      .motaduan-partial .motaduan-content .except-more {
-        font-size: 14px; } }
-  .motaduan-partial .motaduan-link {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 163.42%; }
-    .motaduan-partial .motaduan-link a, .motaduan-partial .motaduan-link .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .motaduan-partial .motaduan-link img {
-      text-decoration: underline !important;
-      color: #0c77c6;
-      font-weight: 500; }
+.motaduan-partial .motaduan-content {
+  margin-top: 16px;
+  width: 100%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  max-width: 645px; }
+  @media (min-width: 998px) {
+    .motaduan-partial .motaduan-content .except-more {
+      width: 645px; } }
+  @media (max-width: 576px) {
+    .motaduan-partial .motaduan-content .except-more {
+      font-size: 14px; } }
+
+.motaduan-partial .motaduan-link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 163.42%; }
+  .motaduan-partial .motaduan-link a, .motaduan-partial .motaduan-link .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .motaduan-partial .motaduan-link img {
+    text-decoration: underline !important;
+    color: #0c77c6;
+    font-weight: 500; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .container .motaduan-partial, .khuVucNoiBat .motaduan-partial {
