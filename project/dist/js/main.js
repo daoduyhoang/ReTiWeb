@@ -124,7 +124,7 @@ for (var i = 0; i < btn.length; i++) {
     var btnActive = this;
     var j = 0;
 
-    for (j = 0; btnActive = btnActive.previousElementSibling; j++) {}
+    for (j = 0; btnActive = btnActive.previousElementSibling; j++) { }
 
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
@@ -148,7 +148,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     var active = this;
     var j = 0;
 
-    for (j = 0; active = active.previousElementSibling; j++) {}
+    for (j = 0; active = active.previousElementSibling; j++) { }
 
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
@@ -460,19 +460,19 @@ if (map) {
       }
     } //Bắt sự kiện scroll up
     else {
-        if (currentScroll < payHome) {
-          map.classList.add("map-fixed");
-          map.style.position = "";
-          iframe.style.position = "";
-          iframe.style.bottom = "";
-        }
-
-        if (currentScroll <= 272) {
-          map.classList.remove("map-fixed");
-        }
-
-        lastScroll = currentScroll;
+      if (currentScroll < payHome) {
+        map.classList.add("map-fixed");
+        map.style.position = "";
+        iframe.style.position = "";
+        iframe.style.bottom = "";
       }
+
+      if (currentScroll <= 272) {
+        map.classList.remove("map-fixed");
+      }
+
+      lastScroll = currentScroll;
+    }
   });
 } // STICK CHITIETCANHO
 
@@ -490,11 +490,12 @@ if (window.innerWidth > 1200) {
   if (tableProduct) {
     //Lấy block cha chứa bảng info
     var parent = infoHome.closest(".position-relative");
+    var width = infoHome.clientWidth;
     var _lastScroll = 0; //Break point kết thúc event scroll
 
     var _endPoint =
-    /*Parent top pos  + parent height - info height - header height - margin bottom*/
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 100;
+      /*Parent top pos  + parent height - info height - header height - margin bottom*/
+      parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 100;
 
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -506,6 +507,7 @@ if (window.innerWidth > 1200) {
         if (currentScroll > parent.offsetTop) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
+          infoHome.style.width = width + "px";
         } //Check khi scroll qua break point
 
 
@@ -516,30 +518,31 @@ if (window.innerWidth > 1200) {
         }
       } //Bắt sự kiện scroll up
       else {
-          //Check khi scroll chạm bottom của bảng info
-          if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
-            infoHome.classList.add("active-fixed");
-            infoHome.style.right = calcRight + "px";
-            infoHome.style.bottom = "";
-            infoHome.style.position = "";
-          }
-
-          if (currentScroll <= parent.offsetTop) {
-            infoHome.style.position = "";
-            infoHome.classList.remove("active-fixed");
-            infoHome.style.bottom = "";
-            infoHome.style.right = "";
-          }
-
-          _lastScroll = currentScroll;
+        //Check khi scroll chạm bottom của bảng info
+        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
+          infoHome.classList.add("active-fixed");
+          infoHome.style.right = calcRight + "px";
+          infoHome.style.bottom = "";
+          infoHome.style.position = "";
         }
+
+        if (currentScroll <= parent.offsetTop) {
+          infoHome.style.position = "";
+          infoHome.classList.remove("active-fixed");
+          infoHome.style.bottom = "";
+          infoHome.style.right = "";
+          infoHome.style.width = "";
+        }
+
+        _lastScroll = currentScroll;
+      }
     });
   }
 
   var stickyRight = document.querySelector(".sticky-detailapartment"); //Function chạy ở trang detail-apartment
 
   if (stickyRight) {
-    var width = stickyRight.clientWidth;
+    var _width = stickyRight.clientWidth;
     var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
     var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
     var _lastScroll2 = 0;
@@ -556,8 +559,8 @@ if (window.innerWidth > 1200) {
 
         if (currentScroll >= _parent.offsetTop) {
           stickyRight.classList.add("active-fixed");
-          stickyRight.style.right = stickyRightPos - 5 + "px";
-          stickyRight.style.width = width + "px";
+          stickyRight.style.right = stickyRightPos + "px";
+          stickyRight.style.width = _width - 5 + "px";
         }
 
         if (currentScroll > _endPoint2) {
