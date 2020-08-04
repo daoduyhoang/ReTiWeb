@@ -1996,18 +1996,40 @@ body {
   .filter-control-mobile .view-map {
     display: none; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .btn-show-result-htm::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    left: -4px;
+    z-index: -1;
+    top: 6px; }
+  .btn-show-result-htm {
+    background-color: white; } }
+
 .info-department {
-  width: 455px;
   min-height: 554px;
   background: #ffffff;
   border: 1px solid #bdbdbd;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px; }
-  @media (min-width: 992px) {
+  @media (min-width: 769px) {
     .info-department {
       padding-left: 22px !important;
-      padding-right: 22px !important; } }
+      padding-right: 22px !important;
+      padding-top: 17px;
+      width: 100%;
+      height: 100%; } }
+  @media (min-width: 425px) and (max-width: 768px) {
+    .info-department {
+      padding-left: 16px;
+      padding-right: 16px;
+      padding-top: 17px;
+      height: 100%; } }
   .info-department .info-adress {
     margin-top: 17px;
     margin-bottom: 10px;
@@ -2117,9 +2139,6 @@ body {
       height: 52px;
       display: block;
       padding: 10px 20px; }
-      @media (min-width: 992px) {
-        .info-department .control-buy a, .info-department .control-buy .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .control-buy img {
-          width: 425px; } }
       @media (min-width: 426px) and (max-width: 768px) {
         .info-department .control-buy a, .info-department .control-buy .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .info-department .control-buy img {
           width: -webkit-calc(50% - 10px);
@@ -4708,6 +4727,17 @@ body {
   -ms-flex-pack: space-around;
   padding-left: 20px;
   height: 554px; }
+  @media (min-width: 1200px) {
+    .chitietduan-rightcolumn {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
+  .chitietduan-rightcolumn .col-12 {
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0; }
   @media only screen and (max-width: 850px) {
     .chitietduan-rightcolumn {
       padding-left: 0px;
@@ -5845,3 +5875,7 @@ main {
 
 .motaduan-link {
   display: contents; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .mobile-mb-10 {
+    margin-bottom: 10px; } }
