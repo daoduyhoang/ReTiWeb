@@ -38,11 +38,20 @@ if (rangeSlide) {
 } // TIEN ICH
 
 
+var isShowMore = true;
 $(".btn-mobile-utilities a").click(function (e) {
   e.preventDefault();
   var parent = $(this).parents(".utilities");
   var child = parent.children(".utilities-content");
   child.toggleClass("show-item");
+
+  if (isShowMore) {
+    $(this).html('Ẩn bớt');
+    isShowMore = false;
+  } else if (isShowMore === false) {
+    $(this).html('Xem thêm');
+    isShowMore = true;
+  }
 }); // FLITER
 
 $(".btn-control .btn-filter").click(function () {

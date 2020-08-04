@@ -356,15 +356,15 @@
           padding-left: 0;
           padding-right: 0;
 
-          & > img:first-child,
-          h3.department-name,
-          .price-department,
-          .info-details,
-          .details h5,
-          .details > .d-flex,
-          .pt-3 p {
-            padding-left: 16px;
-          }
+          // & > img:first-child,
+          // h3.department-name,
+          // .price-department,
+          // .info-details,
+          // .details h5,
+          // .details > .d-flex,
+          // .pt-3 p {
+          //   padding-left: 16px;
+          // }
 
           .info-details {
             margin-top: 16px;
@@ -380,10 +380,9 @@
               font-style: italic !important;
             }
           }
-
           .details {
             .control-buy {
-              margin-top: 0;
+              margin-top: 24px;
               .buy-now {
                 border-radius: 4px;
                 height: 52px;

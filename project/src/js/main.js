@@ -39,12 +39,20 @@ if (rangeSlide) {
 }
 
 // TIEN ICH
-
+var isShowMore = true;
 $(".btn-mobile-utilities a").click(function (e) {
   e.preventDefault();
   var parent = $(this).parents(".utilities");
   var child = parent.children(".utilities-content");
   child.toggleClass("show-item");
+  if (isShowMore) {
+    $(this).html('Ẩn bớt');
+    isShowMore = false;
+  }
+  else if (isShowMore === false) {
+    $(this).html('Xem thêm');
+    isShowMore = true;
+  }
 });
 
 // FLITER
@@ -119,7 +127,7 @@ for (var i = 0; i < btn.length; i++) {
     //tinh vi tri
     var btnActive = this;
     var j = 0;
-    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) {}
+    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) { }
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
       tabs[j].classList.add("active-item");
@@ -140,7 +148,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     //tinh vi tri
     var active = this;
     var j = 0;
-    for (j = 0; (active = active.previousElementSibling); j++) {}
+    for (j = 0; (active = active.previousElementSibling); j++) { }
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
       tabItem[j].classList.add("active-item-table");
