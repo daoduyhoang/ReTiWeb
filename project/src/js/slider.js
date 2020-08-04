@@ -2,7 +2,7 @@ $('.slide-card').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
-    navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+    navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x fw-100'></i>"],
     responsive: {
         0: {
             items: 1
@@ -157,7 +157,7 @@ $('.slide-apartment').owlCarousel({
         1000: {
             items: 1,
             nav: true,
-            navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x'></i>"],
+            navText: [, "<i class='fas fa-chevron-right duannoibat-btn-next fa-2x fw-100'></i>"],
         }
     },
     dots: true
