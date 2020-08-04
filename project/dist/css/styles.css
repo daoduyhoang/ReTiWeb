@@ -2201,6 +2201,12 @@ body {
 .policy-sell {
   margin-right: 15px; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .info-details > div:nth-child(1) {
+    margin-bottom: 10px; }
+  .details div:first-child {
+    margin-bottom: 10px; } }
+
 .table-product .list-tab {
   margin-top: 30px;
   background: #f2f2f2;
@@ -4911,7 +4917,7 @@ body {
           .chitietduan-partial .chitietduan-rightcolumn .info-department .pt-3 p span {
             font-style: italic !important; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy {
-          margin-top: 24px; }
+          margin-top: 14px; }
           .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .buy-now {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
