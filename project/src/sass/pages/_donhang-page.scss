@@ -52,6 +52,9 @@
   .no-wrap-ipad {
     flex-wrap: nowrap !important;
   }
+  .order{
+    padding-right: 22px;
+  }
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .container {

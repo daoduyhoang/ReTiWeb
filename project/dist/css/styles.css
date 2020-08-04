@@ -1760,7 +1760,8 @@ body {
     margin-left: 12.5px; }
 
 .filter-control .btn-show-result-htm {
-  display: none; }
+  display: none;
+  padding-bottom: 20px; }
   .filter-control .btn-show-result-htm button {
     background-color: #56C4CF;
     color: #fff;
@@ -5371,7 +5372,12 @@ input[type="checkbox"]:checked + label {
     .card-category .card-price .card-price-vnd {
       font-size: 16px; }
   .card-category .card-buy {
-    font-size: 12px; } }
+    font-size: 12px; }
+  #filter-control .acreage,
+  #filter-control .apartment {
+    padding: 0; }
+  #filter-control .buy-online {
+    padding: 0; } }
 
 /* Home Page */
 [class*="home-section-"] {
@@ -5595,7 +5601,9 @@ main {
   .no-wrap-ipad {
     -webkit-flex-wrap: nowrap !important;
     -ms-flex-wrap: nowrap !important;
-    flex-wrap: nowrap !important; } }
+    flex-wrap: nowrap !important; }
+  .order {
+    padding-right: 22px; } }
 
 @media (min-width: 320px) and (max-width: 768px) {
   .container, .khuVucNoiBat {
