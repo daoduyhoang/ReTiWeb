@@ -12,6 +12,7 @@ $("#big").bind("mousewheel", function (e) {
 
 var up = document.querySelector(".up-map");
 var down = document.querySelector(".down-map");
+var string = "";
 up.onclick = function () {
   zoomMap.zoomUp();
 };
@@ -102,3 +103,41 @@ down.onclick = function () {
 //         alert('out')
 //     }
 // }, false);
+
+/* 
+
+//Zoom on mobile device
+
+function swipeMobile() {
+  let bigMap = document.getElementById("big");
+  let status = 1;
+  let mapHover = document.querySelector(".mapify-holder");
+  let mapPopover = document.querySelector(".mapify-popOver");
+
+  var ham = new Hammer(big, {
+    domEvents: true,
+  });
+
+  ham.get("pinch").set({ enable: true });
+
+  ham.on("pinch", function (e) {
+    if (width * e.scale >= 300 && status == 1) {
+      mapHover.style.transform = "scale(1.5)";
+      mapPopover.style.transform = "scale(0.667)";
+      bigMap.style.overflow = "hidden";
+      status = 2;
+    } else if (status == 2 && width * e.scale >= 600) {
+      mapHover.style.transform = "scale(2)";
+      mapPopover.style.transform = "scale(0.5)";
+
+      status = 3;
+    } else if (status == 3 && width * e.scale >= 900) {
+      mapHover.style.transform = "scale(3)";
+      mapPopover.style.transform = "scale(0.333)";
+
+      status = 4;
+    }
+  });
+}
+
+*/
