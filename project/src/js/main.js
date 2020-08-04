@@ -288,7 +288,7 @@ x.addListener(myFunction);
 //     }
 // });
 
-// Testtttttttttt
+// Testttttttttttgul
 
 const Utils = {
   lessExcerpt: function (element) {
@@ -336,7 +336,6 @@ var listCard = document.querySelectorAll(".items");
 var block = document.querySelector(".flex-map");
 let cardFavs = document.querySelectorAll(".card-favourite");
 let button = document.querySelectorAll("#list_project .flex-map .owl-next");
-console.log(button);
 var showMap = true;
 var newClassCard = "";
 var oddClassCard = "";
@@ -403,6 +402,7 @@ if (ip) {
   };
 }
 // STICK MAP
+/*
 
 if (map) {
   var payHome = document.getElementById("pay-home").offsetTop;
@@ -412,6 +412,61 @@ if (map) {
       map.classList.add("map-fixed");
     } else if (window.pageYOffset < 272 || window.pageYOffset > payHome) {
       map.classList.remove("map-fixed");
+    }
+  });
+}
+
+*/
+
+//Sticky Map
+
+if (map) {
+  let iframe = map.querySelector(".iframe-map"); /* Query iframe */
+  /* Change map to display block for get the actual height */
+  map.style.display = "block";
+  let iframeHeight = iframe.clientHeight;
+  let header = document.querySelector("header");
+
+  //Turn map to display none by defaults
+  map.style.display = "";
+  let payHome = document.getElementById("pay-home").offsetTop;
+  let endPoint = payHome - iframeHeight + 272;
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", function () {
+    let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentScroll > 0 && lastScroll <= currentScroll) {
+      lastScroll = currentScroll;
+
+      //Bắt sự kiện scroll down
+      //Bắt đầu event khi scroll
+      if (currentScroll > 272) {
+        map.classList.add("map-fixed");
+      }
+
+      //Check khi scroll qua break point
+      if (currentScroll >= endPoint) {
+        map.classList.remove("map-fixed");
+        map.style.position = "relative";
+        iframe.style.position = "absolute";
+        iframe.style.bottom = 0 + "px";
+      }
+    }
+    //Bắt sự kiện scroll up
+    else {
+      if (currentScroll < payHome) {
+        map.classList.add("map-fixed");
+        map.style.position = "";
+        iframe.style.position = "";
+        iframe.style.bottom = "";
+      }
+
+      if (currentScroll <= 272) {
+        map.classList.remove("map-fixed");
+      }
+
+      lastScroll = currentScroll;
     }
   });
 }
