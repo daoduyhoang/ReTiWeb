@@ -124,7 +124,7 @@ for (var i = 0; i < btn.length; i++) {
     var btnActive = this;
     var j = 0;
 
-    for (j = 0; btnActive = btnActive.previousElementSibling; j++) { }
+    for (j = 0; btnActive = btnActive.previousElementSibling; j++) {}
 
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
@@ -148,7 +148,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     var active = this;
     var j = 0;
 
-    for (j = 0; active = active.previousElementSibling; j++) { }
+    for (j = 0; active = active.previousElementSibling; j++) {}
 
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
@@ -460,19 +460,19 @@ if (map) {
       }
     } //Bắt sự kiện scroll up
     else {
-      if (currentScroll < payHome) {
-        map.classList.add("map-fixed");
-        map.style.position = "";
-        iframe.style.position = "";
-        iframe.style.bottom = "";
-      }
+        if (currentScroll < payHome) {
+          map.classList.add("map-fixed");
+          map.style.position = "";
+          iframe.style.position = "";
+          iframe.style.bottom = "";
+        }
 
-      if (currentScroll <= 272) {
-        map.classList.remove("map-fixed");
-      }
+        if (currentScroll <= 272) {
+          map.classList.remove("map-fixed");
+        }
 
-      lastScroll = currentScroll;
-    }
+        lastScroll = currentScroll;
+      }
   });
 } // STICK CHITIETCANHO
 
@@ -494,8 +494,8 @@ if (window.innerWidth > 1200) {
     var _lastScroll = 0; //Break point kết thúc event scroll
 
     var _endPoint =
-      /*Parent top pos  + parent height - info height - header height - margin bottom*/
-      parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 100;
+    /*Parent top pos  + parent height - info height - header height - margin bottom*/
+    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 100;
 
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -518,24 +518,24 @@ if (window.innerWidth > 1200) {
         }
       } //Bắt sự kiện scroll up
       else {
-        //Check khi scroll chạm bottom của bảng info
-        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
-          infoHome.classList.add("active-fixed");
-          infoHome.style.right = calcRight + "px";
-          infoHome.style.bottom = "";
-          infoHome.style.position = "";
-        }
+          //Check khi scroll chạm bottom của bảng info
+          if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
+            infoHome.classList.add("active-fixed");
+            infoHome.style.right = calcRight + "px";
+            infoHome.style.bottom = "";
+            infoHome.style.position = "";
+          }
 
-        if (currentScroll <= parent.offsetTop) {
-          infoHome.style.position = "";
-          infoHome.classList.remove("active-fixed");
-          infoHome.style.bottom = "";
-          infoHome.style.right = "";
-          infoHome.style.width = "";
-        }
+          if (currentScroll <= parent.offsetTop) {
+            infoHome.style.position = "";
+            infoHome.classList.remove("active-fixed");
+            infoHome.style.bottom = "";
+            infoHome.style.right = "";
+            infoHome.style.width = "";
+          }
 
-        _lastScroll = currentScroll;
-      }
+          _lastScroll = currentScroll;
+        }
     });
   }
 

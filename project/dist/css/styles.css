@@ -62,6 +62,10 @@ button:focus {
     margin-left: -16px;
     margin-right: -16px; } }
 
+.fw-100 {
+  font-weight: 100 !important;
+  font-size: 18px !important; }
+
 /* Header */
 .stick {
   -webkit-animation-duration: 1s;
@@ -2070,7 +2074,7 @@ body {
       font-family: "Roboto";
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 26px;
       color: #ef5b40; }
     .info-department .price-department span.price-department__type {
       font-size: 12px;
@@ -2123,9 +2127,11 @@ body {
     color: #333132; }
   .info-department .details .cl-orange {
     color: #ef5b40; }
+  .info-department .policy-department > div:first-child {
+    margin-bottom: 10px; }
   .info-department .control-buy {
     text-align: center;
-    margin-top: 69px;
+    margin-top: 64px;
     margin-bottom: 10px; }
     @media (min-width: 426px) and (max-width: 768px) {
       .info-department .control-buy {
@@ -5753,7 +5759,7 @@ main {
         padding-left: 15px;
         padding-right: 15px; } }
   .utilities .btn-mobile-utilities a, .utilities .btn-mobile-utilities .chitietduan-partial .chitietduan-button .chitietduan-btn div img, .chitietduan-partial .chitietduan-button .chitietduan-btn div .utilities .btn-mobile-utilities img {
-    color: #007bff;
+    color: #0c77c6;
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -5852,6 +5858,9 @@ main {
 
 .like-product-card:focus {
   outline: none; }
+
+.detail-project .control-buy {
+  margin-top: 55px; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .chitietduan-rightcolumn {

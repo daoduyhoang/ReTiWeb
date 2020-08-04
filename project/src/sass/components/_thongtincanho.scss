@@ -59,7 +59,7 @@
       font-family: $roboto;
       font-style: normal;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 26px;
       color: #ef5b40;
     }
 
@@ -109,10 +109,12 @@
       color: #ef5b40;
     }
   }
-
+.policy-department>div:first-child{
+  margin-bottom: 10px;
+}
   .control-buy {
     text-align: center;
-    margin-top: 69px;
+    margin-top: 64px;
     margin-bottom: 10px;
 
     @media (min-width: 426px) and (max-width: 768px) {
