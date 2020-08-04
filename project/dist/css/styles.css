@@ -1996,6 +1996,20 @@ body {
   .filter-control-mobile .view-map {
     display: none; }
 
+@media (min-width: 320px) and (max-width: 414px) {
+  .btn-show-result-htm::before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    left: -4px;
+    z-index: -1;
+    top: 6px; }
+  .btn-show-result-htm {
+    background-color: white; } }
+
 .info-department {
   min-height: 554px;
   background: #ffffff;
@@ -2205,6 +2219,12 @@ body {
 
 .policy-sell {
   margin-right: 15px; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .info-details > div:nth-child(1) {
+    margin-bottom: 10px; }
+  .details div:first-child {
+    margin-bottom: 10px; } }
 
 .table-product .list-tab {
   margin-top: 30px;
@@ -3946,6 +3966,8 @@ body {
   -moz-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .shark-title img {
+    margin-right: 5px; }
   .shark-title h2 {
     font-family: "Roboto";
     font-style: normal;
@@ -4915,14 +4937,6 @@ body {
         padding-top: 10px !important;
         padding-left: 0;
         padding-right: 0; }
-        .chitietduan-partial .chitietduan-rightcolumn .info-department > img:first-child,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department h3.department-name,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department .price-department,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department .info-details,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department .details h5,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department .details > .d-flex,
-        .chitietduan-partial .chitietduan-rightcolumn .info-department .pt-3 p {
-          padding-left: 16px; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .info-details {
           margin-top: 16px; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .pt-3 p {
@@ -4933,7 +4947,7 @@ body {
           .chitietduan-partial .chitietduan-rightcolumn .info-department .pt-3 p span {
             font-style: italic !important; }
         .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy {
-          margin-top: 0; }
+          margin-top: 14px; }
           .chitietduan-partial .chitietduan-rightcolumn .info-department .details .control-buy .buy-now {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
@@ -5861,3 +5875,7 @@ main {
 
 .motaduan-link {
   display: contents; }
+
+@media (min-width: 320px) and (max-width: 414px) {
+  .mobile-mb-10 {
+    margin-bottom: 10px; } }

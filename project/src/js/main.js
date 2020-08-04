@@ -39,12 +39,20 @@ if (rangeSlide) {
 }
 
 // TIEN ICH
-
+var isShowMore = true;
 $(".btn-mobile-utilities a").click(function (e) {
   e.preventDefault();
   var parent = $(this).parents(".utilities");
   var child = parent.children(".utilities-content");
   child.toggleClass("show-item");
+  if (isShowMore) {
+    $(this).html('Ẩn bớt');
+    isShowMore = false;
+  }
+  else if (isShowMore === false) {
+    $(this).html('Xem thêm');
+    isShowMore = true;
+  }
 });
 
 // FLITER
@@ -119,7 +127,7 @@ for (var i = 0; i < btn.length; i++) {
     //tinh vi tri
     var btnActive = this;
     var j = 0;
-    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) {}
+    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) { }
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
       tabs[j].classList.add("active-item");
@@ -140,7 +148,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     //tinh vi tri
     var active = this;
     var j = 0;
-    for (j = 0; (active = active.previousElementSibling); j++) {}
+    for (j = 0; (active = active.previousElementSibling); j++) { }
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
       tabItem[j].classList.add("active-item-table");
@@ -484,6 +492,7 @@ if (window.innerWidth > 1200) {
   if (tableProduct) {
     //Lấy block cha chứa bảng info
     let parent = infoHome.closest(".position-relative");
+    let width = infoHome.clientWidth;
 
     let lastScroll = 0;
 
@@ -504,6 +513,7 @@ if (window.innerWidth > 1200) {
         if (currentScroll > parent.offsetTop) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
+          infoHome.style.width = width + "px";
         }
 
         //Check khi scroll qua break point
@@ -528,6 +538,7 @@ if (window.innerWidth > 1200) {
           infoHome.classList.remove("active-fixed");
           infoHome.style.bottom = "";
           infoHome.style.right = "";
+          infoHome.style.width = "";
         }
 
         lastScroll = currentScroll;
@@ -555,8 +566,8 @@ if (window.innerWidth > 1200) {
 
         if (currentScroll >= parent.offsetTop) {
           stickyRight.classList.add("active-fixed");
-          stickyRight.style.right = stickyRightPos - 5 + "px";
-          stickyRight.style.width = width + "px";
+          stickyRight.style.right = stickyRightPos + "px";
+          stickyRight.style.width = width - 5 + "px";
         }
         if (currentScroll > endPoint) {
           stickyRight.classList.remove("active-fixed");
