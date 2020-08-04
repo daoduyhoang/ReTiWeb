@@ -1965,6 +1965,23 @@ body {
       height: -webkit-calc(1rem - 4px);
       height: -moz-calc(1rem - 4px);
       height: calc(1rem - 4px); }
+    .filter-control-mobile .control-table .custom-switch .custom-control-label .custom-switch .custom-control-label::before {
+      width: 1.75rem;
+      height: 1rem; }
+    .filter-control-mobile .control-table .custom-switch .custom-control-label .custom-switch .custom-control-label::after {
+      width: -webkit-calc(1rem - 4px);
+      width: -moz-calc(1rem - 4px);
+      width: calc(1rem - 4px);
+      height: -webkit-calc(1rem - 4px);
+      height: -moz-calc(1rem - 4px);
+      height: calc(1rem - 4px); }
+    .filter-control-mobile .control-table .custom-switch .btn-show-result-htm {
+      display: block;
+      position: -webkit-sticky;
+      position: sticky;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 20px; }
   .filter-control-mobile .btn-show-result-htm {
     display: block;
     position: -webkit-sticky;
@@ -2705,6 +2722,10 @@ body {
     top: unset;
     bottom: 130%; }
 
+@media (min-width: 550px) {
+  span.progress-per {
+    height: 100% !important; } }
+
 @media (max-width: 768px) {
   .progress-barc {
     height: 400px;
@@ -2737,7 +2758,9 @@ body {
     bottom: unset; }
   .progress-status .tick-complete {
     width: 25px;
-    height: 25px; } }
+    height: 25px; }
+  span.progress-per {
+    width: 100% !important; } }
 
 /*POP UP*/
 .popup-hover span {
