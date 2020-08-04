@@ -27,19 +27,19 @@ const zoomMap = {
     if (pram === 1) {
       this.scaleMap(1.5);
       $(".mapify-holder").draggable();
-      $(".mapify-popOver").css({ transform: "scale(0.667)" });
+      $(".mapify-popOver").css({ transform: "scale(0.667) translateY(-20%)" });
       $("#big").css("overflow", "hidden");
 
       pram = 2;
       statusRemove = 1;
     } else if (pram === 2) {
       this.scaleMap(2);
-      $(".mapify-popOver").css({ transform: "scale(0.5)" });
+      $(".mapify-popOver").css({ transform: "scale(0.5) translateY(-50%)" });
       pram = 3;
       statusRemove = 2;
     } else if (pram === 3) {
       this.scaleMap(3);
-      $(".mapify-popOver").css({ transform: "scale(0.333)" });
+      $(".mapify-popOver").css({ transform: "scale(0.333) translateY(-100%)" });
       pram = 4;
       statusRemove = 3;
     }
@@ -57,15 +57,17 @@ const zoomMap = {
     } else if (statusRemove == 2) {
       this.scaleMap(1.5);
       statusRemove = 1;
-      $(".mapify-popOver").css("transform", "scale(0.667)");
+      $(".mapify-popOver").css("transform", "scale(0.667) translateY(-20%)");
       pram = 2;
     } else if (statusRemove == 3) {
       this.scaleMap(2);
       statusRemove = 2;
-      $(".mapify-popOver").css("transform", "scale(0.5)");
+      $(".mapify-popOver").css("transform", "scale(0.5) translateY(-50%)");
     }
   },
 };
+
+/*
 down.onclick = function () {
   if (statusRemove == 1) {
     $(".mapify-holder").removeClass("scale-15");
@@ -89,6 +91,8 @@ down.onclick = function () {
     console.log(pram + "-" + statusRemove);
   }
 };
+
+*/
 // var zoom = document.getElementById('big');
 // zoom.addEventListener('gestureend', function (e) {
 //     if (e.scale < 1.0) {
