@@ -61,6 +61,7 @@
       font-weight: bold;
       font-size: 26px;
       color: #ef5b40;
+      line-height: 24px;
     }
 
     span.price-department__type {
@@ -74,6 +75,19 @@
       background-color: #ef5b40;
       border-radius: 4px;
       margin-right: 8px;
+
+      @media (min-width: 1200px) {
+        font-size: 16px;
+        height: unset;
+        width: unset;
+        line-height: 20px;
+        padding: {
+          top: 6px;
+          left: 8px;
+          right: 8px;
+          bottom: 4.75px;
+        }
+      }
     }
   }
   .info-details {
