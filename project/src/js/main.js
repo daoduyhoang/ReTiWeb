@@ -46,11 +46,10 @@ $(".btn-mobile-utilities a").click(function (e) {
   var child = parent.children(".utilities-content");
   child.toggleClass("show-item");
   if (isShowMore) {
-    $(this).html('Ẩn bớt');
+    $(this).html("Ẩn bớt");
     isShowMore = false;
-  }
-  else if (isShowMore === false) {
-    $(this).html('Xem thêm');
+  } else if (isShowMore === false) {
+    $(this).html("Xem thêm");
     isShowMore = true;
   }
 });
@@ -127,7 +126,7 @@ for (var i = 0; i < btn.length; i++) {
     //tinh vi tri
     var btnActive = this;
     var j = 0;
-    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) { }
+    for (j = 0; (btnActive = btnActive.previousElementSibling); j++) {}
     for (var i = 0; i < tabs.length; i++) {
       tabs[i].classList.remove("active-item");
       tabs[j].classList.add("active-item");
@@ -148,7 +147,7 @@ for (var i = 0; i < btnActiveTab.length; i++) {
     //tinh vi tri
     var active = this;
     var j = 0;
-    for (j = 0; (active = active.previousElementSibling); j++) { }
+    for (j = 0; (active = active.previousElementSibling); j++) {}
     for (var i = 0; i < tabItem.length; i++) {
       tabItem[i].classList.remove("active-item-table");
       tabItem[j].classList.add("active-item-table");
@@ -500,7 +499,7 @@ if (window.innerWidth > 1200) {
     let endPoint =
       /*Parent top pos  + parent height - info height - header height - margin bottom*/
 
-      parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 100;
+      parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 205;
 
     window.addEventListener("scroll", function () {
       let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -510,7 +509,7 @@ if (window.innerWidth > 1200) {
 
         //Bắt sự kiện scroll down
         //Bắt đầu event khi scroll
-        if (currentScroll > parent.offsetTop) {
+        if (currentScroll > 5) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
           infoHome.style.width = width + "px";
@@ -526,14 +525,14 @@ if (window.innerWidth > 1200) {
       //Bắt sự kiện scroll up
       else {
         //Check khi scroll chạm bottom của bảng info
-        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight) {
+        if (currentScroll < parent.offsetTop + parent.offsetHeight - infoHome.clientHeight - 207) {
           infoHome.classList.add("active-fixed");
           infoHome.style.right = calcRight + "px";
           infoHome.style.bottom = "";
           infoHome.style.position = "";
         }
 
-        if (currentScroll <= parent.offsetTop) {
+        if (currentScroll <= parent.offsetTop - 150) {
           infoHome.style.position = "";
           infoHome.classList.remove("active-fixed");
           infoHome.style.bottom = "";
@@ -556,7 +555,7 @@ if (window.innerWidth > 1200) {
     let lastScroll = 0;
     let parent = stickyRight.closest(".position-relative");
     let endPoint =
-      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 100;
+      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 205;
 
     window.addEventListener("scroll", function () {
       let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
