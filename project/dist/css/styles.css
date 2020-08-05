@@ -2104,6 +2104,9 @@ body {
   .info-department .info-details {
     margin-bottom: 10px;
     margin-top: 20px; }
+    @media (min-width: 1200px) {
+      .info-department .info-details .d-flex {
+        margin-bottom: 10px; } }
     .info-department .info-details span {
       font-family: "Roboto";
       font-style: normal;
