@@ -477,12 +477,14 @@ if (map) {
 } // STICK CHITIETCANHO
 
 
-if (window.innerWidth > 1200) {
-  var infoHome = document.querySelector(".chitietduan-rightcolumn");
+window.addEventListener("DOMContentLoaded", function (event) {
+  stickyScroll();
+});
+
+function stickyScroll() {
+  var infoHome = document.querySelector(".chitietduan-rightcolumn ");
   var tableProduct = document.querySelector(".table-product");
-
-  var _header = document.querySelector("header"); //Function chạy ở trang detail-project
-
+  var header = document.querySelector("header"); //Function chạy ở trang detail-project
 
   var infoHomeOffsetRight = infoHome.offsetLeft + infoHome.clientWidth;
   var calcRight = document.querySelector("body").clientWidth - infoHomeOffsetRight;
@@ -491,11 +493,12 @@ if (window.innerWidth > 1200) {
     //Lấy block cha chứa bảng info
     var parent = infoHome.closest(".position-relative");
     var width = infoHome.clientWidth;
+    infoHome.style.maxWidth = width + "px";
     var _lastScroll = 0; //Break point kết thúc event scroll
 
     var _endPoint =
     /*Parent top pos  + parent height - info height - header height - margin bottom*/
-    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - _header.clientHeight - 205;
+    parent.offsetTop + parent.offsetHeight - infoHome.offsetHeight - header.clientHeight - 205;
 
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -543,13 +546,14 @@ if (window.innerWidth > 1200) {
 
   if (stickyRight) {
     var _width = stickyRight.clientWidth;
+    stickyRight.style.maxWidth = _width + "px";
     var stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
     var stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
     var _lastScroll2 = 0;
 
     var _parent = stickyRight.closest(".position-relative");
 
-    var _endPoint2 = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - _header.clientHeight;
+    var _endPoint2 = _parent.offsetTop + _parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 205;
 
     window.addEventListener("scroll", function () {
       var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;

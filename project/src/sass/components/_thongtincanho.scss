@@ -132,7 +132,7 @@
     }
   }
   .policy-department > div:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .control-buy {
     text-align: center;
@@ -151,6 +151,9 @@
       height: 52px;
       display: block;
       padding: 10px 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
     }
     .buy-now {
       background: #56c4cf;
@@ -177,7 +180,6 @@
   }
   .policy-department {
     .share {
-      margin-top: -5px;
       margin-bottom: 15px;
       display: flex;
       justify-content: center;
@@ -190,6 +192,7 @@
         a {
           color: #333132;
           font-size: 14px;
+          line-height: 16px;
           font-style: normal;
           font-weight: 600;
         }
@@ -201,6 +204,8 @@
         color: #333132;
         font-style: normal;
         font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
       }
     }
     .policy-sell,
@@ -251,7 +256,7 @@
       height: 13px;
     }
     .adress {
-      font-size: 12xp;
+      font-size: 12px;
       line-height: 1;
       margin-bottom: 10px;
     }
