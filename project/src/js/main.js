@@ -555,7 +555,7 @@ if (window.innerWidth > 1200) {
     let lastScroll = 0;
     let parent = stickyRight.closest(".position-relative");
     let endPoint =
-      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 205;
+      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight;
 
     window.addEventListener("scroll", function () {
       let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -574,7 +574,10 @@ if (window.innerWidth > 1200) {
           stickyRight.style.bottom = "0";
         }
       } else {
-        if (currentScroll <= parent.offsetTop + parent.offsetHeight - stickyRight.clientHeight) {
+        if (
+          currentScroll <=
+          parent.offsetTop + parent.offsetHeight - stickyRight.clientHeight - 160
+        ) {
           stickyRight.classList.add("active-fixed");
           stickyRight.style.bottom = "";
           stickyRight.style.position = "";
