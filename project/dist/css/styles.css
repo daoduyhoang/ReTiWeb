@@ -2134,7 +2134,7 @@ body {
     margin-bottom: 10px; }
   .info-department .control-buy {
     text-align: center;
-    margin-top: 64px;
+    margin-top: 60px;
     margin-bottom: 10px; }
     @media (min-width: 426px) and (max-width: 768px) {
       .info-department .control-buy {
@@ -2177,7 +2177,7 @@ body {
       margin-left: auto;
       margin-right: auto; }
   .info-department .policy-department .share {
-    margin-top: 5px;
+    margin-top: -5px;
     margin-bottom: 15px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5863,7 +5863,7 @@ main {
   outline: none; }
 
 .detail-project .control-buy {
-  margin-top: 55px; }
+  margin-top: 50px; }
 
 @media (min-width: 320px) and (max-width: 414px) {
   .chitietduan-rightcolumn {
