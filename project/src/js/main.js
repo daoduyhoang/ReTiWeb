@@ -479,8 +479,12 @@ if (map) {
 }
 // STICK CHITIETCANHO
 
-if (window.innerWidth > 1200) {
-  let infoHome = document.querySelector(".chitietduan-rightcolumn");
+window.addEventListener("DOMContentLoaded", (event) => {
+  stickyScroll();
+});
+
+function stickyScroll() {
+  let infoHome = document.querySelector(".chitietduan-rightcolumn ");
   let tableProduct = document.querySelector(".table-product");
 
   let header = document.querySelector("header");
@@ -492,6 +496,7 @@ if (window.innerWidth > 1200) {
     //Lấy block cha chứa bảng info
     let parent = infoHome.closest(".position-relative");
     let width = infoHome.clientWidth;
+    infoHome.style.maxWidth = width + "px";
 
     let lastScroll = 0;
 
@@ -550,12 +555,13 @@ if (window.innerWidth > 1200) {
   //Function chạy ở trang detail-apartment
   if (stickyRight) {
     let width = stickyRight.clientWidth;
+    stickyRight.style.maxWidth = width + "px";
     let stickyOffsetRight = stickyRight.offsetLeft + stickyRight.clientWidth;
     let stickyRightPos = document.querySelector("body").clientWidth - stickyOffsetRight;
     let lastScroll = 0;
     let parent = stickyRight.closest(".position-relative");
     let endPoint =
-      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight;
+      parent.offsetTop + parent.offsetHeight - stickyRight.offsetHeight - header.clientHeight - 205;
 
     window.addEventListener("scroll", function () {
       let currentScroll = document.documentElement.scrollTop || document.body.scrollTop;

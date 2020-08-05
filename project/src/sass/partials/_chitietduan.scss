@@ -173,13 +173,15 @@
   @include flexbox();
   @include flex-direction(column);
   @include justify-content(space-around);
-  padding-left: 20px;
+
+  @media (min-width: 769px) {
+    margin-left: 20px;
+  }
+
+  flex: 1;
   // width: 455px;
   height: 554px;
 
-  @media (min-width: 1200px) {
-    flex: 1;
-  }
   .col-12 {
     height: 100%;
     padding-left: 0;
