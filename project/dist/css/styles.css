@@ -2339,6 +2339,9 @@ body {
 
 .annotate {
   padding-top: 20px; }
+  @media (min-width: 1200px) {
+    .annotate {
+      padding-right: 16px; } }
   .annotate p {
     font-family: "Roboto";
     font-style: normal;
